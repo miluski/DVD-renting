@@ -45,7 +45,7 @@ public class EkranLogowania {
                     serwer.receiving = 1;
                     Socket sock = new Socket("localhost", 1522);
                     klient.zaloguj(sock);
-                    kontrola.setBounds(20, 330, 400, 20);
+                    kontrola.setBounds(21, 330, 400, 20);
                     kontrola.setText(wiadomosc);
                     pole_login.setText("");
                     pole_haslo.setText("");
