@@ -43,7 +43,7 @@ public class EkranLogowania {
                 try {
                     serwer.serving = 1;
                     serwer.receiving = 1;
-                    Socket sock = new Socket("localhost", 1522);
+                    Socket sock = new Socket("192.168.137.1", 1522);
                     klient.zaloguj(sock);
                     kontrola.setBounds(20, 330, 400, 20);
                     kontrola.setText(wiadomosc);
