@@ -16,7 +16,7 @@ public class baza_danych {
     public static void polacz_z_baza() {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            connect = DriverManager.getConnection("jdbc:oracle:thin:@192.168.43.148:1521:xe", "system", "admin");
+            connect = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "admin");
             state = connect.createStatement();
             if (serwer.serving == 2) {
                 new wysylanie_danych();
@@ -95,7 +95,7 @@ class odbieranie_danych extends baza_danych {
                     System.out.print("To zwykly uzytkownik \n");
                     serwer.rank = rank;
                 }
-                EkranLogowania.wiadomosc = " ";
+                EkranLogowania.wiadomosc = "Pomyślnie zalogowano!";
             }
             else{
                 serwer.rank = "not_logged";
