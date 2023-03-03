@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
 import java.net.Socket;
-//komentarz ddddddddddddddd
+//test webhooka
 public class EkranLogowania {
     static String login_uzytkownika;
     static String haslo_uzytkownika;
