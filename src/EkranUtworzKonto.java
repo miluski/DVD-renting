@@ -116,7 +116,7 @@ public class EkranUtworzKonto extends JFrame{
                         serwer.serving = 2;
                         serwer.receiving = 2;
                         try {
-                            Socket sock = new Socket("192.168.137.1", 1522);
+                            Socket sock = new Socket("192.168.43.148", 1522);
                             klient.zarejestruj(sock);
                             dane.clear();
                             if (blad.equals("Podany uzytkownik istnieje juz w bazie danych!")) {
