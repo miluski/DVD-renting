@@ -6,35 +6,25 @@ import java.net.Socket;
 import java.awt.event.*;
 
 public class EkranLogowania extends javax.swing.JFrame {
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
     static String login_uzytkownika;
     static String haslo_uzytkownika;
     public static String wiadomosc, ranga;
+    private static final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
+    private static final JTextField jTextField1 = new javax.swing.JTextField();
     EkranLogowania() {
         setVisible(true);
         initComponents();
         this.setLocationRelativeTo(null);
     }
     private void initComponents() {
-        jPanel2 = new javax.swing.JPanel();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        JPanel jPanel2 = new javax.swing.JPanel();
+        JButton jButton1 = new javax.swing.JButton();
+        JButton jButton3 = new javax.swing.JButton();
+        JLabel jLabel1 = new javax.swing.JLabel();
+        JLabel jLabel2 = new javax.swing.JLabel();
+        JLabel jLabel3 = new javax.swing.JLabel();
+        JLabel jLabel4 = new javax.swing.JLabel();
+        JLabel jLabel5 = new javax.swing.JLabel();
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Wypożyczalnia płyt DVD");
         setBackground(new java.awt.Color(36, 110, 233));
@@ -57,15 +47,15 @@ public class EkranLogowania extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setText("Załóż Konto");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\T450\\Documents\\Java\\wypozyczalnia_dvd\\images\\login_dvd.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\miluski\\Desktop\\java\\wypozyczalnia_dvd\\images\\login_dvd.png")); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Panel Logowania");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\T450\\Documents\\Java\\wypozyczalnia_dvd\\images\\42264_password_lock_key_black key_authentication_icon.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\miluski\\Desktop\\java\\wypozyczalnia_dvd\\images\\42264_password_lock_key_black key_authentication_icon.png")); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\T450\\Documents\\Java\\wypozyczalnia_dvd\\images\\2135925_face_male_man_portrait_icon.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\miluski\\Desktop\\java\\wypozyczalnia_dvd\\images\\2135925_face_male_man_portrait_icon.png")); // NOI18N
         jLabel4.setToolTipText("");
 
         jLabel5.setText("Nie pamiętasz hasła?");
@@ -185,7 +175,7 @@ public class EkranLogowania extends javax.swing.JFrame {
             System.out.println("Kod bledu: " + except);
         }
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new EkranLogowania();
