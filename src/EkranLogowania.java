@@ -155,7 +155,9 @@ public class EkranLogowania extends javax.swing.JFrame {
     }
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
+        //TODO: frontend okienka do odzyskiwania hasla (wprowadzanie nicku z buttonem ok)
+        serwer.recovering = 4;
+        JOptionPane.showMessageDialog(this, "Rozpoczeto odzyskiwanie hasla", "Informacja", JOptionPane.INFORMATION_MESSAGE);
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,10 +173,10 @@ public class EkranLogowania extends javax.swing.JFrame {
             jPasswordField1.setText("");
             if (ranga.equals("user")) {
                 System.out.print(ranga + "\n");
-                // tu ma przejsc do frontendu aplikacji z wylaczona opcja zarzadzania
+                //TODO: tu ma przejsc do frontendu aplikacji z wylaczona opcja zarzadzania
             } else if (ranga.equals("admin")) {
                 System.out.print(ranga + "\n");
-                // tu ma przejsc do frontendu aplikacji z opcjami zarzadzania
+                //TODO: tu ma przejsc do frontendu aplikacji z opcjami zarzadzania
             } else {
                 System.out.print("Użytkownik nie zalogowany" + "\n");
             }

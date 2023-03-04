@@ -11,7 +11,7 @@ import java.sql.*;
 public class baza_danych {
     static Statement state;
     static Connection connect;
-    static String nick, pass, name, surname, email, phone_number;
+    static String nick, pass, name, surname, email, phone_number, coverage_key;
     /** Metoda polacz_z_baza pozwala na zainicjowanie parametrow polaczenia z baza danych **/
     public static void polacz_z_baza() {
         try {
@@ -27,6 +27,9 @@ public class baza_danych {
             if(serwer.management == 3) {
                 new zarzadzaj_baza(2);
             }
+            if(serwer.recovering == 4){
+                new odzyskiwanie_danych();
+            }
             connect.close();
         }
         catch (Exception except) {
@@ -39,6 +42,8 @@ class wysylanie_danych extends baza_danych {
     wysylanie_danych() {
         serwer.receiving = 2;
         serwer.serving = 2;
+        serwer.recovering = 2;
+        serwer.management = 2;
         try {
             String query0 = "SELECT * FROM users WHERE user_nickname = ?";
             PreparedStatement preparedstate0 = connect.prepareStatement(query0);
@@ -51,11 +56,12 @@ class wysylanie_danych extends baza_danych {
             }
             else {
                 EkranUtworzKonto.blad = " ";
-                String query = "INSERT INTO users (user_nickname, user_password, user_id) VALUES (?, ?, user_id_seq.nextval)";
+                String query = "INSERT INTO users (user_nickname, user_password, user_coverage_key, user_id) VALUES (?, ?, ?, user_id_seq.nextval)";
                 String query2 = "INSERT INTO users_data (user_name, user_surname, user_email, user_phone_number, user_data_id, user_id) VALUES (?, ?, ?, ?, user_data_id_seq.nextval, user_id_seq.currval)";
                 PreparedStatement preparedstate = connect.prepareStatement(query);
                 preparedstate.setString(1, nick);
                 preparedstate.setString(2, pass);
+                preparedstate.setString(3, coverage_key);
                 preparedstate.executeUpdate();
                 preparedstate.close();
                 PreparedStatement preparedstate2 = connect.prepareStatement(query2);
@@ -79,6 +85,8 @@ class odbieranie_danych extends baza_danych {
     odbieranie_danych() {
         serwer.serving = 1;
         serwer.receiving = 1;
+        serwer.recovering = 1;
+        serwer.management = 1;
         try {
             String query = "SELECT * FROM users WHERE user_nickname = ? AND user_password = ?";
             PreparedStatement preparedstate = connect.prepareStatement(query);
@@ -108,13 +116,41 @@ class odbieranie_danych extends baza_danych {
         }
     }
 }
-
+class odzyskiwanie_danych extends baza_danych {
+    odzyskiwanie_danych() {
+        serwer.receiving = 4;
+        serwer.serving = 4;
+        serwer.recovering = 4;
+        serwer.management = 4;
+        try {
+            String query = "SELECT user_password FROM users WHERE user_nickname = ? AND user_coverage_key = ?";
+            PreparedStatement preparedState = connect.prepareStatement(query);
+            preparedState.setString(1,nick);
+            preparedState.setString(2,coverage_key);
+            ResultSet resultSet = preparedState.executeQuery();
+            if(resultSet.next()){
+                System.out.print("Mozna zmienic haslo");
+            }
+            else{
+                System.out.print("Blad");
+            }
+        }
+        catch(SQLException except){
+            System.out.println("Kod bledu: " + except);
+        }
+    }
+}
 class zarzadzaj_baza extends baza_danych {
     zarzadzaj_baza(int option) {
+        serwer.receiving = 3;
+        serwer.serving = 3;
+        serwer.recovering = 3;
+        serwer.management = 3;
         String users = "CREATE TABLE users(\"" +
                 "user_id NUMBER(6) PRIMARY KEY,\"" +
                 "user_nickname VARCHAR2(30),\"" +
-                "user_password VARCHAR2(30)," +
+                "user_password VARCHAR2(30),\"" +
+                "user_coverage_key VARCHAR2(6) NOT NULL,\"" +
                 "user_rank VARCHAR2(30) DEFAULT 'user')";
         String users_data = "CREATE TABLE users_data(\"" +
                             "user_data_id NUMBER(6) PRIMARY KEY,\""+

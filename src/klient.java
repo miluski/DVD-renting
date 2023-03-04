@@ -2,6 +2,21 @@ import java.io.*;
 import java.net.*;
 import java.io.DataOutputStream;
 public class klient {
+    public static void odzyskaj(Socket sock){
+        try {
+            OutputStream socket_send = sock.getOutputStream();
+            InputStream socket_receive = sock.getInputStream();
+            DataOutputStream send = new DataOutputStream(socket_send);
+            DataInputStream receive = new DataInputStream(socket_receive);
+            send.writeUTF(Integer.toString(serwer.recovering));
+            receive.readUTF();
+            receive.close();
+            send.close();
+        }
+        catch (IOException except){
+            System.out.println("Kod bledu: " + except);
+        }
+    }
     public static void zarejestruj(Socket sock) {
         try {
             OutputStream socket_send = sock.getOutputStream();

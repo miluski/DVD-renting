@@ -26,6 +26,10 @@ public class EkranUtworzKonto extends JFrame{
     private static final Pattern patt3 = Pattern.compile(phone_number_patt);
     static List<String> dane = new ArrayList<String>();
     public static String blad;
+    private static int generacja_klucza(){
+        Random random = new Random();
+        return (random.nextInt(999999-100000)+100000);
+    }
     private static boolean walidacja_hasla(final String pass) {
         Matcher match = patt.matcher(pass);
         return match.matches();
@@ -107,12 +111,14 @@ public class EkranUtworzKonto extends JFrame{
                         email = textField4.getText();
                         telefon = textField5.getText();
                         haslo = new String(passwordField1.getPassword());
+                        int klucz = generacja_klucza();
                         dane.add(imie);
                         dane.add(nazwisko);
                         dane.add(login);
                         dane.add(email);
                         dane.add(telefon);
                         dane.add(haslo);
+                        dane.add(Integer.toString(klucz));
                         serwer.serving = 2;
                         serwer.receiving = 2;
                         try {
@@ -123,10 +129,14 @@ public class EkranUtworzKonto extends JFrame{
                                 JOptionPane.showMessageDialog(utworzKonto, blad, "Błąd", JOptionPane.ERROR_MESSAGE);
                                 serwer.receiving = 2;
                                 serwer.serving = 2;
+                                serwer.recovering = 2;
+                                serwer.management = 2;
                             } else {
                                 serwer.serving = 1;
                                 serwer.receiving = 1;
-                                JOptionPane.showMessageDialog(utworzKonto, "Pomyslnie utworzono konto!", "Sukces", JOptionPane.INFORMATION_MESSAGE);
+                                serwer.recovering = 1;
+                                serwer.management = 1;
+                                JOptionPane.showMessageDialog(utworzKonto, "Twój klucz zapasowy to: " + Integer.toString(klucz) + "\n Zapisz go w bezpiecznym miejscu!", "Sukces", JOptionPane.INFORMATION_MESSAGE);
                                 utworzKonto.dispose();
                                 new EkranLogowania();
                             }
