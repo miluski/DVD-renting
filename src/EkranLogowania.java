@@ -45,15 +45,15 @@ public class EkranLogowania extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setText("Załóż Konto");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\miluski\\Desktop\\java\\wypozyczalnia_dvd\\images\\login_dvd.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("images\\login_dvd.png")); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Panel Logowania");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\miluski\\Desktop\\java\\wypozyczalnia_dvd\\images\\42264_password_lock_key_black key_authentication_icon.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("images\\42264_password_lock_key_black key_authentication_icon.png")); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\miluski\\Desktop\\java\\wypozyczalnia_dvd\\images\\2135925_face_male_man_portrait_icon.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("images\\2135925_face_male_man_portrait_icon.png")); // NOI18N
         jLabel4.setToolTipText("");
 
         jLabel5.setText("Nie pamiętasz hasła?");
