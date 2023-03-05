@@ -1,9 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.Socket;
-import java.awt.event.*;
 
 public class EkranLogowania extends javax.swing.JFrame {
     static String login_uzytkownika;
@@ -62,7 +60,7 @@ public class EkranLogowania extends javax.swing.JFrame {
         jLabel5.setCursor(Cursor.getDefaultCursor());
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
+                jLabel5MouseClicked();
             }
         });
 
@@ -128,23 +126,15 @@ public class EkranLogowania extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jButton1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                jButton1ActionPerformed(e);
-            }
-        });
-        jButton3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                dispose();
-                new EkranUtworzKonto();
-            }
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+        jButton3.addActionListener(e -> {
+            dispose();
+            new EkranUtworzKonto();
         });
         pack();
     }
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {
+    private void jLabel5MouseClicked() {
         //TODO: frontend okienka do odzyskiwania hasla (wprowadzanie nicku z buttonem ok)
         serwer.recovering = 4;
         JOptionPane.showMessageDialog(this, "Rozpoczeto odzyskiwanie hasla", "Informacja", JOptionPane.INFORMATION_MESSAGE);
@@ -176,11 +166,7 @@ public class EkranLogowania extends javax.swing.JFrame {
         }
     }
     public static void main(String[] args) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new EkranLogowania();
-            }
-        });
+        java.awt.EventQueue.invokeLater(EkranLogowania::new);
     }
 
 }

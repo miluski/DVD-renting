@@ -120,22 +120,14 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
         jButton1.setText("Załóż konto");
         jButton1.setBorder(null);
         jButton1.setPreferredSize(new java.awt.Dimension(150, 35));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
         jButton2.setText("Anuluj");
         jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton2.setPreferredSize(new java.awt.Dimension(150, 35));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        jButton2.addActionListener(this::jButton2ActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -327,6 +319,13 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
                         serwer.recovering = 1;
                         serwer.management = 1;
                         JOptionPane.showMessageDialog(this, "Pomyślnie zarejestrowano! \n\n " + "Twój klucz zapasowy to: " + klucz + "\n Zapisz go w bezpiecznym miejscu!", "Sukces", JOptionPane.INFORMATION_MESSAGE);
+                        jTextField1.setText("");
+                        jTextField2.setText("");
+                        jTextField3.setText("");
+                        jTextField4.setText("");
+                        jTextField5.setText("");
+                        jPasswordField1.setText("");
+                        jPasswordField2.setText("");
                         dispose();
                         new EkranLogowania();
                     }
@@ -340,6 +339,7 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         dispose();
+        new EkranLogowania();
     }
 
 }

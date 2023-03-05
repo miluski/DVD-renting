@@ -4,7 +4,6 @@
  * @author Maksymilian Sowula
  * @version 0.0.1
  */
-
 import java.sql.*;
 
 /** Klasa obslugujaca przesyl danych z serwera do bazy danych oraz odczyt ich i przesyl do serwera **/
@@ -95,15 +94,31 @@ class odbieranie_danych extends baza_danych {
             ResultSet result = preparedstate.executeQuery();
             if (result.next()) {
                 String rank = result.getString("user_rank");
-                System.out.print("Pomyslnie zalogowano! ");
-                if (rank.equals("admin")) {
-                    System.out.print("Uzytkownik to administrator \n");
-                    serwer.rank = rank;
-                } else if (rank.equals("user")) {
-                    System.out.print("To zwykly uzytkownik \n");
-                    serwer.rank = rank;
+                String is_logged = result.getString("user_logged");
+                if(is_logged.equals("no")) {
+                    System.out.print("Pomyslnie zalogowano! ");
+                    // TODO: po frontendzie glownej aplikacji gdzie bedzie mozliwosc wylogowywania sie tutaj dac user_logged = 'yes'
+                    String query_logged = "UPDATE users SET user_logged = 'no' WHERE user_nickname = ? AND user_password = ?";
+                    preparedstate = connect.prepareStatement(query_logged);
+                    preparedstate.setString(1,serwer.nick);
+                    preparedstate.setString(2,serwer.pass);
+                    preparedstate.executeQuery();
+                    if (rank.equals("admin")) {
+                        System.out.print("Uzytkownik to administrator \n");
+                        serwer.rank = rank;
+                    } else if (rank.equals("user")) {
+                        System.out.print("To zwykly uzytkownik \n");
+                        serwer.rank = rank;
+                    }
+                    else{
+                        System.out.print(rank+"\n");
+                        serwer.rank = "Nieznana";
+                    }
+                    EkranLogowania.wiadomosc = "Pomyślnie zalogowano!";
                 }
-                EkranLogowania.wiadomosc = "Pomyślnie zalogowano!";
+                else if(is_logged.equals("yes")){
+                    EkranLogowania.wiadomosc = "Na podane konto ktoś już jest zalogowany!";
+                }
             }
             else{
                 serwer.rank = "not_logged";
@@ -151,6 +166,7 @@ class zarzadzaj_baza extends baza_danych {
                 "user_nickname VARCHAR2(30),\"" +
                 "user_password VARCHAR2(30),\"" +
                 "user_coverage_key VARCHAR2(6) NOT NULL,\"" +
+                "user_logged VARCHAR2(3) DEFAULT 'no',\"" +
                 "user_rank VARCHAR2(30) DEFAULT 'user')";
         String users_data = "CREATE TABLE users_data(\"" +
                             "user_data_id NUMBER(6) PRIMARY KEY,\""+
@@ -159,17 +175,17 @@ class zarzadzaj_baza extends baza_danych {
                             "user_email VARCHAR2(30),\"" +
                             "user_phone_number NUMBER(12),\"" +
                             "user_id NUMBER(6) REFERENCES users(user_id))";
-        String sequence1 = "CREATE SEQUENCE user_id_seq START WITH 1;";
-        String sequence2 = "CREATE SEQUENCE user_data_id_seq START WITH 1;";
+        String sequence1 = "CREATE SEQUENCE user_id_seq START WITH 1";
+        String sequence2 = "CREATE SEQUENCE user_data_id_seq START WITH 1";
         try {
-            switch(option) {
-                case 1:
-                    state.executeUpdate(users);
-                case 2:
-                    state.executeUpdate(users_data);
-                case 3:
+            switch (option) {
+                case 1 -> state.executeUpdate(users);
+                case 2 -> state.executeUpdate(users_data);
+                case 3 -> {
                     state.executeUpdate(sequence1);
                     state.executeUpdate(sequence2);
+                }
+                default -> System.out.print("Inna opcja");
             }
             String commit_query = "COMMIT";
             state.executeUpdate(commit_query);

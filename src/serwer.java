@@ -20,8 +20,8 @@ public class serwer {
                 DataOutputStream send = new DataOutputStream(socket_send);
                 String receive2 = receive.readUTF();
                 System.out.println("\nPodlaczenie z  " + client);
-                switch(receive2) {
-                    case "1":
+                switch (receive2) {
+                    case "1" -> {
                         serving = 1;
                         receiving = 1;
                         recovering = 1;
@@ -41,8 +41,8 @@ public class serwer {
                         send.close();
                         client.close();
                         running = true;
-                    break;
-                    case "2":
+                    }
+                    case "2" -> {
                         receiving = 2;
                         serving = 2;
                         recovering = 2;
@@ -64,12 +64,12 @@ public class serwer {
                         send.close();
                         client.close();
                         running = true;
-                    break;
-                    case "3":
+                    }
+                    case "3" -> {
                         System.out.print("W budowie ");
                         running = true;
-                    break;
-                    case "4":
+                    }
+                    case "4" -> {
                         recovering = 4;
                         receiving = 4;
                         serving = 4;
@@ -81,10 +81,8 @@ public class serwer {
                         send.close();
                         client.close();
                         running = true;
-                    break;
-                    default:
-                        System.out.print("Inna opcja");
-                    break;
+                    }
+                    default -> System.out.print("Inna opcja");
                 }
             }
         } catch (IOException except) {
