@@ -1,9 +1,5 @@
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -41,15 +37,15 @@ public class EkranLogowania extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(400, 174));
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans", Font.PLAIN, 24)); // NOI18N
         jLabel2.setText("Zaloguj się");
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", Font.PLAIN, 14)); // NOI18N
         jLabel3.setText("Login");
 
         jTextField1.setPreferredSize(new java.awt.Dimension(64, 25));
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", Font.PLAIN, 14)); // NOI18N
         jLabel4.setText("Hasło");
 
         jPasswordField1.setPreferredSize(new java.awt.Dimension(90, 25));
@@ -59,48 +55,32 @@ public class EkranLogowania extends javax.swing.JFrame {
         jButton1.setText("Zaloguj się");
         jButton1.setBorder(null);
         jButton1.setPreferredSize(new java.awt.Dimension(150, 35));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
         jButton2.setText("Załóż konto");
         jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton2.setPreferredSize(new java.awt.Dimension(150, 35));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        jButton2.addActionListener(this::jButton2ActionPerformed);
 
-        jButton3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 12)); // NOI18N
+        jButton3.setFont(new java.awt.Font("DejaVu Sans Condensed", Font.PLAIN, 12)); // NOI18N
         jButton3.setText("Nie pamiętasz hasła?");
         jButton3.setBackground(null);
         jButton3.setContentAreaFilled(false);
         jButton3.setBorderPainted(false);
         jButton3.setFocusPainted(false);
         jButton3.setOpaque(true);
-        jButton3.getModel().addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                ButtonModel model = (ButtonModel) e.getSource();
-                if(model.isRollover()){
-                    jButton3.setForeground(Color.lightGray);
-                }
-                else{
-                    jButton3.setForeground(null);
-                }
+        jButton3.getModel().addChangeListener(e -> {
+            ButtonModel model = (ButtonModel) e.getSource();
+            if(model.isRollover()){
+                jButton3.setForeground(Color.lightGray);
+            }
+            else{
+                jButton3.setForeground(null);
             }
         });
-        jButton3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                jButton3ActionPerformed(e);
-            }
-        });
+        jButton3.addActionListener(this::jButton3ActionPerformed);
 
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -189,32 +169,37 @@ public class EkranLogowania extends javax.swing.JFrame {
     }
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt){
-        //TODO: Frontend odzyskiwania konta
-        JOptionPane.showMessageDialog(this, "Rozpoczęto odzyskiwanie konta", "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        dispose();
+        new EkranPrzywrocHaslo();
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        login_uzytkownika = jTextField1.getText();
-        haslo_uzytkownika = new String(jPasswordField1.getPassword());
-        try {
-            serwer.serving = 1;
-            serwer.receiving = 1;
-            Socket sock = new Socket("localhost", 1522);
-            klient.zaloguj(sock);
-            JOptionPane.showMessageDialog(this, wiadomosc, "Informacja", JOptionPane.INFORMATION_MESSAGE);
-            jTextField1.setText("");
-            jPasswordField1.setText("");
-            if (ranga.equals("user")) {
-                System.out.print(ranga + "\n");
-                //TODO: tu ma przejsc do frontendu aplikacji z wylaczona opcja zarzadzania
-            } else if (ranga.equals("admin")) {
-                System.out.print(ranga + "\n");
-                //TODO: tu ma przejsc do frontendu aplikacji z opcjami zarzadzania
-            } else {
-                System.out.print("Użytkownik nie zalogowany" + "\n");
+        if(jTextField1.getText().isEmpty() || jPasswordField1.getPassword().length == 0){
+            JOptionPane.showMessageDialog(this,"Nie wprowadzono jednej z istotnych danych!","Błąd",JOptionPane.ERROR_MESSAGE);
+        }
+        else {
+            login_uzytkownika = jTextField1.getText();
+            haslo_uzytkownika = new String(jPasswordField1.getPassword());
+            try {
+                serwer.serving = 1;
+                serwer.receiving = 1;
+                Socket sock = new Socket("localhost", 1522);
+                klient.zaloguj(sock);
+                JOptionPane.showMessageDialog(this, wiadomosc, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                jTextField1.setText("");
+                jPasswordField1.setText("");
+                if (ranga.equals("user")) {
+                    System.out.print(ranga + "\n");
+                    //TODO: tu ma przejsc do frontendu aplikacji z wylaczona opcja zarzadzania
+                } else if (ranga.equals("admin")) {
+                    System.out.print(ranga + "\n");
+                    //TODO: tu ma przejsc do frontendu aplikacji z opcjami zarzadzania
+                } else {
+                    System.out.print("Użytkownik nie zalogowany" + "\n");
+                }
+                sock.close();
+            } catch (IOException except) {
+                System.out.println("Kod bledu: " + except);
             }
-            sock.close();
-        } catch (IOException except) {
-            System.out.println("Kod bledu: " + except);
         }
     }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,11 +207,7 @@ public class EkranLogowania extends javax.swing.JFrame {
         new EkranUtworzKonto();
     }
     public static void main(String[] args) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new EkranLogowania();
-            }
-        });
+        java.awt.EventQueue.invokeLater(EkranLogowania::new);
     }
 
 }

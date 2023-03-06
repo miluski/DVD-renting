@@ -23,7 +23,7 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
     private static final Pattern patt3 = Pattern.compile(phone_number_patt);
     static List<String> dane = new ArrayList<>();
     public static String blad;
-    private static int generacja_klucza(){
+    public static int generacja_klucza(){
         Random random = new Random();
         return (random.nextInt(999999-100000)+100000);
     }

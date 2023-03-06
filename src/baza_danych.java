@@ -11,6 +11,7 @@ public class baza_danych {
     static Statement state;
     static Connection connect;
     static String nick, pass, name, surname, email, phone_number, coverage_key;
+    static String key;
     /** Metoda polacz_z_baza pozwala na zainicjowanie parametrow polaczenia z baza danych **/
     public static void polacz_z_baza() {
         try {
@@ -49,9 +50,7 @@ class wysylanie_danych extends baza_danych {
             preparedstate0.setString(1, nick);
             ResultSet result = preparedstate0.executeQuery();
             if (result.next()) {
-                String nicknam = result.getString("user_nickname");
                 EkranUtworzKonto.blad = "Podany uzytkownik istnieje juz w bazie danych!";
-                System.out.print(nicknam);
             }
             else {
                 EkranUtworzKonto.blad = " ";
@@ -103,6 +102,7 @@ class odbieranie_danych extends baza_danych {
                     preparedstate.setString(1,serwer.nick);
                     preparedstate.setString(2,serwer.pass);
                     preparedstate.executeQuery();
+                    preparedstate.close();
                     if (rank.equals("admin")) {
                         System.out.print("Uzytkownik to administrator \n");
                         serwer.rank = rank;
@@ -138,17 +138,27 @@ class odzyskiwanie_danych extends baza_danych {
         serwer.recovering = 4;
         serwer.management = 4;
         try {
-            String query = "SELECT user_password FROM users WHERE user_nickname = ? AND user_coverage_key = ?";
+            String query = "SELECT * FROM users WHERE user_nickname = ? AND user_coverage_key = ?";
             PreparedStatement preparedState = connect.prepareStatement(query);
             preparedState.setString(1,nick);
             preparedState.setString(2,coverage_key);
             ResultSet resultSet = preparedState.executeQuery();
             if(resultSet.next()){
-                System.out.print("Mozna zmienic haslo");
+                key = Integer.toString(EkranUtworzKonto.generacja_klucza());
+                String update_query = "UPDATE users SET user_coverage_key = ?, user_password = ? WHERE user_nickname = ? AND user_coverage_key = ?";
+                PreparedStatement preparedStatement = connect.prepareStatement(update_query);
+                preparedStatement.setString(1,key);
+                preparedStatement.setString(2,pass);
+                preparedStatement.setString(3,nick);
+                preparedStatement.setString(4,coverage_key);
+                preparedStatement.executeQuery();
+                preparedStatement.close();
+                EkranPrzywrocHaslo.message = "Pomyślnie zmieniono hasło!\n\nTwój nowy klucz zapasowy to: " + key + "\n Zapisz go w bezpiecznym miejscu!";
             }
             else{
-                System.out.print("Blad");
+                EkranPrzywrocHaslo.message = "Wystąpił błąd przy próbie zmiany hasła!";
             }
+            preparedState.close();
         }
         catch(SQLException except){
             System.out.println("Kod bledu: " + except);

@@ -74,8 +74,14 @@ public class serwer {
                         receiving = 4;
                         serving = 4;
                         management = 4;
-                        baza_danych.coverage_key = receive.readUTF();
-                        send.writeUTF("w budowie");
+                        int list_size = Integer.parseInt(receive.readUTF());
+                        for(int i=0; i < list_size; i++){
+                            if(i == 0) baza_danych.nick = receive.readUTF();
+                            else if(i == 1) baza_danych.coverage_key = receive.readUTF();
+                            else if (i == 2) baza_danych.pass = receive.readUTF();
+                        }
+                        baza_danych.polacz_z_baza();
+                        send.writeUTF(EkranPrzywrocHaslo.message);
                         send.flush();
                         receive.close();
                         send.close();

@@ -8,8 +8,15 @@ public class klient {
             InputStream socket_receive = sock.getInputStream();
             DataOutputStream send = new DataOutputStream(socket_send);
             DataInputStream receive = new DataInputStream(socket_receive);
-            send.writeUTF(Integer.toString(serwer.recovering));
-            receive.readUTF();
+            send.writeUTF(Integer.toString(4));
+            send.flush();
+            send.writeUTF(Integer.toString(EkranPrzywrocHaslo.recovery_data.size()));
+            send.flush();
+            for(String data:EkranPrzywrocHaslo.recovery_data){
+                send.writeUTF(data);
+                send.flush();
+            }
+            EkranPrzywrocHaslo.message = receive.readUTF();
             receive.close();
             send.close();
         }
