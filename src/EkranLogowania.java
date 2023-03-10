@@ -167,7 +167,6 @@ public class EkranLogowania extends javax.swing.JFrame {
 
         pack();
     }
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt){
         dispose();
         new EkranPrzywrocHaslo();
@@ -180,21 +179,21 @@ public class EkranLogowania extends javax.swing.JFrame {
             login_uzytkownika = jTextField1.getText();
             haslo_uzytkownika = new String(jPasswordField1.getPassword());
             try {
-                serwer.serving = 1;
-                serwer.receiving = 1;
                 Socket sock = new Socket("localhost", 1522);
                 klient.zaloguj(sock);
                 JOptionPane.showMessageDialog(this, wiadomosc, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                 jTextField1.setText("");
                 jPasswordField1.setText("");
-                if (ranga.equals("user")) {
-                    System.out.print(ranga + "\n");
-                    //TODO: tu ma przejsc do frontendu aplikacji z wylaczona opcja zarzadzania
-                } else if (ranga.equals("admin")) {
-                    System.out.print(ranga + "\n");
-                    //TODO: tu ma przejsc do frontendu aplikacji z opcjami zarzadzania
-                } else {
-                    System.out.print("Użytkownik nie zalogowany" + "\n");
+                if(wiadomosc.equals("Pomyślnie zalogowano!")) {
+                    if (ranga.equals("user")) {
+                        System.out.print(ranga + "\n");
+                        //TODO: tu ma przejsc do frontendu aplikacji z wylaczona opcja zarzadzania
+                    } else if (ranga.equals("admin")) {
+                        dispose();
+                        new EkranGlownyAdmin();
+                    } else {
+                        System.out.print("Użytkownik nie zalogowany" + "\n");
+                    }
                 }
                 sock.close();
             } catch (IOException except) {
@@ -207,7 +206,7 @@ public class EkranLogowania extends javax.swing.JFrame {
         new EkranUtworzKonto();
     }
     public static void main(String[] args) {
-        java.awt.EventQueue.invokeLater(EkranLogowania::new);
+        new EkranLogowania();
     }
 
 }

@@ -1,11 +1,14 @@
 import java.io.*;
 import java.net.*;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
 public class serwer {
-    public static int serving, receiving, management, recovering;
-    public static String nick, pass, rank;
+    public static String nick, pass, rank, operation, pass_operation, management_operation;
     private static int j = 1;
     private static boolean running = true;
+    public static List<String> panel_data = new ArrayList<>();
     public static void server_operations() {
         ServerSocket socket;
         Socket client;
@@ -18,14 +21,11 @@ public class serwer {
                 DataInputStream receive = new DataInputStream(socket_receive);
                 OutputStream socket_send = client.getOutputStream();
                 DataOutputStream send = new DataOutputStream(socket_send);
-                String receive2 = receive.readUTF();
-                System.out.println("\nPodlaczenie z  " + client);
-                switch (receive2) {
-                    case "1" -> {
-                        serving = 1;
-                        receiving = 1;
-                        recovering = 1;
-                        management = 1;
+                operation = receive.readUTF();
+                System.out.println("\nDo serwera podlaczono sie z parametrow:\n" + client);
+                switch (operation) {
+                    case "Login" -> {
+                        pass_operation = "Login";
                         for (int i = 0; i < 2; i++) {
                             String buffer = receive.readUTF();
                             if (j % 2 == 1) nick = buffer;
@@ -42,11 +42,19 @@ public class serwer {
                         client.close();
                         running = true;
                     }
-                    case "2" -> {
-                        receiving = 2;
-                        serving = 2;
-                        recovering = 2;
-                        management = 2;
+                    case "Logout" -> {
+                        pass_operation = "Logout";
+                        nick = receive.readUTF();
+                        baza_danych.polacz_z_baza();
+                        send.writeUTF(EkranGlownyAdmin.message);
+                        send.flush();
+                        send.close();
+                        receive.close();
+                        client.close();
+                        running = true;
+                    }
+                    case "Register" -> {
+                        pass_operation = "Register";
                         int list_size = Integer.parseInt(receive.readUTF());
                         for (int i = 0; i < list_size; i++) {
                             if (i == 0) baza_danych.name = receive.readUTF();
@@ -65,15 +73,15 @@ public class serwer {
                         client.close();
                         running = true;
                     }
-                    case "3" -> {
-                        System.out.print("W budowie ");
+                    case "Management" -> {
+                        pass_operation = "Management";
+                        management_operation = receive.readUTF();
+                        baza_danych.polacz_z_baza();
+                        send.writeUTF(EkranGlownyAdmin.message);
                         running = true;
                     }
-                    case "4" -> {
-                        recovering = 4;
-                        receiving = 4;
-                        serving = 4;
-                        management = 4;
+                    case "Recovery" -> {
+                        pass_operation = "Recovery";
                         int list_size = Integer.parseInt(receive.readUTF());
                         for(int i=0; i < list_size; i++){
                             if(i == 0) baza_danych.nick = receive.readUTF();
@@ -86,6 +94,21 @@ public class serwer {
                         receive.close();
                         send.close();
                         client.close();
+                        running = true;
+                    }
+                    case "DataPass" -> {
+                        pass_operation = receive.readUTF();
+                        int size = Integer.parseInt(receive.readUTF());
+                        for(int i=0; i<size; i++){
+                            panel_data.add(receive.readUTF());
+                        }
+                        baza_danych.polacz_z_baza();
+                        send.writeUTF(DialogDodajDVD.message);
+                        send.flush();
+                        send.close();
+                        receive.close();
+                        panel_data.clear();
+                        size = 0;
                         running = true;
                     }
                     default -> System.out.print("Inna opcja");

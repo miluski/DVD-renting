@@ -243,7 +243,6 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
 
         pack();
     }
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         if(jTextField1.getText().isEmpty() || jTextField2.getText().isEmpty() || jTextField3.getText().isEmpty() || jTextField4.getText().isEmpty() || jTextField5.getText().isEmpty() || jPasswordField1.getPassword().length == 0 || jPasswordField2.getPassword().length == 0){
             JOptionPane.showMessageDialog(this,"Nie wprowadzono jednej z istotnych danych!","Błąd",JOptionPane.ERROR_MESSAGE);
@@ -301,23 +300,13 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
                 dane.add(telefon);
                 dane.add(haslo);
                 dane.add(Integer.toString(klucz));
-                serwer.serving = 2;
-                serwer.receiving = 2;
                 try {
                     Socket sock = new Socket("localhost", 1522);
                     klient.zarejestruj(sock);
                     dane.clear();
                     if (blad.equals("Podany uzytkownik istnieje juz w bazie danych!")) {
                         JOptionPane.showMessageDialog(this, blad, "Błąd", JOptionPane.ERROR_MESSAGE);
-                        serwer.receiving = 2;
-                        serwer.serving = 2;
-                        serwer.recovering = 2;
-                        serwer.management = 2;
                     } else {
-                        serwer.serving = 1;
-                        serwer.receiving = 1;
-                        serwer.recovering = 1;
-                        serwer.management = 1;
                         JOptionPane.showMessageDialog(this, "Pomyślnie zarejestrowano! \n\n " + "Twój klucz zapasowy to: " + klucz + "\n Zapisz go w bezpiecznym miejscu!", "Sukces", JOptionPane.INFORMATION_MESSAGE);
                         jTextField1.setText("");
                         jTextField2.setText("");
