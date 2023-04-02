@@ -1,9 +1,11 @@
+/** @file DialogDodajDVD.java
+ * @brief plik zawierający kod dialog boxa pozwalajacego na dodanie nowej płyty DVD
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 0.5.0
+ */
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.AdjustmentListener;
-import java.io.IOException;
-import java.net.Socket;
 
 public class DialogDodajDVD extends javax.swing.JDialog {
     private static final JTextField jTextField1 = new javax.swing.JTextField();
@@ -15,9 +17,8 @@ public class DialogDodajDVD extends javax.swing.JDialog {
     private static final JTextField jTextField7 = new javax.swing.JTextField();
     private static final JSpinner jSpinner1 = new javax.swing.JSpinner();
     private static final JSpinner jSpinner2 = new javax.swing.JSpinner();
-    public static String message;
-    private static final JScrollBar jScrollBar = new JScrollBar();
-    public DialogDodajDVD(java.awt.Frame parent, boolean modal) {
+    protected static String title;
+    DialogDodajDVD(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -51,64 +52,64 @@ public class DialogDodajDVD extends javax.swing.JDialog {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(400, 750));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 18));
         jLabel1.setText("Dodawanie nowego filmu DVD do kolekcji");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel2.setText("Nazwa filmu");
 
         jTextField1.setPreferredSize(new java.awt.Dimension(71, 30));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel3.setText("Reżyseria");
 
         jTextField2.setPreferredSize(new java.awt.Dimension(71, 30));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel4.setText("Gatunek");
 
         jTextField3.setPreferredSize(new java.awt.Dimension(64, 30));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel5.setText("Kraj produkcji");
 
         jTextField4.setPreferredSize(new java.awt.Dimension(64, 30));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel6.setText("Rok premiery");
 
         jTextField5.setPreferredSize(new java.awt.Dimension(64, 30));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel7.setText("Język filmu");
 
         jTextField6.setPreferredSize(new java.awt.Dimension(64, 30));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel8.setText("Długość filmu");
 
         jTextField7.setPreferredSize(new java.awt.Dimension(64, 30));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel9.setText("Ilość egzemplarzy");
 
         jSpinner1.setPreferredSize(new java.awt.Dimension(64, 25));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jLabel10.setText("Opłata za dobę");
 
         jSpinner2.setMinimumSize(new java.awt.Dimension(64, 25));
         jSpinner2.setPreferredSize(new java.awt.Dimension(64, 25));
 
         jButton1.setBackground(new java.awt.Color(89, 168, 105));
-        jButton1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jButton1.setText("Dodaj");
         jButton1.setBorder(null);
         jButton1.setPreferredSize(new java.awt.Dimension(150, 35));
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jButton2.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jButton2.setText("Anuluj");
         jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton2.setPreferredSize(new java.awt.Dimension(150, 35));
@@ -215,7 +216,7 @@ public class DialogDodajDVD extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-
+        jSpinner2.setValue(10);
         pack();
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt){
@@ -223,26 +224,59 @@ public class DialogDodajDVD extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this,"Nie wprowadzono jednej z istotnych danych!","Błąd",JOptionPane.ERROR_MESSAGE);
         }
         else {
-            try {
-                klient.panel_data.add(jTextField1.getText());
-                klient.panel_data.add(jTextField2.getText());
-                klient.panel_data.add(jTextField3.getText());
-                klient.panel_data.add(jTextField4.getText());
-                klient.panel_data.add(jTextField5.getText());
-                klient.panel_data.add(jTextField6.getText());
-                klient.panel_data.add(jTextField7.getText());
-                klient.panel_data.add(jSpinner1.getValue().toString());
-                klient.panel_data.add(jSpinner2.getValue().toString());
-                Socket sock = new Socket("localhost", 1522);
-                klient.wysylaj_dane(sock, "AddDVD");
-                JOptionPane.showMessageDialog(this, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
-                dispose();
-            } catch (IOException exception) {
-                System.out.println("Kod bledu: " + exception);
+            if(Integer.parseInt(jSpinner1.getValue().toString()) < 0){
+                JOptionPane.showMessageDialog(this,"Ilość egzemplarzy nie może być mniejsza od 0!","Błąd",JOptionPane.ERROR_MESSAGE);
+                jSpinner1.setValue(0);
+            }
+            else if(Integer.parseInt(jSpinner2.getValue().toString()) < 10){
+                JOptionPane.showMessageDialog(this,"Opłata za dobę nie może być mniejsza od 10 zł!","Błąd",JOptionPane.ERROR_MESSAGE);
+                jSpinner1.setValue(10);
+            }
+            else {
+                Klient.panelData.add(jTextField1.getText());
+                Klient.panelData.add(jTextField2.getText());
+                Klient.panelData.add(jTextField3.getText());
+                Klient.panelData.add(jTextField4.getText());
+                Klient.panelData.add(jTextField5.getText());
+                Klient.panelData.add(jTextField6.getText());
+                Klient.panelData.add(jTextField7.getText());
+                Klient.panelData.add(jSpinner1.getValue().toString());
+                Klient.panelData.add(jSpinner2.getValue().toString());
+                try {
+                    Klient.polacz();
+                    Klient.wysylajDane("AddDVD");
+                    Klient.zakonczPolaczenie();
+                    if (EkranSerwer.message == null || EkranSerwer.message.equals("")) {
+                        EkranSerwer.message = "Wystąpił nieoczekiwany błąd!";
+                        title = "Błąd";
+                    } else title = "Sukces";
+                    JOptionPane.showMessageDialog(this, EkranSerwer.message, title, JOptionPane.INFORMATION_MESSAGE);
+                    jTextField1.setText("");
+                    jTextField2.setText("");
+                    jTextField3.setText("");
+                    jTextField4.setText("");
+                    jTextField5.setText("");
+                    jTextField6.setText("");
+                    jTextField7.setText("");
+                    jSpinner1.setValue(0);
+                    jSpinner1.setValue(10);
+                    dispose();
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                }
             }
         }
     }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt){
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        jTextField6.setText("");
+        jTextField7.setText("");
+        jSpinner1.setValue(0);
+        jSpinner2.setValue(10);
         dispose();
     }
 }

@@ -1,9 +1,14 @@
+/** @file EkranPrzywrocHaslo.java
+ * @brief plik zawierający kod głównego okna odzyskiwania hasła
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 0.5.0
+ */
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,8 +18,8 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
     private static final JTextField jTextField2 = new javax.swing.JTextField();
     private static final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
     private static final JPasswordField jPasswordField2 = new javax.swing.JPasswordField();
-    public static String message;
-    public static final List<String> recovery_data = new ArrayList<>();
+    protected static String message;
+    protected static final List<String> recovery_data = new ArrayList<>();
     private static final String pass_patt = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
     private static final Pattern patt = Pattern.compile(pass_patt);
     EkranPrzywrocHaslo() {
@@ -216,26 +221,36 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
                 else {
                     recovery_data.add(jTextField1.getText());
                     recovery_data.add(jTextField2.getText());
-                    recovery_data.add(new String(jPasswordField1.getPassword()));
+                    recovery_data.add(Klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K"));
                     try {
-                        Socket sock = new Socket("localhost", 1522);
-                        klient.odzyskaj(sock);
-                        if(message.equals("Wystąpił błąd przy próbie zmiany hasła!")){
-                            JOptionPane.showMessageDialog(this,message,"Błąd",JOptionPane.ERROR_MESSAGE);
-                        }
-                        else{
-                            JOptionPane.showMessageDialog(this,message,"Sukces",JOptionPane.INFORMATION_MESSAGE);
-                            dispose();
-                            new EkranLogowania();
-                        }
-                        recovery_data.clear();
-                        jTextField1.setText("");
-                        jTextField2.setText("");
-                        jPasswordField1.setText("");
-                        jPasswordField2.setText("");
-                    } catch (IOException exception) {
-                        System.out.print("Wystąpił błąd o treści: " + exception);
+                        Klient.polacz();
+                        Klient.odzyskaj();
+                        Klient.zakonczPolaczenie();
                     }
+                    catch(Exception ex){
+                        JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                    }
+                    if(message==null) {
+                        message = "Wystąpił nieoczekiwany błąd!";
+                        JOptionPane.showMessageDialog(this, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
+                    }
+                    else if(message.equals("Wystąpił błąd przy próbie zmiany hasła!")){
+                        JOptionPane.showMessageDialog(this,message,"Błąd",JOptionPane.ERROR_MESSAGE);
+                    }
+                    else if(message.contains("Pomyślnie zmieniono hasło!\n\nTwój nowy klucz zapasowy to: ")){
+                        JOptionPane.showMessageDialog(this,message,"Sukces",JOptionPane.INFORMATION_MESSAGE);
+                        dispose();
+                        new EkranLogowania();
+                    }
+                    else{
+                        message = "Wystąpił nieoczekiwany błąd!";
+                        JOptionPane.showMessageDialog(this, message, "Błąd", JOptionPane.WARNING_MESSAGE);
+                    }
+                    recovery_data.clear();
+                    jTextField1.setText("");
+                    jTextField2.setText("");
+                    jPasswordField1.setText("");
+                    jPasswordField2.setText("");
                 }
             }
         }

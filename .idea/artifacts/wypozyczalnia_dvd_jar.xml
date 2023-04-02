@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="wypozyczalnia_dvd:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/wypozyczalnia_dvd_jar</output-path>
+    <root id="archive" name="wypozyczalnia_dvd.jar">
+      <element id="module-output" name="wypozyczalnia_dvd" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/23.0.0/annotations-23.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/ojdbc11.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
