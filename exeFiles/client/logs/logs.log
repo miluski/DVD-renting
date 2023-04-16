@@ -1,0 +1,11 @@
+[ERROR] Klient: [ Sun Apr 16 21:30:29 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 21:31:18 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 21:31:18 CEST 2023 ] Socket closed
+[ERROR] Klient: [ Sun Apr 16 21:31:39 CEST 2023 ] Connection timed out: connect
+[ERROR] Klient: [ Sun Apr 16 21:31:50 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 21:32:14 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 21:32:18 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 22:16:01 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 22:16:01 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 22:16:02 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
+[ERROR] EkranLogowania: [ Sun Apr 16 22:16:02 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null

@@ -1,0 +1,1831 @@
+[INFO] EkranSerwer: [ Sun Apr 16 14:47:08 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 14:47:09 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 14:47:18 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 14:47:23 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 14:47:49 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 14:47:50 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 14:47:54 CEST 2023 ] New thread called Thread-6 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 14:47:54 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[FATAL] EkranSerwer: [ Sun Apr 16 14:47:54 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Apr 16 14:47:54 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 14:47:54 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 14:48:02 CEST 2023 ] New thread called Thread-7 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 14:48:02 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[FATAL] EkranSerwer: [ Sun Apr 16 14:48:02 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Apr 16 14:48:02 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 14:48:03 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 14:54:02 CEST 2023 ] New thread called Thread-8 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 14:54:02 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[FATAL] EkranSerwer: [ Sun Apr 16 14:54:02 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Apr 16 14:54:02 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 14:54:03 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 14:55:47 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 14:55:47 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 14:55:49 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 14:56:13 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 14:56:14 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 14:56:17 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 14:56:23 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 14:56:23 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[FATAL] EkranSerwer: [ Sun Apr 16 14:56:23 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Apr 16 14:56:23 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 14:56:24 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 14:56:48 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 14:57:08 CEST 2023 ] New thread called Thread-0 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 14:57:08 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[FATAL] EkranSerwer: [ Sun Apr 16 14:57:08 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Apr 16 14:57:08 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 14:57:09 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 14:57:32 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 14:57:39 CEST 2023 ] New thread called Thread-0 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 14:57:40 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[FATAL] EkranSerwer: [ Sun Apr 16 14:57:40 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Apr 16 14:57:40 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 14:57:42 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 14:59:40 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 14:59:40 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 14:59:45 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 14:59:57 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 14:59:58 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:01 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:00:01 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:09 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:00:09 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:14 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:14 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:14 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:14 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:14 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:00:14 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 15:00:42 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 15:00:42 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 15:00:43 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 15:06:24 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 15:06:30 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:06:31 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:06:45 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:06:45 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:06:45 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:06:45 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 15:06:46 CEST 2023 ] Connection reset
+[ERROR] Klient: [ Sun Apr 16 15:06:51 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 15:06:51 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 15:06:52 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 15:07:11 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 15:07:15 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:07:15 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:07:17 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:07:17 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] EkranSerwer: [ Sun Apr 16 15:07:17 CEST 2023 ] Wystąpił nieoczekiwany błąd!
+[INFO] EkranSerwer: [ Sun Apr 16 15:08:08 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:08:08 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:08:08 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:08:08 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:08:08 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:08:08 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 15:08:10 CEST 2023 ] Connection reset
+[ERROR] Klient: [ Sun Apr 16 15:08:14 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 15:08:14 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 15:08:14 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:33 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:41 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:14:42 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:43 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:50 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:14:50 CEST 2023 ] ORA-00923: nie znaleziono słowa kluczowego FROM w oczekiwanym miejscu
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:55 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:55 CEST 2023 ] New thread called Thread-5 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:14:55 CEST 2023 ] ORA-00923: nie znaleziono słowa kluczowego FROM w oczekiwanym miejscu
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:57 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:58 CEST 2023 ] New thread called Thread-7 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:14:58 CEST 2023 ] ORA-00923: nie znaleziono słowa kluczowego FROM w oczekiwanym miejscu
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:14:59 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:01 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:01 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:02 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:03 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:03 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:18 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:19 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:19 CEST 2023 ] New thread called Thread-16 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:15:19 CEST 2023 ] ORA-00923: nie znaleziono słowa kluczowego FROM w oczekiwanym miejscu
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:20 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:20 CEST 2023 ] New thread called Thread-18 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:15:20 CEST 2023 ] ORA-00923: nie znaleziono słowa kluczowego FROM w oczekiwanym miejscu
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:21 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:22 CEST 2023 ] New thread called Thread-20 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:15:22 CEST 2023 ] ORA-00923: nie znaleziono słowa kluczowego FROM w oczekiwanym miejscu
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:23 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:23 CEST 2023 ] New thread called Thread-22 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:15:23 CEST 2023 ] ORA-00923: nie znaleziono słowa kluczowego FROM w oczekiwanym miejscu
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:15:25 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:15:25 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:16:50 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 15:17:55 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 15:17:55 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 15:17:55 CEST 2023 ] Socket closed
+[ERROR] Klient: [ Sun Apr 16 15:20:54 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 15:20:54 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 15:20:55 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
+[INFO] EkranSerwer: [ Sun Apr 16 15:24:10 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 15:24:15 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:24:16 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:24:20 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:24:20 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:24:24 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:24:24 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:24:30 CEST 2023 ] New thread called Thread-4 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:24:30 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:01 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:25:01 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:07 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:25:07 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:09 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:09 CEST 2023 ] New thread called Thread-8 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:25:09 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:11 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:12 CEST 2023 ] New thread called Thread-10 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:25:12 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:12 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:25:13 CEST 2023 ] New thread called Thread-12 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:25:13 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:26:29 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:26:29 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 15:26:33 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:26:33 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:26:49 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 15:26:49 CEST 2023 ] Index 0 out of bounds for length 0
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:07 CEST 2023 ] New thread called Thread-16 was created 
+[FATAL] EkranSerwer: [ Sun Apr 16 15:27:10 CEST 2023 ] null
+[FATAL] EkranSerwer: [ Sun Apr 16 15:27:10 CEST 2023 ] null
+[FATAL] EkranSerwer: [ Sun Apr 16 15:27:10 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:11 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:12 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:14 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:27:14 CEST 2023 ] Changed count of DVD 3
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:18 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:20 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:27:20 CEST 2023 ] Deleted DVD 61
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:21 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:28 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:31 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:27:31 CEST 2023 ] Edited DVD 10
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:33 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:38 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:39 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:39 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:39 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:27:39 CEST 2023 ] User 10 Rented DVD 4
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:39 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:27:39 CEST 2023 ] Deleted reservation for DVD: 4 reservation by user: 10
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:42 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:46 CEST 2023 ] New thread called Thread-32 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:27:46 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:50 CEST 2023 ] New thread called Thread-33 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:51 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:52 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:53 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:54 CEST 2023 ] New thread called Thread-37 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:55 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:56 CEST 2023 ] New thread called Thread-39 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:57 CEST 2023 ] New thread called Thread-40 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:27:57 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:57 CEST 2023 ] New thread called Thread-41 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:27:57 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:58 CEST 2023 ] New thread called Thread-42 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:27:58 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:27:59 CEST 2023 ] New thread called Thread-43 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:27:59 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:00 CEST 2023 ] New thread called Thread-44 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:28:00 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:00 CEST 2023 ] New thread called Thread-45 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:28:00 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:01 CEST 2023 ] New thread called Thread-46 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:28:01 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:03 CEST 2023 ] New thread called Thread-47 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:04 CEST 2023 ] New thread called Thread-48 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:05 CEST 2023 ] New thread called Thread-49 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:28:05 CEST 2023 ] Deleted client 62
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:07 CEST 2023 ] New thread called Thread-50 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:09 CEST 2023 ] New thread called Thread-51 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:10 CEST 2023 ] New thread called Thread-52 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:28:20 CEST 2023 ] New thread called Thread-53 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:28:20 CEST 2023 ] ORA-00971: brak słowa kluczowego SET
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:04 CEST 2023 ] New thread called Thread-54 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:29:04 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:10 CEST 2023 ] New thread called Thread-55 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:29:10 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:11 CEST 2023 ] New thread called Thread-56 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:12 CEST 2023 ] New thread called Thread-57 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:12 CEST 2023 ] New thread called Thread-58 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:14 CEST 2023 ] New thread called Thread-59 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:14 CEST 2023 ] New thread called Thread-60 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:14 CEST 2023 ] New thread called Thread-61 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:29:14 CEST 2023 ] New DVD reservation
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:14 CEST 2023 ] New thread called Thread-62 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:29:14 CEST 2023 ] Changed count of DVD 26
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:15 CEST 2023 ] New thread called Thread-63 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:17 CEST 2023 ] New thread called Thread-64 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:17 CEST 2023 ] New thread called Thread-65 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:17 CEST 2023 ] New thread called Thread-66 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:29:17 CEST 2023 ] New DVD reservation
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:17 CEST 2023 ] New thread called Thread-67 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:29:17 CEST 2023 ] Changed count of DVD 35
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:18 CEST 2023 ] New thread called Thread-68 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:26 CEST 2023 ] New thread called Thread-69 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:27 CEST 2023 ] New thread called Thread-70 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:29 CEST 2023 ] New thread called Thread-71 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:29:29 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:31 CEST 2023 ] New thread called Thread-72 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:31 CEST 2023 ] New thread called Thread-73 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:31 CEST 2023 ] New thread called Thread-74 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:32 CEST 2023 ] New thread called Thread-75 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:32 CEST 2023 ] New thread called Thread-76 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:32 CEST 2023 ] New thread called Thread-77 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:29:32 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:33 CEST 2023 ] New thread called Thread-78 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:33 CEST 2023 ] New thread called Thread-79 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:33 CEST 2023 ] New thread called Thread-80 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:34 CEST 2023 ] New thread called Thread-81 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:35 CEST 2023 ] New thread called Thread-82 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:29:35 CEST 2023 ] ORA-00933: polecenie SQL niepoprawnie zakończone
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:36 CEST 2023 ] New thread called Thread-83 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:29:36 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[FATAL] EkranSerwer: [ Sun Apr 16 15:29:40 CEST 2023 ] Connection reset
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] New thread called Thread-84 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-25 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-26 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-27 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-28 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-29 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-30 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-31 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-32 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-33 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-34 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-35 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-36 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-37 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-38 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-39 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-40 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-41 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-42 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-43 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-44 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-45 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-46 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-47 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-48 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-49 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-50 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-51 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-52 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-53 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-54 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-55 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-56 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-57 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-58 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-59 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-60 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-61 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-62 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-63 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-64 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-65 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-66 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-67 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-68 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-69 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-70 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-71 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-72 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-73 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-74 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-75 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-76 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-77 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-78 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-79 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-80 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-81 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-82 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-83 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Thread called Thread-84 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:29:51 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 15:34:01 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 15:34:08 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:34:08 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:34:11 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:34:23 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:34:28 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:34:29 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:34:52 CEST 2023 ] New thread called Thread-6 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 15:34:52 CEST 2023 ] Index 0 out of bounds for length 0
+[FATAL] EkranSerwer: [ Sun Apr 16 15:34:52 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Apr 16 15:34:52 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Apr 16 15:35:03 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Apr 16 15:35:05 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:04 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 15:36:10 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 15:36:10 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 15:36:11 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:20 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:25 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:36:26 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:32 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:32 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:32 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:32 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:36 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:41 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:36:41 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:45 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:36:55 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:05 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:05 CEST 2023 ] Added new Bill
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:07 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:12 CEST 2023 ] New thread called Thread-6 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 15:37:12 CEST 2023 ] ORA-00955: nazwa jest już używana przez istniejący obiekt
+
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:15 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:16 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:16 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:16 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:16 CEST 2023 ] User 10 Rented DVD 24
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:16 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:16 CEST 2023 ] Deleted reservation for DVD: 24 reservation by user: 10
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:18 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:21 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:21 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:21 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:21 CEST 2023 ] User 10 Rented DVD 35
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:21 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:21 CEST 2023 ] Deleted reservation for DVD: 35 reservation by user: 10
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:22 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:26 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:26 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:29 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:29 CEST 2023 ] User 21 Rented DVD 41
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:29 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:29 CEST 2023 ] Changed count of DVD 41
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:30 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:31 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:31 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:31 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:31 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:32 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:32 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:33 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:33 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:33 CEST 2023 ] User 3 Returned DVD 9
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:33 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:33 CEST 2023 ] Changed count of DVD 9
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:34 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:35 CEST 2023 ] New thread called Thread-33 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:36 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:36 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:37 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:37 CEST 2023 ] New thread called Thread-37 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:38 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:39 CEST 2023 ] New thread called Thread-39 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:39 CEST 2023 ] New thread called Thread-40 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:40 CEST 2023 ] New thread called Thread-41 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:41 CEST 2023 ] New thread called Thread-42 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:42 CEST 2023 ] New thread called Thread-43 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:37:59 CEST 2023 ] New thread called Thread-44 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:37:59 CEST 2023 ] Register from: 127.0.0.1 Nickname: Login
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:01 CEST 2023 ] New thread called Thread-45 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:04 CEST 2023 ] New thread called Thread-46 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:06 CEST 2023 ] New thread called Thread-47 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:38:06 CEST 2023 ] Deleted client 81
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:07 CEST 2023 ] New thread called Thread-48 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:09 CEST 2023 ] New thread called Thread-49 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:10 CEST 2023 ] New thread called Thread-50 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:11 CEST 2023 ] New thread called Thread-51 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:13 CEST 2023 ] New thread called Thread-52 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:16 CEST 2023 ] New thread called Thread-53 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:22 CEST 2023 ] New thread called Thread-54 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:23 CEST 2023 ] New thread called Thread-55 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:31 CEST 2023 ] New thread called Thread-56 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:38:31 CEST 2023 ] Edited client 3
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:33 CEST 2023 ] New thread called Thread-57 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:36 CEST 2023 ] New thread called Thread-58 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:38 CEST 2023 ] New thread called Thread-59 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:55 CEST 2023 ] New thread called Thread-60 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:38:55 CEST 2023 ] Added new DVD film
+[INFO] EkranSerwer: [ Sun Apr 16 15:38:58 CEST 2023 ] New thread called Thread-61 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:02 CEST 2023 ] New thread called Thread-62 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:03 CEST 2023 ] New thread called Thread-63 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:09 CEST 2023 ] New thread called Thread-64 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:39:09 CEST 2023 ] Changed count of DVD 62
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:13 CEST 2023 ] New thread called Thread-65 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:15 CEST 2023 ] New thread called Thread-66 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:39:15 CEST 2023 ] Deleted DVD 62
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:16 CEST 2023 ] New thread called Thread-67 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:18 CEST 2023 ] New thread called Thread-68 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:19 CEST 2023 ] New thread called Thread-69 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:23 CEST 2023 ] New thread called Thread-70 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:26 CEST 2023 ] New thread called Thread-71 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:39:26 CEST 2023 ] Changed count of DVD 63
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:28 CEST 2023 ] New thread called Thread-72 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:29 CEST 2023 ] New thread called Thread-73 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:33 CEST 2023 ] New thread called Thread-74 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:36 CEST 2023 ] New thread called Thread-75 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:39:36 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:42 CEST 2023 ] New thread called Thread-76 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:39:42 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: Testowe23
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:48 CEST 2023 ] New thread called Thread-77 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:39:48 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:57 CEST 2023 ] New thread called Thread-78 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:39:57 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:58 CEST 2023 ] New thread called Thread-79 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:59 CEST 2023 ] New thread called Thread-80 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:39:59 CEST 2023 ] New thread called Thread-81 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:03 CEST 2023 ] New thread called Thread-82 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:03 CEST 2023 ] New thread called Thread-83 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:04 CEST 2023 ] New thread called Thread-84 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:05 CEST 2023 ] New thread called Thread-85 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:07 CEST 2023 ] New thread called Thread-86 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:08 CEST 2023 ] New thread called Thread-87 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:10 CEST 2023 ] New thread called Thread-88 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:10 CEST 2023 ] New thread called Thread-89 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:10 CEST 2023 ] New thread called Thread-90 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:40:10 CEST 2023 ] New DVD reservation
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:10 CEST 2023 ] New thread called Thread-91 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:40:10 CEST 2023 ] Changed count of DVD 42
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:11 CEST 2023 ] New thread called Thread-92 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:13 CEST 2023 ] New thread called Thread-93 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:14 CEST 2023 ] New thread called Thread-94 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:15 CEST 2023 ] New thread called Thread-95 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:26 CEST 2023 ] New thread called Thread-96 was created 
+[INFO] BazaDanych: [ Sun Apr 16 15:40:26 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] New thread called Thread-97 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-25 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-26 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-27 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-28 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-29 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-30 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-31 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-32 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-33 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-34 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-35 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-36 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-37 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-38 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-39 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-40 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-41 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-42 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-43 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-44 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-45 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-46 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-47 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-48 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-49 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-50 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-51 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-52 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-53 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-54 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-55 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-56 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-57 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-58 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-59 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-60 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-61 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-62 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-63 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-64 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-65 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-66 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-67 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-68 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-69 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-70 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-71 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-72 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-73 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-74 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-75 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-76 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-77 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-78 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-79 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-80 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-81 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-82 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-83 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-84 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-85 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-86 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-87 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-88 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-89 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-90 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-91 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-92 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-93 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-94 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-95 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-96 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Thread called Thread-97 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 15:40:30 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 16:06:36 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:06:42 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:06:42 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 16:06:43 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 16:06:43 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:37 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:07:37 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:40 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:40 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:40 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:40 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:40 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:40 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:46 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:51 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:07:52 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 16:07:52 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 16:07:52 CEST 2023 ] Zamknięty zestaw wyników: getString
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:05 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:09:05 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:06 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:06 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:06 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:06 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:06 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:06 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:13 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:19 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:09:20 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:21 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:45 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:09:45 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:53 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:09:53 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:09:53 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:24 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:32 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:33 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:10:33 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:42 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:10:42 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:10:43 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:35 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:11:35 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:38 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:38 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:38 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:38 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:38 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:38 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:11:38 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 16:12:07 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:12:14 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:12:14 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:12:15 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:12:15 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:14:09 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:14:09 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:15:12 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:15:12 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:15:12 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:15:12 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:15:12 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:15:12 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 16:16:10 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:16:15 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:16:15 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:16:16 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:16:16 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:16:36 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:16:36 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:16:48 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:16:48 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:16:48 CEST 2023 ] New thread called Thread-5 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:16:48 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:18:21 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:18:21 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:18:33 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:18:33 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:18:34 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:18:34 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:20:32 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:20:32 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:20:42 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:20:42 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:20:43 CEST 2023 ] New thread called Thread-11 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:20:43 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:21:21 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:21:21 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:21:35 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:21:35 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:21:36 CEST 2023 ] New thread called Thread-14 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:21:36 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:21:39 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:21:39 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:23:09 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:23:09 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:23:10 CEST 2023 ] New thread called Thread-17 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:23:10 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:25:09 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:25:09 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:25:24 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:25:24 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:25:25 CEST 2023 ] New thread called Thread-20 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:25:25 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:26:13 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:26:13 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:26:23 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:26:23 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:26:23 CEST 2023 ] New thread called Thread-23 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:26:23 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:27:22 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:27:22 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:27:32 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:27:32 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:27:32 CEST 2023 ] New thread called Thread-26 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:27:32 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:31:59 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:31:59 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:32:09 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:32:09 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:32:10 CEST 2023 ] New thread called Thread-29 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:32:10 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-25 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-26 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-27 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-28 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-29 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Thread called Thread-30 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:31 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:35 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:42 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:33:43 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:33:43 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:33:43 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:35:47 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:35:47 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:36:06 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:36:06 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:36:07 CEST 2023 ] New thread called Thread-5 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:36:07 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:37:41 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:37:41 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:37:51 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:37:51 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:37:52 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:37:52 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:37:57 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:37:57 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:39:15 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:39:15 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:39:15 CEST 2023 ] New thread called Thread-11 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:39:15 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:40:18 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:40:18 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:40:33 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:40:33 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:40:34 CEST 2023 ] New thread called Thread-14 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 16:40:34 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 16:41:58 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 16:45:28 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 16:45:28 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 16:45:29 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 16:45:38 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:45:45 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:45:45 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:45:53 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:45:53 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:46:28 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:46:28 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:46:39 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:46:39 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:47:04 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:47:04 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:47:13 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:47:13 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:47:32 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:47:32 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:47:45 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:47:45 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:48:21 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:48:21 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:48:24 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:48:24 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[ERROR] Klient: [ Sun Apr 16 16:49:53 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 16:49:53 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 16:49:54 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
+[INFO] EkranSerwer: [ Sun Apr 16 16:49:59 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 16:50:00 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:50:01 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:50:16 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:50:16 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:50:39 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:50:39 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:50:50 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:50:50 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:50:58 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:50:58 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:51:16 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:51:16 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:51:28 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:51:28 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:51:31 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:51:31 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:51:44 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:51:44 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:51:49 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:51:49 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:52:05 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:52:05 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:52:11 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:52:11 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:55:12 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:55:12 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:55:18 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:55:18 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:55:31 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:55:31 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:56:26 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:56:26 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:56:35 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:56:35 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:56:45 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:56:45 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:57:22 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:57:22 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 16:57:48 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] BazaDanych: [ Sun Apr 16 16:57:48 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:00:10 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:00:10 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:00:10 CEST 2023 ] New thread called Thread-22 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:00:10 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:00:36 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:00:36 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:00:46 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:00:46 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:00:46 CEST 2023 ] New thread called Thread-25 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:00:46 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:01:04 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:01:04 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:01:13 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:01:13 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:01:14 CEST 2023 ] New thread called Thread-28 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:01:14 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:01:44 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:01:44 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:01:53 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:01:53 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:01:54 CEST 2023 ] New thread called Thread-31 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:01:54 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-25 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-26 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-27 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-28 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-29 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-30 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-31 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Thread called Thread-32 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:03 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:09 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:14 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:02:15 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:21 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:02:21 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:02:22 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:02:22 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:03 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:03 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:03 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:03 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:03 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:03 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:07 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:09 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:03:10 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:16 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:03:16 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:17 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:03:17 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:54 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:54 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:54 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:54 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:54 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:03:54 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:04:00 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:04:03 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:04:04 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:04:10 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:04:10 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:04:11 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:04:11 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:09 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:09 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:09 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:09 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:09 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:09 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:17 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:21 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:10:21 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:27 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:10:28 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:10:28 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:10:28 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:10 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:10 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:10 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:10 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:10 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:10 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:14 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:15 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:14:15 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:22 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:14:22 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:14:23 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Apr 16 17:14:23 CEST 2023 ] For input string: "Jakis"
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:37 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:37 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:37 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:37 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:37 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:37 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:48 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:49 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:15:49 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:55 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:15:55 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:15:56 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 17:15:56 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:14 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:14 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:14 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:14 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:14 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:14 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:18 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:22 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:18:22 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:29 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:18:29 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:18:30 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:09 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:09 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:09 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:09 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:09 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:09 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 17:19:14 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 17:19:14 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 17:19:14 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:17 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:29 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:19:29 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:19:30 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:23 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:23 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:23 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:23 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:23 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:28 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:29 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:20:30 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:35 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:20:35 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:20:36 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 17:20:36 CEST 2023 ] Nie odczytano danych
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:21 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:21:22 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:44 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:44 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:44 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:44 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:44 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:44 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:44 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:47 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:55 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:21:55 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:21:56 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 17:21:56 CEST 2023 ] Nie odczytano danych
+[INFO] EkranSerwer: [ Sun Apr 16 17:22:59 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:22:59 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:00 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:00 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:00 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:00 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:00 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:00 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:04 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:11 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:23:12 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:23:12 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:32 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:26:32 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:36 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:36 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:36 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:36 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:36 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:36 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:43 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:49 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:26:50 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:26:51 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:18 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:18 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:18 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:18 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:18 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 17:28:22 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 17:28:22 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 17:28:22 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:29 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:37 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:28:37 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:28:38 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:25 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:25 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:25 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:25 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:25 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:29 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:32 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:29:33 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:39 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:29:39 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:29:39 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:16 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:39:16 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:19 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:19 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:19 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:19 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:19 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:19 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:39:19 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:40:33 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:40:40 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:40:41 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:40:41 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:31 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:31 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:31 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:31 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:31 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 17:41:35 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 17:41:35 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 17:41:35 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:40 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:46 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:41:46 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:41:47 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:01 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:01 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:01 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:01 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:01 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 17:42:05 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 17:42:05 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 17:42:06 CEST 2023 ] Connection reset by peer
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:09 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:16 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:42:16 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:42:17 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:43 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:47:43 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:45 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:46 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:46 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:46 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:46 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:46 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:50 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:57 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:47:58 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:47:58 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:48:35 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:48:35 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:49:37 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:49:37 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:49:38 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:51:39 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:51:39 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:51:48 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:51:48 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:51:49 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:51:55 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:51:56 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:10 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:56:10 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:11 CEST 2023 ] New thread called Thread-11 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 17:56:11 CEST 2023 ] ORA-00936: brak wyrażenia
+
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:13 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:14 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:16 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:17 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:19 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:19 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:25 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:27 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:28 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:28 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:29 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:29 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:31 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:33 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:34 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:41 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:56:41 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:47 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:56:47 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:56:48 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 17:57:28 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:57:28 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:57:39 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] BazaDanych: [ Sun Apr 16 17:57:39 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 17:57:39 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:03:22 CEST 2023 ] New thread called Thread-33 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:03:22 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:03:33 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:03:33 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:03:33 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:04:07 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:04:07 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:05:40 CEST 2023 ] New thread called Thread-37 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:05:40 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:05:41 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:06:12 CEST 2023 ] New thread called Thread-39 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:06:12 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:06:23 CEST 2023 ] New thread called Thread-40 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:06:23 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:06:23 CEST 2023 ] New thread called Thread-41 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:06:47 CEST 2023 ] New thread called Thread-42 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:06:47 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:08:33 CEST 2023 ] New thread called Thread-43 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:08:33 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:08:34 CEST 2023 ] New thread called Thread-44 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:14:27 CEST 2023 ] New thread called Thread-45 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:14:27 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:14:37 CEST 2023 ] New thread called Thread-46 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:14:37 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:14:37 CEST 2023 ] New thread called Thread-47 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:14:49 CEST 2023 ] New thread called Thread-48 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:14:49 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] New thread called Thread-49 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-25 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-26 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-27 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-28 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-29 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-30 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-31 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-32 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-33 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-34 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-35 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-36 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-37 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-38 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-39 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-40 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-41 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-42 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-43 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-44 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-45 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-46 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-47 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-48 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Thread called Thread-49 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:18:59 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 18:19:33 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 18:19:39 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:19:39 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:19:40 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:19:45 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:19:45 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:21:52 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:21:52 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:21:53 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:22:06 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:22:06 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:22:38 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:22:38 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:22:38 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:22:50 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:22:50 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:23:18 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:23:18 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:23:25 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:23:25 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:23:26 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:23:41 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:23:41 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:24:05 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:24:05 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:24:05 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:24:37 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:24:38 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:24:48 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:24:48 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:24:48 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:25:00 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:25:00 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:25:35 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:25:35 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:25:35 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:25:49 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:25:49 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:26:54 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:26:54 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:26:55 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:27:07 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:27:07 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:27:46 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:27:46 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:27:47 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:27:51 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:27:51 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:28:39 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:28:39 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:28:39 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:28:56 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:28:56 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:29:23 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:29:23 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:29:23 CEST 2023 ] New thread called Thread-33 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:29:36 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:29:36 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:29:55 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:29:55 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:29:56 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:30:30 CEST 2023 ] New thread called Thread-37 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:30:30 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:30:40 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:30:40 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:30:41 CEST 2023 ] New thread called Thread-39 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:30:52 CEST 2023 ] New thread called Thread-40 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:30:52 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:31:19 CEST 2023 ] New thread called Thread-41 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:31:19 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:31:20 CEST 2023 ] New thread called Thread-42 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:31:32 CEST 2023 ] New thread called Thread-43 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:31:32 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:31:56 CEST 2023 ] New thread called Thread-44 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:31:56 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:31:57 CEST 2023 ] New thread called Thread-45 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:32:09 CEST 2023 ] New thread called Thread-46 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:32:09 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:32:19 CEST 2023 ] New thread called Thread-47 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:32:19 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:32:20 CEST 2023 ] New thread called Thread-48 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:33:33 CEST 2023 ] New thread called Thread-49 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:33:33 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:33:42 CEST 2023 ] New thread called Thread-50 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:33:42 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:33:43 CEST 2023 ] New thread called Thread-51 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:34:50 CEST 2023 ] New thread called Thread-52 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:34:50 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:35:14 CEST 2023 ] New thread called Thread-53 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:35:14 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:35:14 CEST 2023 ] New thread called Thread-54 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:35:43 CEST 2023 ] New thread called Thread-55 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:35:43 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:35:57 CEST 2023 ] New thread called Thread-56 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:35:57 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:35:58 CEST 2023 ] New thread called Thread-57 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:36:19 CEST 2023 ] New thread called Thread-58 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:36:19 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:36:29 CEST 2023 ] New thread called Thread-59 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:36:29 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:36:29 CEST 2023 ] New thread called Thread-60 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:36:38 CEST 2023 ] New thread called Thread-61 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:36:38 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:00 CEST 2023 ] New thread called Thread-62 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:37:00 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:00 CEST 2023 ] New thread called Thread-63 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:17 CEST 2023 ] New thread called Thread-64 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:37:17 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:27 CEST 2023 ] New thread called Thread-65 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:37:27 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:27 CEST 2023 ] New thread called Thread-66 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:35 CEST 2023 ] New thread called Thread-67 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:37:35 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:51 CEST 2023 ] New thread called Thread-68 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:37:51 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:37:52 CEST 2023 ] New thread called Thread-69 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:38:03 CEST 2023 ] New thread called Thread-70 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:38:03 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:38:12 CEST 2023 ] New thread called Thread-71 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:38:12 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:38:13 CEST 2023 ] New thread called Thread-72 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:38:25 CEST 2023 ] New thread called Thread-73 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:38:25 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:38:35 CEST 2023 ] New thread called Thread-74 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:38:35 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:38:36 CEST 2023 ] New thread called Thread-75 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:38:47 CEST 2023 ] New thread called Thread-76 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:38:47 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:00 CEST 2023 ] New thread called Thread-77 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:39:00 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:01 CEST 2023 ] New thread called Thread-78 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:15 CEST 2023 ] New thread called Thread-79 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:39:15 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] New thread called Thread-80 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-25 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-26 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-27 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-28 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-29 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-30 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-31 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-32 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-33 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-34 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-35 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-36 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-37 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-38 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-39 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-40 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-41 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-42 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-43 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-44 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-45 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-46 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-47 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-48 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-49 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-50 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-51 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-52 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-53 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-54 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-55 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-56 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-57 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-58 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-59 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-60 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-61 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-62 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-63 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-64 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-65 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-66 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-67 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-68 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-69 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-70 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-71 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-72 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-73 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-74 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-75 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-76 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-77 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-78 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-79 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Thread called Thread-80 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:39:18 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 18:48:59 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 18:49:00 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:49:01 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:49:01 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:49:01 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 18:49:01 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:49:01 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:01 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:50:01 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:11 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:50:11 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:12 CEST 2023 ] New thread called Thread-6 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:50:12 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:12 CEST 2023 ] New thread called Thread-7 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:50:12 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:19 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:23 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:25 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:50:25 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:30 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:50:30 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:31 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:50:31 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:31 CEST 2023 ] New thread called Thread-4 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:50:31 CEST 2023 ] Niepoprawny indeks kolumny
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:38 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:50:49 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:04 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:52:04 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:06 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:11 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:20 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:52:20 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:21 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:52:21 CEST 2023 ] ORA-00936: brak wyrażenia
+
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:21 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:52:21 CEST 2023 ] ORA-00936: brak wyrażenia
+
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:26 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:45 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:52:45 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:48 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:52 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:58 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:52:58 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:59 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:52:59 CEST 2023 ] ORA-00936: brak wyrażenia
+
+[INFO] EkranSerwer: [ Sun Apr 16 18:52:59 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Apr 16 18:52:59 CEST 2023 ] ORA-00936: brak wyrażenia
+
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:48 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:48 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:48 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:48 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:48 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:48 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:52 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 18:54:55 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:54:55 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:55:01 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:55:01 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:55:01 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:55:07 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:56:26 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:56:26 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:17 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:22 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:28 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:57:28 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:29 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:57:29 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 18:58:33 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Apr 16 18:58:33 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:00:06 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:00:06 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:00:07 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:00:07 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:00:18 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:00:18 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:01:42 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:01:42 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 19:01:46 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:01:46 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:01:46 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:01:47 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:01:56 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:01:56 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:02:49 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:02:49 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:02:50 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:02:50 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:03:25 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:03:26 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:03:26 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:03:26 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:03:26 CEST 2023 ] User 10 Rented DVD 4
+[INFO] EkranSerwer: [ Sun Apr 16 19:03:26 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:03:26 CEST 2023 ] Deleted reservation for DVD: 4 reservation by user: 10
+[INFO] EkranSerwer: [ Sun Apr 16 19:03:30 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:03:30 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:09:47 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:09:47 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:09:47 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:09:47 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:09:47 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:09:53 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:09:53 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:10:45 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:10:45 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:10:46 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:10:46 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:10:46 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:10:51 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:10:57 CEST 2023 ] New thread called Thread-33 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:10:57 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:33 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:11:33 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:34 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:34 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:34 CEST 2023 ] New thread called Thread-37 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:37 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:43 CEST 2023 ] New thread called Thread-39 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:45 CEST 2023 ] New thread called Thread-40 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:45 CEST 2023 ] New thread called Thread-41 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:45 CEST 2023 ] New thread called Thread-42 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:11:45 CEST 2023 ] User 10 Rented DVD 42
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:45 CEST 2023 ] New thread called Thread-43 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:11:45 CEST 2023 ] Deleted reservation for DVD: 42 reservation by user: 10
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:46 CEST 2023 ] New thread called Thread-44 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:47 CEST 2023 ] New thread called Thread-45 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:11:52 CEST 2023 ] New thread called Thread-46 was created 
+[INFO] BazaDanych: [ Sun Apr 16 19:11:52 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] New thread called Thread-47 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-14 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-15 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-16 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-17 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-18 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-19 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-20 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:19 CEST 2023 ] Thread called Thread-21 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-22 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-23 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-24 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-25 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-26 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-27 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-28 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-29 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-30 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-31 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-32 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-33 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-34 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-35 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-36 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-37 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-38 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-39 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-40 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-41 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-42 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-43 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-44 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-45 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-46 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Thread called Thread-47 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 19:12:20 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 20:34:01 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 20:34:06 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 20:34:07 CEST 2023 ] Login from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 20:34:07 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:34:07 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:34:07 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:34:20 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:34:23 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:34 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Apr 16 20:39:34 CEST 2023 ] Logout from: 127.0.0.1 Nickname: a
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:39:36 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Apr 16 20:41:37 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Apr 16 20:41:46 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Apr 16 20:41:46 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 20:41:52 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sun Apr 16 20:41:52 CEST 2023 ] Login from: 127.0.0.1 Nickname: Jakis
+[INFO] EkranSerwer: [ Sun Apr 16 20:41:52 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:43:55 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Apr 16 20:43:55 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:43:55 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:43:55 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:43:55 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Apr 16 20:43:55 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Apr 16 20:44:00 CEST 2023 ] null
+[ERROR] Klient: [ Sun Apr 16 20:44:00 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Apr 16 20:44:00 CEST 2023 ] Connection reset by peer
+[INFO] LogsTest: Info message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] BazaDanych: [ Sun Apr 16 21:58:02 CEST 2023 ] Test exception
+[ERROR] EkranPrzywrocHaslo: [ Sun Apr 16 22:09:13 CEST 2023 ] For input string: "12three"
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[ERROR] EkranPrzywrocHaslo: [ Sun Apr 16 22:10:11 CEST 2023 ] For input string: "12three"
+[ERROR] BazaDanych: [ Sun Apr 16 22:10:11 CEST 2023 ] Test exception
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[ERROR] EkranPrzywrocHaslo: [ Sun Apr 16 22:10:43 CEST 2023 ] For input string: "12three"
+[ERROR] BazaDanych: [ Sun Apr 16 22:10:43 CEST 2023 ] Test exception
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[ERROR] EkranPrzywrocHaslo: [ Sun Apr 16 22:11:04 CEST 2023 ] For input string: "12three"
+[ERROR] BazaDanych: [ Sun Apr 16 22:11:04 CEST 2023 ] Test exception
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
