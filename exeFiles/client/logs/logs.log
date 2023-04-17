@@ -9,3 +9,7 @@
 [ERROR] Klient: [ Sun Apr 16 22:16:01 CEST 2023 ] Connection refused: connect
 [ERROR] Klient: [ Sun Apr 16 22:16:02 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
 [ERROR] EkranLogowania: [ Sun Apr 16 22:16:02 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
+[ERROR] Klient: [ Mon Apr 17 14:30:06 CEST 2023 ] null
+[ERROR] EkranLogowania: [ Mon Apr 17 14:30:07 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
+[ERROR] Klient: [ Mon Apr 17 23:10:34 CEST 2023 ] null
+[ERROR] EkranLogowania: [ Mon Apr 17 23:10:35 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null

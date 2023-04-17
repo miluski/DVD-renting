@@ -95,7 +95,7 @@ public class EkranSerwer extends javax.swing.JFrame {
     /**
      * Atrybut będący adresem IP do podłączenia się z bazą danych
      */
-    public static String IP;
+    public static String IP = "localhost";
     /**
      * Atrybut będący listą wszystkich wątków serwera
      */
@@ -132,7 +132,6 @@ public class EkranSerwer extends javax.swing.JFrame {
      * Konstruktor odpowiadający za inicjalizację GUI i operacje wykonywane przez serwer
      */
     public EkranSerwer() {
-        IP = "localhost";
         initComponents();
         this.setLocationRelativeTo(null);
         addWindowListener(new java.awt.event.WindowAdapter() {

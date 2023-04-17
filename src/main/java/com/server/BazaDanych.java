@@ -89,7 +89,7 @@ public class BazaDanych implements Callable<String> {
     public String call() {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            connect = DriverManager.getConnection("jdbc:oracle:thin:@"+ EkranSerwer.IP+":1521:xe", "system", "admin");
+            connect = DriverManager.getConnection("jdbc:oracle:thin:@"+EkranSerwer.IP+":1521:xe", "system", "admin");
             EkranSerwer.setMessage("Połączono z bazą danych");
             state = connect.createStatement();
             switch (EkranSerwer.operation) {

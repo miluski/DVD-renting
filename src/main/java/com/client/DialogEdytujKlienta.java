@@ -345,14 +345,14 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
             jPasswordField1.setText("");
             jPasswordField2.setText("");
         } else {
-            if (EkranUtworzKonto.walidacjaHasla(new String(jPasswordField1.getPassword()))) {
+            if (!EkranUtworzKonto.walidacjaHasla(new String(jPasswordField1.getPassword()))) {
                 JOptionPane.showMessageDialog(this, "Wprowadzone hasło nie spełnia wymogów bezpieczeństwa!", "Błąd", JOptionPane.ERROR_MESSAGE);
                 jPasswordField1.setText("");
                 jPasswordField2.setText("");
-            } else if (EkranUtworzKonto.walidacjaTelefonu(jTextField4.getText())) {
+            } else if (!EkranUtworzKonto.walidacjaTelefonu(jTextField4.getText())) {
                 JOptionPane.showMessageDialog(this, "Wprowadzony telefon jest nieprawidłowy!", "Błąd", JOptionPane.ERROR_MESSAGE);
                 jTextField4.setText("");
-            } else if (EkranUtworzKonto.walidacjaEmail(jTextField3.getText())) {
+            } else if (!EkranUtworzKonto.walidacjaEmail(jTextField3.getText())) {
                 JOptionPane.showMessageDialog(this, "Wprowadzony adres email jest nieprawidłowy!", "Błąd", JOptionPane.ERROR_MESSAGE);
                 jTextField3.setText("");
             } else {
