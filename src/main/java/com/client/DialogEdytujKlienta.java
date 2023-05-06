@@ -1,16 +1,12 @@
-/**
- * @file DialogDodajDVD.java
- * @brief Plik zawierający kod dialog boxa pozwalajacego na edycję wybranego klienta od strony administratora wypożyczalnii
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import javax.swing.*;
 import java.awt.*;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogEdytujKlienta extends javax.swing.JDialog {
     /**

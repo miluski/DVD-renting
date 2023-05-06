@@ -1,15 +1,11 @@
-/**
- * @file DialogUsunTabele.java
- * @brief Plik zawierający kod dialog boxa pozwalającego na usunięcie wybranej tabeli od strony administratora wypożyczalni
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import javax.swing.*;
 import java.awt.*;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogUsunTabele extends javax.swing.JDialog {
     /**

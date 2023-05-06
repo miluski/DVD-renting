@@ -1,10 +1,3 @@
-/**
- * @file EkranUtworzKonto.java
- * @brief Plik zawierający kod głównego okna umożliwiającego utworzenie konta
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.Logs;
 import javax.swing.*;
@@ -15,6 +8,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
  * Klasa zawierająca pola i metody służące do obsługi głównego okna logowania
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class EkranUtworzKonto extends javax.swing.JFrame {
     /**

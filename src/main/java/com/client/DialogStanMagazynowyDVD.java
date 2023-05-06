@@ -1,10 +1,3 @@
-/**
- * @file DialogStanMagazynowyDVD.java
- * @brief Plik zawierający kod dialog boxa pozwalającego na przeglądanie stanu magazynowego DVD od strony administratora wypożyczalni
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import javax.swing.*;
@@ -15,6 +8,9 @@ import javax.swing.table.*;
 import java.awt.*;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
     /**

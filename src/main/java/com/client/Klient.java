@@ -1,10 +1,3 @@
-/**
- * @file Klient.java
- * @brief Plik zawierający kod ułatwiający zbieranie danych od dialog boxów
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.*;
 import org.jetbrains.annotations.Contract;
@@ -23,6 +16,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 /**
  * Klasa zawierająca pola i metody niezbędne do komunikacji aplikacji klienta z aplikacją serwera
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class Klient implements Callable<Void> {
     /**

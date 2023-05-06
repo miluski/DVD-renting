@@ -1,10 +1,3 @@
-/**
- * @file DialogZwroc.java
- * @brief Plik zawierający kod dialog boxa pozwalającego na zwrócenie wybranej płyty DVD od strony administratora wypożyczalni
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import javax.swing.*;
@@ -13,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogZwroc extends javax.swing.JDialog {
     /**
@@ -59,6 +55,10 @@ public class DialogZwroc extends javax.swing.JDialog {
      * Atrybut będący identyfikatorem wypożyczenia
      */
     protected static String rentID;
+    /**
+     * Atrybut będący datą wypożyczenia
+     */
+    protected static String rentDate;
     /**
      * Atrybut będący nazwą filmu
      */
@@ -181,6 +181,7 @@ public class DialogZwroc extends javax.swing.JDialog {
                         jTextArea2.setText(jList2.getSelectedValue());
                         filmName = jList2.getSelectedValue().substring((jList2.getSelectedValue()).indexOf(".")+2);
                         rentID = jList2.getSelectedValue().substring(0,(jList2.getSelectedValue()).indexOf("."));
+                        rentDate = EkranSerwer.panelData.get(8);
                     }
                 });
                 jTextArea2.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
@@ -322,6 +323,7 @@ public class DialogZwroc extends javax.swing.JDialog {
         Klient.panelData.add(userID);
         Klient.panelData.add(Integer.toString(dvdID));
         Klient.panelData.add(rentID);
+        Klient.panelData.add(rentDate);
         Klient.polacz();
         Klient.wysylajDane("ReturnDVD");
         EkranSerwer.updatingID = Integer.parseInt(Integer.toString(dvdID));

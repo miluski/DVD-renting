@@ -1,10 +1,3 @@
-/**
- * @file DialogDodajDVD.java
- * @brief Plik zawierający kod dialog boxa pozwalajacego na dodanie nowej płyty DVD
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import com.server.Logs;
@@ -12,6 +5,9 @@ import javax.swing.*;
 import java.awt.*;
 /**
  * Klasa zawierająca pola i metody obsługująca komponenty graficzne dialog boxa Dodaj DVD
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public final class DialogDodajDVD extends javax.swing.JDialog {
     private static final JTextField jTextField1 = new javax.swing.JTextField();

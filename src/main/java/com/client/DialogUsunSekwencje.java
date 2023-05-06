@@ -1,15 +1,11 @@
-/**
- * @file DialogUsunSekwencje.java
- * @brief Plik zawierający kod dialog boxa pozwalającego na usunięcie wybranej sekwencji od strony administratora wypożyczalni
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import java.awt.*;
 import javax.swing.JOptionPane;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogUsunSekwencje extends javax.swing.JDialog {
     /**

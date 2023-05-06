@@ -1,10 +1,3 @@
-/**
- * @file EkranSerwer.java
- * @brief Plik zawierający kod głównego okna serwera
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.server;
 import com.client.*;
 import org.jetbrains.annotations.NotNull;
@@ -18,6 +11,9 @@ import java.util.List;
 import java.util.concurrent.*;
 /**
  * Klasa zawierająca pola i metody obsługujące konstrukcję GUI i techniczną serwera
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class EkranSerwer extends javax.swing.JFrame {
     /**

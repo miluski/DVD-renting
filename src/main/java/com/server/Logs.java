@@ -1,16 +1,12 @@
-/**
- * @file Logs.java
- * @brief Plik zawierający metody, pola i klasy, które pozwalają na logowanie zdarzeń aplikacji do pliku
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.server;
 import org.apache.log4j.*;
 import java.io.File;
 import java.io.FileWriter;
 /**
  * Klasa zawierająca pola i metody umożliwiające zapis zdarzeń generowanych przez aplikację do pliku
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class Logs {
     /**

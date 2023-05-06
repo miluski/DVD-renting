@@ -1,10 +1,3 @@
-/**
- * @file DialogGlownyAdmin.java
- * @brief Plik zawierający kod głównego okna panelu administratora
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.Logs;
 import javax.swing.*;
@@ -12,6 +5,9 @@ import javax.swing.event.ChangeEvent;
 import java.awt.*;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class EkranGlownyAdmin extends javax.swing.JFrame {
     /**

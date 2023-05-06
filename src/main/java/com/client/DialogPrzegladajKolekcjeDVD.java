@@ -1,14 +1,6 @@
-/**
- * @file DialogPrzegladajKolekcjeDVD.java
- * @brief plik zawierający kod dialog boxa pozwalającego na przeglądanie kolekcji DVD od strony administratora i klienta wypożyczalni
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import com.server.Logs;
-
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentListener;
@@ -20,6 +12,9 @@ import java.awt.*;
 import javax.swing.event.DocumentEvent;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
     /**

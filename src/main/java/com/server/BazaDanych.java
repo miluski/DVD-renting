@@ -1,17 +1,17 @@
-/**
- * @file BazaDanych.java
- * @brief Plik zawierający metody, pola i klasy, które pozwalają na wymiane danych pomiędzy serwerem a bazą danych
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.server;
 import com.client.*;
 import org.jetbrains.annotations.NotNull;
 import java.sql.*;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.Callable;
 /**
  * Klasa przyjmująca dane od serwera i zezwalająca na połączenie się z bazą danych
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class BazaDanych implements Callable<String> {
     /**
@@ -237,7 +237,6 @@ final class WymianaDanych extends BazaDanych {
         try{
             EkranSerwer.panelData.clear();
             String query = "SELECT returns.return_id, " +
-                    "returns.rent_id, " +
                     "dvds_data.film_name, " +
                     "dvds_data.film_direction, " +
                     "dvds_data.film_type, " +
@@ -245,21 +244,18 @@ final class WymianaDanych extends BazaDanych {
                     "dvds_data.production_year, " +
                     "dvds_data.film_language, " +
                     "dvds_data.video_length, " +
-                    "rents.rent_date, " +
+                    "returns.rent_date, " +
                     "returns.return_date " +
                     "FROM returns " +
                     "JOIN dvds_data ON dvds_data.dvd_id = returns.dvd_id " +
                     "JOIN users ON users.user_id = returns.user_id " +
-                    "JOIN rents ON rents.rent_id = returns.rent_id " +
                     "WHERE dvds_data.dvd_id = returns.dvd_id " +
-                    "AND returns.rent_id = rents.rent_id " +
-                    "AND rents.user_id = ?";
+                    "AND returns.user_id = ?";
             PreparedStatement preparedStatement = connect.prepareStatement(query);
             preparedStatement.setInt(1,Integer.parseInt(EkranSerwer.userID));
             ResultSet result = preparedStatement.executeQuery();
             while(result.next()){
                 EkranSerwer.panelData.add(Integer.toString((result.getInt("return_id"))));
-                EkranSerwer.panelData.add(Integer.toString((result.getInt("rent_id"))));
                 EkranSerwer.panelData.add(result.getString("film_name"));
                 EkranSerwer.panelData.add(result.getString("film_direction"));
                 EkranSerwer.panelData.add(result.getString("film_type"));
@@ -323,19 +319,28 @@ final class WymianaDanych extends BazaDanych {
      */
     private static void returnDVD(){
         try {
-            String query = "INSERT INTO returns(return_id,user_id,dvd_id,rent_id,return_date) " +
-                    "VALUES(rent_id_seq.nextval,?,?,?,SYSDATE)";
+            String query = "INSERT INTO returns(return_id,user_id,dvd_id,rent_date,return_date) " +
+                    "VALUES(return_id_seq.nextval,?,?,?,SYSDATE)";
+            DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-DD");
+            Date bufferDate = dateFormat.parse(EkranSerwer.panelData.get(3));
+            java.sql.Date rentDate = new java.sql.Date(bufferDate.getTime());
             PreparedStatement preparedStatement = connect.prepareStatement(query);
             preparedStatement.setInt(1,Integer.parseInt(EkranSerwer.panelData.get(0)));
             preparedStatement.setInt(2,Integer.parseInt(EkranSerwer.panelData.get(1)));
-            preparedStatement.setInt(3,Integer.parseInt(EkranSerwer.panelData.get(2)));
+            preparedStatement.setDate(3,rentDate);
             preparedStatement.executeUpdate();
             preparedStatement.close();
+            commitQuery();
+            String query2 = "DELETE FROM rents WHERE rent_id = ?";
+            PreparedStatement preparedStatement1 = connect.prepareStatement(query2);
+            preparedStatement1.setInt(1, Integer.parseInt(EkranSerwer.panelData.get(2)));
+            preparedStatement1.executeUpdate();
+            preparedStatement1.close();
             commitQuery();
             new Logs("[ " + new java.util.Date() + " ] " + "User " + EkranSerwer.panelData.get(0) + " Returned DVD " + EkranSerwer.panelData.get(1), "BazaDanych", "info");
             EkranSerwer.message = "Pomyślnie zwrócono DVD!";
         }
-        catch (SQLException ex){
+        catch (SQLException | ParseException ex){
              catchServe(ex);
         }
     }
@@ -1024,7 +1029,7 @@ final class ZarzadzajBaza extends BazaDanych {
                 "return_id NUMBER(6) PRIMARY KEY, " +
                 "dvd_id NUMBER(6) CONSTRAINT returns_dvd_id_fk REFERENCES dvds_data(dvd_id), " +
                 "user_id NUMBER(6) CONSTRAINT returns_user_id_fk REFERENCES users(user_id), " +
-                "rent_id NUMBER(6) CONSTRAINT returns_rent_id_fk REFERENCES rents(rent_id), " +
+                "rent_date DATE, " +
                 "return_date DATE)";
         String bills = "CREATE TABLE bills(" +
                 "bill_id NUMBER(6) PRIMARY KEY, " +

@@ -1,10 +1,3 @@
-/**
- * @file DialogWypozycz.java
- * @brief Plik zawierający kod dialog boxa pozwalającego na wypożyczenie płyty DVD dla klienta od strony administratora wypożyczalni
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import javax.swing.*;
@@ -13,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogWypozycz extends javax.swing.JDialog {
     /**

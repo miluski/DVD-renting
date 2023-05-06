@@ -9,8 +9,5 @@
         <module name="wypozyczalnia_dvd" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="wypozyczalnia_dvd" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>

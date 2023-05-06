@@ -1,15 +1,11 @@
-/**
- * @file Powiadomienia.java
- * @brief Plik zawierający kod umożliwiający na wyświetlanie powiadomień w panelach administratora lub użytkownika
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import java.util.ArrayList;
 import java.util.List;
 /**
  * Klasa zawierająca pola pozwalające na przechowywanie powiadomień dla użytkowników/administratorów
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class Powiadomienia {
     /**

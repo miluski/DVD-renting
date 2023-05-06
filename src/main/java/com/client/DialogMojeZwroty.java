@@ -1,10 +1,3 @@
-/**
- * @file DialogMojeZwroty.java
- * @brief Plik zawierający kod dialog boxa pozwalajacego na przeglądanie zwrotów od strony klienta wypożyczalnii
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import javax.swing.*;
@@ -18,6 +11,9 @@ import javax.swing.table.TableRowSorter;
 import java.awt.*;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogMojeZwroty extends javax.swing.JDialog {
     /**
@@ -77,22 +73,22 @@ public class DialogMojeZwroty extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 18));
         jLabel1.setText("Lista zwróconych przeze mnie DVD");
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/11);
+        int size = ((EkranSerwer.panelData.size())/10);
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
                 new Object [][] {
                 },
                 new String [] {
-                        "ID Zwrotu", "ID Wypożyczenia", "Nazwa filmu", "Reżyseria", "Gatunek", "Kraj produkcji", "Rok produkcji", "Język filmu", "Długość filmu", "Data wypożyczenia","Data zwrotu"
+                        "ID Zwrotu", "Nazwa filmu", "Reżyseria", "Gatunek", "Kraj produkcji", "Rok produkcji", "Język filmu", "Długość filmu", "Data wypożyczenia","Data zwrotu"
                 }
         ));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         for(int i=0; i<size; i++){
-            model.addRow(new Object[]{EkranSerwer.panelData.get(counter), EkranSerwer.panelData.get(counter+1), EkranSerwer.panelData.get(counter+2), EkranSerwer.panelData.get(counter+3), EkranSerwer.panelData.get(counter+4), EkranSerwer.panelData.get(counter+5), EkranSerwer.panelData.get(counter+6), EkranSerwer.panelData.get(counter+7), EkranSerwer.panelData.get(counter+8),EkranSerwer.panelData.get(counter+9),EkranSerwer.panelData.get(counter+10)});
-            if(size>1) counter+=11;
+            model.addRow(new Object[]{EkranSerwer.panelData.get(counter), EkranSerwer.panelData.get(counter+1), EkranSerwer.panelData.get(counter+2), EkranSerwer.panelData.get(counter+3), EkranSerwer.panelData.get(counter+4), EkranSerwer.panelData.get(counter+5), EkranSerwer.panelData.get(counter+6), EkranSerwer.panelData.get(counter+7), EkranSerwer.panelData.get(counter+8),EkranSerwer.panelData.get(counter+9)});
+            if(size>1) counter+=10;
         }
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-        for(int i=0; i<11; i++) {
+        for(int i=0; i<10; i++) {
             jTable1.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
             jTable1.getColumnModel().getColumn(i).setHeaderRenderer(centerRenderer);
         }

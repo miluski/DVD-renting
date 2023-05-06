@@ -1,10 +1,3 @@
-/**
- * @file DialogPrzegladajZwroty.java
- * @brief Plik zawierający kod dialog boxa pozwalającego na przeglądanie zwrotów od strony administratora wypożyczalni
- * @author Jakub Szczur
- * @author Maksymilian Sowula
- * @version 1.0.0-alpha
- */
 package com.client;
 import com.server.EkranSerwer;
 import javax.swing.*;
@@ -16,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ * @author Jakub Szczur
+ * @author Maksymilian Sowula
+ * @version 1.0.0-alpha
  */
 public class DialogPrzegladajZwroty extends javax.swing.JDialog {
     /**
@@ -115,7 +111,7 @@ public class DialogPrzegladajZwroty extends javax.swing.JDialog {
                 Klient.polacz();
                 Klient.otrzymujDane("ReviewReturns");
                 int counter2 = 0;
-                int size2 = ((EkranSerwer.panelData.size())/11);
+                int size2 = ((EkranSerwer.panelData.size())/10);
                 jTable1.setModel(new javax.swing.table.DefaultTableModel(
                         new Object[][]{
                         },
@@ -127,8 +123,8 @@ public class DialogPrzegladajZwroty extends javax.swing.JDialog {
                 jTable1.setBorder(new LineBorder(Color.BLACK));
                 DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
                 for(int i=0; i<size2; i++){
-                    model.addRow(new Object[]{EkranSerwer.panelData.get(counter2+2), EkranSerwer.panelData.get(counter2+9), EkranSerwer.panelData.get(counter2+10)});
-                    if(size2>1) counter2+=11;
+                    model.addRow(new Object[]{EkranSerwer.panelData.get(counter2+1), EkranSerwer.panelData.get(counter2+8), EkranSerwer.panelData.get(counter2+9)});
+                    if(size2>1) counter2+=10;
                 }
                 DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
                 centerRenderer.setHorizontalAlignment(JLabel.CENTER);
