@@ -1,5 +1,4 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
@@ -9,6 +8,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.util.LinkedList;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -29,18 +30,24 @@ public class DialogPrzegladajRachunki extends javax.swing.JDialog {
      */
     private static TableRowSorter<TableModel> rowSorter;
     /**
-     * Konstruktor odpowiadający za inicjalizację GUI
+     * Lista zawierająca dane
      */
-    DialogPrzegladajRachunki(java.awt.Frame parent, boolean modal) {
+    private final java.util.List<String> panelData = new LinkedList<>();
+    /**
+     * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
+     */
+    DialogPrzegladajRachunki(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewBills");
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewBills",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
-                Klient.panelData.clear();
-                EkranSerwer.panelData.clear();
                 dispose();
             }
         });
@@ -71,7 +78,7 @@ public class DialogPrzegladajRachunki extends javax.swing.JDialog {
         jTextField1.setDisabledTextColor(Color.lightGray);
         jTextField1.setMaximumSize(jTextField1.getPreferredSize());
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/7);
+        int size = ((panelData.size())/7);
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
             },
@@ -81,7 +88,7 @@ public class DialogPrzegladajRachunki extends javax.swing.JDialog {
         ));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         for(int i=0; i<size; i++){
-            model.addRow(new Object[]{EkranSerwer.panelData.get(counter), EkranSerwer.panelData.get(counter+1), EkranSerwer.panelData.get(counter+2), EkranSerwer.panelData.get(counter+3), EkranSerwer.panelData.get(counter+4), EkranSerwer.panelData.get(counter+5), EkranSerwer.panelData.get(counter+6)});
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1), panelData.get(counter+2), panelData.get(counter+3), panelData.get(counter+4), panelData.get(counter+5), panelData.get(counter+6)});
             if(size>1) counter+=7;
         }
         jScrollPane1.setViewportView(jTable1);
@@ -179,8 +186,6 @@ public class DialogPrzegladajRachunki extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         pack();
     }
     /**
@@ -191,8 +196,6 @@ public class DialogPrzegladajRachunki extends javax.swing.JDialog {
         dispose();
         jTable1.setRowSorter(null);
         rowSorter = null;
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
         model.setColumnCount(0);

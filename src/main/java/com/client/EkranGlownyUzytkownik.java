@@ -3,6 +3,7 @@ import com.server.Logs;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import java.awt.*;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -17,19 +18,31 @@ public class EkranGlownyUzytkownik extends javax.swing.JFrame {
     /**
      * Atrybut będący listą w postaci graficznej
      */
-    private static final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    private final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
     /**
      * Atrybut będący scrollbarem
      */
-    private static final javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
+    private final javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
     /**
      * Atrybut będący wiadomością
      */
     protected static String message;
     /**
-     * Konstruktor odpowiadający za inicjalizację GUI
+     * Atrybut przechowujący login użytkownika
      */
-    EkranGlownyUzytkownik() {
+    private final String loginUzytkownika;
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * Konstruktor odpowiadający za inicjalizację GUI
+     * @param loginUzytkownika Login użytkownika
+     * @param klient Instancja klasy klient
+     */
+    EkranGlownyUzytkownik(String loginUzytkownika, Klient klient) {
+        this.klient = klient;
+        this.loginUzytkownika = loginUzytkownika;
         initComponents();
         this.setLocationRelativeTo(null);
         setVisible(true);
@@ -37,9 +50,9 @@ public class EkranGlownyUzytkownik extends javax.swing.JFrame {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
                 try {
-                    Klient.polacz();
-                    Klient.wyloguj();
-                    Klient.zakonczPolaczenie();
+                    klient.polacz(klient);
+                    klient.wyloguj(loginUzytkownika);
+                    klient.zakonczPolaczenie();
                     dispose();
                 }
                 catch(Exception ex){
@@ -52,19 +65,19 @@ public class EkranGlownyUzytkownik extends javax.swing.JFrame {
     /**
      * Metoda, której zadaniem jest inicjacja listy w postaci graficznej z powiadomieniami dla użytkownika
      */
-    private static void setNotifications(){
+    private void setNotifications(){
         try {
             DefaultListModel<String> newListModel = new DefaultListModel<>();
             jList1.setModel(newListModel);
-            Powiadomienia.userDetentionDVDsNotifications.clear();
-            Klient.polacz();
-            Klient.notifications("User");
+            klient.polacz(klient);
+            java.util.List<String> userDetentionDVDsNotifications = new LinkedList<>(klient.notifications("User",loginUzytkownika));
+            klient.zakonczPolaczenie();
             DefaultListModel<String> defaultListModel = new DefaultListModel<>();
-            for(int i=0; i<Powiadomienia.userDetentionDVDsNotifications.size(); i+=3){
-                if(!Powiadomienia.userDetentionDVDsNotifications.get(i).equals("Brak powiadomień")){
-                    defaultListModel.addElement("Przetrzymujesz płytę o ID: "+Powiadomienia.userDetentionDVDsNotifications.get(i) + ", nazwie: " + Powiadomienia.userDetentionDVDsNotifications.get(i+1) + " od: "+ Powiadomienia.userDetentionDVDsNotifications.get(i+2)+"\n");
+            for(int i=0; i<userDetentionDVDsNotifications.size(); i+=3){
+                if(!userDetentionDVDsNotifications.get(i).equals("Brak powiadomień")){
+                    defaultListModel.addElement("Przetrzymujesz płytę o ID: "+userDetentionDVDsNotifications.get(i) + ", nazwie: " + userDetentionDVDsNotifications.get(i+1) + " od: "+ userDetentionDVDsNotifications.get(i+2)+"\n");
                 }
-                else defaultListModel.addElement(Powiadomienia.userDetentionDVDsNotifications.get(i));
+                else defaultListModel.addElement(userDetentionDVDsNotifications.get(i));
             }
             jList1.setModel(defaultListModel);
             jList1.setBackground(new java.awt.Color(255, 255, 255));
@@ -390,16 +403,17 @@ public class EkranGlownyUzytkownik extends javax.swing.JFrame {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {
-        int reply = Klient.dialogTakNie("Czy na pewno chcesz sie wylogowac?");
+        int reply = klient.dialogTakNie("Czy na pewno chcesz sie wylogowac?");
         if (reply == JOptionPane.YES_OPTION) {
             try {
-                Klient.polacz();
-                Klient.wyloguj();
-                Klient.zakonczPolaczenie();
+                klient.polacz(klient);
+                java.util.List<String> listaDanych = new LinkedList<>(klient.wyloguj(loginUzytkownika));
+                klient.zakonczPolaczenie();
+                message = listaDanych.get(0);
                 if(message==null || message.equals("")) message = "Wystąpił nieoczekiwany błąd!\n";
                 JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                 dispose();
-                new EkranLogowania();
+                new EkranLogowania(klient.getKlientIP());
             }
             catch(Exception ex){
                 JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
@@ -440,27 +454,27 @@ public class EkranGlownyUzytkownik extends javax.swing.JFrame {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogPrzegladajKolekcjeDVD(this, true, "ReviewDVDCollection");
+        new DialogPrzegladajKolekcjeDVD(this, true, "ReviewDVDCollection", klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Moje wypożyczenia
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogMojeWypozyczenia(this, true);
+        new DialogMojeWypozyczenia(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Moje zwroty
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogMojeZwroty(this, true);
+        new DialogMojeZwroty(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Zarezerwuj DVD
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogPrzegladajKolekcjeDVD(this, true, "DVDAvalaible");
+        new DialogPrzegladajKolekcjeDVD(this, true, "DVDAvalaible", klient);
     }
 }

@@ -1,5 +1,4 @@
 package com.client;
-import com.server.EkranSerwer;
 import com.server.Logs;
 import javax.swing.*;
 import java.awt.*;
@@ -10,20 +9,55 @@ import java.awt.*;
  * @version 1.0.0-alpha
  */
 public final class DialogDodajDVD extends javax.swing.JDialog {
-    private static final JTextField jTextField1 = new javax.swing.JTextField();
-    private static final JTextField jTextField2 = new javax.swing.JTextField();
-    private static final JTextField jTextField3 = new javax.swing.JTextField();
-    private static final JTextField jTextField4 = new javax.swing.JTextField();
-    private static final JTextField jTextField5 = new javax.swing.JTextField();
-    private static final JTextField jTextField6 = new javax.swing.JTextField();
-    private static final JTextField jTextField7 = new javax.swing.JTextField();
-    private static final JSpinner jSpinner1 = new javax.swing.JSpinner();
-    private static final JSpinner jSpinner2 = new javax.swing.JSpinner();
+    /**
+     * Atrybut będący polem tekstowym do wprowadzania tekstu
+     */
+    private final JTextField jTextField1 = new javax.swing.JTextField();
+    /**
+     * Atrybut będący polem tekstowym do wprowadzania tekstu
+     */
+    private final JTextField jTextField2 = new javax.swing.JTextField();
+    /**
+     * Atrybut będący polem tekstowym do wprowadzania tekstu
+     */
+    private final JTextField jTextField3 = new javax.swing.JTextField();
+    /**
+     * Atrybut będący polem tekstowym do wprowadzania tekstu
+     */
+    private final JTextField jTextField4 = new javax.swing.JTextField();
+    /**
+     * Atrybut będący polem tekstowym do wprowadzania tekstu
+     */
+    private final JTextField jTextField5 = new javax.swing.JTextField();
+    /**
+     * Atrybut będący polem tekstowym do wprowadzania tekstu
+     */
+    private final JTextField jTextField6 = new javax.swing.JTextField();
+    /**
+     * Atrybut będący polem tekstowym do wprowadzania tekstu
+     */
+    private final JTextField jTextField7 = new javax.swing.JTextField();
+    /**
+     * Atrybut będący komponentem do wyboru liczby
+     */
+    private final JSpinner jSpinner1 = new javax.swing.JSpinner();
+    /**
+     * Atrybut będący komponentem do wyboru liczby
+     */
+    private final JSpinner jSpinner2 = new javax.swing.JSpinner();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne czy nie
+     * @param parent Okno macierzyste
      */
-    DialogDodajDVD(java.awt.Frame parent, boolean modal) {
+    DialogDodajDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
+        this.klient = klient;
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -243,24 +277,26 @@ public final class DialogDodajDVD extends javax.swing.JDialog {
                 jSpinner1.setValue(10);
             }
             else {
-                Klient.panelData.add(jTextField1.getText());
-                Klient.panelData.add(jTextField2.getText());
-                Klient.panelData.add(jTextField3.getText());
-                Klient.panelData.add(jTextField4.getText());
-                Klient.panelData.add(jTextField5.getText());
-                Klient.panelData.add(jTextField6.getText());
-                Klient.panelData.add(jTextField7.getText());
-                Klient.panelData.add(jSpinner1.getValue().toString());
-                Klient.panelData.add(jSpinner2.getValue().toString());
+                klient.panelData.clear();
+                klient.panelData.add(jTextField1.getText());
+                klient.panelData.add(jTextField2.getText());
+                klient.panelData.add(jTextField3.getText());
+                klient.panelData.add(jTextField4.getText());
+                klient.panelData.add(jTextField5.getText());
+                klient.panelData.add(jTextField6.getText());
+                klient.panelData.add(jTextField7.getText());
+                klient.panelData.add(jSpinner1.getValue().toString());
+                klient.panelData.add(jSpinner2.getValue().toString());
                 try {
-                    Klient.polacz();
-                    Klient.wysylajDane("AddDVD");
+                    klient.polacz(klient);
+                    String message = klient.wysylajDane("AddDVD");
+                    klient.zakonczPolaczenie();
                     String title;
-                    if (EkranSerwer.message == null || EkranSerwer.message.equals("")) {
-                        EkranSerwer.message = "Wystąpił nieoczekiwany błąd!";
+                    if (message == null || message.equals("")) {
+                        message = "Wystąpił nieoczekiwany błąd!";
                         title = "Błąd";
                     } else title = "Sukces";
-                    JOptionPane.showMessageDialog(this, EkranSerwer.message, title, JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(this, message, title, JOptionPane.INFORMATION_MESSAGE);
                     jTextField1.setText("");
                     jTextField2.setText("");
                     jTextField3.setText("");
@@ -270,7 +306,7 @@ public final class DialogDodajDVD extends javax.swing.JDialog {
                     jTextField7.setText("");
                     jSpinner1.setValue(0);
                     jSpinner1.setValue(10);
-                    new Logs("[ " + new java.util.Date() + " ] " + EkranSerwer.message, "DialogDodajDVD", "info");
+                    new Logs("[ " + new java.util.Date() + " ] " + message, "DialogDodajDVD", "info");
                     dispose();
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);

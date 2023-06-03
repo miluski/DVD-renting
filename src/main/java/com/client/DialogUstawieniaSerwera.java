@@ -14,10 +14,18 @@ public class DialogUstawieniaSerwera extends javax.swing.JDialog {
      */
     private static final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
     /**
-     * Konstruktor odpowiadający za inicjalizację GUI
+     * Instancja klasy Klient
      */
-    DialogUstawieniaSerwera(java.awt.Frame parent, boolean modal) {
+    private final Klient klient;
+    /**
+     * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
+     */
+    DialogUstawieniaSerwera(java.awt.Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
+        this.klient = klient;
         initComponents();
         this.setLocationRelativeTo(null);
         setVisible(true);
@@ -120,8 +128,8 @@ public class DialogUstawieniaSerwera extends javax.swing.JDialog {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        if(Klient.walidacjaIP(jTextField1.getText())){
-            Klient.setKlientIP(jTextField1.getText());
+        if(klient.walidacjaIP(jTextField1.getText())){
+            klient.setKlientIP(jTextField1.getText());
             JOptionPane.showMessageDialog(this,"Pomyślnie ustawiono nowe IP do połączenia z serwerem!","Sukces",JOptionPane.INFORMATION_MESSAGE);
             dispose();
         }

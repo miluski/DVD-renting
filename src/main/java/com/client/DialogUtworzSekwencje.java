@@ -13,10 +13,18 @@ public class DialogUtworzSekwencje extends javax.swing.JDialog {
      */
     private static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
     /**
-     * Konstruktor odpowiadający za inicjalizację GUI
+     * Instancja klasy klient
      */
-    DialogUtworzSekwencje(java.awt.Frame parent, boolean modal) {
+    private final Klient klient;
+    /**
+     * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
+     */
+    DialogUtworzSekwencje(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
+        this.klient = klient;
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -123,9 +131,10 @@ public class DialogUtworzSekwencje extends javax.swing.JDialog {
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         String sequence = String.valueOf(jComboBox1.getSelectedItem());
-        Klient.polacz();
-        Klient.zarzadzaj(sequence);
-        JOptionPane.showMessageDialog(this, EkranGlownyAdmin.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        klient.polacz(klient);
+        String message = klient.zarzadzaj(sequence);
+        klient.zakonczPolaczenie();
+        JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }
     /**

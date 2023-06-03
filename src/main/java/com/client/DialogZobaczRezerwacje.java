@@ -1,5 +1,4 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
@@ -9,6 +8,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -19,39 +19,50 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
+    private final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący tabelą
      */
-    private static final javax.swing.JTable jTable1 = new javax.swing.JTable();
+    private final javax.swing.JTable jTable1 = new javax.swing.JTable();
     /**
      * Atrybut będący sorterem tabeli
      */
-    private static TableRowSorter<TableModel> rowSorter;
+    private TableRowSorter<TableModel> rowSorter;
     /**
      * Atrybut będący nazwą użytkownika
      */
-    private static String userName;
+    private String userName;
     /**
      * Atrybut będący nazwą płyty DVD
      */
-    private static String dvdName;
+    private String dvdName;
+    /**
+     * Lista zawierająca dane
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
+    /**
+     * Instancja klasy klient
+     */
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogZobaczRezerwacje(java.awt.Frame parent, boolean modal) {
+    DialogZobaczRezerwacje(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
+        this.klient = klient;
         jTable1.setRowSorter(null);
         rowSorter = null;
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewReservations");
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewReservations",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
                 dispose();
-                Klient.panelData.clear();
-                EkranSerwer.panelData.clear();
                 jTable1.setModel(new DefaultTableModel());
                 jTable1.getSelectionModel().removeListSelectionListener(e2 -> {
                     if (!e2.getValueIsAdjusting() && jTable1.getSelectedRowCount() == 1) {
@@ -97,7 +108,7 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
         jTextField1.setMaximumSize(jTextField1.getPreferredSize());
 
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/2);
+        int size = ((panelData.size())/2);
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
             },
@@ -107,7 +118,7 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
         ));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         for(int i=0; i<size; i++){
-            model.addRow(new Object[]{EkranSerwer.panelData.get(counter), EkranSerwer.panelData.get(counter+1)});
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1)});
             if(size>1) counter+=2;
         }
         jTextField1.getDocument().addDocumentListener(new DocumentListener() {
@@ -208,8 +219,6 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        Klient.panelData.clear();
-        EkranSerwer.panelData.clear();
         jTable1.setRowSorter(null);
         rowSorter = null;
         pack();
@@ -222,18 +231,21 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
         jTable1.setRowSorter(null);
         rowSorter = null;
         if(userName!=null) {
-            EkranSerwer.selectedNick = userName;
-            EkranSerwer.filmName = dvdName;
-            Klient.polacz();
-            Klient.panelData.add(Klient.pobierzIDKlienta("selectedUser"));
-            Klient.polacz();
-            Klient.panelData.add(Integer.toString(Klient.pobierzIDDVD()));
-            Klient.polacz();
-            Klient.wysylajDane("RentDVD");
-            Klient.polacz();
-            Klient.usunRezerwacje();
-            Klient.panelData.clear();
-            EkranSerwer.panelData.clear();
+            klient.panelData.clear();
+            klient.polacz(klient);
+            String userID = klient.pobierzIDKlienta(userName);
+            klient.panelData.add(userID);
+            klient.zakonczPolaczenie();
+            klient.polacz(klient);
+            int dvdID = klient.pobierzIDDVD(dvdName);
+            klient.panelData.add(Integer.toString(dvdID));
+            klient.zakonczPolaczenie();
+            klient.polacz(klient);
+            klient.wysylajDane("RentDVD");
+            klient.zakonczPolaczenie();
+            klient.polacz(klient);
+            klient.usunRezerwacje(userID,dvdID);
+            klient.zakonczPolaczenie();
             DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
             model.setRowCount(0);
             model.setColumnCount(0);

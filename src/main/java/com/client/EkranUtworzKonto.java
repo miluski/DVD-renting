@@ -16,76 +16,80 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    public static final JTextField jTextField1 = new javax.swing.JTextField();
+    public final JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    public static final JTextField jTextField2 = new javax.swing.JTextField();
+    public final JTextField jTextField2 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    public static final JTextField jTextField3 = new javax.swing.JTextField();
+    public final JTextField jTextField3 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    public static final JTextField jTextField4 = new javax.swing.JTextField();
+    public final JTextField jTextField4 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    public static final JTextField jTextField5 = new javax.swing.JTextField();
+    public final JTextField jTextField5 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI służącym do wprowadzania hasła
      */
-    public static final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
+    public final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
     /**
      * Atrybut będący polem tekstowym GUI służącym do wprowadzania hasła
      */
-    public static final JPasswordField jPasswordField2 = new javax.swing.JPasswordField();
+    public final JPasswordField jPasswordField2 = new javax.swing.JPasswordField();
     /**
      * Atrybut będący wzorcem hasła
      */
-    private static final String passPatt = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–{}:;',?/*~$^+=<>]).{8,20}$";
+    private final String passPatt = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–{}:;',?/*~$^+=<>]).{8,20}$";
     /**
      * Atrybut będący skompilowaną wersją wzorca hasła
      */
-    private static final Pattern patt = Pattern.compile(passPatt);
+    private final Pattern patt = Pattern.compile(passPatt);
     /**
      * Atrybut będący wzorcem emailu
      */
-    private static final String emailPatt = "^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+    private final String emailPatt = "^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
     /**
      * Atrybut będący skompilowaną wersją wzorca emailu
      */
-    private static final Pattern patt2 = Pattern.compile(emailPatt);
+    private final Pattern patt2 = Pattern.compile(emailPatt);
     /**
      * Atrybut będący wzorcem numeru telefonu
      */
-    private static final String phoneNumberPatt = "^(?:(?:(?:\\+|00)?48)|(?:\\(\\+?48\\)))?(?:1[2-8]|2[2-69]|3[2-49]|4[1-8]|5[0-9]|6[0-35-9]|[7-8][1-9]|9[145])\\d{7}$";
+    private final String phoneNumberPatt = "^(?:(?:(?:\\+|00)?48)|(?:\\(\\+?48\\)))?(?:1[2-8]|2[2-69]|3[2-49]|4[1-8]|5[0-9]|6[0-35-9]|[7-8][1-9]|9[145])\\d{7}$";
     /**
      * Atrybut będący skompilowaną wersją wzorca numeru telefonu
      */
-    private static final Pattern patt3 = Pattern.compile(phoneNumberPatt);
+    private final Pattern patt3 = Pattern.compile(phoneNumberPatt);
     /**
      * Atrybut będący ciągiem znaków przechowującym informacje o użytkowniku
      */
-    private static String userInformation;
+    private String userInformation;
     /**
      * Atrybut będący ciągiem znaków przechowującym rangę użytkownika
      */
-    private static String rank;
+    private String rank;
     /**
      * Atrybut będący listą ciągów znaków przechowującym dane
      */
-    protected static final List<String> dane = new ArrayList<>();
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący ciągiem znaków przechowującym informacje o błędzie
      */
-    public static String blad;
+    public String blad;
+    /**
+     * Instancja klasy Klient
+     */
+    private Klient klient;
     /**
      * Metoda generująca klucz do odzyskiwania konta
      * @return Zwraca wygenerowany klucz
      */
-    public static int generujKlucz(){
+    public int generujKlucz(){
         Random random = new Random();
         return (random.nextInt(999999-100000)+100000);
     }
@@ -94,32 +98,32 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
      * @param pass Wprowadzone hasło
      * @return Zwraca true, jeśli hasło jest zgodne ze wzorcem
      */
-    public static boolean walidacjaHasla(final String pass) {
+    public boolean walidacjaHasla(final String pass) {
         Matcher match = patt.matcher(pass);
-        return match.matches();
+        return !match.matches();
     }
     /**
      * Metoda służąca do walidacji wprowadzonego adresu email
      * @param email Wprowadzony adres email
      * @return Zwraca true, jeśli email jest zgodny ze wzorcem
      */
-    public static boolean walidacjaEmail(final String email) {
+    public boolean walidacjaEmail(final String email) {
         Matcher match = patt2.matcher(email);
-        return match.matches();
+        return !match.matches();
     }
     /**
      * Metoda służąca do walidacji wprowadzonego numeru telefonu
      * @param phoneNumber Wprowadzony numer telefonu
      * @return Zwraca true, jeśli numer telefonu jest zgodny ze wzorcem
      */
-    public static boolean walidacjaTelefonu(final String phoneNumber) {
+    public boolean walidacjaTelefonu(final String phoneNumber) {
         Matcher match = patt3.matcher(phoneNumber);
         return match.matches();
     }
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    public static void wyczyscPola(){
+    public void wyczyscPola(){
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText("");
@@ -131,14 +135,20 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
      * @param rank Ranga użytkownika
+     * @param klient Instancja klasy klient
      */
-    public EkranUtworzKonto(String rank) {
+    public EkranUtworzKonto(String rank, Klient klient) {
+        this.klient = klient;
         setVisible(true);
         initComponents();
         this.setLocationRelativeTo(null);
-        userInformation = rank;
-        EkranUtworzKonto.rank = rank;
+        this.userInformation = rank;
+        this.rank = rank;
     }
+    /**
+     * Konstruktor pozwalający na tworzenie instancji klasy
+     */
+    public EkranUtworzKonto(){}
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -363,7 +373,7 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
             jPasswordField2.setText("");
         }
         else {
-            if(!walidacjaHasla(new String(jPasswordField1.getPassword()))) {
+            if(walidacjaHasla(new String(jPasswordField1.getPassword()))) {
                 JOptionPane.showMessageDialog(this,"Wprowadzone hasło nie spełnia wymogów bezpieczeństwa!","Błąd",JOptionPane.ERROR_MESSAGE);
                 jPasswordField1.setText("");
                 jPasswordField2.setText("");
@@ -372,7 +382,7 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this,"Wprowadzony telefon jest nieprawidłowy!","Błąd",JOptionPane.ERROR_MESSAGE);
                 jTextField4.setText("");
             }
-            else if(!walidacjaEmail(jTextField3.getText())) {
+            else if(walidacjaEmail(jTextField3.getText())) {
                 JOptionPane.showMessageDialog(this,"Wprowadzony adres email jest nieprawidłowy!","Błąd",JOptionPane.ERROR_MESSAGE);
                 jTextField3.setText("");
             }
@@ -383,7 +393,7 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
                 login = jTextField5.getText();
                 email = jTextField3.getText();
                 telefon = jTextField4.getText();
-                haslo = Klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K");
+                haslo = klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K");
                 int klucz = generujKlucz();
                 dane.add(imie);
                 dane.add(nazwisko);
@@ -393,9 +403,11 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
                 dane.add(haslo);
                 dane.add(Integer.toString(klucz));
                 try {
-                    Klient.polacz();
-                    Klient.zarejestruj();
-                    Klient.zakonczPolaczenie();
+                    klient.polacz(klient);
+                    java.util.List<String> listaDanych = new LinkedList<>(klient.zarejestruj(dane));
+                    blad = listaDanych.get(0);
+                    System.out.println(blad);
+                    klient.zakonczPolaczenie();
                 }
                 catch(Exception ex){
                     JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
@@ -408,12 +420,12 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
                 }
                 else if (blad.equals("Podany uzytkownik istnieje juz w bazie danych!")) {
                     JOptionPane.showMessageDialog(this, blad, "Błąd", JOptionPane.ERROR_MESSAGE);
-                } else if(blad.equals("Sukces")){
+                } else if(blad.equals("Pomyślnie zarejestrowano!")){
                     if(rank.equals("guest")) {
                         JOptionPane.showMessageDialog(this, "Pomyślnie zarejestrowano! \n\n" + "Twój klucz zapasowy to: " + klucz + "\nZapisz go w bezpiecznym miejscu!", "Sukces", JOptionPane.INFORMATION_MESSAGE);
                         wyczyscPola();
                         dispose();
-                        new EkranLogowania();
+                        new EkranLogowania(klient.getKlientIP());
                     }
                     else if(rank.equals("admin")){
                         JOptionPane.showMessageDialog(this, "Pomyślnie dodano nowego klienta! \n\n" + "Klucz zapasowy użytkownika to: " + klucz + "\nPrzekaż mu go przez adres email!", "Sukces", JOptionPane.INFORMATION_MESSAGE);
@@ -435,7 +447,7 @@ public class EkranUtworzKonto extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         dispose();
         if(userInformation.equals("guest")) {
-            new EkranLogowania();
+            new EkranLogowania(klient.getKlientIP());
         }
     }
 }

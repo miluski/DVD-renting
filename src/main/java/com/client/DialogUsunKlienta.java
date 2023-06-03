@@ -1,7 +1,8 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -12,20 +13,31 @@ public class DialogUsunKlienta extends javax.swing.JDialog {
     /**
      * Atrybut będący listą w postaci graficznej
      */
-    private static final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    private final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * Lista odebranych danych
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogUsunKlienta(java.awt.Frame parent, boolean modal) {
+    DialogUsunKlienta(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewClients");
+        this.klient = klient;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
-                EkranSerwer.panelData.clear();
-                Klient.panelData.clear();
                 DefaultListModel<String> newListModel = new DefaultListModel<>();
                 jList1.setModel(newListModel);
                 dispose();
@@ -37,11 +49,9 @@ public class DialogUsunKlienta extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         DefaultListModel<String> newListModel = new DefaultListModel<>();
         jList1.setModel(newListModel);
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
     }
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
@@ -66,12 +76,12 @@ public class DialogUsunKlienta extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 14));
         jLabel2.setText("Wybierz klienta z listy do usunięcia");
 
-        int size = ((EkranSerwer.panelData.size())/5);
+       int size = ((panelData.size())/5);
         int counter = 0;
 
         DefaultListModel<String> defaultListModel = new DefaultListModel<>();
         for(int i=0; i<size; i++){
-            defaultListModel.addElement(EkranSerwer.panelData.get(counter)+". "+EkranSerwer.panelData.get(counter+1)+" "+EkranSerwer.panelData.get(counter+2));
+            defaultListModel.addElement(panelData.get(counter)+". "+panelData.get(counter+1)+" "+panelData.get(counter+2));
             if(size>1) counter+=5;
         }
         jList1.setModel(defaultListModel);
@@ -141,8 +151,6 @@ public class DialogUsunKlienta extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         pack();
     }
     /**
@@ -150,11 +158,13 @@ public class DialogUsunKlienta extends javax.swing.JDialog {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        Klient.panelData.add(jList1.getSelectedValue().substring(0,(jList1.getSelectedValue()).indexOf(".")));
-        Klient.polacz();
-        Klient.wysylajDane("DeleteClient");
-        if(EkranSerwer.message==null) EkranSerwer.message = "Wystąpił nieoczekiwany błąd!";
-        JOptionPane.showMessageDialog(this, EkranSerwer.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        klient.panelData.clear();
+        klient.panelData.add(jList1.getSelectedValue().substring(0,(jList1.getSelectedValue()).indexOf(".")));
+        klient.polacz(klient);
+        String message = klient.wysylajDane("DeleteClient");
+        klient.zakonczPolaczenie();
+        if(message==null) message = "Wystąpił nieoczekiwany błąd!";
+        JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
         clearComponents();
         dispose();
     }

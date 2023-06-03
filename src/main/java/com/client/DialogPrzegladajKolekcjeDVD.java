@@ -1,6 +1,6 @@
 package com.client;
-import com.server.EkranSerwer;
 import com.server.Logs;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentListener;
@@ -9,6 +9,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.util.LinkedList;
 import javax.swing.event.DocumentEvent;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
@@ -20,51 +21,56 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
+    private final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący tabelą
      */
-    private static final javax.swing.JTable jTable1 = new javax.swing.JTable();
+    private final javax.swing.JTable jTable1 = new javax.swing.JTable();
     /**
      * Atrybut będący sorterem tabeli
      */
-    private static TableRowSorter<TableModel> rowSorter;
+    private TableRowSorter<TableModel> rowSorter;
     /**
      * Atrybut będący określeniem, czy kolekcje przegląda użytkownik, czy administrator
      */
-    private static String operation;
+    private final String operation;
     /**
      * Atrybut będący identyfikatorem płyty DVD
      */
-    private static String dvdID;
+    private String dvdID;
     /**
      * Atrybut określający liczbę kopii płyty DVD
      */
-    private static String numberOfCopies;
+    private String numberOfCopies;
     /**
-     * Atrybut określający nazwę filmu
+     * Lista zawierająca dane kolekcji DVD
      */
-    private static String filmName;
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
-     * Atrybut określający, czy rezerwacja takiego filmu została znaleziona
+     * Instancja klasy klient
      */
-    private static boolean reservationFound = false;
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
+     * @param operation Parametr określający jaką operację wykonujemy przy wyświetlaniu tego okna
      */
-    DialogPrzegladajKolekcjeDVD(java.awt.Frame parent, boolean modal, String operation) {
+    DialogPrzegladajKolekcjeDVD(Frame parent, boolean modal, String operation, Klient klient) {
         super(parent, modal);
-        DialogPrzegladajKolekcjeDVD.operation = operation;
-        Klient.polacz();
+        this.klient = klient;
+        this.operation = operation;
+        this.klient.polacz(klient);
         switch (operation) {
-            case "ReviewDVDCollection" -> Klient.otrzymujDane("ReviewDVDCollection");
-            case "DVDAvalaible" -> Klient.otrzymujDane("DVDAvalaible");
+            case "ReviewDVDCollection" -> panelData.addAll(this.klient.otrzymujDane("ReviewDVDCollection",""));
+            case "DVDAvalaible" -> panelData.addAll(this.klient.otrzymujDane("DVDAvalaible",""));
         }
+        this.klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
-                EkranSerwer.panelData.clear();
                 dispose();
             }
         });
@@ -74,10 +80,9 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void resetComponents(){
+    private void resetComponents(){
         jTable1.setRowSorter(null);
         rowSorter = null;
-        EkranSerwer.panelData.clear();
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
         model.setColumnCount(0);
@@ -87,7 +92,6 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
                 int selectedRow = jTable1.getSelectedRow();
                 dvdID = jTable1.getModel().getValueAt(selectedRow, 0).toString();
                 numberOfCopies = jTable1.getModel().getValueAt(selectedRow, 8).toString();
-                filmName = jTable1.getModel().getValueAt(selectedRow,1).toString();
             }
         });
     }
@@ -113,7 +117,7 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
         jTable1.setBorder(new LineBorder(Color.BLACK));
         jTable1.setEnabled(true);
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/10);
+        int size = ((panelData.size())/10);
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
                 new Object[][]{
                 },
@@ -123,7 +127,9 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
         ));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         for(int i=0; i<size; i++){
-            model.addRow(new Object[]{EkranSerwer.panelData.get(counter), EkranSerwer.panelData.get(counter+1), EkranSerwer.panelData.get(counter+2), EkranSerwer.panelData.get(counter+3), EkranSerwer.panelData.get(counter+4), EkranSerwer.panelData.get(counter+5), EkranSerwer.panelData.get(counter+6), EkranSerwer.panelData.get(counter+7), EkranSerwer.panelData.get(counter+8), EkranSerwer.panelData.get(counter+9)});
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1), panelData.get(counter+2), panelData.get(counter+3),
+                    panelData.get(counter+4), panelData.get(counter+5), panelData.get(counter+6), panelData.get(counter+7), panelData.get(counter+8),
+                    panelData.get(counter+9)});
             if(size>1) counter+=10;
         }
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
@@ -165,8 +171,6 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
                 int selectedRow = jTable1.getSelectedRow();
                 dvdID = jTable1.getModel().getValueAt(selectedRow, 0).toString();
                 numberOfCopies = jTable1.getModel().getValueAt(selectedRow, 8).toString();
-                filmName = jTable1.getModel().getValueAt(selectedRow,1).toString();
-                reservationFound = false;
             }
         });
         jScrollPane1.setViewportView(jTable1);
@@ -233,7 +237,7 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        EkranSerwer.panelData.clear();
+        panelData.clear();
         pack();
     }
     /**
@@ -241,46 +245,46 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-       if (operation.equals("DVDAvalaible")) {
-           Klient.filmName = filmName;
-           Klient.polacz();
-           reservationFound = Klient.checkReservations();
-           if(reservationFound) JOptionPane.showMessageDialog(this, "Nie możesz zarezerwować wypożyczenia tego DVD!", "Informacja", JOptionPane.INFORMATION_MESSAGE);
-           if(!reservationFound) {
-               try {
-                   if (dvdID != null) {
-                       Klient.polacz();
-                       String userID = Klient.pobierzIDKlienta("loggedIn");
-                       Klient.panelData.add(dvdID);
-                       EkranSerwer.updatingID = Integer.parseInt(dvdID);
-                       int buffer = (Integer.parseInt(numberOfCopies) - 1);
-                       if (buffer < 0) {
-                           throw new Exception("Nie możesz zarezerwować wypożyczenia tego DVD!");
-                       } else {
-                           EkranSerwer.updatingItem = Integer.toString(buffer);
-                           Klient.panelData.add(userID);
-                           Klient.polacz();
-                           Klient.wysylajDane("ReservateDVD");
-                           if (EkranSerwer.message == null || EkranSerwer.message.equals("")) {
-                               EkranSerwer.message = "Wystąpił nieoczekiwany błąd!";
-                           }
-                           JOptionPane.showMessageDialog(this, EkranSerwer.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
-                           Klient.polacz();
-                           Klient.zaktualizujStan();
-                           resetComponents();
-                           dispose();
-                       }
-                   }
-               } catch (Exception ex) {
-                   JOptionPane.showMessageDialog(this, ex.getMessage(), "Informacja", JOptionPane.INFORMATION_MESSAGE);
-                   new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "DialogPrzegladajKolekcjeDVD", "error");
+        System.out.println(operation);
+        if (operation.equals("DVDAvalaible")) {
+            try {
+                if (dvdID != null) {
+                    klient.panelData.clear();
+                    klient.polacz(klient);
+                    String userID = klient.pobierzIDKlienta(klient.getNickname());
+                    klient.zakonczPolaczenie();
+                    klient.panelData.add(dvdID);
+                    int updatingID = Integer.parseInt(dvdID);
+                    int buffer = (Integer.parseInt(numberOfCopies) - 1);
+                    if (buffer < 0) {
+                        throw new Exception("Nie możesz zarezerwować wypożyczenia tego DVD!");
+                    } else {
+                    String updatingItem = Integer.toString(buffer);
+                    klient.panelData.add(userID);
+                    klient.polacz(klient);
+                    String message = klient.wysylajDane("ReservateDVD");
+                    klient.zakonczPolaczenie();
+                    if (message == null || message.equals("")) {
+                           message = "Wystąpił nieoczekiwany błąd!";
+                    }
+                    JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                    klient.polacz(klient);
+                    klient.zaktualizujStan(updatingItem, updatingID);
+                    klient.zakonczPolaczenie();
+                    resetComponents();
+                    dispose();
                }
            }
+        } catch (Exception ex) {
+           JOptionPane.showMessageDialog(this, ex.getMessage(), "Informacja", JOptionPane.INFORMATION_MESSAGE);
+           new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "DialogPrzegladajKolekcjeDVD", "error");
         }
-        else if(operation.equals("ReviewDVDCollection")){
+       }
+       else if(operation.equals("ReviewDVDCollection")){
             resetComponents();
             dispose();
-       }
+        }
     }
 }
+
 

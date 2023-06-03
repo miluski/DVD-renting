@@ -1,7 +1,8 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -12,24 +13,35 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
     /**
      * Atrybut będący listą wyboru
      */
-    private static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    private final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
     /**
      * Atrybut będący polem liczbowym
      */
-    private static final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
+    private final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * Lista odebranych danych
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogUstawLiczbeDVD(java.awt.Frame parent, boolean modal) {
+    DialogUstawLiczbeDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewDVDCollection");
+        this.klient = klient;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewDVDCollection",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
-                EkranSerwer.panelData.clear();
-                Klient.panelData.clear();
                 jComboBox1.setModel(new DefaultComboBoxModel<>());
                 dispose();
             }
@@ -40,10 +52,8 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         jComboBox1.setModel(new DefaultComboBoxModel<>());
-        Klient.panelData.clear();
-        EkranSerwer.panelData.clear();
     }
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
@@ -67,10 +77,10 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>());
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/10);
+        int size = ((panelData.size())/10);
         jComboBox1.setPreferredSize(new java.awt.Dimension(320, 25));
         for(int i=0; i<size; i++){
-            jComboBox1.addItem(EkranSerwer.panelData.get(counter)+". "+EkranSerwer.panelData.get(counter+1));
+            jComboBox1.addItem(panelData.get(counter)+". "+panelData.get(counter+1));
             if(size>1) counter+=10;
         }
         jComboBox1.setPreferredSize(new java.awt.Dimension(72, 25));
@@ -151,8 +161,6 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         pack();
     }
     /**
@@ -165,12 +173,14 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
         }
         else{
             int liczba = (Integer)jSpinner1.getValue();
-            Klient.panelData.add(Integer.toString(liczba));
-            Klient.panelData.add(String.valueOf(jComboBox1.getSelectedItem()).substring(0,(String.valueOf(jComboBox1.getSelectedItem()).indexOf("."))));
-            Klient.polacz();
-            Klient.wysylajDane("AddSameDVDs");
-            if(EkranSerwer.message==null) EkranSerwer.message="Wystąpił nieoczekiwany błąd!";
-            JOptionPane.showMessageDialog(this, EkranSerwer.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+            klient.panelData.clear();
+            klient.panelData.add(Integer.toString(liczba));
+            klient.panelData.add(String.valueOf(jComboBox1.getSelectedItem()).substring(0,(String.valueOf(jComboBox1.getSelectedItem()).indexOf("."))));
+            klient.polacz(klient);
+            String message = klient.wysylajDane("AddSameDVDs");
+            klient.zakonczPolaczenie();
+            if(message==null) message="Wystąpił nieoczekiwany błąd!";
+            JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
             clearComponents();
             dispose();
         }

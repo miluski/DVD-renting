@@ -1,12 +1,10 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -17,27 +15,39 @@ public class DialogPrzegladajZwroty extends javax.swing.JDialog {
     /**
      * Atrybut będący listą w postaci graficznej
      */
-    private static final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    private final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
     /**
      * Atrybut będący tabelą
      */
-    private static final javax.swing.JTable jTable1 = new javax.swing.JTable();
+    private final javax.swing.JTable jTable1 = new javax.swing.JTable();
     /**
      * Atrybut będący identyfikatorem użytkownika
      */
-    protected static String userID;
+    protected String userID;
     /**
-     * Atrybut będący listą ciągów znaków, w którym zapisywane są niezbędne dane do odczytu
+     * Lista zawierająca dane
      */
-    private static List<String> panelData = new ArrayList<>();
+    private final java.util.List<String> panelData = new LinkedList<>();
+    /**
+     * Lista zawierająca dane
+     */
+    private final java.util.List<String> panelData2 = new LinkedList<>();
+    /**
+     * Instancja klasy klient
+     */
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogPrzegladajZwroty(java.awt.Frame parent, boolean modal) {
+    DialogPrzegladajZwroty(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewClients");
-        panelData = EkranSerwer.panelData;
+        this.klient = klient;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -45,8 +55,6 @@ public class DialogPrzegladajZwroty extends javax.swing.JDialog {
                 jTable1.setModel(new DefaultTableModel());
                 DefaultListModel<String> newListModel = new DefaultListModel<>();
                 jList1.setModel(newListModel);
-                EkranSerwer.panelData.clear();
-                Klient.panelData.clear();
                 panelData.clear();
                 dispose();
             }
@@ -57,12 +65,10 @@ public class DialogPrzegladajZwroty extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         jTable1.setModel(new DefaultTableModel());
         DefaultListModel<String> newListModel = new DefaultListModel<>();
         jList1.setModel(newListModel);
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         panelData.clear();
     }
     /**
@@ -104,14 +110,15 @@ public class DialogPrzegladajZwroty extends javax.swing.JDialog {
         jList1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jList1.addListSelectionListener(e -> {
             if (!e.getValueIsAdjusting()) {
+                panelData2.clear();
                 jTable1.setModel(new DefaultTableModel());
                 if(jList1.getSelectedValue()!=null) userID = jList1.getSelectedValue().substring(0,(jList1.getSelectedValue()).indexOf("."));
-                EkranSerwer.panelData.clear();
-                Klient.panelData.clear();
-                Klient.polacz();
-                Klient.otrzymujDane("ReviewReturns");
+                klient.panelData.clear();
+                klient.polacz(klient);
+                panelData2.addAll(klient.otrzymujDane("ReviewReturns",userID));
+                klient.zakonczPolaczenie();
                 int counter2 = 0;
-                int size2 = ((EkranSerwer.panelData.size())/10);
+                int size2 = ((panelData2.size())/10);
                 jTable1.setModel(new javax.swing.table.DefaultTableModel(
                         new Object[][]{
                         },
@@ -123,7 +130,7 @@ public class DialogPrzegladajZwroty extends javax.swing.JDialog {
                 jTable1.setBorder(new LineBorder(Color.BLACK));
                 DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
                 for(int i=0; i<size2; i++){
-                    model.addRow(new Object[]{EkranSerwer.panelData.get(counter2+1), EkranSerwer.panelData.get(counter2+8), EkranSerwer.panelData.get(counter2+9)});
+                    model.addRow(new Object[]{panelData2.get(counter2+1), panelData2.get(counter2+8), panelData2.get(counter2+9)});
                     if(size2>1) counter2+=10;
                 }
                 DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();

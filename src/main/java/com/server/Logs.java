@@ -12,7 +12,7 @@ public class Logs {
     /**
      * Atrybut określający wiadomość zdarzenia
      */
-    private static String logMessage;
+    private final String logMessage;
     /**
      * Atrybut służący do ustawienia odpowiedniego typu loga zdarzenia
      */
@@ -28,24 +28,10 @@ public class Logs {
      * @param messageType parametr określający typ zdarzenia
      */
     public Logs(String logMessage, String className, String messageType) {
-        Logs.logMessage = logMessage;
+        this.logMessage = logMessage;
         this.className = className;
         this.log = LogManager.getLogger(className+".class");
         writeMessage(messageType);
-    }
-    /**
-     * Metoda zwracająca wiadomość loga
-     * @return Zwraca wiadomość loga
-     */
-    public static String getLogMessage(){
-        return logMessage;
-    }
-    /**
-     * Metoda zwracająca nazwę klasy
-     * @return Zwraca nazwę klasy
-     */
-    public String getClassName(){
-        return className;
     }
     /**
      * Metoda odpowiedzialna za zapis zdarzenia do pliku
@@ -55,9 +41,7 @@ public class Logs {
         try {
             File folder = new File("logs");
             if(!folder.exists()){
-                if(folder.mkdir()){
-                    EkranSerwer.setMessage("Utworzono folder dla logów");
-                }
+                folder.mkdir();
             }
             File file = new File("logs/logs.log");
             FileWriter fileWriter = new FileWriter(file,true);
@@ -71,7 +55,6 @@ public class Logs {
             fileWriter.close();
         }
         catch (Exception e){
-            EkranSerwer.setMessage(e.getMessage());
             log.fatal("[ " + new java.util.Date() + " ] " + "Error while writing log to file");
         }
     }

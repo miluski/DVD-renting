@@ -11,12 +11,20 @@ public class DialogUtworzTabele extends javax.swing.JDialog {
     /**
      * Atrybut będący listą wyboru
      */
-    private static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    private final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    /**
+     * Instancja klasy klient
+     */
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogUtworzTabele(java.awt.Frame parent, boolean modal) {
+    DialogUtworzTabele(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
+        this.klient = klient;
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -123,9 +131,10 @@ public class DialogUtworzTabele extends javax.swing.JDialog {
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         String table = String.valueOf(jComboBox1.getSelectedItem());
-        Klient.polacz();
-        Klient.zarzadzaj(table);
-        JOptionPane.showMessageDialog(this, EkranGlownyAdmin.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        klient.polacz(klient);
+        String message = klient.zarzadzaj(table);
+        klient.zakonczPolaczenie();
+        JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }
     /**

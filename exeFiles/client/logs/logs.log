@@ -64,3 +64,11 @@
 [ERROR] EkranLogowania: [ Sat May 06 18:40:20 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
 [ERROR] Klient: [ Sat May 06 18:41:04 CEST 2023 ] null
 [ERROR] EkranLogowania: [ Sat May 06 18:41:05 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
+[INFO] DialogEdytujDVD: [ Mon May 08 23:27:35 CEST 2023 ] Pomyślnie edytowano wybrane DVD!
+[ERROR] Klient: [ Mon May 08 23:32:00 CEST 2023 ] null
+[ERROR] Klient: [ Mon May 08 23:32:00 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Mon May 08 23:32:01 CEST 2023 ] Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+[INFO] DialogDodajDVD: [ Mon May 29 22:08:01 CEST 2023 ] Pomyślnie dodano nową płytę DVD!
+
+[ERROR] Klient: [ Sat Jun 03 11:10:56 CEST 2023 ] null
+[ERROR] Klient: [ Sat Jun 03 11:11:08 CEST 2023 ] null

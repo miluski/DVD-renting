@@ -1,8 +1,10 @@
 package com.client;
-import com.server.EkranSerwer;
 import com.server.Logs;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
+
 /**
  * Klasa zawierająca pola i metody obsługująca komponenty graficzne dialog boxa Edytuj DVD
  * @author Jakub Szczur
@@ -13,50 +15,63 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
     /**
      * Atrybut będący listą wyboru
      */
-    private static final JComboBox<Object> jComboBox1 = new javax.swing.JComboBox<>();
+    private final JComboBox<Object> jComboBox1 = new javax.swing.JComboBox<>();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField1 = new javax.swing.JTextField();
+    private final JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField2 = new javax.swing.JTextField();
+    private final JTextField jTextField2 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField3 = new javax.swing.JTextField();
+    private final JTextField jTextField3 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField4 = new javax.swing.JTextField();
+    private final JTextField jTextField4 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField5 = new javax.swing.JTextField();
+    private final JTextField jTextField5 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField6 = new javax.swing.JTextField();
+    private final JTextField jTextField6 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField7 = new javax.swing.JTextField();
+    private final JTextField jTextField7 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem liczbowym
      */
-    private static final JSpinner jSpinner1 = new javax.swing.JSpinner();
+    private final JSpinner jSpinner1 = new javax.swing.JSpinner();
     /**
      * Atrybut będący polem liczbowym
      */
-    private static final JSpinner jSpinner2 = new javax.swing.JSpinner();
+    private final JSpinner jSpinner2 = new javax.swing.JSpinner();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * Lista odebranych danych
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne czy nie
+     * @param parent Okno macierzyste
      */
-    DialogEdytujDVD(java.awt.Frame parent, boolean modal) {
+    DialogEdytujDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewDVDCollection");
+        this.klient = klient;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewDVDCollection",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -69,8 +84,6 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
                 jTextField5.setText("");
                 jTextField6.setText("");
                 jTextField7.setText("");
-                Klient.panelData.clear();
-                EkranSerwer.panelData.clear();
                 dispose();
             }
 
@@ -81,7 +94,7 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         jComboBox1.setModel(new DefaultComboBoxModel<>());
         jTextField1.setText("");
         jTextField2.setText("");
@@ -90,8 +103,6 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
         jTextField5.setText("");
         jTextField6.setText("");
         jTextField7.setText("");
-        Klient.panelData.clear();
-        EkranSerwer.panelData.clear();
     }
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
@@ -129,9 +140,9 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
         jComboBox1.setBackground(Color.WHITE);
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>());
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/10);
+        int size = ((panelData.size())/10);
         for(int i=0; i<size; i++){
-            jComboBox1.addItem(EkranSerwer.panelData.get(counter)+". "+EkranSerwer.panelData.get(counter+1));
+            jComboBox1.addItem(panelData.get(counter)+". "+panelData.get(counter+1));
             if(size>1) counter+=10;
         }
 
@@ -353,20 +364,20 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
         jTextField6.setText("");
         jTextField7.setText("");
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/10);
+        int size = ((panelData.size())/10);
         for(int i=0; i<size; i++){
             String dvdID = String.valueOf(jComboBox1.getSelectedItem()).substring(0,(String.valueOf(jComboBox1.getSelectedItem()).indexOf(".")));
-            boolean isfound = dvdID.equals(EkranSerwer.panelData.get(counter));
+            boolean isfound = dvdID.equals(panelData.get(counter));
             if(isfound){
-                jTextField1.setText(EkranSerwer.panelData.get(counter+1));
-                jTextField2.setText(EkranSerwer.panelData.get(counter+2));
-                jTextField3.setText(EkranSerwer.panelData.get(counter+3));
-                jTextField4.setText(EkranSerwer.panelData.get(counter+4));
-                jTextField5.setText(EkranSerwer.panelData.get(counter+5));
-                jTextField6.setText(EkranSerwer.panelData.get(counter+6));
-                jTextField7.setText(EkranSerwer.panelData.get(counter+7));
-                jSpinner1.setValue(Integer.parseInt(EkranSerwer.panelData.get(counter+8)));
-                jSpinner2.setValue(Integer.parseInt(EkranSerwer.panelData.get(counter+9)));
+                jTextField1.setText(panelData.get(counter+1));
+                jTextField2.setText(panelData.get(counter+2));
+                jTextField3.setText(panelData.get(counter+3));
+                jTextField4.setText(panelData.get(counter+4));
+                jTextField5.setText(panelData.get(counter+5));
+                jTextField6.setText(panelData.get(counter+6));
+                jTextField7.setText(panelData.get(counter+7));
+                jSpinner1.setValue(Integer.parseInt(panelData.get(counter+8)));
+                jSpinner2.setValue(Integer.parseInt(panelData.get(counter+9)));
                 break;
             }
             if(size>1) counter+=10;
@@ -389,25 +400,27 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
                 jSpinner1.setValue(10);
             } else {
                 String dvdID = String.valueOf(jComboBox1.getSelectedItem()).substring(0,(String.valueOf(jComboBox1.getSelectedItem()).indexOf(".")));
-                Klient.panelData.add(jTextField1.getText());
-                Klient.panelData.add(jTextField2.getText());
-                Klient.panelData.add(jTextField3.getText());
-                Klient.panelData.add(jTextField4.getText());
-                Klient.panelData.add(jTextField5.getText());
-                Klient.panelData.add(jTextField6.getText());
-                Klient.panelData.add(jTextField7.getText());
-                Klient.panelData.add(jSpinner1.getValue().toString());
-                Klient.panelData.add(jSpinner2.getValue().toString());
-                Klient.panelData.add(dvdID);
+                klient.panelData.clear();
+                klient.panelData.add(jTextField1.getText());
+                klient.panelData.add(jTextField2.getText());
+                klient.panelData.add(jTextField3.getText());
+                klient.panelData.add(jTextField4.getText());
+                klient.panelData.add(jTextField5.getText());
+                klient.panelData.add(jTextField6.getText());
+                klient.panelData.add(jTextField7.getText());
+                klient.panelData.add(jSpinner1.getValue().toString());
+                klient.panelData.add(jSpinner2.getValue().toString());
+                klient.panelData.add(dvdID);
                 try {
-                    Klient.polacz();
-                    Klient.wysylajDane("EditDVD");
+                    klient.polacz(klient);
+                    String message = klient.wysylajDane("EditDVD");
+                    klient.zakonczPolaczenie();
                     String title;
-                    if (EkranSerwer.message == null || EkranSerwer.message.equals("")) {
-                        EkranSerwer.message = "Wystąpił nieoczekiwany błąd!";
+                    if (message == null || message.equals("")) {
+                        message = "Wystąpił nieoczekiwany błąd!";
                         title = "Błąd";
                     } else title = "Sukces";
-                    JOptionPane.showMessageDialog(this, EkranSerwer.message, title, JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(this, message, title, JOptionPane.INFORMATION_MESSAGE);
                     jTextField1.setText("");
                     jTextField2.setText("");
                     jTextField3.setText("");
@@ -418,7 +431,7 @@ public class DialogEdytujDVD extends javax.swing.JDialog {
                     jSpinner1.setValue(0);
                     jSpinner1.setValue(10);
                     clearComponents();
-                    new Logs("[ " + new java.util.Date() + " ] " + EkranSerwer.message, "DialogEdytujDVD", "info");
+                    new Logs("[ " + new java.util.Date() + " ] " + message, "DialogEdytujDVD", "info");
                     dispose();
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);

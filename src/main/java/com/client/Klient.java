@@ -7,6 +7,7 @@ import java.io.*;
 import java.net.*;
 import java.io.DataOutputStream;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.regex.Matcher;
@@ -22,50 +23,47 @@ import java.security.NoSuchAlgorithmException;
  */
 public class Klient implements Callable<Void> {
     /**
-     * Konstruktor umożliwiający tworzenie instancji klasy
+     * Konstruktor umożliwiający tworzenie instancji
      */
-    public Klient(){
+    public Klient(){}
+    /**
+     * Konstruktor umożliwiający ustawienie IP do połączenia z serwerem
+     */
+    public Klient(String IP){
+        this.IP = IP;
     }
     /**
      * Atrybut będący listą ciągów znaków przechowuje dane do wyświetlenia dla klienta po uruchomieniu jakiegoś okna dialogowego w panelu
      */
-    protected static final List<String> panelData = new ArrayList<>();
+    protected final List<String> panelData = new ArrayList<>();
     /**
      * Atrybut będący gniazdem, pod które będzie podłączał się klient
      */
-    private static Socket sock;
+    private Socket sock;
     /**
      * Atrybut będący ciągiem znaków, w którym zapisywane jest IP, do którego użytkownik będzie chciał się podłączyć
      */
-    public static String IP = "localhost";
-    /**
-     * Atrybut będący nazwą filmu
-     */
-    protected static String filmName;
+    public String IP;
     /**
      * Atrybut będący nazwą użytkownika
      */
-    public static String nickname = null;
+    public String nickname = null;
     /**
      * Atrybut będący wzorcem hasła
      */
-    private static final String ipPatt = "^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}$";
+    private final String ipPatt = "^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}$";
     /**
      * Atrybut będący skompilowaną wersją wzorca hasła
      */
-    private static final Pattern patt = Pattern.compile(ipPatt);
-    /**
-     * Atrybut, który stwierdza czy rezerwacja istnieje, czy nie
-     */
-    protected static boolean existReservation = false;
+    private final Pattern patt = Pattern.compile(ipPatt);
     /**
      * Atrybut będący strumieniem wyjściowych danych dla klienta
      */
-    private static DataOutputStream send;
+    private DataOutputStream send;
     /**
      * Atrybut będący strumieniem wejściowym danych dla klienta
      */
-    private static DataInputStream receive;
+    private DataInputStream receive;
     /**
      * Metoda, której głównym zadaniem jest ustawienie parametrów gniazda klienta
      * @return Nic nie zwraca
@@ -74,7 +72,7 @@ public class Klient implements Callable<Void> {
     public Void call() {
         try {
             try {
-                setParametres(new Socket(Klient.IP, 1522));
+                setParametres(new Socket(IP, 1522));
             }
             catch (IOException except) {
                 catchServe(except);
@@ -90,7 +88,7 @@ public class Klient implements Callable<Void> {
      * Metoda obsługująca postępowanie w razie wystąpienia wyjątku
      * @param except Otrzymany wyjątek
      */
-    protected static void catchServe(@NotNull Exception except){
+    protected void catchServe(@NotNull Exception except){
         if(except.getMessage()==null) JOptionPane.showMessageDialog(null, "Unexpected exception", "Informacja", JOptionPane.INFORMATION_MESSAGE);
         else JOptionPane.showMessageDialog(null, except.getMessage(), "Informacja", JOptionPane.INFORMATION_MESSAGE);
         new Logs("[ " + new java.util.Date() + " ] " + except.getMessage(), "Klient", "error");
@@ -99,9 +97,9 @@ public class Klient implements Callable<Void> {
      * Metoda ustawiająca podstawowe parametry gniazda i strumieni wejścia/wyjścia danych
      * @param sock Gniazdo ustawione do połączenia klienta i serwera
      */
-    public static void setParametres(@NotNull Socket sock){
+    public void setParametres(@NotNull Socket sock){
         try {
-            Klient.sock = sock;
+            this.sock = sock;
             OutputStream socketSend = sock.getOutputStream();
             InputStream socketReceive = sock.getInputStream();
             send = new DataOutputStream(socketSend);
@@ -113,11 +111,12 @@ public class Klient implements Callable<Void> {
     }
     /**
      * Metoda, której głównym zadaniem jest próba podłączenia się pod serwer, w przypadku gdy po 2 sekundach połączenie nie nastąpi to próba jest przerywana
+     * @param klient Instancja klasy klient
      */
-    public static void polacz() {
+    public void polacz(Klient klient) {
         try {
             ExecutorService executor = Executors.newSingleThreadExecutor();
-            Future<Void> future = executor.submit(new Klient());
+            Future<Void> future = executor.submit(klient);
             future.get(2, TimeUnit.SECONDS);
         }
         catch (Exception except){
@@ -130,7 +129,7 @@ public class Klient implements Callable<Void> {
      * @param salt Ziarno używane do hashowania hasła
      * @return Zwraca zahashowaną wersję hasła
      */
-    public static String hashPassword(@NotNull String passwordToHash, @NotNull String salt){
+    public String hashPassword(@NotNull String passwordToHash, @NotNull String salt){
         String generatedPassword = null;
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-512");
@@ -151,25 +150,39 @@ public class Klient implements Callable<Void> {
      * @param IP IP do zwalidowania
      * @return Zwraca true, gdy dostarczone IP jest prawidłowe
      */
-    public static boolean walidacjaIP(@NotNull final String IP){
+    public boolean walidacjaIP(@NotNull final String IP){
         Matcher match = patt.matcher(IP);
         return match.matches();
+    }
+    /**
+     * Metoda pobierająca nickname użytkownika
+     * @return Zwraca nickname zalogowanego użytkownika
+     */
+    public String getNickname(){
+        return this.nickname;
+    }
+    /**
+     * Metoda pobierająca aktualne IP
+     * @return Zwraca aktualne IP ustawione do podłączenia klienta do serwera
+     */
+    protected String getKlientIP(){
+        return this.IP;
     }
     /**
      * Metoda typu setter, której celem jest ustawienie IP do połączenia z serwerem
      * @param IP IP do ustawienia do połączenia z serwerem
      */
-    protected static void setKlientIP(@NotNull String IP){
-        Klient.IP = IP;
+    protected void setKlientIP(String IP){
+        this.IP = IP;
     }
     /**
      * Metoda, której celem jest zakończenie połączenia z serwerem danego klienta
      */
-    public static void zakonczPolaczenie(){
+    public void zakonczPolaczenie(){
         try {
-            Klient.send.close();
-            Klient.receive.close();
-            Klient.sock.close();
+            send.close();
+            receive.close();
+            sock.close();
         }
         catch (IOException except) {
             catchServe(except);
@@ -180,219 +193,225 @@ public class Klient implements Callable<Void> {
      * @param message Wiadomość okna dialogowego
      * @return Zwraca okno dialogowe z opcjami tak/nie
      */
-    public static int dialogTakNie(@NotNull String message){
+    public int dialogTakNie(@NotNull String message){
         Object[] takNie = {"Tak", "Nie"};
         return JOptionPane.showOptionDialog(null,message,"Potwierdzenie",JOptionPane.YES_NO_OPTION,JOptionPane.INFORMATION_MESSAGE, null, takNie, null);
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu odzyskania hasła dla użytkownika
+     * @param recoveryData Lista danych niezbednych do odzyskania konta
+     * @return Zwraca odebrane dane od serwera przy odzyskiwaniu konta
      */
-    protected  static void odzyskaj(){
+    protected List<String> odzyskaj(List<String> recoveryData){
         try {
-            Klient.send.writeUTF("Recovery");
-            Klient.send.flush();
-            Klient.send.writeUTF(Integer.toString(EkranPrzywrocHaslo.recovery_data.size()));
-            Klient.send.flush();
-            for(String data:EkranPrzywrocHaslo.recovery_data){
-                Klient.send.writeUTF(data);
-                Klient.send.flush();
+            send.writeUTF("Recovery");
+            send.flush();
+            send.writeInt(recoveryData.size());
+            send.flush();
+            for(String data:recoveryData){
+                send.writeUTF(data);
+                send.flush();
             }
-            EkranPrzywrocHaslo.message = receive.readUTF();
+            List<String> listaDanych = new LinkedList<>();
+            listaDanych.add(receive.readUTF());
+            return listaDanych;
         }
         catch (Exception except) {
             catchServe(except);
         }
+        return null;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu zarejestrowania nowego użytkownika
+     * @param dane Lista danych uzyskanych przy rejestracji
+     * @return Zwraca listę danych otrzymaną od serwera
      */
-    protected static void zarejestruj() {
+    protected List<String> zarejestruj(List<String> dane) {
         try {
-            Klient.send.writeUTF("Register");
-            Klient.send.flush();
-            Klient.send.writeUTF((Integer.toString(EkranUtworzKonto.dane.size())));
-            Klient.send.flush();
-            for(String data:EkranUtworzKonto.dane){
-                Klient.send.writeUTF(data);
-                Klient.send.flush();
+            send.writeUTF("Register");
+            send.flush();
+            send.writeInt(dane.size());
+            send.flush();
+            for(String s: dane){
+                send.writeUTF(s);
+                send.flush();
             }
-            EkranUtworzKonto.blad = receive.readUTF();
+            List<String> listaDanych = new LinkedList<>();
+            listaDanych.add(receive.readUTF());
+            return listaDanych;
         }
         catch (Exception except) {
             catchServe(except);
         }
+        return null;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu zalogowania użytkownika
+     * @param loginUzytkownika Login użytkownika
+     * @param hasloUzytkownika Hasło użytkownika
+     * @return  Zwraca listę danych otrzymaną od serwera
      */
-    protected static void zaloguj() {
+    protected List<String> zaloguj(String loginUzytkownika, String hasloUzytkownika) {
         try {
-            Klient.send.writeUTF("Login");
-            Klient.send.flush();
-            Klient.send.writeUTF(EkranLogowania.loginUzytkownika);
-            Klient.send.flush();
-            Klient.send.writeUTF(EkranLogowania.hasloUzytkownika);
-            Klient.send.flush();
-            EkranLogowania.wiadomosc = receive.readUTF();
-            EkranLogowania.ranga = receive.readUTF();
+            send.writeUTF("Login");
+            send.flush();
+            send.writeUTF(loginUzytkownika);
+            send.flush();
+            send.writeUTF(hasloUzytkownika);
+            send.flush();
+            this.nickname = loginUzytkownika;
+            List<String> listaDanych = new LinkedList<>();
+            for(int i=0; i<2;i++) {
+                listaDanych.add(receive.readUTF());
+            }
+            return listaDanych;
         }
         catch (Exception except) {
             catchServe(except);
         }
-    }
-    /**
-     * Metoda, której celem jest wymiana danych z serwerem w celu wylogowania wszystkich użytkowników
-     */
-    public static void wylogujWszystkich(){
-        try {
-            Klient.send.writeUTF("LogoutAll");
-            Klient.send.flush();
-            EkranGlownyAdmin.message = receive.readUTF();
-        }
-        catch (Exception except) {
-            catchServe(except);
-        }
+        return null;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu wylogowania pojedynczego użytkownika
+     * @param loginUzytkownika Login użytkownika
+     * @return Zwraca listę danych otrzymaną od serwera
      */
-    protected static void wyloguj(){
+    protected List<String> wyloguj(String loginUzytkownika){
         try {
-            Klient.send.writeUTF("Logout");
-            Klient.send.flush();
-            Klient.send.writeUTF(EkranLogowania.loginUzytkownika);
-            Klient.send.flush();
-            EkranGlownyAdmin.message = receive.readUTF();
-            EkranGlownyUzytkownik.message = EkranGlownyAdmin.message;
+            send.writeUTF("Logout");
+            send.flush();
+            send.writeUTF(loginUzytkownika);
+            send.flush();
+            List<String> listaDanych = new LinkedList<>();
+            listaDanych.add(receive.readUTF());
+            return listaDanych;
         }
         catch (Exception except) {
             catchServe(except);
         }
+        return null;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem, aby zarządzać konstrukcją bazy danych
      * @param managementOption Opcja zarządzania bazą danych
+     * @return Zwraca wiadomość o tym, czy dany transfer danych się powiódł
      */
-    protected static void zarzadzaj(@NotNull String managementOption){
+    protected String zarzadzaj(@NotNull String managementOption){
         try {
-            Klient.send.writeUTF("Management");
-            Klient.send.flush();
-            Klient.send.writeUTF(managementOption);
-            Klient.send.flush();
-            EkranGlownyAdmin.message = receive.readUTF();
+            send.writeUTF("Management");
+            send.flush();
+            send.writeUTF(managementOption);
+            send.flush();
+            return receive.readUTF();
         }
         catch (Exception except) {
             catchServe(except);
         }
+        return null;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu wysłania danych do bazy z odpowiedniego dialogboxa
      * @param option Typ dialog boxa, z którego wysyłane są dane
+     * @return Zwraca wiadomość o tym, czy dany transfer danych się powiódł
      */
-    protected static void wysylajDane(@NotNull String option){
+    protected String wysylajDane(@NotNull String option){
         try {
-            Klient.send.writeUTF("DataPass");
-            Klient.send.flush();
-            Klient.send.writeUTF(option);
-            Klient.send.flush();
-            Klient.send.writeUTF((Integer.toString(Klient.panelData.size())));
-            Klient.send.flush();
-            for(String data: Klient.panelData){
-                Klient.send.writeUTF(data);
-                Klient.send.flush();
+            send.writeUTF("DataPass");
+            send.flush();
+            send.writeUTF(option);
+            send.flush();
+            send.writeInt(this.panelData.size());
+            send.flush();
+            for(String data: this.panelData){
+                send.writeUTF(data);
+                send.flush();
             }
-            EkranSerwer.message = receive.readUTF();
-            Klient.panelData.clear();
+            this.panelData.clear();
+            return receive.readUTF();
         }
         catch (Exception except) {
             catchServe(except);
         }
+        return null;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu otrzymania danych do odpowiedniego dialogboxa
      * @param option Typ dialog boxa, z którego wysyłane są dane
+     * @param userID ID użytkownika
+     * @return Zwraca listę danych dla danej operacji
      */
-    protected static void otrzymujDane(@NotNull String option){
+    protected List<String> otrzymujDane(@NotNull String option, @NotNull String userID){
         try{
-            Klient.send.writeUTF("DataReceive");
-            Klient.send.flush();
-            Klient.send.writeUTF(option);
-            Klient.send.flush();
+            send.writeUTF("DataReceive");
+            send.flush();
+            send.writeUTF(option);
+            send.flush();
             switch (option) {
-                case "ReviewMyRents" -> {
-                    Klient.send.writeUTF(DialogMojeWypozyczenia.userID);
-                    Klient.send.flush();
-                }
-                case "ReviewMyReturns" -> {
-                    Klient.send.writeUTF(DialogMojeZwroty.userID);
-                    Klient.send.flush();
-                }
-                case "ReviewRents" -> {
-                    Klient.send.writeUTF(DialogPrzegladajWypozyczenia.userID);
-                    Klient.send.flush();
-                }
-                case "ReviewReturns" -> {
-                    Klient.send.writeUTF(DialogPrzegladajZwroty.userID);
-                    Klient.send.flush();
+                case "ReviewMyRents", "ReviewReturns", "ReviewRents", "ReviewMyReturns" -> {
+                    send.writeUTF(userID);
+                    send.flush();
                 }
             }
-            int size = Integer.parseInt(receive.readUTF());
+            int size = receive.readInt();
+            List<String> listaDanych = new LinkedList<>();
             for(int i=0; i<size; i++){
-                EkranSerwer.panelData.add(receive.readUTF());
+                listaDanych.add(receive.readUTF());
             }
+            return listaDanych;
         } catch (Exception except) {
             catchServe(except);
         }
+        return null;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu otrzymania id klienta do odpowiedniego dialogboxa
-     * @param whichClient Parametr określający czy chcemy id aktualnie zalogowanego użytkownika, czy wybranego z listy
+     * @param Nick Zaznaczony przez administratora nickname użytkownika
      * @return Zwraca pobrane ID użytkownika
      */
-    protected static String pobierzIDKlienta(@NotNull String whichClient){
+    protected String pobierzIDKlienta(@NotNull String Nick){
         try {
-            Klient.send.writeUTF("GetClientID");
-            Klient.send.flush();
-            Klient.send.writeUTF(whichClient);
-            Klient.send.flush();
-            if(whichClient.equals("selectedUser")){
-                Klient.send.writeUTF(EkranSerwer.selectedNick);
-                Klient.send.flush();
-            }
-            EkranSerwer.userID = receive.readUTF();
+            send.writeUTF("GetClientID");
+            send.flush();
+            send.writeUTF(Nick);
+            send.flush();
+            return receive.readUTF();
         } catch (Exception except) {
             catchServe(except);
         }
-        return EkranSerwer.userID;
+        return "";
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu otrzymania id płyty DVD do odpowiedniego dialogboxa
+     * @param dvdName Nazwa płyty DVD
      * @return Zwraca ID otrzymanej płyty DVD
      */
-    protected static int pobierzIDDVD() {
+    protected int pobierzIDDVD(@NotNull String dvdName) {
         try {
-            Klient.send.writeUTF("GetDVDID");
-            Klient.send.flush();
-            Klient.send.writeUTF(EkranSerwer.filmName);
-            EkranSerwer.dvdID = receive.readInt();
+            send.writeUTF("GetDVDID");
+            send.flush();
+            send.writeUTF(dvdName);
+            send.flush();
+            return receive.readInt();
         } catch (Exception except) {
             catchServe(except);
         }
-        return EkranSerwer.dvdID;
+        return -1;
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu zaktualizowania ilości płyt DVD w bazie danych
+     * @param updatingID ID aktualizowanego stanu płyty DVD
+     * @param updatingItem ID aktualizowanej płyty DVD
      */
-    protected static void zaktualizujStan(){
+    protected void zaktualizujStan(String updatingItem, int updatingID){
         try {
-            Klient.send.writeUTF("UpdateCount");
-            Klient.send.flush();
-            Klient.send.writeUTF("dvds_data");
-            Klient.send.flush();
-            Klient.send.writeInt(EkranSerwer.updatingID);
-            Klient.send.flush();
-            Klient.send.writeUTF(EkranSerwer.updatingItem);
-            Klient.send.flush();
+            send.writeUTF("UpdateCount");
+            send.flush();
+            send.writeUTF("dvds_data");
+            send.flush();
+            send.writeInt(updatingID);
+            send.flush();
+            send.writeUTF(updatingItem);
+            send.flush();
         }
         catch (Exception except) {
             catchServe(except);
@@ -400,45 +419,33 @@ public class Klient implements Callable<Void> {
     }
     /**
      * Metoda, której celem jest wymiana danych z serwerem w celu usunięcia wybranej rezerwacji z bazy danych
+     * @param dvdID ID płyty DVD
+     * @param userID ID Użytkownika
      */
-    protected static void usunRezerwacje(){
+    protected void usunRezerwacje(String userID, int dvdID){
         try{
-            Klient.send.writeUTF("DeleteReservation");
-            Klient.send.flush();
+            send.writeUTF("DeleteReservation");
+            send.flush();
+            send.writeUTF(userID);
+            send.flush();
+            send.writeInt(dvdID);
+            send.flush();
         }
         catch (Exception except) {
             catchServe(except);
         }
-    }
-    /**
-     * Metoda, której celem jest wymiana danych z serwerem w celu sprawdzenia, czy rezerwacja istnieje, czy nie
-     * @return Zwraca status czy rezerwacja istnieje, czy nie
-     */
-    protected static boolean checkReservations(){
-        try{
-            existReservation = false;
-            Klient.send.writeUTF("CheckReservations");
-            Klient.send.flush();
-            Klient.send.writeUTF(filmName);
-            Klient.send.flush();
-            existReservation = receive.readBoolean();
-        }
-        catch (Exception except) {
-            catchServe(except);
-        }
-        return existReservation;
     }
     /**
      * Metoda, której celem jest komunikacja z serwerem w celu pobrania nazwy użytkownika z bazy danych
      * @param userID ID użytkownika
      * @return Zwraca nickname użytkownika o podanym ID
      */
-    protected static String downloadNickname(@NotNull String userID){
+    protected String downloadNickname(@NotNull String userID){
         try {
-            Klient.send.writeUTF("DownloadNickname");
-            Klient.send.flush();
-            Klient.send.writeUTF(userID);
-            Klient.send.flush();
+            send.writeUTF("DownloadNickname");
+            send.flush();
+            send.writeUTF(userID);
+            send.flush();
             nickname = receive.readUTF();
         }
         catch (Exception except) {
@@ -449,32 +456,41 @@ public class Klient implements Callable<Void> {
     /**
      * Metoda, której celem jest komunikacja z serwerem w celu otrzymania odpowiednich powiadomień
      * @param notificationType Typ powiadomienia
+     * @param username Nazwa użytkownika
      */
     @Contract(pure = true)
-    protected static void notifications(@NotNull String notificationType){
+    protected List<String> notifications(@NotNull String notificationType, @NotNull String username){
         try{
-            Klient.send.writeUTF(notificationType+"Notifications");
-            Klient.send.flush();
-            int size = Klient.receive.readInt();
+            send.writeUTF(notificationType+"Notifications");
+            send.flush();
+            send.writeUTF(username);
+            send.flush();
+            panelData.clear();
             switch(notificationType) {
-                case "Admin" -> {
-                    for(int i=0; i<size; i++){
-                        Powiadomienia.adminReservationNotifications.add(Klient.receive.readUTF());
-                    }
-                    size = Klient.receive.readInt();
-                    for(int j=0; j<size; j++){
-                        Powiadomienia.adminDetentionDVDsNotifications.add(Klient.receive.readUTF());
-                    }
-                }
                 case "User" -> {
+                    int size = receive.readInt();
                     for(int i=0; i<size; i++){
-                        Powiadomienia.userDetentionDVDsNotifications.add(Klient.receive.readUTF());
+                        panelData.add(receive.readUTF());
                     }
+                    return panelData;
+                }
+                case "Admin" -> {
+                    int size = receive.readInt();
+                    for(int i=0; i<size; i++){
+                        panelData.add(receive.readUTF());
+                    }
+                    int size2 = receive.readInt();
+                    panelData.add("SecondNotificationLine");
+                    for(int i=0; i<size2; i++){
+                        panelData.add(receive.readUTF());
+                    }
+                    return panelData;
                 }
             }
         }
         catch (Exception except){
             catchServe(except);
         }
+        return null;
     }
 }

@@ -1,5 +1,4 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
@@ -9,6 +8,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -33,24 +33,30 @@ public class DialogMojeWypozyczenia extends javax.swing.JDialog {
      */
     protected static String userID;
     /**
+     * Lista pobranych danych
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
+    /**
      * Konstruktor odpowiadający za inicjalizację GUI
      * @param parent Rodzic okna
      * @param modal Parametr określający czy okno ma należeć do rodzica
+     * @param klient Instancja klasy klient
      */
-    public DialogMojeWypozyczenia(java.awt.Frame parent, boolean modal) {
+    public DialogMojeWypozyczenia(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        userID = Klient.pobierzIDKlienta("loggedIn");
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewMyRents");
+        klient.polacz(klient);
+        userID = klient.pobierzIDKlienta(klient.getNickname());
+        klient.zakonczPolaczenie();
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewMyRents", userID));
+        klient.zakonczPolaczenie();
         initComponents();
         this.setLocationRelativeTo(null);
         setVisible(true);
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
-            EkranSerwer.panelData.clear();
-            dispose();
+                dispose();
             }
         });
     }
@@ -73,7 +79,7 @@ public class DialogMojeWypozyczenia extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 18));
         jLabel1.setText("Lista wypożyczonych przeze mnie DVD");
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/9);
+        int size = ((panelData.size())/9);
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
             },
@@ -83,7 +89,9 @@ public class DialogMojeWypozyczenia extends javax.swing.JDialog {
         ));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         for(int i=0; i<size; i++){
-            model.addRow(new Object[]{EkranSerwer.panelData.get(counter), EkranSerwer.panelData.get(counter+1), EkranSerwer.panelData.get(counter+2), EkranSerwer.panelData.get(counter+3), EkranSerwer.panelData.get(counter+4), EkranSerwer.panelData.get(counter+5), EkranSerwer.panelData.get(counter+6), EkranSerwer.panelData.get(counter+7), EkranSerwer.panelData.get(counter+8)});
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1), panelData.get(counter+2),
+                    panelData.get(counter+3), panelData.get(counter+4), panelData.get(counter+5), panelData.get(counter+6),
+                    panelData.get(counter+7), panelData.get(counter+8)});
             if(size>1) counter+=9;
         }
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
@@ -181,7 +189,6 @@ public class DialogMojeWypozyczenia extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        EkranSerwer.panelData.clear();
         pack();
     }
     /**
@@ -192,7 +199,6 @@ public class DialogMojeWypozyczenia extends javax.swing.JDialog {
         dispose();
         jTable1.setRowSorter(null);
         rowSorter = null;
-        EkranSerwer.panelData.clear();
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
         model.setColumnCount(0);

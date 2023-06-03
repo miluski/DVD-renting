@@ -1,0 +1,55 @@
+CREATE TABLE users(
+                user_id NUMBER(6) PRIMARY KEY, 
+                user_nickname VARCHAR2(30), 
+                user_password VARCHAR2(200),
+                 user_coverage_key VARCHAR2(6) NOT NULL, 
+                user_logged VARCHAR2(3) DEFAULT 'no', 
+                user_rank VARCHAR2(30) DEFAULT 'user');
+CREATE TABLE users_data(
+                user_data_id NUMBER(6) PRIMARY KEY, 
+                user_name VARCHAR2(30), 
+                user_surname VARCHAR2(30), 
+                user_email VARCHAR2(30), 
+                user_phone_number NUMBER(12), 
+                user_id NUMBER(6) REFERENCES users(user_id));
+CREATE TABLE dvds_data(
+                dvd_id NUMBER(6) PRIMARY KEY, 
+                film_name VARCHAR2(50), 
+                film_direction VARCHAR2(50), 
+                film_type VARCHAR2(50), 
+                country VARCHAR2(30), 
+                production_year VARCHAR2(10), 
+                film_language VARCHAR2(30), 
+                video_length VARCHAR2(15), 
+                number_of_copies NUMBER(6) DEFAULT '0',
+                day_payment VARCHAR2(30) DEFAULT '0 zl');
+CREATE TABLE rents(
+                rent_id NUMBER(6) PRIMARY KEY, 
+                dvd_id NUMBER(6) CONSTRAINT rents_dvd_id_fk REFERENCES dvds_data(dvd_id), 
+                user_id NUMBER(6) CONSTRAINT rents_user_id_fk REFERENCES users(user_id), 
+                rent_date DATE);
+CREATE TABLE returns(
+                return_id NUMBER(6) PRIMARY KEY, 
+                dvd_id NUMBER(6) CONSTRAINT returns_dvd_id_fk REFERENCES dvds_data(dvd_id), 
+                user_id NUMBER(6) CONSTRAINT returns_user_id_fk REFERENCES users(user_id), 
+                rent_date DATE, 
+                return_date DATE);
+CREATE TABLE bills(
+                bill_id NUMBER(6) PRIMARY KEY, 
+                user_id NUMBER(6) CONSTRAINT bills_user_id_fk REFERENCES users(user_id), 
+                NIP NUMBER(10), 
+                REGON NUMBER(9), 
+                PESEL NUMBER(11), 
+                Kwota NUMBER, 
+                Data DATE);
+CREATE TABLE reservations(
+                reservation_id NUMBER(6) PRIMARY KEY, 
+                user_id NUMBER(6) CONSTRAINT reservations_user_id_fk REFERENCES users(user_id), 
+                dvd_id NUMBER(6) CONSTRAINT reservations_dvd_id_fk REFERENCES dvds_data(dvd_id));
+CREATE SEQUENCE user_id_seq START WITH 1;
+CREATE SEQUENCE user_data_id_seq START WITH 1;
+CREATE SEQUENCE dvd_id_seq START WITH 1;
+CREATE SEQUENCE rent_id_seq START WITH 1;
+CREATE SEQUENCE return_id_seq START WITH 1;
+CREATE SEQUENCE bill_id_seq START WITH 1;
+CREATE SEQUENCE reservation_id_seq START WITH 1;

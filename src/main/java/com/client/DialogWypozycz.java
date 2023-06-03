@@ -1,9 +1,7 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -12,58 +10,70 @@ import java.util.List;
  */
 public class DialogWypozycz extends javax.swing.JDialog {
     /**
-     * Atrybut będący buforową listą zawierającą dane
+     * Lista zawierająca dane
      */
-    private static List<String> panelData = new ArrayList<>();
+    private final java.util.List<String> panelData = new LinkedList<>();
+    /**
+     * Lista zawierająca dane
+     */
+    private final java.util.List<String> panelData2 = new LinkedList<>();
+    /**
+     * Instancja klasy klient
+     */
+    private final Klient klient;
     /**
      * Atrybut będący listą w postaci graficznej
      */
-    private static final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    private final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
     /**
      * Atrybut będący listą w postaci graficznej
      */
-    private static final javax.swing.JList<String> jList2 = new javax.swing.JList<>();
+    private final javax.swing.JList<String> jList2 = new javax.swing.JList<>();
     /**
      * Atrybut będący scrollbarem
      */
-    private static final javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
+    private final javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
     /**
      * Atrybut będący scrollbarem
      */
-    private static final javax.swing.JScrollPane jScrollPane2 = new javax.swing.JScrollPane();
+    private final javax.swing.JScrollPane jScrollPane2 = new javax.swing.JScrollPane();
     /**
      * Atrybut będący scrollbarem
      */
-    private static final javax.swing.JScrollPane jScrollPane3 = new javax.swing.JScrollPane();
+    private final javax.swing.JScrollPane jScrollPane3 = new javax.swing.JScrollPane();
     /**
      * Atrybut będący scrollbarem
      */
-    private static final javax.swing.JScrollPane jScrollPane4 = new javax.swing.JScrollPane();
+    private final javax.swing.JScrollPane jScrollPane4 = new javax.swing.JScrollPane();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final javax.swing.JTextArea jTextArea1 = new javax.swing.JTextArea();
+    private final javax.swing.JTextArea jTextArea1 = new javax.swing.JTextArea();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final javax.swing.JTextArea jTextArea2 = new javax.swing.JTextArea();
+    private final javax.swing.JTextArea jTextArea2 = new javax.swing.JTextArea();
     /**
      * Atrybut będący identyfikatorem użytkownika
      */
-    protected static String userID;
+    protected String userID;
     /**
      * Atrybut będący identyfikatorem płyty DVD
      */
-    protected static String dvdID;
+    protected String dvdID;
     /**
      * Atrybut będący liczbą kopii danej płyty DVD
      */
-    protected static String numberOfCopies;
+    protected String numberOfCopies;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogWypozycz(java.awt.Frame parent, boolean modal) {
+    DialogWypozycz(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
+        this.klient = klient;
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -71,8 +81,6 @@ public class DialogWypozycz extends javax.swing.JDialog {
                 DefaultListModel<String> defaultListModel3 = new DefaultListModel<>();
                 jList1.setModel(defaultListModel3);
                 jList2.setModel(defaultListModel3);
-                EkranSerwer.panelData.clear();
-                Klient.panelData.clear();
                 panelData.clear();
                 dispose();
             }
@@ -83,12 +91,10 @@ public class DialogWypozycz extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         DefaultListModel<String> defaultListModel3 = new DefaultListModel<>();
         jList1.setModel(defaultListModel3);
         jList2.setModel(defaultListModel3);
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         panelData.clear();
     }
     /**
@@ -106,9 +112,9 @@ public class DialogWypozycz extends javax.swing.JDialog {
         javax.swing.JButton jButton1 = new javax.swing.JButton();
         javax.swing.JButton jButton2 = new javax.swing.JButton();
 
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewClients");
-        panelData = EkranSerwer.panelData;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
+        klient.zakonczPolaczenie();
         int size = ((panelData.size())/5);
         int counter = 0;
         DefaultListModel<String> defaultListModel = new DefaultListModel<>();
@@ -119,8 +125,6 @@ public class DialogWypozycz extends javax.swing.JDialog {
         jList1.setModel(defaultListModel);
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Wypożyczalnia DVD - Wypożycz");
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 18));
@@ -131,13 +135,14 @@ public class DialogWypozycz extends javax.swing.JDialog {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 14));
         jLabel2.setText("Wybierz z listy klienta, który DVD wypożycza");
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewDVDCollection");
+        klient.polacz(klient);
+        panelData2.addAll(klient.otrzymujDane("ReviewDVDCollection", ""));
+        klient.zakonczPolaczenie();
         int counter2 = 0;
-        int size2 = ((EkranSerwer.panelData.size())/10);
+        int size2 = ((panelData2.size())/10);
         DefaultListModel<String> defaultListModel2 = new DefaultListModel<>();
         for(int i=0; i<size2; i++){
-            defaultListModel2.addElement(EkranSerwer.panelData.get(counter2)+". "+EkranSerwer.panelData.get(counter2+1));
+            defaultListModel2.addElement(panelData2.get(counter2)+". "+panelData2.get(counter2+1));
             if(size>1) counter2+=10;
         }
         jList2.setModel(defaultListModel2);
@@ -181,11 +186,11 @@ public class DialogWypozycz extends javax.swing.JDialog {
                 jTextArea2.setEnabled(false);
                 jScrollPane4.setViewportView(jTextArea2);
                 int counter3 = 0;
-                int size3 = ((EkranSerwer.panelData.size())/10);
+                int size3 = ((panelData2.size())/10);
                 for(int i=0; i<size3; i++){
-                    boolean isFound = dvdID.equals(EkranSerwer.panelData.get(counter3));
+                    boolean isFound = dvdID.equals(panelData2.get(counter3));
                     if(isFound){
-                        numberOfCopies = EkranSerwer.panelData.get(counter3+8);
+                        numberOfCopies = panelData2.get(counter3+8);
                         break;
                     }
                     if(size3>1) counter3+=10;
@@ -306,15 +311,18 @@ public class DialogWypozycz extends javax.swing.JDialog {
         if (buffer <= 0) {
             JOptionPane.showMessageDialog(this, "Nie możesz wypożyczyć tego DVD!", "Błąd", JOptionPane.WARNING_MESSAGE);
         } else {
-            Klient.panelData.add(userID);
-            Klient.panelData.add(dvdID);
-            Klient.polacz();
-            Klient.wysylajDane("RentDVD");
-            EkranSerwer.updatingID = Integer.parseInt(dvdID);
-            EkranSerwer.updatingItem = Integer.toString(buffer);
-            Klient.polacz();
-            Klient.zaktualizujStan();
-            if (EkranSerwer.message == null) JOptionPane.showMessageDialog(this, "Wystąpil nieoczekiwany błąd!", "Informacja", JOptionPane.INFORMATION_MESSAGE);
+            klient.panelData.clear();
+            klient.panelData.add(userID);
+            klient.panelData.add(dvdID);
+            klient.polacz(klient);
+            String message = klient.wysylajDane("RentDVD");
+            klient.zakonczPolaczenie();
+            int updatingID = Integer.parseInt(dvdID);
+            String updatingItem = Integer.toString(buffer);
+            klient.polacz(klient);
+            klient.zaktualizujStan(updatingItem,updatingID);
+            klient.zakonczPolaczenie();
+            if (message == null) JOptionPane.showMessageDialog(this, "Wystąpil nieoczekiwany błąd!", "Informacja", JOptionPane.INFORMATION_MESSAGE);
             else JOptionPane.showMessageDialog(this, "Sukces", "Informacja", JOptionPane.INFORMATION_MESSAGE);
             clearComponents();
             dispose();

@@ -3,6 +3,7 @@ import com.server.Logs;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import java.awt.*;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -13,41 +14,45 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
     /**
      * Atrybut będący graficznym menu wyboru strony
      */
-    private static JTabbedPane jTabbedPane2;
+    private JTabbedPane jTabbedPane2;
     /**
      * Atrybut będący listą w postaci graficznej
      */
-    private static final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    private final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
     /**
      * Atrybut będący scrollbarem
      */
-    private static final javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
+    private final javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
     /**
      * Atrybut będący wiadomością
      */
-    public static String message;
+    public String message;
+    /**
+     * Atrybut przechowujący login użytkownika
+     */
+    private final String loginUzytkownika;
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy Klient
+     * @param loginUzytkownika Login użytkownika
      */
-    EkranGlownyAdmin() {
+    EkranGlownyAdmin(String loginUzytkownika, Klient klient) {
+        this.klient = klient;
+        this.loginUzytkownika = loginUzytkownika;
         setVisible(true);
         initComponents();
-        try {
-            Klient.polacz();
-            Klient.notifications("Admin");
-        }
-        catch (Exception ex){
-            JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
-            new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranGlownyAdmin", "error");
-        }
         this.setLocationRelativeTo(null);
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
                 try {
-                    Klient.polacz();
-                    Klient.wyloguj();
-                    Klient.zakonczPolaczenie();
+                    klient.polacz(klient);
+                    klient.wyloguj(loginUzytkownika);
+                    klient.zakonczPolaczenie();
                 }
                 catch(Exception ex){
                     JOptionPane.showMessageDialog(null, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
@@ -59,27 +64,43 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
     /**
      * Metoda, której zadaniem jest inicjacja listy w postaci graficznej z powiadomieniami dla administratora
      */
-    private static void setNotifications(){
+    private void setNotifications(){
         try {
             DefaultListModel<String> newListModel = new DefaultListModel<>();
             jList1.setModel(newListModel);
-            Powiadomienia.adminDetentionDVDsNotifications.clear();
-            Powiadomienia.adminReservationNotifications.clear();
-            Klient.polacz();
-            Klient.notifications("Admin");
+            klient.polacz(klient);
+            java.util.List<String> adminNotifications = new LinkedList<>(klient.notifications("Admin",loginUzytkownika));
+            klient.zakonczPolaczenie();
+            java.util.List<String> firstNotifications = new LinkedList<>();
+            java.util.List<String> secondNotifications = new LinkedList<>();
+            int index = 0;
+            for(String s:adminNotifications){
+                if(!s.equals("SecondNotificationLine")){
+                    firstNotifications.add(s);
+                    index++;
+                }
+                else break;
+            }
+            for(int i=index; i<(adminNotifications.size()-index);i++){
+                secondNotifications.add(adminNotifications.get(i));
+            }
             DefaultListModel<String> defaultListModel = new DefaultListModel<>();
-            for(int i=0; i<Powiadomienia.adminReservationNotifications.size(); i+=2){
-                if(!Powiadomienia.adminReservationNotifications.get(i).equals("Brak powiadomień")){
-                    defaultListModel.addElement("Użytkownik " + Powiadomienia.adminReservationNotifications.get(i+1) + " chce wypożyczyć płytę o nazwie " + Powiadomienia.adminReservationNotifications.get(i)+"\n");
+            for(int i=0; i<firstNotifications.size(); i+=2){
+                if(!adminNotifications.get(i).equals("Brak powiadomień")){
+                    defaultListModel.addElement("Użytkownik " + firstNotifications.get(i+1) + " chce wypożyczyć płytę o nazwie " + firstNotifications.get(i)+"\n");
                 }
-                else defaultListModel.addElement(Powiadomienia.adminReservationNotifications.get(i));
+                else defaultListModel.addElement(firstNotifications.get(i));
             }
-            for(int i=0; i<Powiadomienia.adminDetentionDVDsNotifications.size(); i+=3){
-                if(!Powiadomienia.adminDetentionDVDsNotifications.get(i).equals("Brak powiadomień")){
-                    defaultListModel.addElement("Użytkownik o ID " + Powiadomienia.adminDetentionDVDsNotifications.get(i) + " przetrzymuje płytę o ID " + Powiadomienia.adminDetentionDVDsNotifications.get(i+1) + " od " + Powiadomienia.adminDetentionDVDsNotifications.get(i+2));
+            if(index!=0) {
+                for (int i = index + 1; i < secondNotifications.size(); i += 3) {
+                    if (!adminNotifications.get(i).equals("Brak powiadomień")) {
+                        defaultListModel.addElement("Użytkownik o ID " + secondNotifications.get(i) + " przetrzymuje płytę o ID " + secondNotifications.get(i+1) + " od " + secondNotifications.get(i+2));
+                    } else defaultListModel.addElement(secondNotifications.get(i));
                 }
-                else defaultListModel.addElement(Powiadomienia.adminDetentionDVDsNotifications.get(i));
             }
+            adminNotifications.clear();
+            firstNotifications.clear();
+            secondNotifications.clear();
             jList1.setModel(defaultListModel);
             jList1.setBackground(new java.awt.Color(255, 255, 255));
             jList1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 16));
@@ -140,8 +161,6 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
             JButton jButton26 = new javax.swing.JButton();
             JButton jButton31 = new javax.swing.JButton();
             JLabel jLabel1 = new javax.swing.JLabel();
-
-            setNotifications();
 
             UIManager.put("TabbedPane.contentAreaColor", Color.WHITE);
             UIManager.put("TabbedPane.selected", Color.WHITE);
@@ -720,21 +739,21 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogDodajDVD(this, true);
+        new DialogDodajDVD(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Edytuj DVD
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogEdytujDVD(this, true);
+        new DialogEdytujDVD(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Usun DVD
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUsunDVD(this, true);
+        new DialogUsunDVD(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Pulpit
@@ -781,102 +800,103 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogPrzegladajKolekcjeDVD(this, true, "ReviewDVDCollection");
+        new DialogPrzegladajKolekcjeDVD(this, true, "ReviewDVDCollection", klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Stan magazynowy
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogStanMagazynowyDVD(this, true);
+        new DialogStanMagazynowyDVD(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Zmień liczbę kopii
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUstawLiczbeDVD(this, true);
+        new DialogUstawLiczbeDVD(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj listę klientów
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogPrzegladajListeKlientow(this, true);
+        new DialogPrzegladajListeKlientow(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń klienta
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUsunKlienta(this, true);
+        new DialogUsunKlienta(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Dodaj klienta
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {
-        new EkranUtworzKonto("admin");
+        new EkranUtworzKonto("admin", klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Wypożycz
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogWypozycz(this, true);
+        new DialogWypozycz(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj wypożyczenia
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogPrzegladajWypozyczenia(this, true);
+        new DialogPrzegladajWypozyczenia(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Zwróć
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogZwroc(this, true);
+        new DialogZwroc(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj zwroty
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogPrzegladajZwroty(this, true);
+        new DialogPrzegladajZwroty(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Zobacz rezerwację
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogZobaczRezerwacje(this, true);
+        new DialogZobaczRezerwacje(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Utwórz tabelę
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUtworzTabele(this, true);
+        new DialogUtworzTabele(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń tabelę
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUsunTabele(this, true);
+        new DialogUsunTabele(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń wszystkie dane bazy
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {
-        int reply = Klient.dialogTakNie("Spowoduje to usunięcie wszystkich użytkowników z bazy danych\nCzy kontynuować?");
+        int reply = klient.dialogTakNie("Spowoduje to usunięcie wszystkich użytkowników z bazy danych\nCzy kontynuować?");
         if (reply == JOptionPane.YES_OPTION) {
             try {
-                Klient.polacz();
-                Klient.zarzadzaj("DeleteFromTables");
+                klient.polacz(klient);
+                message = klient.zarzadzaj("DeleteFromTables");
+                klient.zakonczPolaczenie();
                 if(message.equals("")) message = "Wystąpił nieoczekiwany błąd!";
                 JOptionPane.showMessageDialog(this, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
             }
@@ -891,30 +911,31 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUtworzSekwencje(this, true);
+        new DialogUtworzSekwencje(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń sekwencje
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUsunSekwencje(this, true);
+        new DialogUsunSekwencje(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Wyloguj się
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {
-        int reply = Klient.dialogTakNie("Czy na pewno chcesz sie wylogowac?");
+        int reply = klient.dialogTakNie("Czy na pewno chcesz sie wylogowac?");
         if (reply == JOptionPane.YES_OPTION) {
             try {
-                Klient.polacz();
-                Klient.wyloguj();
-                Klient.zakonczPolaczenie();
+                klient.polacz(klient);
+                java.util.List<String> listaDanych = new LinkedList<>(klient.wyloguj(loginUzytkownika));
+                klient.zakonczPolaczenie();
+                message = listaDanych.get(0);
                 if(message.equals("")) message = "Wystąpił nieoczekiwany błąd!";
                 JOptionPane.showMessageDialog(this, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
                 dispose();
-                new EkranLogowania();
+                new EkranLogowania(klient.getKlientIP());
             }
             catch(Exception ex){
                 JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
@@ -934,20 +955,20 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogWystawRachunek(this, true);
+        new DialogWystawRachunek(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj rachunki
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogPrzegladajRachunki(this, true);
+        new DialogPrzegladajRachunki(this, true, klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Edytuj klienta
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogEdytujKlienta(this, true);
+        new DialogEdytujKlienta(this, true, klient);
     }
 }

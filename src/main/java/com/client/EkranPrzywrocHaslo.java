@@ -3,6 +3,7 @@ import com.server.Logs;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,39 +17,44 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final JTextField jTextField1 = new javax.swing.JTextField();
+    private final JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final JTextField jTextField2 = new javax.swing.JTextField();
+    private final JTextField jTextField2 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI służącym do wprowadzania hasła
      */
-    private static final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
+    private final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
     /**
      * Atrybut będący polem tekstowym GUI służącym do wprowadzania hasła
      */
-    private static final JPasswordField jPasswordField2 = new javax.swing.JPasswordField();
+    private final JPasswordField jPasswordField2 = new javax.swing.JPasswordField();
     /**
      * Atrybut będący wiadomością
      */
-    public static String message;
+    public String message;
     /**
      * Atrybut będący listą danych uzyskanych przy odzyskiwaniu konta
      */
-    protected static final List<String> recovery_data = new ArrayList<>();
+    protected final List<String> recoveryData = new ArrayList<>();
     /**
      * Atrybut będący wzorcem hasła
      */
-    private static final String passPatt = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
+    private final String passPatt = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
     /**
      * Atrybut będący skompilowaną wersją wzorca hasła
      */
-    private static final Pattern patt = Pattern.compile(passPatt);
+    private final Pattern patt = Pattern.compile(passPatt);
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
      */
-    EkranPrzywrocHaslo() {
+    EkranPrzywrocHaslo(Klient klient) {
+        this.klient = klient;
         setVisible(true);
         initComponents();
         this.setLocationRelativeTo(null);
@@ -58,7 +64,7 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
      * @param pass Wprowadzone hasło
      * @return Zwraca true, jeśli hasło jest zgodne ze wzorcem
      */
-    public static boolean walidacjaHasla(final String pass) {
+    public boolean walidacjaHasla(final String pass) {
         Matcher match = patt.matcher(pass);
         return match.matches();
     }
@@ -67,7 +73,7 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
      * @param key Wprowadzony klucz
      * @return Zwraca true, jeśli klucz jest zgodny ze wzorcem
      */
-    public static boolean walidacjaKodu(final String key){
+    public boolean walidacjaKodu(final String key){
         boolean match = true;
         try{
             Integer.parseInt(key);
@@ -254,41 +260,42 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(this, "Wprowadzony klucz zapasowy jest nieprawidłowy!", "Błąd", JOptionPane.ERROR_MESSAGE);
                     jTextField2.setText("");
                 }
-                else if(!walidacjaHasla(new String(jPasswordField1.getPassword()))) {
+                else if(!this.walidacjaHasla(new String(jPasswordField1.getPassword()))) {
                     JOptionPane.showMessageDialog(this,"Wprowadzone hasło nie spełnia wymogów bezpieczeństwa!","Błąd",JOptionPane.ERROR_MESSAGE);
                     jPasswordField1.setText("");
                     jPasswordField2.setText("");
                 }
                 else {
-                    recovery_data.add(jTextField1.getText());
-                    recovery_data.add(jTextField2.getText());
-                    recovery_data.add(Klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K"));
+                    recoveryData.add(jTextField1.getText());
+                    recoveryData.add(jTextField2.getText());
+                    recoveryData.add(klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K"));
                     try {
-                        Klient.polacz();
-                        Klient.odzyskaj();
-                        Klient.zakonczPolaczenie();
+                        klient.polacz(klient);
+                        java.util.List<String> listaDanych = new LinkedList<>(klient.odzyskaj(recoveryData));
+                        klient.zakonczPolaczenie();
+                        message = listaDanych.get(0);
                     }
                     catch(Exception ex){
-                        JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                         new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranPrzywrocHaslo", "error");
                     }
                     if(message==null) {
                         message = "Wystąpił nieoczekiwany błąd!";
-                        JOptionPane.showMessageDialog(this, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
                     }
                     else if(message.equals("Wystąpił błąd przy próbie zmiany hasła!")){
-                        JOptionPane.showMessageDialog(this,message,"Błąd",JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null,message,"Błąd",JOptionPane.ERROR_MESSAGE);
                     }
                     else if(message.contains("Pomyślnie zmieniono hasło!\n\nTwój nowy klucz zapasowy to: ")){
-                        JOptionPane.showMessageDialog(this,message,"Sukces",JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
                         dispose();
-                        new EkranLogowania();
+                        new EkranLogowania(klient.getKlientIP());
                     }
                     else{
                         message = "Wystąpił nieoczekiwany błąd!";
                         JOptionPane.showMessageDialog(this, message, "Błąd", JOptionPane.WARNING_MESSAGE);
                     }
-                    recovery_data.clear();
+                    recoveryData.clear();
                     jTextField1.setText("");
                     jTextField2.setText("");
                     jPasswordField1.setText("");
@@ -303,6 +310,6 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         dispose();
-        new EkranLogowania();
+        new EkranLogowania(klient.getKlientIP());
     }
 }

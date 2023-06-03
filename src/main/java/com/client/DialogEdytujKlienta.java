@@ -1,7 +1,7 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -12,42 +12,55 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
     /**
      * Atrybut będący listą wyboru
      */
-    private static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    private final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField1 = new javax.swing.JTextField();
+    private final JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField2 = new javax.swing.JTextField();
+    private final JTextField jTextField2 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField3 = new javax.swing.JTextField();
+    private final JTextField jTextField3 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField4 = new javax.swing.JTextField();
+    private final JTextField jTextField4 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final JTextField jTextField5 = new javax.swing.JTextField();
+    private final JTextField jTextField5 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym do wprowadzania hasła
      */
-    private static final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
+    private final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
     /**
      * Atrybut będący polem tekstowym do wprowadzania hasła
      */
-    private static final JPasswordField jPasswordField2 = new javax.swing.JPasswordField();
+    private final JPasswordField jPasswordField2 = new javax.swing.JPasswordField();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * Lista odebranych danych
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne czy nie
+     * @param parent Okno macierzyste
      */
-    DialogEdytujKlienta(java.awt.Frame parent, boolean modal) {
+    DialogEdytujKlienta(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewClients");
+        this.klient = klient;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -60,8 +73,6 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
                 jTextField5.setText("");
                 jPasswordField1.setText("");
                 jPasswordField2.setText("");
-                Klient.panelData.clear();
-                EkranSerwer.panelData.clear();
                 dispose();
             }
         });
@@ -71,7 +82,7 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         jComboBox1.setModel(new DefaultComboBoxModel<>());
         jTextField1.setText("");
         jTextField2.setText("");
@@ -80,8 +91,6 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
         jTextField5.setText("");
         jPasswordField1.setText("");
         jPasswordField2.setText("");
-        Klient.panelData.clear();
-        EkranSerwer.panelData.clear();
     }
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
@@ -116,10 +125,10 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>());
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/5);
+        int size = ((panelData.size())/5);
         jComboBox1.setPreferredSize(new java.awt.Dimension(320, 25));
         for(int i=0; i<size; i++){
-            jComboBox1.addItem(EkranSerwer.panelData.get(counter)+". "+EkranSerwer.panelData.get(counter+1)+" "+EkranSerwer.panelData.get(counter+2));
+            jComboBox1.addItem(panelData.get(counter)+". "+panelData.get(counter+1)+" "+panelData.get(counter+2));
             if(size>1) counter+=5;
         }
         jLabel3.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
@@ -299,17 +308,18 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
         jTextField4.setText("");
         jTextField5.setText("");
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/5);
+        int size = ((panelData.size())/5);
         for(int i=0; i<size; i++){
             String userID = String.valueOf(jComboBox1.getSelectedItem()).substring(0,(String.valueOf(jComboBox1.getSelectedItem()).indexOf(".")));
-            boolean isfound = userID.equals(EkranSerwer.panelData.get(counter));
+            boolean isfound = userID.equals(panelData.get(counter));
             if(isfound){
-                Klient.polacz();
-                String nickname = Klient.downloadNickname(userID);
-                jTextField1.setText(EkranSerwer.panelData.get(counter+1));
-                jTextField2.setText(EkranSerwer.panelData.get(counter+2));
-                jTextField3.setText(EkranSerwer.panelData.get(counter+3));
-                jTextField4.setText(EkranSerwer.panelData.get(counter+4));
+                klient.polacz(klient);
+                String nickname = klient.downloadNickname(userID);
+                klient.zakonczPolaczenie();
+                jTextField1.setText(panelData.get(counter+1));
+                jTextField2.setText(panelData.get(counter+2));
+                jTextField3.setText(panelData.get(counter+3));
+                jTextField4.setText(panelData.get(counter+4));
                 jTextField5.setText(nickname);
                 break;
             }
@@ -341,14 +351,15 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
             jPasswordField1.setText("");
             jPasswordField2.setText("");
         } else {
-            if (!EkranUtworzKonto.walidacjaHasla(new String(jPasswordField1.getPassword()))) {
+            EkranUtworzKonto ekranUtworzKonto = new EkranUtworzKonto();
+            if (ekranUtworzKonto.walidacjaHasla(new String(jPasswordField1.getPassword()))) {
                 JOptionPane.showMessageDialog(this, "Wprowadzone hasło nie spełnia wymogów bezpieczeństwa!", "Błąd", JOptionPane.ERROR_MESSAGE);
                 jPasswordField1.setText("");
                 jPasswordField2.setText("");
-            } else if (!EkranUtworzKonto.walidacjaTelefonu(jTextField4.getText())) {
+            } else if (!ekranUtworzKonto.walidacjaTelefonu(jTextField4.getText())) {
                 JOptionPane.showMessageDialog(this, "Wprowadzony telefon jest nieprawidłowy!", "Błąd", JOptionPane.ERROR_MESSAGE);
                 jTextField4.setText("");
-            } else if (!EkranUtworzKonto.walidacjaEmail(jTextField3.getText())) {
+            } else if (ekranUtworzKonto.walidacjaEmail(jTextField3.getText())) {
                 JOptionPane.showMessageDialog(this, "Wprowadzony adres email jest nieprawidłowy!", "Błąd", JOptionPane.ERROR_MESSAGE);
                 jTextField3.setText("");
             } else {
@@ -358,18 +369,20 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
                 login = jTextField5.getText();
                 email = jTextField3.getText();
                 telefon = jTextField4.getText();
-                haslo = Klient.hashPassword(new String(jPasswordField1.getPassword()), "e5WX^6&dNg8K");
-                Klient.panelData.add(imie);
-                Klient.panelData.add(nazwisko);
-                Klient.panelData.add(email);
-                Klient.panelData.add(telefon);
-                Klient.panelData.add(login);
-                Klient.panelData.add(haslo);
-                Klient.panelData.add(userID);
-                Klient.polacz();
-                Klient.wysylajDane("EditClient");
-                if(EkranSerwer.message==null) EkranSerwer.message="Wystąpił nieoczekiwany błąd!";
-                JOptionPane.showMessageDialog(this, EkranSerwer.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                haslo = klient.hashPassword(new String(jPasswordField1.getPassword()), "e5WX^6&dNg8K");
+                klient.panelData.clear();
+                klient.panelData.add(imie);
+                klient.panelData.add(nazwisko);
+                klient.panelData.add(email);
+                klient.panelData.add(telefon);
+                klient.panelData.add(login);
+                klient.panelData.add(haslo);
+                klient.panelData.add(userID);
+                klient.polacz(klient);
+                String message = klient.wysylajDane("EditClient");
+                klient.zakonczPolaczenie();
+                if(message==null) message="Wystąpił nieoczekiwany błąd!";
+                JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                 clearComponents();
                 dispose();
             }

@@ -1,8 +1,8 @@
 package com.client;
-import com.server.EkranSerwer;
 import com.server.Logs;
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
 /**
  * Klasa zawierająca pola i metody służące do obsługi głównego okna logowania
  * @author Jakub Szczur
@@ -13,39 +13,50 @@ public class EkranLogowania extends javax.swing.JFrame {
     /**
      * Atrybut będący nazwą użytkownika
      */
-    protected static String loginUzytkownika;
+    protected String loginUzytkownika;
     /**
      * Atrybut będący hasłem użytkownika
      */
-    protected static String hasloUzytkownika;
+    protected String hasloUzytkownika;
     /**
      * Atrybut będący wiadomością
      */
-    public static String wiadomosc;
+    public String wiadomosc;
     /**
      * Atrybut będący rangą użytkownika
      */
-    protected static String ranga;
+    protected String ranga;
     /**
      * Atrybut będący polem tekstowym GUI służącym do wprowadzania hasła
      */
-    private static final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
+    private final JPasswordField jPasswordField1 = new javax.swing.JPasswordField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final JTextField jTextField1 = new javax.swing.JTextField();
+    private final JTextField jTextField1 = new javax.swing.JTextField();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * IP używane do połączenia z serwerem
+     */
+    public String IP;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
      */
-    public EkranLogowania() {
+    public EkranLogowania(String IP) {
+        this.IP = IP;
+        this.klient = new Klient(this.IP);
         setVisible(true);
         initComponents();
         this.setLocationRelativeTo(null);
     }
     /**
      * Metoda obsługująca powstałe wyjątki
+     * @param ex Otrzymany wyjątek
      */
-    private static void catchService(Exception ex){
+    private void catchService(Exception ex){
         if(ex.getMessage()==null) { JOptionPane.showMessageDialog(null, "Unexpected event", "Informacja", JOptionPane.INFORMATION_MESSAGE);}
         else JOptionPane.showMessageDialog(null, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
         new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranLogowania", "error");
@@ -229,10 +240,12 @@ public class EkranLogowania extends javax.swing.JFrame {
         }
         else {
             loginUzytkownika = jTextField1.getText();
-            hasloUzytkownika = Klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K");
+            hasloUzytkownika = klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K");
             try {
-                Klient.polacz();
-                Klient.zaloguj();
+                klient.polacz(klient);
+                java.util.List<String> listaDanych = new LinkedList<>(klient.zaloguj(loginUzytkownika, hasloUzytkownika));
+                wiadomosc = listaDanych.get(0);
+                ranga = listaDanych.get(1);
                 if(wiadomosc.equals("")) {
                     wiadomosc = "Wystąpił nieoczekiwany błąd!";
                 }
@@ -241,20 +254,20 @@ public class EkranLogowania extends javax.swing.JFrame {
                     jTextField1.setText("");
                     jPasswordField1.setText("");
                     if (wiadomosc.equals("Pomyślnie zalogowano!")) {
-                        EkranSerwer.jTextArea1.setText(EkranSerwer.jTextArea1.getText() + "\n" + ranga);
                         if (ranga.equals("user")) {
                             dispose();
-                            new EkranGlownyUzytkownik();
+                            new EkranGlownyUzytkownik(loginUzytkownika, klient);
                         } else if (ranga.equals("admin")) {
                             dispose();
-                            new EkranGlownyAdmin();
+                            new EkranGlownyAdmin(loginUzytkownika, klient);
                         } else {
-                            EkranSerwer.jTextArea1.setText(EkranSerwer.jTextArea1.getText() + "\n" + "Użytkownik nie zalogowany");
+                            JOptionPane.showMessageDialog(this, "Nie udana próba logowania!", "Informacja", JOptionPane.INFORMATION_MESSAGE);
                         }
                         wiadomosc = "";
                         ranga = "";
                     }
                 }
+                klient.zakonczPolaczenie();
             }
             catch(Exception ex){
                 catchService(ex);
@@ -267,7 +280,7 @@ public class EkranLogowania extends javax.swing.JFrame {
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         dispose();
-        new EkranUtworzKonto("guest");
+        new EkranUtworzKonto("guest",klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku Nie pamiętasz hasła?
@@ -275,20 +288,20 @@ public class EkranLogowania extends javax.swing.JFrame {
      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt){
         dispose();
-        new EkranPrzywrocHaslo();
+        new EkranPrzywrocHaslo(klient);
     }
     /**
      * Metoda obsługująca kliknięcie przycisku zębatki
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
-        new DialogUstawieniaSerwera(this, true);
+        new DialogUstawieniaSerwera(this, true, klient);
     }
     /**
      * Metoda pozwalająca na uruchomienie ekranu logowania
      * @param args Argumenty przyjmowane podczas uruchamiania aplikacji
      */
     public static void main(String[] args) {
-        new EkranLogowania();
+        new EkranLogowania("localhost");
     }
 }

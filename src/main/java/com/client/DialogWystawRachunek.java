@@ -1,7 +1,8 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -12,36 +13,47 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
+    private final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final javax.swing.JTextField jTextField2 = new javax.swing.JTextField();
+    private final javax.swing.JTextField jTextField2 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private static final javax.swing.JTextField jTextField3 = new javax.swing.JTextField();
+    private final javax.swing.JTextField jTextField3 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem liczbowym
      */
-    private static final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
+    private final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
     /**
      * Atrybut będący listą wyboru
      */
-    private static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    private final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * Lista zawierająca dane
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogWystawRachunek(java.awt.Frame parent, boolean modal) {
+    DialogWystawRachunek(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewClients");
+        this.klient = klient;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
-                Klient.panelData.clear();
-                EkranSerwer.panelData.clear();
                 dispose();
             }
         });
@@ -51,14 +63,12 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         jComboBox1.setModel(new DefaultComboBoxModel<>());
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText("");
         jSpinner1.setValue(1);
-        Klient.panelData.clear();
-        EkranSerwer.panelData.clear();
     }
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
@@ -88,12 +98,12 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
         jLabel2.setText("Wybierz klienta");
 
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/5);
+        int size = ((panelData.size())/5);
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>());
         jComboBox1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
         jComboBox1.setPreferredSize(new java.awt.Dimension(72, 25));
         for(int i=0; i<size; i++){
-            jComboBox1.addItem(EkranSerwer.panelData.get(counter)+". "+EkranSerwer.panelData.get(counter+1)+" "+EkranSerwer.panelData.get(counter+2));
+            jComboBox1.addItem(panelData.get(counter)+". "+panelData.get(counter+1)+" "+panelData.get(counter+2));
             if(size>1) counter+=5;
         }
         jLabel3.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 15));
@@ -222,8 +232,6 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        Klient.panelData.clear();
-        EkranSerwer.panelData.clear();
         pack();
     }
     /**
@@ -247,16 +255,17 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
                     }
                     else{
                         String userID = (String.valueOf(jComboBox1.getSelectedItem())).substring(0,(String.valueOf(jComboBox1.getSelectedItem()).indexOf(".")));
-                        Klient.panelData.add(userID);
-                        Klient.panelData.add(jTextField1.getText());
-                        Klient.panelData.add(jTextField2.getText());
-                        Klient.panelData.add(jTextField3.getText());
+                        klient.panelData.clear();
+                        klient.panelData.add(userID);
+                        klient.panelData.add(jTextField1.getText());
+                        klient.panelData.add(jTextField2.getText());
+                        klient.panelData.add(jTextField3.getText());
                         int cost = (Integer)jSpinner1.getValue();
-                        Klient.panelData.add(Integer.toString(cost));
-                        Klient.polacz();
-                        Klient.wysylajDane("NewBill");
-                        if(EkranSerwer.message==null) EkranSerwer.message="Wystąpił nieoczekiwany błąd!";
-                        JOptionPane.showMessageDialog(this, EkranSerwer.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                        klient.panelData.add(Integer.toString(cost));
+                        klient.polacz(klient);
+                        String message = klient.wysylajDane("NewBill");
+                        if(message==null) message="Wystąpił nieoczekiwany błąd!";
+                        JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                         clearComponents();
                         dispose();
                     }

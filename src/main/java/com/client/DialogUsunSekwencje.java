@@ -1,6 +1,7 @@
 package com.client;
+import javax.swing.*;
 import java.awt.*;
-import javax.swing.JOptionPane;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -11,12 +12,20 @@ public class DialogUsunSekwencje extends javax.swing.JDialog {
     /**
      * Atrybut będący listą wyboru
      */
-    private static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    private final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    /**
+     * Instancja klasy klient
+     */
+    private final Klient klient;
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogUsunSekwencje(java.awt.Frame parent, boolean modal) {
+    DialogUsunSekwencje(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
+        this.klient = klient;
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -123,11 +132,12 @@ public class DialogUsunSekwencje extends javax.swing.JDialog {
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         String sequence = String.valueOf(jComboBox1.getSelectedItem());
-        int reply = Klient.dialogTakNie("Spowoduje to usunięcie sekwencji "+sequence+"\nCzy kontynuować?");
+        int reply = klient.dialogTakNie("Spowoduje to usunięcie sekwencji "+sequence+"\nCzy kontynuować?");
         if (reply == JOptionPane.YES_OPTION) {
-            Klient.polacz();
-            Klient.zarzadzaj(sequence);
-            JOptionPane.showMessageDialog(this, EkranGlownyAdmin.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+            klient.polacz(klient);
+            String message = klient.zarzadzaj(sequence);
+            klient.zakonczPolaczenie();
+            JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         }
     }

@@ -1,7 +1,8 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -12,20 +13,31 @@ public class DialogUsunDVD extends javax.swing.JDialog {
     /**
      * Atrybut będący listą w postaci graficznej
      */
-    private static final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    private final javax.swing.JList<String> jList1 = new javax.swing.JList<>();
+    /**
+     * Instancja klasy Klient
+     */
+    private final Klient klient;
+    /**
+     * Lista odebranych danych
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogUsunDVD(java.awt.Frame parent, boolean modal) {
+    DialogUsunDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("ReviewDVDCollection");
+        this.klient = klient;
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("ReviewDVDCollection",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
-                EkranSerwer.panelData.clear();
-                Klient.panelData.clear();
                 DefaultListModel<String> newListModel = new DefaultListModel<>();
                 jList1.setModel(newListModel);
                 dispose();
@@ -37,11 +49,9 @@ public class DialogUsunDVD extends javax.swing.JDialog {
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private static void clearComponents(){
+    private void clearComponents(){
         DefaultListModel<String> newListModel = new DefaultListModel<>();
         jList1.setModel(newListModel);
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
     }
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
@@ -64,10 +74,10 @@ public class DialogUsunDVD extends javax.swing.JDialog {
         jLabel1.setText("Usuń DVD");
 
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/10);
+        int size = ((panelData.size())/10);
         DefaultListModel<String> defaultListModel = new DefaultListModel<>();
         for(int i=0; i<size; i++){
-            defaultListModel.addElement(EkranSerwer.panelData.get(counter)+". "+EkranSerwer.panelData.get(counter+1));
+            defaultListModel.addElement(panelData.get(counter)+". "+panelData.get(counter+1));
             if(size>1) counter+=10;
         }
         jList1.setModel(defaultListModel);
@@ -138,8 +148,6 @@ public class DialogUsunDVD extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        EkranSerwer.panelData.clear();
-        Klient.panelData.clear();
         pack();
     }
     /**
@@ -147,11 +155,13 @@ public class DialogUsunDVD extends javax.swing.JDialog {
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        Klient.panelData.add(jList1.getSelectedValue().substring(0,(jList1.getSelectedValue()).indexOf(".")));
-        Klient.polacz();
-        Klient.wysylajDane("DeleteDVD");
-        if(EkranSerwer.message==null) EkranSerwer.message = "Wystąpił nieoczekiwany błąd!";
-        JOptionPane.showMessageDialog(this, EkranSerwer.message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        klient.panelData.clear();
+        klient.panelData.add(jList1.getSelectedValue().substring(0,(jList1.getSelectedValue()).indexOf(".")));
+        klient.polacz(klient);
+        String message = klient.wysylajDane("DeleteDVD");
+        klient.zakonczPolaczenie();
+        if(message==null) message = "Wystąpił nieoczekiwany błąd!";
+        JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
         clearComponents();
         dispose();
     }

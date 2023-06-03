@@ -1,11 +1,12 @@
 package com.client;
-import com.server.EkranSerwer;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.*;
 import java.awt.*;
+import java.util.LinkedList;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
  * @author Jakub Szczur
@@ -16,28 +17,35 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
     /**
      * Atrybut będący polem tekstowym
      */
-    private static final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
+    private final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący tabelą
      */
-    private static final javax.swing.JTable jTable1 = new javax.swing.JTable();
+    private final javax.swing.JTable jTable1 = new javax.swing.JTable();
     /**
      * Atrybut będący sorterem tabeli
      */
-    private static TableRowSorter<TableModel> rowSorter;
+    private TableRowSorter<TableModel> rowSorter;
+    /**
+     * Lista odebranych danych
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     * @param klient Instancja klasy klient
+     * @param modal Określa czy okno jest modalne, czy nie
+     * @param parent Okno macierzyste
      */
-    DialogStanMagazynowyDVD(java.awt.Frame parent, boolean modal) {
+    DialogStanMagazynowyDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        Klient.polacz();
-        Klient.otrzymujDane("DVDWareHouseAvalaible");
+        klient.polacz(klient);
+        panelData.addAll(klient.otrzymujDane("DVDWareHouseAvalaible",""));
+        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
                 dispose();
-                EkranSerwer.panelData.clear();
             }
         });
         this.setLocationRelativeTo(null);
@@ -67,7 +75,7 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
         jTextField1.setDisabledTextColor(Color.lightGray);
         jTextField1.setMaximumSize(jTextField1.getPreferredSize());
         int counter = 0;
-        int size = ((EkranSerwer.panelData.size())/2);
+        int size = ((panelData.size())/2);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -78,7 +86,7 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
         ));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         for(int i=0; i<size; i++){
-            model.addRow(new Object[]{EkranSerwer.panelData.get(counter), EkranSerwer.panelData.get(counter+1)});
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1)});
             if(size>1) counter+=2;
         }
         jTable1.setBorder(new LineBorder(Color.BLACK));
@@ -182,7 +190,6 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        EkranSerwer.panelData.clear();
         pack();
     }
     /**
@@ -193,7 +200,6 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
         dispose();
         jTable1.setRowSorter(null);
         rowSorter = null;
-        EkranSerwer.panelData.clear();
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
         model.setColumnCount(0);
