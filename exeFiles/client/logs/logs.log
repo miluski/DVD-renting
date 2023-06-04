@@ -9,61 +9,19 @@
 [ERROR] Klient: [ Sun Apr 16 22:16:01 CEST 2023 ] Connection refused: connect
 [ERROR] Klient: [ Sun Apr 16 22:16:02 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
 [ERROR] EkranLogowania: [ Sun Apr 16 22:16:02 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Sun Apr 16 22:30:29 CEST 2023 ] null
-[ERROR] Klient: [ Sun Apr 16 22:30:29 CEST 2023 ] Connection refused: connect
-[ERROR] Klient: [ Sun Apr 16 22:30:30 CEST 2023 ] Connection reset by peer
-[ERROR] Klient: [ Sun Apr 16 22:31:04 CEST 2023 ] null
-[ERROR] Klient: [ Sun Apr 16 22:31:04 CEST 2023 ] Connection refused: connect
-[ERROR] Klient: [ Sun Apr 16 22:31:05 CEST 2023 ] Connection reset by peer
-[ERROR] Klient: [ Mon Apr 17 09:29:38 CEST 2023 ] null
-[ERROR] Klient: [ Mon Apr 17 09:29:38 CEST 2023 ] Connection refused: connect
-[ERROR] Klient: [ Mon Apr 17 09:29:38 CEST 2023 ] Connection reset by peer
-[ERROR] Klient: [ Mon Apr 17 09:29:53 CEST 2023 ] null
-[ERROR] Klient: [ Mon Apr 17 09:29:53 CEST 2023 ] Connection refused: connect
-[ERROR] Klient: [ Mon Apr 17 09:29:54 CEST 2023 ] Connection reset by peer
-[ERROR] Klient: [ Mon Apr 17 09:30:00 CEST 2023 ] null
-[ERROR] Klient: [ Mon Apr 17 09:30:00 CEST 2023 ] Connection refused: connect
-[ERROR] Klient: [ Mon Apr 17 09:30:00 CEST 2023 ] Connection reset by peer
-[ERROR] EkranGlownyAdmin: [ Mon Apr 17 09:30:01 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranGlownyAdmin.message" is null
-[ERROR] Klient: [ Mon Apr 17 09:30:07 CEST 2023 ] null
-[ERROR] Klient: [ Mon Apr 17 09:30:07 CEST 2023 ] Connection refused: connect
-[ERROR] Klient: [ Mon Apr 17 09:30:07 CEST 2023 ] Socket closed
-[ERROR] Klient: [ Mon Apr 17 23:09:56 CEST 2023 ] null
-[ERROR] Klient: [ Mon Apr 17 23:09:57 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
-[ERROR] EkranLogowania: [ Mon Apr 17 23:09:57 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Mon Apr 17 23:10:10 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Mon Apr 17 23:10:11 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Mon Apr 17 23:10:15 CEST 2023 ] Connection timed out: connect
-[ERROR] Klient: [ Mon Apr 17 23:11:49 CEST 2023 ] null
-[ERROR] Klient: [ Mon Apr 17 23:11:49 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Mon Apr 17 23:11:50 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Mon Apr 17 23:12:14 CEST 2023 ] Connection timed out: connect
-[ERROR] Klient: [ Mon Apr 17 23:16:34 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Mon Apr 17 23:16:35 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Mon Apr 17 23:17:12 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Mon Apr 17 23:17:13 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Mon Apr 17 23:19:50 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Mon Apr 17 23:19:50 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Mon Apr 17 23:28:42 CEST 2023 ] null
-[ERROR] Klient: [ Mon Apr 17 23:28:42 CEST 2023 ] Connection refused: connect
-[ERROR] Klient: [ Mon Apr 17 23:28:43 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
-[ERROR] EkranLogowania: [ Mon Apr 17 23:28:44 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Tue Apr 18 00:00:50 CEST 2023 ] null
-[ERROR] Klient: [ Tue Apr 18 00:00:50 CEST 2023 ] Connection reset by peer
-[ERROR] Klient: [ Tue Apr 18 00:00:58 CEST 2023 ] null
-[ERROR] Klient: [ Tue Apr 18 00:00:58 CEST 2023 ] Connection reset by peer
 [ERROR] Klient: [ Mon Apr 17 14:30:06 CEST 2023 ] null
 [ERROR] EkranLogowania: [ Mon Apr 17 14:30:07 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
 [ERROR] Klient: [ Mon Apr 17 23:10:34 CEST 2023 ] null
 [ERROR] EkranLogowania: [ Mon Apr 17 23:10:35 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Sat May 06 18:39:14 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Sat May 06 18:39:15 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Sat May 06 18:39:20 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Sat May 06 18:39:21 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Sat May 06 18:40:19 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Sat May 06 18:40:20 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
-[ERROR] Klient: [ Sat May 06 18:41:04 CEST 2023 ] null
-[ERROR] EkranLogowania: [ Sat May 06 18:41:05 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
+[ERROR] Klient: [ Mon May 08 14:18:48 CEST 2023 ] Connection reset
+[ERROR] Klient: [ Mon May 08 14:18:51 CEST 2023 ] null
+[ERROR] Klient: [ Mon May 08 14:18:53 CEST 2023 ] Connection reset by peer
+[ERROR] Klient: [ Mon May 08 14:19:00 CEST 2023 ] null
+[ERROR] Klient: [ Mon May 08 14:36:54 CEST 2023 ] null
+[ERROR] Klient: [ Mon May 08 14:36:54 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Mon May 08 14:36:56 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "com.client.Klient.send" is null
+[ERROR] EkranLogowania: [ Mon May 08 14:36:57 CEST 2023 ] Cannot invoke "String.equals(Object)" because "com.client.EkranLogowania.wiadomosc" is null
+[INFO] DialogEdytujDVD: [ Mon May 08 14:38:05 CEST 2023 ] Pomyślnie edytowano wybrane DVD!
 [INFO] DialogEdytujDVD: [ Mon May 08 23:27:35 CEST 2023 ] Pomyślnie edytowano wybrane DVD!
 [ERROR] Klient: [ Mon May 08 23:32:00 CEST 2023 ] null
 [ERROR] Klient: [ Mon May 08 23:32:00 CEST 2023 ] Connection refused: connect

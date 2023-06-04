@@ -36,7 +36,7 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogStanMagazynowyDVD(Frame parent, boolean modal, Klient klient) {
+    public DialogStanMagazynowyDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         klient.polacz(klient);
         panelData.addAll(klient.otrzymujDane("DVDWareHouseAvalaible",""));

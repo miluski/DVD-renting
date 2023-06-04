@@ -53,7 +53,7 @@ public class EkranPrzywrocHaslo extends javax.swing.JFrame {
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
      */
-    EkranPrzywrocHaslo(Klient klient) {
+    public EkranPrzywrocHaslo(Klient klient) {
         this.klient = klient;
         setVisible(true);
         initComponents();

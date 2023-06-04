@@ -3393,6 +3393,18 @@
 [INFO] EkranSerwer: [ Sat May 06 17:31:21 CEST 2023 ] Thread called Thread-34 was deleted 
 [INFO] EkranSerwer: [ Sat May 06 17:31:21 CEST 2023 ] Thread called Thread-35 was deleted 
 [INFO] EkranSerwer: [ Sat May 06 17:31:21 CEST 2023 ] Server shutdown
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[ERROR] EkranPrzywrocHaslo: [ Wed May 31 08:32:17 CEST 2023 ] For input string: "12three"
+[ERROR] BazaDanych: [ Wed May 31 08:32:17 CEST 2023 ] Test exception
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
+[ERROR] LogsTest: Error message
+[INFO] LogsTest: Info message
+[ERROR] EkranPrzywrocHaslo: [ Wed May 31 08:46:52 CEST 2023 ] For input string: "12three"
+[ERROR] BazaDanych: [ Wed May 31 08:46:52 CEST 2023 ] Test exception
+[WARN] LogsTest: Warning message
+[FATAL] LogsTest: Fatal message
 [INFO] EkranSerwer: [ Fri Jun 02 14:14:51 CEST 2023 ] Server running
 [INFO] EkranSerwer: [ Fri Jun 02 14:15:10 CEST 2023 ] Server running
 [INFO] EkranSerwer: [ Fri Jun 02 14:16:02 CEST 2023 ] Server running
@@ -6305,3 +6317,1572 @@
 [INFO] EkranSerwer: [ Sat Jun 03 14:21:29 CEST 2023 ] Thread called Thread-40 was deleted 
 [INFO] EkranSerwer: [ Sat Jun 03 14:21:29 CEST 2023 ] Thread called Thread-41 was deleted 
 [INFO] EkranSerwer: [ Sat Jun 03 14:21:29 CEST 2023 ] Server shutdown
+[ERROR] EkranPrzywrocHaslo: [ Sat Jun 03 18:56:52 CEST 2023 ] For input string: "abc123"
+[ERROR] EkranPrzywrocHaslo: [ Sat Jun 03 18:58:47 CEST 2023 ] For input string: "abc123"
+[ERROR] EkranPrzywrocHaslo: [ Sat Jun 03 18:59:10 CEST 2023 ] For input string: "abc123"
+[ERROR] EkranPrzywrocHaslo: [ Sat Jun 03 19:08:34 CEST 2023 ] For input string: "abc123"
+[ERROR] EkranPrzywrocHaslo: [ Sat Jun 03 19:09:18 CEST 2023 ] For input string: "abc123"
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:27:13 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:27:16 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 09:27:17 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:27:48 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:27:50 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 09:27:52 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:30:15 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:30:22 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 09:30:23 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:31:01 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:31:18 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 09:31:18 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:32:09 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:32:11 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 09:32:11 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:32:50 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:32:52 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 09:32:53 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:37:25 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:37:32 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 09:37:32 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 09:37:32 CEST 2023 ] Connection refused: connect
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:39:17 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:39:19 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 09:39:22 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 09:41:24 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 09:41:27 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 09:41:27 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:02:10 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:02:12 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:02:13 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:04:01 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:04:06 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 10:04:11 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:06:19 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:06:21 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:06:21 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:07:54 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:07:56 CEST 2023 ] Connection refused: connect
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:08:37 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:08:40 CEST 2023 ] Connection refused: connect
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:09:30 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:09:32 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:09:32 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:13:23 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:13:31 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 10:13:33 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:15:37 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:15:38 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:15:39 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:20:11 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:20:13 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:20:13 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 10:20:14 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:20:15 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:29:01 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:29:06 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 10:29:14 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[INFO] EkranSerwer: [ Sun Jun 04 10:33:38 CEST 2023 ] Server running
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:33:59 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:34:00 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 10:34:01 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:34:01 CEST 2023 ] Unexpected event
+[FATAL] BazaDanych: [ Sun Jun 04 10:34:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=bQksqgzxS9uBT/xzt3YxzQ==)
+[ERROR] Klient: [ Sun Jun 04 10:34:02 CEST 2023 ] null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:34:07 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:34:08 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:34:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=K2u9qnTzSwmRNBnvHCsIuw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:34:24 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:34:25 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:34:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Rt4NMxwtROu0eSRs6+JJGg==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:35:25 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:35:29 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 10:35:29 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:35:38 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:35:39 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:35:40 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:36:10 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 10:36:12 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 10:36:13 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[INFO] EkranSerwer: [ Sun Jun 04 10:36:35 CEST 2023 ] Server running
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:36:48 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:36:49 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:36:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=nnIREhJZR7++MCxY+44abw==)
+[FATAL] BazaDanych: [ Sun Jun 04 10:37:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=0UyZ4I4sRsau1RLu64aD5A==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:37:03 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 10:37:03 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 10:47:00 CEST 2023 ] Server running
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:47:14 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:47:15 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:47:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Y87qzriaQBarpWXFX0e4Sw==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:50:35 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:50:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=r2sLAh9/T+WcwiRFCu3wXQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:50:35 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:50:36 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:50:36 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ziWH9sRJRIauKrpBiSn7xA==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:53:17 CEST 2023 ] New thread called Thread-4 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:53:17 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=DFX78ejCT86LoVGChNkWpg==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:53:17 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:53:18 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 10:53:18 CEST 2023 ] New thread called Thread-6 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:53:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SXYYvxGxQpGP5tq7jz4W0A==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:53:19 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:53:49 CEST 2023 ] New thread called Thread-7 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:53:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Wnkc6X0ZTS+AJUvmXSuNlA==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:53:49 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:53:52 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:53:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=u6D15p/lTbmpv+ftpWpQ/w==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:53:52 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:53:52 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 10:53:58 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:53:58 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:53:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=X1Sy4QpBQ5yo3veZZ/o45A==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:54:00 CEST 2023 ] New thread called Thread-10 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:54:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eqj7MrwzQwKxooZSsIQniA==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:54:26 CEST 2023 ] New thread called Thread-11 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:54:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=kHFq6BaESdqG07ki67aF8w==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:54:27 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:54:27 CEST 2023 ] New thread called Thread-12 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:54:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=I5D7M1YTQlu7PczVzQ5Q6w==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:54:28 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:54:28 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 10:54:29 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:54:29 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:54:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SqKZQiRnQAib9qrr/g6KnQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:54:31 CEST 2023 ] New thread called Thread-14 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:54:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Cx+UEsjYTbOZxFZfFjb5Fw==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:27 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:27 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=HRHyufm7QxOar6SciB/z7Q==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:55:27 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:28 CEST 2023 ] New thread called Thread-16 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=RfLB0adtQDGUVumfqNopVQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:55:28 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:55:28 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 10:55:29 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:29 CEST 2023 ] New thread called Thread-17 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=v/ZbUerWTZSj/rkX3PNcLA==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:30 CEST 2023 ] New thread called Thread-18 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:30 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=sw53985rRmu8Wz/3aHGFYw==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:47 CEST 2023 ] New thread called Thread-19 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:47 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=MjsB7WFcT9CIrnsmUAmVNw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:55:47 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:48 CEST 2023 ] New thread called Thread-20 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=PMnzlnF8RC+dh+eN+tvo2g==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:55:48 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:55:48 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 10:55:51 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:51 CEST 2023 ] New thread called Thread-21 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=c77o/lSqQVSGxxLAP90ZAA==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:55:56 CEST 2023 ] New thread called Thread-22 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:55:56 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=v4oGWby2TTGdxPZf3+v7WQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:14 CEST 2023 ] New thread called Thread-23 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:14 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=fj3CwVy+QdCwVBZk8t1cIw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:56:15 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:16 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=keL6FtgAR/+hr0b/g0yTFw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:56:16 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:56:16 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 10:56:17 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:17 CEST 2023 ] New thread called Thread-25 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:17 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=HxgGWrcHSlqwHMBKnMzFgw==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:18 CEST 2023 ] New thread called Thread-26 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=siGqUy8hRdSB/OmDdQ3Sxw==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:41 CEST 2023 ] New thread called Thread-27 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=LjziJp/gRvyWYcIhHzP4Nw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:56:41 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:42 CEST 2023 ] New thread called Thread-28 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:42 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cYKl5XLhSuuiRFsDmrTpLQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:56:42 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:56:42 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 10:56:43 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:43 CEST 2023 ] New thread called Thread-29 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1LH01yeTSnS5ur3HTZrv7g==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:56:45 CEST 2023 ] New thread called Thread-30 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:56:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Zz52oWMjTdia9ed5p1CIFw==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:58:20 CEST 2023 ] New thread called Thread-31 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:58:20 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NMMR0K64TcaQFNAO50IMBA==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 10:58:20 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 10:58:21 CEST 2023 ] New thread called Thread-32 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:58:21 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1S/MU0N/QSmL0DXCFTWwCA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 10:58:21 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 10:58:21 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 10:58:23 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 10:58:23 CEST 2023 ] New thread called Thread-33 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:58:23 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=k01mjbqWSWeSAZFvJ0Pz1A==)
+[INFO] EkranSerwer: [ Sun Jun 04 10:58:26 CEST 2023 ] New thread called Thread-34 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 10:58:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ZKp5OFsfQnyoGU58ygaTqQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:00:52 CEST 2023 ] New thread called Thread-35 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:00:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=OY91ptoVT92bjFcFits2nQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:00:52 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:00:52 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:00:55 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:00:55 CEST 2023 ] New thread called Thread-36 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:00:55 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=XoctWatwRaSuP3/GZL/Yyw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:00:57 CEST 2023 ] New thread called Thread-37 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:00:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=8ccy0RxvT4SSb0i7TL/Qug==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:00:57 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:00:58 CEST 2023 ] New thread called Thread-38 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:00:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=+1HifSR+RdeEyyfVx/xxMg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:00:58 CEST 2023 ] New thread called Thread-39 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:00:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=mYmhzSQfRjOqJ66y9TJqWg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:00:58 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:00:58 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:00:59 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:00:59 CEST 2023 ] New thread called Thread-40 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:00:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=rNYeP5rqTQyvr8SuIq9Rdw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:04:41 CEST 2023 ] New thread called Thread-41 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:04:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Kq6rdKC6SeiPbhpg5lSgUA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:04:41 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:04:41 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:04:44 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:04:44 CEST 2023 ] New thread called Thread-42 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:04:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1Q6wbw9dSAqMemmoaMHgoA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:04:44 CEST 2023 ] New thread called Thread-43 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:04:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=T5auxWNSQMuYHZkjU+UxhA==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:04:46 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:04:46 CEST 2023 ] New thread called Thread-44 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:04:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=W3MmgthrQ+Gvswv3AHVo6A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:04:46 CEST 2023 ] New thread called Thread-45 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:04:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=wtQdDJT2R1as+ZSUMpXvMw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:04:46 CEST 2023 ] New thread called Thread-46 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:04:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Xsk9S6p8RK+M9kpDCdY4vQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:04:46 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:04:46 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:04:47 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:04:47 CEST 2023 ] New thread called Thread-47 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:04:47 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3evWf2MdTl25DsCgelWP2w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:05:16 CEST 2023 ] New thread called Thread-48 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:05:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qPjUlxl9S1auKLBF6kjwdw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:05:16 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:05:16 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:05:18 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:05:18 CEST 2023 ] New thread called Thread-49 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:05:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=dDwieh7vS8OgTS0lJAA61w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:05:20 CEST 2023 ] New thread called Thread-50 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:05:20 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=yu45hlbaSGu2yx6sGoFzxw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:05:20 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:05:21 CEST 2023 ] New thread called Thread-51 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:05:21 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=O9jck/jOQU27RpoM1O+L3g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:05:22 CEST 2023 ] New thread called Thread-52 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:05:22 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=h8OAoEqlSPWU3czzUzabAw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:05:22 CEST 2023 ] New thread called Thread-53 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:05:22 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=A9Xh+G72RI+YvsdT8dhL4Q==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:05:22 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:05:22 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:05:23 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:05:23 CEST 2023 ] New thread called Thread-54 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:05:23 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=xQU2H9PKRsOFx5EHOTkXcg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:44 CEST 2023 ] New thread called Thread-55 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4zCISdkpReOIxzVQ7Y65JA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:06:44 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:06:44 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:06:46 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:46 CEST 2023 ] New thread called Thread-56 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3uUpqoEKQIGgFe+XXk14/A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:49 CEST 2023 ] New thread called Thread-57 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ouE7yfUNTM6Suyn0w/azBQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:06:49 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:49 CEST 2023 ] New thread called Thread-58 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=wP1qvXYHRFGeLW2Z+94hOw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:50 CEST 2023 ] New thread called Thread-59 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=wVFhlUgnS7Wm1YBpLb8jBQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:50 CEST 2023 ] New thread called Thread-60 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3kjPTa02QjSEF+o7TfopzA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:06:50 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:06:50 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:06:51 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:51 CEST 2023 ] New thread called Thread-61 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:51 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=LUpYhRQdQB+VEcwUQvOfwQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:06:52 CEST 2023 ] New thread called Thread-62 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:06:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eTbzjnTgQJq3YbjEsiOZ9Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:29 CEST 2023 ] New thread called Thread-63 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=tDha+LlCRyKe5RF4zXtw8A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:29 CEST 2023 ] New thread called Thread-64 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=y6ZfN4W1RqmNjYMisc2tOQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:14:29 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:14:29 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:14:30 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:30 CEST 2023 ] New thread called Thread-65 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:30 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BsnfEUSoTniIG9L+h3WgSw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:31 CEST 2023 ] New thread called Thread-66 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:31 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GqsLEeH2TF6Elul6PoNm7g==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:14:32 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:32 CEST 2023 ] New thread called Thread-67 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=2Gi5B/vZTbm+hkN1AMUw3A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:33 CEST 2023 ] New thread called Thread-68 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:33 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=OJOTY90GTsWa78HCKL0/+g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:33 CEST 2023 ] New thread called Thread-69 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:33 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Jga2ZjIEQZ64jOF37ULZNQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:33 CEST 2023 ] New thread called Thread-70 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:33 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=AYnpqrqOTVaQ5enRP1BV/A==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:14:33 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:14:33 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:14:35 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:35 CEST 2023 ] New thread called Thread-71 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=nfUwUlECTTGZpG31sDZ+Vw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:14:36 CEST 2023 ] New thread called Thread-72 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:14:36 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3vQOC8mxSc+z3C4dJlp21w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:23 CEST 2023 ] New thread called Thread-73 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:23 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=MsYgCUcuTZeCzqM7QzQ4yw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:23 CEST 2023 ] New thread called Thread-74 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:23 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=CsTNUc1YT2iS32nJni//3Q==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:18:23 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:18:23 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:18:26 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:26 CEST 2023 ] New thread called Thread-75 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=U0wFhYXeSwKezFN58cgc5g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:28 CEST 2023 ] New thread called Thread-76 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=q/wK3F4+Sc2d7YINGYKvBQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:28 CEST 2023 ] New thread called Thread-77 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=RKrdiG0wRA6OEI7XsJyEJg==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:18:28 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:28 CEST 2023 ] New thread called Thread-78 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=N6WtN1v5TjaPAfKBzjzCNA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:29 CEST 2023 ] New thread called Thread-79 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eMdhfrrkQ76KJsicgD0/qQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:29 CEST 2023 ] New thread called Thread-80 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=wzoPpzBjROuqxPIPhxpG9g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:29 CEST 2023 ] New thread called Thread-81 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GAfckCPPSaOLXzHFGTtvsA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:18:29 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:18:29 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:18:30 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:30 CEST 2023 ] New thread called Thread-82 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:30 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=u9aJWkPRReiVgTMpK6PDdw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:33 CEST 2023 ] New thread called Thread-83 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:33 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=zaSMv9QtRAWKogQlCQ6RHQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:18:33 CEST 2023 ] New thread called Thread-84 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:18:33 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=HmBatOJtQau04gcju9MMrg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:47 CEST 2023 ] New thread called Thread-85 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:47 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=5/RyEO+2SMOY1ti/yA2V6Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:48 CEST 2023 ] New thread called Thread-86 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=pWhz35KMSC+IYi5x5NqMGg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:24:48 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:24:48 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:24:49 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:49 CEST 2023 ] New thread called Thread-87 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Fm5AjByIQVijSslFmV0gDQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:50 CEST 2023 ] New thread called Thread-88 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Icp9exggS565LR280rMICA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:51 CEST 2023 ] New thread called Thread-89 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:51 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Jah+RKAbR02YjTgjG8+2WA==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:24:51 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:51 CEST 2023 ] New thread called Thread-90 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:51 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=JYRyHxGWT/iRd3wDH1j9dg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:52 CEST 2023 ] New thread called Thread-91 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=iWlEE+PoS6+/zoLw11G09Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:52 CEST 2023 ] New thread called Thread-92 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=DCHuTdJYR6GrirvyRGwiKQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:52 CEST 2023 ] New thread called Thread-93 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=hpBPhLyLR8evSLv07FeARg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:24:52 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:24:52 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:24:53 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:53 CEST 2023 ] New thread called Thread-94 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:53 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=g1KNoi9WS/Kd2U6L8y1y2g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:54 CEST 2023 ] New thread called Thread-95 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:54 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=VKbfKyzTQma1BxEWXrNcAg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:24:54 CEST 2023 ] New thread called Thread-96 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:24:54 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=88KCzyiqQiavCr3wYlt/YA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:21 CEST 2023 ] New thread called Thread-97 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:21 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=uC1IReZOQ3aDCcEVcnhUZQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:21 CEST 2023 ] New thread called Thread-98 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:21 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=tUEhT3wkRLqRUGixTkPyfQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:25:21 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:25:21 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:25:22 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:22 CEST 2023 ] New thread called Thread-99 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:22 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=c/TvEay3SzOcyPbQl98bUA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:24 CEST 2023 ] New thread called Thread-100 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Jcu1na/NReSS+fNLGza2OA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:25 CEST 2023 ] New thread called Thread-101 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=0cZEsg+4Sdiwwwsp87OsvQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:25:25 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:26 CEST 2023 ] New thread called Thread-102 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=lfbGc9JVRlup+X/kXe/9Pg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:26 CEST 2023 ] New thread called Thread-103 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IL1CiwcQT7iQHyptnwuACQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:26 CEST 2023 ] New thread called Thread-104 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=x19GfVorS8OqSuCgmpbMTA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:26 CEST 2023 ] New thread called Thread-105 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qx0oqAH7RsyrWGFbYrfU+A==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:25:26 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:25:26 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:25:27 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:27 CEST 2023 ] New thread called Thread-106 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:27 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IwRShE4IQFWYsx5aS5fGBQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:28 CEST 2023 ] New thread called Thread-107 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1J/fJ3M1QTmyTZzSgxEzuw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:25:29 CEST 2023 ] New thread called Thread-108 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:25:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=9s5RErdZTJeeR4KYgkQOVA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:20 CEST 2023 ] New thread called Thread-109 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:20 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=hHNwl6YcSc+88sjF6c1zCQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:20 CEST 2023 ] New thread called Thread-110 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:20 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ti4CDiEIS4KEIsQ9wRET3g==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:39:20 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:39:20 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:39:22 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:22 CEST 2023 ] New thread called Thread-111 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:22 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QGK5s3CtSqyFKaNaYShdOQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:23 CEST 2023 ] New thread called Thread-112 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:23 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=kkzE+L20QZGgPxgd1supkA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:24 CEST 2023 ] New thread called Thread-113 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=8LiOAIgQTW2Eqmx15Sestw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:39:24 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:24 CEST 2023 ] New thread called Thread-114 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=XwU2kf7ySEmBTK2w1EU+7Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:25 CEST 2023 ] New thread called Thread-115 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=F01c3TUNQCOcOxIm43yALQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:25 CEST 2023 ] New thread called Thread-116 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=bPjvGzLZQWqa2XAH/tNvNQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:25 CEST 2023 ] New thread called Thread-117 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=TxxfeF43Ra6J2asEwIycdg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:39:25 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:39:25 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:39:26 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:26 CEST 2023 ] New thread called Thread-118 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3G6uEd2ZT2unhahs/xaGGA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:27 CEST 2023 ] New thread called Thread-119 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:27 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=V773YSPhS6GEpcm6/nfLwA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:27 CEST 2023 ] New thread called Thread-120 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:27 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=8Vs9ZdEdTmO4sbPfMdkGgw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:27 CEST 2023 ] New thread called Thread-121 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:27 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=6gagomotRbS2/PWD0sq9wQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:55 CEST 2023 ] New thread called Thread-122 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:55 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=/Fd7OEUAQ4KRoe6Uf4SKfA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:56 CEST 2023 ] New thread called Thread-123 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:56 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=moyYHNwYSEyiX6PyJW01Mw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:39:56 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:39:56 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:39:57 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:58 CEST 2023 ] New thread called Thread-124 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=+mxRxaKzRnaXBxV9EJd2ww==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:59 CEST 2023 ] New thread called Thread-125 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=YTgksVXtQ/mCWMI53yFpaA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:39:59 CEST 2023 ] New thread called Thread-126 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:39:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qh52XsoQSYOw5Gz63slXrw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:39:59 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:00 CEST 2023 ] New thread called Thread-127 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IztF+P3jTVacCUUGGV1nDQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:00 CEST 2023 ] New thread called Thread-128 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=9+yzLKfFSm+plZsPfp12bA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:00 CEST 2023 ] New thread called Thread-129 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=oZVi0rz4QnmB6Db/fBSP8g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:00 CEST 2023 ] New thread called Thread-130 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Mr3STjL3TmeUnPvaoiFYTw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:40:00 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:40:00 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:40:01 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:01 CEST 2023 ] New thread called Thread-131 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=nMttVQApTTm8raBJEZ6uRw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:02 CEST 2023 ] New thread called Thread-132 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:02 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=G9dSLmf0QtCKe+ao5WPknA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:03 CEST 2023 ] New thread called Thread-133 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=46qCq89pTl6w+j3GgVaFdg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:03 CEST 2023 ] New thread called Thread-134 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=AL3BvpMKQzua2bPBh0qwAg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:22 CEST 2023 ] New thread called Thread-135 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:22 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=X4lrXG/hQISmLHPwzkAe9w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:22 CEST 2023 ] New thread called Thread-136 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:22 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ARiACIEeTxmr/AAbiGjfrQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:40:22 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:40:22 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:40:23 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:24 CEST 2023 ] New thread called Thread-137 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=G8vZCMHZTe+SdKERPJOu0w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:25 CEST 2023 ] New thread called Thread-138 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=6zjwcmS9RIqLLtFejOt/WA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:25 CEST 2023 ] New thread called Thread-139 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SN+9wUB7REWKs/w8KIF1Gg==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:40:25 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:26 CEST 2023 ] New thread called Thread-140 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4i4zTa/qR5aEv7VVMr7Dtw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:26 CEST 2023 ] New thread called Thread-141 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=lJA6uXSqRji+NNW49GTvJQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:26 CEST 2023 ] New thread called Thread-142 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NqdQIhffTnW0rYZTTrclFA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:26 CEST 2023 ] New thread called Thread-143 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=l3nuBjWxQxazV+gLykct1g==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:40:26 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:40:26 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:40:27 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:27 CEST 2023 ] New thread called Thread-144 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:27 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=WxMyOQ0iT4u/milW1p1eBw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:28 CEST 2023 ] New thread called Thread-145 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QcXN4+pIQTSE4ptg03OoeQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:28 CEST 2023 ] New thread called Thread-146 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SxFsGiE6RXajxqB/kxTL2w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:28 CEST 2023 ] New thread called Thread-147 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3jp+9VJ7SheBB98thWIC1A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:45 CEST 2023 ] New thread called Thread-148 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=OB5wJtcfQiKifoGLIbhKow==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:46 CEST 2023 ] New thread called Thread-149 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qcZ3sU1dRMKBHIFHHXhS6g==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:40:46 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:40:46 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:40:47 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:48 CEST 2023 ] New thread called Thread-150 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1f1SRn5RQzix/mMPC8vOnQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:49 CEST 2023 ] New thread called Thread-151 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=XyI5x9qORGey31sicMvAjQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:49 CEST 2023 ] New thread called Thread-152 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=nu/6ZcjRTxSmLRXw3xAPUw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:40:50 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:50 CEST 2023 ] New thread called Thread-153 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cYYM1neFRzWWzOKi/ioN0A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:50 CEST 2023 ] New thread called Thread-154 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qOqPQ/mJSWendz9r4Y8wJw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:50 CEST 2023 ] New thread called Thread-155 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=/7Uuo1MqQA+b0JVeLxDmFg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:51 CEST 2023 ] New thread called Thread-156 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:51 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=r3Y387goSX+5TMzNMse5Qw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:40:51 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:40:51 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:40:51 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:51 CEST 2023 ] New thread called Thread-157 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=c6kudIaDTA2pmCkfyk+rmg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:52 CEST 2023 ] New thread called Thread-158 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:53 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=bMdzXaoASe6bZF0Fgq9jfw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:53 CEST 2023 ] New thread called Thread-159 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:53 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=+UFOiSqsRsupxBxHqvTi2A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:40:53 CEST 2023 ] New thread called Thread-160 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:40:53 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IauZnAD7QYyeRbsMz7dbSw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:41:58 CEST 2023 ] New thread called Thread-161 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:41:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SidrWRR3T1ucovKAwNtYng==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:41:59 CEST 2023 ] New thread called Thread-162 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:41:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=DHpm3X9AQSSVoiiLmMl7iw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:41:59 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:41:59 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:42:01 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:01 CEST 2023 ] New thread called Thread-163 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=TkDrQHroRXWeBBiEw8ePkg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:02 CEST 2023 ] New thread called Thread-164 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:02 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=r2vgCKWzSauePy1Z/xX5IA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:02 CEST 2023 ] New thread called Thread-165 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=fzYhiiKDTPyVvZ7TTvcqEw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:42:03 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:03 CEST 2023 ] New thread called Thread-166 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=9evljGaIRZKtZrkojlW/1Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:03 CEST 2023 ] New thread called Thread-167 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=xfsAso0FRKKbQc8rPvw9Xg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:04 CEST 2023 ] New thread called Thread-168 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=onS4/Pt+Skq7Zrm3iJyqRA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:04 CEST 2023 ] New thread called Thread-169 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=uC1DLEoVRn2rQF04g5VoNA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:42:04 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:42:04 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:42:05 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:05 CEST 2023 ] New thread called Thread-170 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:05 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cCr0s8tmRbyexKJl9LJkwQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:06 CEST 2023 ] New thread called Thread-171 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=42+XlOLGQSSyEDpSqh/pRA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:06 CEST 2023 ] New thread called Thread-172 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qK//4EkJRuWQgLK0ZxOohQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:06 CEST 2023 ] New thread called Thread-173 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=JqAAvarQRe+BphujzlCuSg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:40 CEST 2023 ] New thread called Thread-174 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:40 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=D+J20UD8RwGE6nNxSu6A/g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:41 CEST 2023 ] New thread called Thread-175 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=CPAxUd1zSYivCoMwW8etJg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:42:41 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:42:41 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:42:43 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:43 CEST 2023 ] New thread called Thread-176 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4ezZx/aySkGQt9+/k79noQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:44 CEST 2023 ] New thread called Thread-177 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=7AHcPvvSRhuP3Rmxezp/rg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:44 CEST 2023 ] New thread called Thread-178 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=AWX+qUoxT+eiEksL9qH1gA==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:42:45 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:45 CEST 2023 ] New thread called Thread-179 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=i2U+dvtVSlmDIfbG8B+38Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:45 CEST 2023 ] New thread called Thread-180 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=JlToxDkRSfSIShaKh2jAHA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:46 CEST 2023 ] New thread called Thread-181 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=atxwx2/ISyW7fV+iP1rfNg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:46 CEST 2023 ] New thread called Thread-182 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IaiU1m/JRDGTIN5jgdagUQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:42:46 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:42:46 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:42:46 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:46 CEST 2023 ] New thread called Thread-183 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=KSsZB/isRv2SyE3Wfesesg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:48 CEST 2023 ] New thread called Thread-184 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=sNix0KCeQzuiEwpd9yaAxw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:48 CEST 2023 ] New thread called Thread-185 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=kUR1SfsRQre+NnTsjYkI3A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:42:48 CEST 2023 ] New thread called Thread-186 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:42:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1pWXbavCR5eNFXvxezc3XA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:43:27 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Jun 04 11:43:34 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:35 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:36 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:36 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:37 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:37 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:38 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:38 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:43:39 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 11:43:40 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:40 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:41 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:41 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:42 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:42 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:43 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:44 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:44 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:45 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:45 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:46 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 11:43:46 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 11:43:46 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[INFO] EkranSerwer: [ Sun Jun 04 11:43:57 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:07 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=xjklSvX4QS6Ko9DJvocC+w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:08 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QtLs/tgSQHaWsCXod+8PEQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:44:08 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:44:08 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:44:09 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:10 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:10 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=jLXTRjriTIyDPRTKvF0LrA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:11 CEST 2023 ] New thread called Thread-4 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:11 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4NR/ogGBTViMo8G/7jwt8A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:11 CEST 2023 ] New thread called Thread-5 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:11 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=RzaYEZc+Sgyk4cpW9tvubA==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:44:11 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:12 CEST 2023 ] New thread called Thread-6 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=L3Iu6QHLSnOgZTfcDJO3UQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:12 CEST 2023 ] New thread called Thread-7 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=pSLk4InASNmeTj4S9ZUhwA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:13 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=T5Y0uW39RraUeut3WMtM5A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:13 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Be+CY8vLSoS3ZGsKABKvFw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:44:13 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:44:13 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:44:13 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:13 CEST 2023 ] New thread called Thread-10 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GUmZLYWPQiK2AbFeT5y2YA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:14 CEST 2023 ] New thread called Thread-11 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:14 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=T2e2FrA1Q2mQS4SEDQUXbg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:14 CEST 2023 ] New thread called Thread-12 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:15 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=TrVVHJbyTpewojGxTAHlyg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:15 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:15 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=V46XbmCPTFmo3ka5I0N9ew==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:42 CEST 2023 ] New thread called Thread-14 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:42 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=a9hM7+teTt+Xmsl0KdyrvA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:42 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:42 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4NHAK+TRTUWszwSdD0r2pA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:44:42 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:44:42 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:44:43 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:43 CEST 2023 ] New thread called Thread-16 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=2g5KgbZnSeK41nU/mJ9vGg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:44 CEST 2023 ] New thread called Thread-17 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=yLz2aZRXQRCFa90Hn0/Kpg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:45 CEST 2023 ] New thread called Thread-18 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=wLKdRsUdTZ+GZ5C2SniLBQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:44:45 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:45 CEST 2023 ] New thread called Thread-19 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1d6zF75NRgGmbO8ONLTTZw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:46 CEST 2023 ] New thread called Thread-20 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=J6Eq2cVMTZmc5fFCLhBwhA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:46 CEST 2023 ] New thread called Thread-21 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=+PPat7qxQnyQkR1qs/krRQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:46 CEST 2023 ] New thread called Thread-22 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=tNpTInR/S3mSlvIsp6Hzog==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:44:46 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:44:46 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:44:47 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:47 CEST 2023 ] New thread called Thread-23 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:47 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=taJZ0fgMRzyEnFGr9pNsFw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:48 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=PQHFseYAT8GlfIpTGmWAEw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:48 CEST 2023 ] New thread called Thread-25 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Y/WIBiawSFOSOm1ak4FqWg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:44:48 CEST 2023 ] New thread called Thread-26 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:44:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=004YMDarTumrRJ6fZBEyWA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:11 CEST 2023 ] New thread called Thread-27 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:11 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3zIWW4deSHChDCaQ+mpYeg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:12 CEST 2023 ] New thread called Thread-28 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=0wpuXLzVRja+bIYKStjgJw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:45:12 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:45:12 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:45:13 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:13 CEST 2023 ] New thread called Thread-29 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GdHuWY/9R26v7tB6gThWlA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:14 CEST 2023 ] New thread called Thread-30 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:15 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=EqNfYyLJTxOkpxEl2oi9Qg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:15 CEST 2023 ] New thread called Thread-31 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:15 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=5OQxAW7VSyGdv0YmUedBeQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:45:15 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:16 CEST 2023 ] New thread called Thread-32 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=u7Y7AqMeRxmdHBIE4BhA6g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:16 CEST 2023 ] New thread called Thread-33 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=jNTxL51OT6mcPuX58sW96Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:16 CEST 2023 ] New thread called Thread-34 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eCUPVAdISICkXdnHaSo0zg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:16 CEST 2023 ] New thread called Thread-35 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=DO4R0pmJSOCC/APio6HRuQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:45:16 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:45:16 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:45:17 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:17 CEST 2023 ] New thread called Thread-36 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:17 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=d/epJX6TSNOKsvFM/NpOxA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:18 CEST 2023 ] New thread called Thread-37 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=fi7qvbvUS5G9UKJiuvz1Qw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:18 CEST 2023 ] New thread called Thread-38 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=mdU4BN5GS+OrzgyN+qfItA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:45:18 CEST 2023 ] New thread called Thread-39 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:45:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=0ge5kydcRjuWmtJnRWjQ7g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:47:57 CEST 2023 ] New thread called Thread-40 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:47:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=bYFObLwxRnGFuCeIqfHqYQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:47:57 CEST 2023 ] New thread called Thread-41 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:47:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=W74AOC0BR/qZB3OCbfW0tQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:47:57 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:47:57 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:47:58 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:47:59 CEST 2023 ] New thread called Thread-42 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:47:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eEd4sxDfR7KlmoMRzIVE0w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:02 CEST 2023 ] New thread called Thread-43 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:02 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NecqyrskTX6p5M9cmaoh0g==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:02 CEST 2023 ] New thread called Thread-44 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:02 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QKqzj9zBRfi3Q5wjqDaHwQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:48:02 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:03 CEST 2023 ] New thread called Thread-45 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=y7a9paVBRb+fo7i0vDGPaQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:03 CEST 2023 ] New thread called Thread-46 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=UMkfJiAWR1qZ8mPPH0c0RQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:03 CEST 2023 ] New thread called Thread-47 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=mjrmXyaAQluHDRWS8xLQAQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:03 CEST 2023 ] New thread called Thread-48 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=77QzT/MRSAKd1AzOu/K87g==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:48:03 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:48:03 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:48:05 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:05 CEST 2023 ] New thread called Thread-49 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:05 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=PHHtzNWJQ2ypzbeaAMXY0Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:08 CEST 2023 ] New thread called Thread-50 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4SnLLysyTquWGpeWZqxqjA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:08 CEST 2023 ] New thread called Thread-51 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Ft6xOXBRSUa9QHEPYhih8w==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:48:08 CEST 2023 ] New thread called Thread-52 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:48:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Csk91YFmTAOS+rSDsyKAAQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:45 CEST 2023 ] New thread called Thread-53 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BR3O5x3hTxu9835pef3vEw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:45 CEST 2023 ] New thread called Thread-54 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=04XnKTYaQ6WjVXf+6TjkXA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:51:45 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:51:45 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:51:47 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:47 CEST 2023 ] New thread called Thread-55 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GGQwGfXxTESQ1tSWTmcRxQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:49 CEST 2023 ] New thread called Thread-56 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Ss48p51SQ0ydtekfGN5Apg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:49 CEST 2023 ] New thread called Thread-57 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=P3WzRRa+RIK1xQjSB81hDw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:51:49 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:50 CEST 2023 ] New thread called Thread-58 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=iE+miPRSTWOTdmWjjTGO0Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:50 CEST 2023 ] New thread called Thread-59 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=c6EYktAaQr+QBRH7/Fk3Rg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:50 CEST 2023 ] New thread called Thread-60 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=P0A2yI2TRruZJ4Ciw/SrLA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:50 CEST 2023 ] New thread called Thread-61 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1b/TGd8FTPSKMVjjp3UPjg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:51:50 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:51:50 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:51:51 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:51 CEST 2023 ] New thread called Thread-62 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:51 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=jIPLR9IPTKyt3P+rSTT8Zg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:52 CEST 2023 ] New thread called Thread-63 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=9kCyWBxwSKuqBqHiHkLuEA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:52 CEST 2023 ] New thread called Thread-64 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QtXHXB7AQVyuUZu8MJ2NTg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:52 CEST 2023 ] New thread called Thread-65 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:52 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qOHii8ufSQ235sHkrUP1Ww==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:51:53 CEST 2023 ] New thread called Thread-66 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:51:53 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qDHO/8RDRAezFvArbMymeA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:06 CEST 2023 ] New thread called Thread-67 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=OW9mmmjfQauIrU1mp6c0gg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:06 CEST 2023 ] New thread called Thread-68 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cwl68ATpQGiOyWBQuIMqEw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:53:06 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:53:06 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:53:08 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:08 CEST 2023 ] New thread called Thread-69 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=8yRRhHQNTCePUbM2YtZ7Lw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:09 CEST 2023 ] New thread called Thread-70 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:09 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=yD90ntejSN29ttw5qp3nxg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:09 CEST 2023 ] New thread called Thread-71 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:09 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=sp3HJEZoR9WiKQo0zTxUig==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 11:53:10 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:10 CEST 2023 ] New thread called Thread-72 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:10 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=hSh+FPMtRzui6tSCHXsZJA==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:10 CEST 2023 ] New thread called Thread-73 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:10 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=nl947sSxSgGYePr8ANGU9A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:10 CEST 2023 ] New thread called Thread-74 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:10 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=S2W8K1u5Qf+ey81vqSpP0A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:11 CEST 2023 ] New thread called Thread-75 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:11 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=pgS2L4Y2Tw6cBhxt3imn+A==)
+[FATAL] EkranSerwer: [ Sun Jun 04 11:53:11 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 11:53:11 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 11:53:11 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:11 CEST 2023 ] New thread called Thread-76 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:11 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ZvxMvr8iRB29yNYw96UKZw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:12 CEST 2023 ] New thread called Thread-77 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Wc5fyRqnRjGob/tZUSdK4A==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:12 CEST 2023 ] New thread called Thread-78 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GVgz9o2VQ5yVh+KwfurkXw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:12 CEST 2023 ] New thread called Thread-79 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NIsvtCSzQ9mkaiM+AwBIIw==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:13 CEST 2023 ] New thread called Thread-80 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=MCGWs+cUSzWUCPiUyxAlEg==)
+[INFO] EkranSerwer: [ Sun Jun 04 11:53:13 CEST 2023 ] New thread called Thread-81 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 11:53:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=bnrsLk/eRISZ1OuWxl7PpA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:13 CEST 2023 ] New thread called Thread-82 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NDD9azHaS0KYwC6YahZH5A==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:14 CEST 2023 ] New thread called Thread-83 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:14 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=k/83OjXVRki1i8SvUoveMw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 12:01:14 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:01:14 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:01:15 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:15 CEST 2023 ] New thread called Thread-84 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:15 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=w/AAT6UVSV6GP9DSNJG+yA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:16 CEST 2023 ] New thread called Thread-85 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1wdq15lESrGOfezxBCOcGw==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:16 CEST 2023 ] New thread called Thread-86 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=5jIOpdcsTaeQB1A7MJXBwg==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 12:01:17 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:17 CEST 2023 ] New thread called Thread-87 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:17 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=j07Eq8JFQ0WbbGjbk22PUA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:17 CEST 2023 ] New thread called Thread-88 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:17 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qHYHps/BRY6GAJX8aM4Htw==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:17 CEST 2023 ] New thread called Thread-89 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:17 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ng8NWCteR1igR+tiUupVJg==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:18 CEST 2023 ] New thread called Thread-90 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cLmw7/eTSHi4Jtk2/M1pbg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 12:01:18 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:01:18 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:01:18 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:18 CEST 2023 ] New thread called Thread-91 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:18 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SyhYZNa2QJKGfSSuWR6cDg==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:19 CEST 2023 ] New thread called Thread-92 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:19 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=A+VSVN39RqGxxWIBxs3IoA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:19 CEST 2023 ] New thread called Thread-93 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:19 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=5BbtX61dSXOFy2+EGlJpgg==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:19 CEST 2023 ] New thread called Thread-94 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:19 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=l75pR9NCSLG/iSiDGwriDQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:20 CEST 2023 ] New thread called Thread-95 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:20 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=jW5/QtVXRiO4LnzDr5Q4rQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:01:20 CEST 2023 ] New thread called Thread-96 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:01:20 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ur3c3ELzSeCjnhw3MtW3uA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:35:36 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:35:55 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 12:35:56 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:35:56 CEST 2023 ] Unexpected event
+[FATAL] BazaDanych: [ Sun Jun 04 12:35:56 CEST 2023 ] Błąd we-wy: Socket read interrupted, socket connect lapse 5 ms. localhost 1521  0 (1/2) true, Authentication lapse 0 ms.
+[ERROR] Klient: [ Sun Jun 04 12:35:57 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:35:58 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:35:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=R/nMo3UiQw+Ug7FVhB3JuQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 12:35:59 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:35:59 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:35:59 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:35:59 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=wNDTkXJAQcG8b1qx4nxBKQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:03 CEST 2023 ] New thread called Thread-4 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=LE4uJDMrRgm/qAT7jSkarQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:04 CEST 2023 ] New thread called Thread-5 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eXkXpUmrSKafna55/oG/5A==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 12:36:04 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:04 CEST 2023 ] New thread called Thread-6 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:05 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=MBo2zMbMRTWfYoWJgAbGWg==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:05 CEST 2023 ] New thread called Thread-7 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:05 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cBJyVjnbRVuikvCNV2dglw==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:05 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:05 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=A+e+K60zRLOIkjHNqd3CtA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:06 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=7dPYU/jgR2iJF2yQ6+TuaQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 12:36:06 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:36:06 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:36:06 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:06 CEST 2023 ] New thread called Thread-10 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BAQxj0DwRre6akVPv+YzhQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:08 CEST 2023 ] New thread called Thread-11 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=w9SoQiIqSwua3O/8uoD7Xw==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:08 CEST 2023 ] New thread called Thread-12 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=pbLJrzl9TcGmZO7H1QDKjA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:08 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=+ISk/Kr+RJK8ZnmGH/zb3w==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:08 CEST 2023 ] New thread called Thread-14 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:08 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=fWuLAV+5TJWOgiK4S21j5A==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:08 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:09 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=EfToxNoDQB+qlGSCzKRSJQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:19 CEST 2023 ] New thread called Thread-16 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:19 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=5A0tFeMiQJ+oVOe3Yx1+9A==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:19 CEST 2023 ] New thread called Thread-17 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:19 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=kDZ2QS63SHihEzvT0Vdb7w==)
+[FATAL] EkranSerwer: [ Sun Jun 04 12:36:19 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:36:19 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:36:22 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:23 CEST 2023 ] New thread called Thread-18 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:23 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=7XAr+kyUSWunYFXt/8bVlA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:24 CEST 2023 ] New thread called Thread-19 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=kiNt1PbgRNGY3dsEQtlHng==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:24 CEST 2023 ] New thread called Thread-20 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=2XZNOKMTSsCXP/gRZ/2+Yw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 12:36:25 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:25 CEST 2023 ] New thread called Thread-21 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:25 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Bma2/hEWT6Cjy3+cf1VRMQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:26 CEST 2023 ] New thread called Thread-22 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=w4K/o8vuSHa1V6rkVh0ezA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:26 CEST 2023 ] New thread called Thread-23 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=t3z4MGB8RO+NCCR+AnA+3g==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:26 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=LfI1TDqCSFKUexqSfk0QCA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 12:36:26 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:36:26 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:36:27 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:27 CEST 2023 ] New thread called Thread-25 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:27 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Ei8zLvDtQQuSjzGHI5jTZA==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:28 CEST 2023 ] New thread called Thread-26 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QaU9siXoR2uJVT1mebtG6g==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:29 CEST 2023 ] New thread called Thread-27 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=FIa9FoKOSBqCcoERygs6CQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:29 CEST 2023 ] New thread called Thread-28 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=vW2RVl+nTw+hfn5oS0kLhw==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:29 CEST 2023 ] New thread called Thread-29 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ULBO0jA5T2y39fqPVGWNHw==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:29 CEST 2023 ] New thread called Thread-30 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:36:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=f2L11hicSkSIfjfBr7U9Rg==)
+[INFO] EkranSerwer: [ Sun Jun 04 12:36:45 CEST 2023 ] Server shutdown

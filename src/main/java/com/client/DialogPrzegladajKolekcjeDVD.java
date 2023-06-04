@@ -57,7 +57,7 @@ public class DialogPrzegladajKolekcjeDVD extends javax.swing.JDialog {
      * @param parent Okno macierzyste
      * @param operation Parametr określający jaką operację wykonujemy przy wyświetlaniu tego okna
      */
-    DialogPrzegladajKolekcjeDVD(Frame parent, boolean modal, String operation, Klient klient) {
+    public DialogPrzegladajKolekcjeDVD(Frame parent, boolean modal, String operation, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         this.operation = operation;

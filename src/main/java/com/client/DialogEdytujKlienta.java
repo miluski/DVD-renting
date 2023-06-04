@@ -55,7 +55,7 @@ public class DialogEdytujKlienta extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne czy nie
      * @param parent Okno macierzyste
      */
-    DialogEdytujKlienta(Frame parent, boolean modal, Klient klient) {
+    public DialogEdytujKlienta(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         klient.polacz(klient);

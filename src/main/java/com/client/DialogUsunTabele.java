@@ -22,7 +22,7 @@ public class DialogUsunTabele extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogUsunTabele(Frame parent, boolean modal, Klient klient) {
+    public DialogUsunTabele(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         initComponents();

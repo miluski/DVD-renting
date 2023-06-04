@@ -39,7 +39,7 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogPrzegladajListeKlientow(Frame parent, boolean modal, Klient klient) {
+    public DialogPrzegladajListeKlientow(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         klient.polacz(klient);
         panelData.addAll(klient.otrzymujDane("ReviewClients",""));

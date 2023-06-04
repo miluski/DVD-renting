@@ -17,7 +17,7 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
     /**
      * Atrybut będący polem liczbowym
      */
-    private final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
+    public final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
     /**
      * Instancja klasy Klient
      */
@@ -32,7 +32,7 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogUstawLiczbeDVD(Frame parent, boolean modal, Klient klient) {
+    public DialogUstawLiczbeDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         klient.polacz(klient);
@@ -167,7 +167,7 @@ public class DialogUstawLiczbeDVD extends javax.swing.JDialog {
      * Metoda obsługująca kliknięcie przycisku Zatwierdź zmiany
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    public void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         if((Integer)jSpinner1.getValue()<0){
             JOptionPane.showMessageDialog(this, "Liczba egzemplarzy nie może być mniejsza od 0!", "Błąd", JOptionPane.ERROR_MESSAGE);
         }

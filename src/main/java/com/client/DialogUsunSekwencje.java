@@ -23,7 +23,7 @@ public class DialogUsunSekwencje extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogUsunSekwencje(Frame parent, boolean modal, Klient klient) {
+    public DialogUsunSekwencje(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         initComponents();

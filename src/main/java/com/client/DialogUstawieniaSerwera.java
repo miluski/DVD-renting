@@ -23,7 +23,7 @@ public class DialogUstawieniaSerwera extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogUstawieniaSerwera(java.awt.Frame parent, boolean modal, Klient klient) {
+    public DialogUstawieniaSerwera(java.awt.Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         initComponents();

@@ -55,7 +55,7 @@ public final class DialogDodajDVD extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne czy nie
      * @param parent Okno macierzyste
      */
-    DialogDodajDVD(Frame parent, boolean modal, Klient klient) {
+    public DialogDodajDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         initComponents();

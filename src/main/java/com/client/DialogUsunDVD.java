@@ -28,7 +28,7 @@ public class DialogUsunDVD extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogUsunDVD(Frame parent, boolean modal, Klient klient) {
+    public DialogUsunDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         klient.polacz(klient);
