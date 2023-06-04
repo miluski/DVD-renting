@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 /**
  * Klasa zawierająca pola i metody testujące całą aplikację od strony zarówno serwera, jak i klienta
@@ -736,7 +735,6 @@ public class UnitTests {
         JFrame ok = new JFrame();
         DialogUtworzSekwencje dialog = new DialogUtworzSekwencje(ok,false,kl);
         dialog.jComboBox1.setSelectedItem("Sekwencja1");
-        Klient klient = new Klient();
         dialog.jButton1ActionPerformed(null);
         Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
     }
@@ -759,7 +757,6 @@ public class UnitTests {
         JFrame ok = new JFrame();
         DialogUtworzTabele dialog = new DialogUtworzTabele(ok,false,kl);
         dialog.jComboBox1.setSelectedItem("Sekwencja1");
-        Klient klient = new Klient();
         dialog.jButton1ActionPerformed(null);
         Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
     }

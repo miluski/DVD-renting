@@ -30,3 +30,7 @@
 
 [ERROR] Klient: [ Sat Jun 03 11:10:56 CEST 2023 ] null
 [ERROR] Klient: [ Sat Jun 03 11:11:08 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 17:54:14 CEST 2023 ] null
+[ERROR] EkranLogowania: [ Sun Jun 04 17:54:15 CEST 2023 ] Cannot invoke "java.util.Collection.toArray()" because "c" is null
+[ERROR] Klient: [ Sun Jun 04 17:54:59 CEST 2023 ] null
+[ERROR] EkranLogowania: [ Sun Jun 04 17:54:59 CEST 2023 ] Cannot invoke "java.util.Collection.toArray()" because "c" is null

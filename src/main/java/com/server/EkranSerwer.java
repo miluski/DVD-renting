@@ -313,8 +313,6 @@ public class EkranSerwer extends javax.swing.JFrame {
             if (klient.walidacjaIP(jTextField1.getText())) {
                 setIP(jTextField1.getText());
                 JOptionPane.showMessageDialog(this, "Pomyślnie ustawiono nowe IP do połączenia z serwerem!", "Sukces", JOptionPane.INFORMATION_MESSAGE);
-                dispose();
-                java.awt.EventQueue.invokeLater(() -> new EkranSerwer().setVisible(true));
                 jTextArea1.setText("");
                 setMessage("Ustawiono nowe IP do połączenia serwera z bazą danych:\n" + IP);
                 jTextField1.setText("");

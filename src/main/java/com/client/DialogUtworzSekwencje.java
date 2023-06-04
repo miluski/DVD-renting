@@ -11,7 +11,7 @@ public class DialogUtworzSekwencje extends javax.swing.JDialog {
     /**
      * Atrybut będący listą wyboru
      */
-    public static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    public final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
     /**
      * Instancja klasy klient
      */

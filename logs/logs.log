@@ -10345,3 +10345,161 @@ ORA-12505, TNS:listener does not currently know of SID given in connect descript
 
 [INFO] EkranSerwer: [ Sun Jun 04 20:55:35 CEST 2023 ] New thread called Thread-157 was created 
 [FATAL] BazaDanych: [ Sun Jun 04 20:55:36 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 21:47:47 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:01 CEST 2023 ] New IP: 192.168.0.12 for connection to database was set
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:11 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:11 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 21:48:11 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 21:48:11 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 21:48:12 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:12 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:12 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:13 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:13 CEST 2023 ] New thread called Thread-5 was created 
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 21:48:14 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:14 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 21:48:14 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 21:48:14 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:14 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:15 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:15 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:15 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:48:15 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 21:48:16 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 21:48:16 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 21:48:17 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:17 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:18 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:18 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:18 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:19 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:19 CEST 2023 ] New thread called Thread-21 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:48:19 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:19 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:19 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:48:20 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:48:21 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:18 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:23 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:23 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 21:49:23 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 21:49:23 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 21:49:25 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:25 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:25 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:27 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:27 CEST 2023 ] New thread called Thread-5 was created 
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 21:49:27 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:27 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 21:49:27 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 21:49:27 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:28 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:29 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:29 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:29 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:49:29 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:29 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:29 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:29 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:29 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:29 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:29 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:29 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:29 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:29 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:29 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:49:30 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:30 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:30 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:30 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 21:49:30 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 21:49:30 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 21:49:31 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:31 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:31 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:31 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:32 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:32 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:32 CEST 2023 ] New thread called Thread-21 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:49:32 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:32 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:32 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:33 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:49:34 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:46 CEST 2023 ] New IP: 192.168.0.12 for connection to database was set
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:54 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:54 CEST 2023 ] New thread called Thread-26 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 21:49:54 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 21:49:54 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 21:49:58 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:58 CEST 2023 ] New thread called Thread-27 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:58 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:59 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:49:59 CEST 2023 ] New thread called Thread-29 was created 
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 21:49:59 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 21:49:59 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 21:49:59 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 21:50:00 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:00 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:01 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:01 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:01 CEST 2023 ] New thread called Thread-33 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:50:01 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 21:50:01 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 21:50:01 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 21:50:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:50:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:50:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 21:50:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:01 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:01 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:01 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:02 CEST 2023 ] New thread called Thread-37 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:50:02 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 21:50:02 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:02 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:02 CEST 2023 ] New thread called Thread-39 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 21:50:02 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 21:50:02 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 21:50:03 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:03 CEST 2023 ] New thread called Thread-40 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:03 CEST 2023 ] New thread called Thread-41 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:04 CEST 2023 ] New thread called Thread-42 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:04 CEST 2023 ] New thread called Thread-43 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:04 CEST 2023 ] New thread called Thread-44 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:04 CEST 2023 ] New thread called Thread-45 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:50:04 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:04 CEST 2023 ] New thread called Thread-46 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:04 CEST 2023 ] New thread called Thread-47 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:05 CEST 2023 ] New thread called Thread-48 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 21:50:06 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:22 CEST 2023 ] New thread called Thread-49 was created 
+[INFO] BazaDanych: [ Sun Jun 04 21:50:22 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:22 CEST 2023 ] New thread called Thread-50 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:27 CEST 2023 ] New thread called Thread-51 was created 
+[INFO] BazaDanych: [ Sun Jun 04 21:50:27 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:37 CEST 2023 ] New thread called Thread-52 was created 
+[INFO] BazaDanych: [ Sun Jun 04 21:50:37 CEST 2023 ] Login from: 192.168.0.12 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:38 CEST 2023 ] New thread called Thread-53 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:43 CEST 2023 ] New thread called Thread-54 was created 
+[INFO] BazaDanych: [ Sun Jun 04 21:50:43 CEST 2023 ] Logout from: 192.168.0.12 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 21:50:45 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 21:56:03 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 21:56:05 CEST 2023 ] Server shutdown
