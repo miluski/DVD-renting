@@ -329,7 +329,7 @@ public class EkranSerwer extends javax.swing.JFrame {
      * Metoda, której głównym zadaniem jest akceptowanie podłączeń nowych klientów pod serwer
      * @param ekranSerwer Instancja klasy EkranSerwer
      */
-    private void serverOperations(EkranSerwer ekranSerwer) {
+    public void serverOperations(EkranSerwer ekranSerwer) {
         try {
             ekranSerwer.socket = new ServerSocket(1522);
             ekranSerwer.socket.setReuseAddress(true);

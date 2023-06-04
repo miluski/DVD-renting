@@ -65,6 +65,10 @@ public class Klient implements Callable<Void> {
      */
     private DataInputStream receive;
     /**
+     * Atrybut będący rozmiarem listy
+     */
+    private int listSize;
+    /**
      * Metoda, której głównym zadaniem jest ustawienie parametrów gniazda klienta
      * @return Nic nie zwraca
      */
@@ -165,7 +169,7 @@ public class Klient implements Callable<Void> {
      * Metoda pobierająca aktualne IP
      * @return Zwraca aktualne IP ustawione do podłączenia klienta do serwera
      */
-    protected String getKlientIP(){
+    public String getKlientIP(){
         return this.IP;
     }
     /**
@@ -174,6 +178,20 @@ public class Klient implements Callable<Void> {
      */
     protected void setKlientIP(String IP){
         this.IP = IP;
+    }
+    /**
+     * Metoda typu setter ustawiająca rozmiar listy
+     * @param listSize rozmiar listy
+     */
+    protected void setListSize(int listSize){
+        this.listSize = listSize;
+    }
+    /**
+     * Metoda typu getter zwracająca rozmiar listy
+     * @return Zwraca rozmiar listy
+     */
+    protected int getListSize(){
+        return this.listSize;
     }
     /**
      * Metoda, której celem jest zakończenie połączenia z serwerem danego klienta
@@ -479,8 +497,8 @@ public class Klient implements Callable<Void> {
                     for(int i=0; i<size; i++){
                         panelData.add(receive.readUTF());
                     }
+                    setListSize(size);
                     int size2 = receive.readInt();
-                    panelData.add("SecondNotificationLine");
                     for(int i=0; i<size2; i++){
                         panelData.add(receive.readUTF());
                     }

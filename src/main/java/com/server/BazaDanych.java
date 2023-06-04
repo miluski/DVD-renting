@@ -59,7 +59,7 @@ public class BazaDanych implements Callable<String> {
     /**
      * Lista danych odbierana od serwera
      */
-    private final List<String> dataList = new LinkedList<>();
+    public final List<String> dataList = new LinkedList<>();
     /**
      * Instancja klasy EkranSerwer
      */
@@ -127,7 +127,7 @@ public class BazaDanych implements Callable<String> {
     }
     /**
      * Jest to metoda pozwalająca na zainicjowanie parametrow polaczenia z baza danych
-     * @return Zwraca informację o tym czy podłączenie się udało czy nie
+     * @return Zwraca informację o tym, czy podłączenie się udało, czy nie
      */
     public String setUpDataBase(){
         try {
@@ -137,13 +137,13 @@ public class BazaDanych implements Callable<String> {
             state = connect.createStatement();
             switch (operation) {
                 case "GetClientID", "GetDVDID", "LogoutAll", "DeleteReservation", "CheckReservations", "DownloadNickname", "AdminNotifications", "UserNotifications" ->
-                        WymianaDanych(operation);
+                        wymianaDanych(operation);
                 case "Register", "Login", "Logout", "DataPass", "DataReceive", "UpdateCount" ->
-                        WymianaDanych(ekranSerwer.getPassOperation());
+                        wymianaDanych(ekranSerwer.getPassOperation());
                 case "Management" ->
-                        ZarzadzajBaza(ekranSerwer.getManagementOperation());
+                        zarzadzajBaza(ekranSerwer.getManagementOperation());
                 case "Recovery" ->
-                        OdzyskiwanieDanych();
+                        odzyskiwanieDanych();
             }
             connect.close();
             return "Success";
@@ -166,38 +166,43 @@ public class BazaDanych implements Callable<String> {
      * Jest to metoda odpowiadająca za wybór odpowiedniej metody do wymiany danych z bazą
      * @param operation Jest to parametr przechowujący typ operacji wykonywanej na bazie danych
      */
-    void WymianaDanych(@NotNull String operation) {
-        this.nick = ekranSerwer.nick;
-        this.pass = ekranSerwer.pass;
-        switch (operation) {
-            case "ReviewDVDCollection", "DVDAvalaible", "DVDWareHouseAvalaible" -> reviewDVDCollection(operation);
-            case "ReviewMyRents", "ReviewRents" -> reviewMyRents();
-            case "ReviewMyReturns", "ReviewReturns" -> reviewMyReturns();
-            case "Register" -> register();
-            case "Login" -> login();
-            case "Logout" -> logout("oneUser");
-            case "LogoutAll" -> logout("allUsers");
-            case "AddDVD" -> addDVD();
-            case "EditDVD" -> editDVD();
-            case "DeleteDVD" -> deleteDVD();
-            case "AddSameDVDs" -> addSameDVDs();
-            case "ReviewClients" -> reviewClients();
-            case "DeleteClient" -> deleteClient();
-            case "EditClient" -> editClient();
-            case "RentDVD" -> rentDVD();
-            case "ReturnDVD" -> returnDVD();
-            case "ReviewReservations" -> reviewReservations();
-            case "ReservateDVD" -> reservateDVD();
-            case "NewBill" -> newBill();
-            case "ReviewBills" -> reviewBills();
-            case "GetClientID" -> getClientID();
-            case "GetDVDID" -> getDVDID();
-            case "UpdateCount" -> updateCount();
-            case "DeleteReservation" -> deleteReservation();
-            case "CheckReservations" -> checkReservations();
-            case "DownloadNickname" -> downloadNickname();
-            case "AdminNotifications" -> adminNotifications();
-            case "UserNotifications" -> userNotifications();
+    public void wymianaDanych(@NotNull String operation) {
+        try {
+            this.nick = ekranSerwer.nick;
+            this.pass = ekranSerwer.pass;
+            switch (operation) {
+                case "ReviewDVDCollection", "DVDAvalaible", "DVDWareHouseAvalaible" -> reviewDVDCollection(operation);
+                case "ReviewMyRents", "ReviewRents" -> reviewMyRents();
+                case "ReviewMyReturns", "ReviewReturns" -> reviewMyReturns();
+                case "Register" -> register();
+                case "Login" -> login();
+                case "Logout" -> logout("oneUser");
+                case "LogoutAll" -> logout("allUsers");
+                case "AddDVD" -> addDVD();
+                case "EditDVD" -> editDVD();
+                case "DeleteDVD" -> deleteDVD();
+                case "AddSameDVDs" -> addSameDVDs();
+                case "ReviewClients" -> reviewClients();
+                case "DeleteClient" -> deleteClient();
+                case "EditClient" -> editClient();
+                case "RentDVD" -> rentDVD();
+                case "ReturnDVD" -> returnDVD();
+                case "ReviewReservations" -> reviewReservations();
+                case "ReservateDVD" -> reservateDVD();
+                case "NewBill" -> newBill();
+                case "ReviewBills" -> reviewBills();
+                case "GetClientID" -> getClientID();
+                case "GetDVDID" -> getDVDID();
+                case "UpdateCount" -> updateCount();
+                case "DeleteReservation" -> deleteReservation();
+                case "CheckReservations" -> checkReservations();
+                case "DownloadNickname" -> downloadNickname();
+                case "AdminNotifications" -> adminNotifications();
+                case "UserNotifications" -> userNotifications();
+            }
+        }
+        catch (Exception ex){
+            System.out.println(ex.getMessage());
         }
     }
     /**
@@ -357,7 +362,7 @@ public class BazaDanych implements Callable<String> {
             result.close();
             preparedStatement.close();
         }
-        catch(SQLException ex){
+        catch (Exception ex){
             catchServe(ex);
         }
     }
@@ -947,8 +952,9 @@ public class BazaDanych implements Callable<String> {
             while(resultSet2.next()) {
                 panelData2.add(Integer.toString(resultSet2.getInt(1)));
                 panelData2.add(Integer.toString(resultSet2.getInt(2)));
-                panelData2.add(resultSet2.getString(3));
+                panelData2.add(String.valueOf(resultSet2.getDate(3)));
             }
+            if(panelData.isEmpty()&&panelData2.isEmpty()) panelData.add("Brak powiadomień");
             resultSet2.close();
         }
         catch (SQLException ex) {
@@ -973,10 +979,11 @@ public class BazaDanych implements Callable<String> {
             preparedStatement.setString(1,ekranSerwer.nick);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
-                panelData.add(Integer.toString(resultSet.getInt("rents.dvd_id")));
-                panelData.add(resultSet.getString("dvds_data.film_name"));
-                panelData.add(resultSet.getString("rents.rent_date"));
+                panelData.add(Integer.toString(resultSet.getInt(1)));
+                panelData.add(resultSet.getString(2));
+                panelData.add(resultSet.getString(3));
             }
+            if(panelData.isEmpty()) panelData.add("Brak powiadomień");
             resultSet.close();
         }
         catch (SQLException ex) {
@@ -987,7 +994,7 @@ public class BazaDanych implements Callable<String> {
     /**
      * Metoda umożliwiająca na zapis zmienionego hasła do bazy i wygenerowanie nowego klucza do odzyskiwania hasła
      */
-    private void OdzyskiwanieDanych() {
+    public void odzyskiwanieDanych() {
         try {
             String query = "SELECT * " +
                     "FROM users " +
@@ -1020,7 +1027,7 @@ public class BazaDanych implements Callable<String> {
             }
             preparedState.close();
         }
-        catch (SQLException ex) {
+        catch (Exception ex) {
             catchServe(ex);
         }
     }
@@ -1028,7 +1035,7 @@ public class BazaDanych implements Callable<String> {
      * Metoda umożliwiająca wykonywanie zapytań do bazy
      * @param option Jest to parametr pomagający określić, jaka operacja na bazie ma zostać wykonana
      */
-    private void ZarzadzajBaza(@NotNull String option) {
+    private void zarzadzajBaza(@NotNull String option) {
         String users = "CREATE TABLE users(" +
                 "user_id NUMBER(6) PRIMARY KEY, " +
                 "user_nickname VARCHAR2(30), " +

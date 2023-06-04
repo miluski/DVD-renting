@@ -7886,3 +7886,390 @@ ORA-12505, TNS:listener does not currently know of SID given in connect descript
 ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
   (CONNECTION_ID=f2L11hicSkSIfjfBr7U9Rg==)
 [INFO] EkranSerwer: [ Sun Jun 04 12:36:45 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:38 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:50 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:50 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 12:43:50 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:43:50 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:43:52 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:52 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:43:52 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:53 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:53 CEST 2023 ] New thread called Thread-5 was created 
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 12:43:54 CEST 2023 ] For input string: "abc123"
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:54 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:54 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:54 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:54 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 12:43:54 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 12:43:54 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 12:43:55 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:55 CEST 2023 ] New thread called Thread-10 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 12:43:55 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:56 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:56 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:56 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:57 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:43:57 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:44:56 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:44:56 CEST 2023 ] Login from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:44:57 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:07 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:07 CEST 2023 ] Login from: 127.0.0.1 Nickname: Janusz
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:08 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:10 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:12 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:12 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:12 CEST 2023 ] New DVD reservation
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:13 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:13 CEST 2023 ] Changed count of DVD 1
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:14 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:15 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:15 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:15 CEST 2023 ] New DVD reservation
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:16 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:16 CEST 2023 ] Changed count of DVD 1
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:18 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:18 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:23 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:23 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:24 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:27 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:28 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:28 CEST 2023 ] New thread called Thread-33 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:28 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:29 CEST 2023 ] User 5 Rented DVD 1
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:29 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:29 CEST 2023 ] Deleted reservation for DVD: 1 reservation by user: 5
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:29 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:30 CEST 2023 ] New thread called Thread-37 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:30 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:30 CEST 2023 ] New thread called Thread-39 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:30 CEST 2023 ] User 7 Rented DVD 1
+[INFO] EkranSerwer: [ Sun Jun 04 12:45:30 CEST 2023 ] New thread called Thread-40 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:45:30 CEST 2023 ] Deleted reservation for DVD: 1 reservation by user: 7
+[INFO] EkranSerwer: [ Sun Jun 04 12:46:38 CEST 2023 ] New thread called Thread-41 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:46:39 CEST 2023 ] New thread called Thread-42 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:46:40 CEST 2023 ] New thread called Thread-43 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:46:58 CEST 2023 ] New thread called Thread-44 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:46:58 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 12:47:04 CEST 2023 ] New thread called Thread-45 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:47:04 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 12:47:05 CEST 2023 ] New thread called Thread-46 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:47:07 CEST 2023 ] New thread called Thread-47 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:47:08 CEST 2023 ] New thread called Thread-48 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:47:08 CEST 2023 ] New thread called Thread-49 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:50:00 CEST 2023 ] New thread called Thread-50 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:50:02 CEST 2023 ] New thread called Thread-51 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:50:06 CEST 2023 ] New thread called Thread-52 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:50:06 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 12:50:11 CEST 2023 ] New thread called Thread-53 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:50:11 CEST 2023 ] Login from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:50:11 CEST 2023 ] New thread called Thread-54 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 12:50:11 CEST 2023 ] Niepoprawna nazwa kolumny
+[INFO] EkranSerwer: [ Sun Jun 04 12:52:19 CEST 2023 ] New thread called Thread-55 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:52:19 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:52:22 CEST 2023 ] New thread called Thread-56 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:52:22 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Janusz
+[INFO] EkranSerwer: [ Sun Jun 04 12:52:23 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 12:52:36 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:52:45 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:52:45 CEST 2023 ] Login from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:52:46 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:08 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:53:08 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:09 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:09 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:09 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:09 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:15 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:50 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:53:51 CEST 2023 ] Login from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:51 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:53 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:56 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:53:56 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:00 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:54:00 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:06 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:54:06 CEST 2023 ] Login from: 127.0.0.1 Nickname: Janusz
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:06 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:08 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:11 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:54:11 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Janusz
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:15 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:54:15 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:16 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:54:18 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-11 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-12 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Thread called Thread-13 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:32 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:39 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:55:41 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:56:43 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:56:43 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Jun 04 12:56:48 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 12:56:48 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 12:56:48 CEST 2023 ] Socket closed
+[INFO] EkranSerwer: [ Sun Jun 04 12:56:56 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:57:02 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:57:03 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 12:57:03 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 12:57:53 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:57:53 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 12:57:53 CEST 2023 ] Server shutdown
+[ERROR] Klient: [ Sun Jun 04 12:57:58 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 12:57:58 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 12:57:59 CEST 2023 ] Socket closed
+[INFO] EkranSerwer: [ Sun Jun 04 12:58:08 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:58:10 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 12:58:21 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 12:58:29 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 12:58:29 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 12:58:30 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:02:43 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:02:43 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:02:57 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:02:57 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:02:58 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:03:49 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:03:49 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:03:59 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:03:59 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:00 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:02 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:18 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:04:18 CEST 2023 ] Login from: 127.0.0.1 Nickname: Marian
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:19 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:20 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:21 CEST 2023 ] New thread called Thread-13 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:21 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:25 CEST 2023 ] New thread called Thread-15 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:27 CEST 2023 ] New thread called Thread-16 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:31 CEST 2023 ] New thread called Thread-17 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:32 CEST 2023 ] New thread called Thread-18 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:35 CEST 2023 ] New thread called Thread-19 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:37 CEST 2023 ] New thread called Thread-20 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:37 CEST 2023 ] New thread called Thread-21 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:04:37 CEST 2023 ] New DVD reservation
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:38 CEST 2023 ] New thread called Thread-22 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:04:38 CEST 2023 ] Changed count of DVD 1
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:40 CEST 2023 ] New thread called Thread-23 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:42 CEST 2023 ] New thread called Thread-24 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:49 CEST 2023 ] New thread called Thread-25 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:50 CEST 2023 ] New thread called Thread-26 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:51 CEST 2023 ] New thread called Thread-27 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:04:52 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:42 CEST 2023 ] New thread called Thread-29 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:08:43 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:48 CEST 2023 ] New thread called Thread-30 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:08:48 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:49 CEST 2023 ] New thread called Thread-31 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:52 CEST 2023 ] New thread called Thread-32 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:52 CEST 2023 ] New thread called Thread-33 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:53 CEST 2023 ] New thread called Thread-34 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:54 CEST 2023 ] New thread called Thread-35 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:54 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:56 CEST 2023 ] New thread called Thread-37 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:08:57 CEST 2023 ] New thread called Thread-38 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:09:38 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:09:59 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:09:59 CEST 2023 ] Unsuccessfull login try from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:10:02 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:10:02 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:10:06 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:10:13 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:10:13 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:10:14 CEST 2023 ] New thread called Thread-2 was created 
+[ERROR] Klient: [ Sun Jun 04 13:10:57 CEST 2023 ] null
+[ERROR] Klient: [ Sun Jun 04 13:10:57 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:10:57 CEST 2023 ] Socket closed
+[INFO] EkranSerwer: [ Sun Jun 04 13:11:03 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:11:06 CEST 2023 ] Server running
+[FATAL] EkranSerwer: [ Sun Jun 04 13:11:06 CEST 2023 ] Address already in use: bind
+[INFO] EkranSerwer: [ Sun Jun 04 13:11:11 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:11:20 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:11:50 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:11:58 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:11:58 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:11:59 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:22 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:22 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:22 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:27 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:33 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:12:33 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:34 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:46 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:12:46 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:57 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:12:57 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:12:57 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:10 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:24:11 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:21 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:24:21 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:22 CEST 2023 ] New thread called Thread-8 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:24 CEST 2023 ] New thread called Thread-9 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:30 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] BazaDanych: [ Sun Jun 04 13:24:30 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-8 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-9 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Thread called Thread-10 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:24:33 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:25:16 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:26:50 CEST 2023 ] Server shutdown
+[FATAL] BazaDanych: [ Sun Jun 04 13:28:35 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 13:31:13 CEST 2023 ] error
+[INFO] EkranSerwer: [ Sun Jun 04 13:32:25 CEST 2023 ] Server running
+[ERROR] BazaDanych: [ Sun Jun 04 13:32:30 CEST 2023 ] error
+[INFO] EkranSerwer: [ Sun Jun 04 13:32:34 CEST 2023 ] Server shutdown
+[FATAL] BazaDanych: [ Sun Jun 04 13:33:13 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 13:33:58 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 13:34:08 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 13:36:10 CEST 2023 ] error
+[ERROR] BazaDanych: [ Sun Jun 04 13:36:53 CEST 2023 ] error
+[ERROR] BazaDanych: [ Sun Jun 04 13:37:03 CEST 2023 ] error
+[ERROR] Klient: [ Sun Jun 04 13:37:54 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:37:54 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:37:55 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:37:55 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:37:56 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:37:56 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:37:57 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:37:57 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 13:37:57 CEST 2023 ] For input string: "abc123"
+[ERROR] Klient: [ Sun Jun 04 13:37:58 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:37:59 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:37:59 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:00 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:00 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:00 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:00 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:00 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:01 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:01 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:01 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:01 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:02 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:02 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:02 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:02 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:03 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:03 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[ERROR] Klient: [ Sun Jun 04 13:38:35 CEST 2023 ] Connection refused: connect
+[ERROR] Klient: [ Sun Jun 04 13:38:35 CEST 2023 ] Cannot invoke "java.io.DataOutputStream.writeUTF(String)" because "this.send" is null
+[INFO] EkranSerwer: [ Sun Jun 04 13:39:12 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:39:17 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:39:29 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:46:30 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:46:30 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 13:46:30 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:47:10 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:47:58 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:50:06 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:50:17 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:51:19 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:53:16 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 13:53:19 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 13:53:24 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 13:53:24 CEST 2023 ] New thread called Thread-1 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 13:53:24 CEST 2023 ] ex
+[FATAL] EkranSerwer: [ Sun Jun 04 13:53:24 CEST 2023 ] null
+[FATAL] EkranSerwer: [ Sun Jun 04 13:53:24 CEST 2023 ] null
+[ERROR] BazaDanych: [ Sun Jun 04 13:56:04 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 14:00:51 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:03:43 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:03:48 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:03:48 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:05:39 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:08:04 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:08:30 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:10:30 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:11:03 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:03 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:03 CEST 2023 ] Cannot parse null string
+[FATAL] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Index: 2, Size: 0
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 14:11:42 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[INFO] EkranSerwer: [ Sun Jun 04 14:14:59 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:06 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:07 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 14:15:07 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 14:15:07 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 14:15:08 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:08 CEST 2023 ] New thread called Thread-3 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:08 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:09 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:09 CEST 2023 ] New thread called Thread-5 was created 
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 14:15:09 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:09 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 14:15:09 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:10 CEST 2023 ] New thread called Thread-6 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:10 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:10 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:15:10 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:10 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 14:15:10 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 14:15:10 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 14:15:11 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:11 CEST 2023 ] New thread called Thread-10 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:12 CEST 2023 ] New thread called Thread-11 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:12 CEST 2023 ] New thread called Thread-12 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:12 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:15:12 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:13 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:15:13 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:15:14 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 14:15:46 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 14:15:47 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:01 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:10 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:32 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sun Jun 04 14:16:32 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:33 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:35 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:36 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:38 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:42 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:44 CEST 2023 ] New thread called Thread-7 was created 
+[INFO] BazaDanych: [ Sun Jun 04 14:16:44 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-7 was deleted 
+[INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Server shutdown

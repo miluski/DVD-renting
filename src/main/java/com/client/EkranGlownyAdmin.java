@@ -70,37 +70,21 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
             jList1.setModel(newListModel);
             klient.polacz(klient);
             java.util.List<String> adminNotifications = new LinkedList<>(klient.notifications("Admin",loginUzytkownika));
+            int size = klient.getListSize();
             klient.zakonczPolaczenie();
-            java.util.List<String> firstNotifications = new LinkedList<>();
-            java.util.List<String> secondNotifications = new LinkedList<>();
-            int index = 0;
-            for(String s:adminNotifications){
-                if(!s.equals("SecondNotificationLine")){
-                    firstNotifications.add(s);
-                    index++;
-                }
-                else break;
-            }
-            for(int i=index; i<(adminNotifications.size()-index);i++){
-                secondNotifications.add(adminNotifications.get(i));
-            }
             DefaultListModel<String> defaultListModel = new DefaultListModel<>();
-            for(int i=0; i<firstNotifications.size(); i+=2){
+            for(int i=0; i<size; i+=2){
                 if(!adminNotifications.get(i).equals("Brak powiadomień")){
-                    defaultListModel.addElement("Użytkownik " + firstNotifications.get(i+1) + " chce wypożyczyć płytę o nazwie " + firstNotifications.get(i)+"\n");
+                    defaultListModel.addElement("Użytkownik " + adminNotifications.get(i+1) + " chce wypożyczyć płytę o nazwie " + adminNotifications.get(i)+"\n");
                 }
-                else defaultListModel.addElement(firstNotifications.get(i));
+                else defaultListModel.addElement(adminNotifications.get(i));
             }
-            if(index!=0) {
-                for (int i = index + 1; i < secondNotifications.size(); i += 3) {
-                    if (!adminNotifications.get(i).equals("Brak powiadomień")) {
-                        defaultListModel.addElement("Użytkownik o ID " + secondNotifications.get(i) + " przetrzymuje płytę o ID " + secondNotifications.get(i+1) + " od " + secondNotifications.get(i+2));
-                    } else defaultListModel.addElement(secondNotifications.get(i));
-                }
+            for (int i = size; i < adminNotifications.size(); i += 3) {
+                if (!adminNotifications.get(i).equals("Brak powiadomień")) {
+                    defaultListModel.addElement("Użytkownik o ID " + adminNotifications.get(i) + " przetrzymuje płytę o ID " + adminNotifications.get(i+1) + " od " + adminNotifications.get(i+2));
+                } else defaultListModel.addElement(adminNotifications.get(i));
             }
             adminNotifications.clear();
-            firstNotifications.clear();
-            secondNotifications.clear();
             jList1.setModel(defaultListModel);
             jList1.setBackground(new java.awt.Color(255, 255, 255));
             jList1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 16));
