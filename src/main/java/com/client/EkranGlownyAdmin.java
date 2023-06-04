@@ -40,7 +40,7 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
      * @param klient Instancja klasy Klient
      * @param loginUzytkownika Login użytkownika
      */
-    EkranGlownyAdmin(String loginUzytkownika, Klient klient) {
+    public EkranGlownyAdmin(String loginUzytkownika, Klient klient) {
         this.klient = klient;
         this.loginUzytkownika = loginUzytkownika;
         setVisible(true);

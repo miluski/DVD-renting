@@ -20,7 +20,7 @@ public class DialogZwroc extends javax.swing.JDialog {
     /**
      * Lista zawierająca dane
      */
-    private final java.util.List<String> panelData3 = new LinkedList<>();
+    public final java.util.List<String> panelData3 = new LinkedList<>();
     /**
      * Instancja klasy klient
      */
@@ -87,7 +87,7 @@ public class DialogZwroc extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogZwroc(Frame parent, boolean modal, Klient klient) {
+    public DialogZwroc(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         initComponents();
@@ -312,7 +312,7 @@ public class DialogZwroc extends javax.swing.JDialog {
      * Metoda obsługująca kliknięcie przycisku Zatwierdź
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    public void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         panelData3.clear();
         klient.panelData.clear();
         klient.polacz(klient);

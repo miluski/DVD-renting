@@ -40,7 +40,7 @@ public class EkranGlownyUzytkownik extends javax.swing.JFrame {
      * @param loginUzytkownika Login użytkownika
      * @param klient Instancja klasy klient
      */
-    EkranGlownyUzytkownik(String loginUzytkownika, Klient klient) {
+    public EkranGlownyUzytkownik(String loginUzytkownika, Klient klient) {
         this.klient = klient;
         this.loginUzytkownika = loginUzytkownika;
         initComponents();

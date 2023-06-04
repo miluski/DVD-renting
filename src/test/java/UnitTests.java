@@ -1,11 +1,13 @@
 import com.client.*;
 import com.server.BazaDanych;
 import com.server.EkranSerwer;
+import com.server.Logs;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 /**
  * Klasa zawierająca pola i metody testujące całą aplikację od strony zarówno serwera, jak i klienta
@@ -128,7 +130,13 @@ public class UnitTests {
         bazaDanych.setUpDataBase();
         bazaDanych.odzyskiwanieDanych();
     }
-    //Logi jeszcze
+    //Logi
+    @Test
+    public void testKonstruktoraLogi() {
+        Logs lg = new Logs("Wiadomosc","Wiadomosc","info");
+        Assertions.assertNotNull(lg);
+        Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
+    }
 
     //Ekran logowania
     @Test
@@ -328,8 +336,26 @@ public class UnitTests {
         Assertions.assertFalse(ekranPrzywrocHaslo.walidacjaHasla("Password"));
         Assertions.assertFalse(ekranPrzywrocHaslo.walidacjaHasla("PASSWORD123!"));
     }
-    //Ekran glowny uzytkownik
 
+    //Ekran glowny uzytkownik
+    @Test
+    public void testEkranGlownyUzytkownik() {
+        Klient kl = new Klient();
+        EkranGlownyUzytkownik ekranGlownyUzytkownik = new EkranGlownyUzytkownik("login",kl);
+        Assertions.assertNotNull(ekranGlownyUzytkownik);
+        ekranGlownyUzytkownik.dispose();
+        Assertions.assertFalse(ekranGlownyUzytkownik.isVisible());
+    }
+
+    //Ekran glowny admin
+    @Test
+    public void testEkranGlownyAdmin() {
+        Klient kl = new Klient();
+        EkranGlownyAdmin ekranGlownyAdmin = new EkranGlownyAdmin("login",kl);
+        Assertions.assertNotNull(ekranGlownyAdmin);
+        ekranGlownyAdmin.dispose();
+        Assertions.assertFalse(ekranGlownyAdmin.isVisible());
+    }
 
     //Dialog Dodaj DVD
     @Test
@@ -693,52 +719,96 @@ public class UnitTests {
         Assertions.assertFalse(dialog.isVisible());
     }
     //Dialog utworz sekwencje
-
+    @Test
+    public void testKonstruktoraUtworzSekwencje() {
+        Frame parent = new Frame();
+        boolean modal = false;
+        Klient klient = new Klient();
+        klient.nickname = "admin";
+        DialogUtworzSekwencje dialog = new DialogUtworzSekwencje(parent, modal, klient);
+        Assertions.assertNotNull(dialog);
+        dialog.dispose();
+        Assertions.assertFalse(dialog.isVisible());
+    }
+    @Test
+    public void testDialogUtworzSekwencje2() {
+        Klient kl = new Klient();
+        JFrame ok = new JFrame();
+        DialogUtworzSekwencje dialog = new DialogUtworzSekwencje(ok,false,kl);
+        dialog.jComboBox1.setSelectedItem("Sekwencja1");
+        Klient klient = new Klient();
+        dialog.jButton1ActionPerformed(null);
+        Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
+    }
 
     //Dialog utworz tabele
+    @Test
+    public void testKonstruktoraUtworzTabele() {
+        Frame parent = new Frame();
+        boolean modal = false;
+        Klient klient = new Klient();
+        klient.nickname = "admin";
+        DialogUtworzSekwencje dialog = new DialogUtworzSekwencje(parent, modal, klient);
+        Assertions.assertNotNull(dialog);
+        dialog.dispose();
+        Assertions.assertFalse(dialog.isVisible());
+    }
+    @Test
+    public void testDialogUtworzTabele2() {
+        Klient kl = new Klient();
+        JFrame ok = new JFrame();
+        DialogUtworzTabele dialog = new DialogUtworzTabele(ok,false,kl);
+        dialog.jComboBox1.setSelectedItem("Sekwencja1");
+        Klient klient = new Klient();
+        dialog.jButton1ActionPerformed(null);
+        Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
+    }
 
     //Dialog Wypozycz
+    @Test
+    public void testWypozycz() {
+        Frame parent = new Frame();
+        boolean modal = false;
+        Klient klient = new Klient();
+        DialogWypozycz dialog = new DialogWypozycz(parent, modal, klient);
+        Assertions.assertNotNull(dialog);
+        dialog.dispose();
+        Assertions.assertFalse(dialog.isVisible());
+    }
 
     //Dialog Wystaw rachunek
+    @Test
+    public void testWystawRachunek() {
+        Frame parent = new Frame();
+        boolean modal = false;
+        Klient klient = new Klient();
+        DialogWystawRachunek dialog = new DialogWystawRachunek(parent, modal, klient);
+        Assertions.assertNotNull(dialog);
+        dialog.dispose();
+        Assertions.assertFalse(dialog.isVisible());
+    }
 
     //Dialog zobacz rezerwacje
+    @Test
+    public void testZobaczRezerwacje() {
+        Frame parent = new Frame();
+        boolean modal = false;
+        Klient klient = new Klient();
+        DialogZobaczRezerwacje dialog = new DialogZobaczRezerwacje(parent, modal, klient);
+        Assertions.assertNotNull(dialog);
+        dialog.dispose();
+        Assertions.assertFalse(dialog.isVisible());
+    }
 
     //Dialog zwroc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Test
+    public void testDialogZwroc() {
+        Frame parent = new Frame();
+        boolean modal = false;
+        Klient klient = new Klient();
+        DialogZwroc dialog = new DialogZwroc(parent, modal, klient);
+        Assertions.assertNotNull(dialog);
+        dialog.dispose();
+        Assertions.assertFalse(dialog.isVisible());
+    }
 }

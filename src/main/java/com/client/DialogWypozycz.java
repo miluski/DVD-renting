@@ -71,7 +71,7 @@ public class DialogWypozycz extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogWypozycz(Frame parent, boolean modal, Klient klient) {
+    public DialogWypozycz(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         initComponents();
@@ -306,7 +306,7 @@ public class DialogWypozycz extends javax.swing.JDialog {
      * Metoda obsługująca kliknięcie przycisku Zatwierdź
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    public void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         int buffer = (Integer.parseInt(numberOfCopies) - 1);
         if (buffer <= 0) {
             JOptionPane.showMessageDialog(this, "Nie możesz wypożyczyć tego DVD!", "Błąd", JOptionPane.WARNING_MESSAGE);

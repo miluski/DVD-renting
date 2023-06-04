@@ -13,19 +13,19 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
+    public final javax.swing.JTextField jTextField1 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private final javax.swing.JTextField jTextField2 = new javax.swing.JTextField();
+    public final javax.swing.JTextField jTextField2 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem tekstowym GUI
      */
-    private final javax.swing.JTextField jTextField3 = new javax.swing.JTextField();
+    public final javax.swing.JTextField jTextField3 = new javax.swing.JTextField();
     /**
      * Atrybut będący polem liczbowym
      */
-    private final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
+    public final javax.swing.JSpinner jSpinner1 = new javax.swing.JSpinner();
     /**
      * Atrybut będący listą wyboru
      */
@@ -44,7 +44,7 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogWystawRachunek(Frame parent, boolean modal, Klient klient) {
+    public DialogWystawRachunek(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         klient.polacz(klient);
@@ -238,7 +238,7 @@ public class DialogWystawRachunek extends javax.swing.JDialog {
      * Metoda obsługująca kliknięcie przycisku Zatwierdź
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    public void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         if(jTextField1.getText().length()<10 || jTextField1.getText().length()>10){
             JOptionPane.showMessageDialog(this,"Wprowadzony NIP jest nieprawidłowy!","Błąd",JOptionPane.ERROR_MESSAGE);
         }

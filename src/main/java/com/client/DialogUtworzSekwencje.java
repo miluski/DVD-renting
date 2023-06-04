@@ -11,7 +11,7 @@ public class DialogUtworzSekwencje extends javax.swing.JDialog {
     /**
      * Atrybut będący listą wyboru
      */
-    private static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
+    public static final javax.swing.JComboBox<String> jComboBox1 = new javax.swing.JComboBox<>();
     /**
      * Instancja klasy klient
      */
@@ -22,7 +22,7 @@ public class DialogUtworzSekwencje extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogUtworzSekwencje(Frame parent, boolean modal, Klient klient) {
+    public DialogUtworzSekwencje(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         initComponents();
@@ -129,7 +129,7 @@ public class DialogUtworzSekwencje extends javax.swing.JDialog {
      * Metoda obsługująca kliknięcie przycisku Dodaj
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    public void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         String sequence = String.valueOf(jComboBox1.getSelectedItem());
         klient.polacz(klient);
         String message = klient.zarzadzaj(sequence);

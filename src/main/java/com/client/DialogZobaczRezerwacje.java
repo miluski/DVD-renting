@@ -50,7 +50,7 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
      * @param modal Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
-    DialogZobaczRezerwacje(Frame parent, boolean modal, Klient klient) {
+    public DialogZobaczRezerwacje(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
         jTable1.setRowSorter(null);

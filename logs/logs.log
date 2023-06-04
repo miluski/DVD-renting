@@ -8273,3 +8273,2075 @@ ORA-12505, TNS:listener does not currently know of SID given in connect descript
 [INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-6 was deleted 
 [INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Thread called Thread-7 was deleted 
 [INFO] EkranSerwer: [ Sun Jun 04 14:16:47 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:09 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:25 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=xpLwC4VvSsuh2jA7zLL0Hw==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:26 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=WqjhfHlHQy20pSWIUGfFdw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 14:58:26 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 14:58:26 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 14:58:29 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:29 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=iZrSw/bFRfeGGIg9cnBmHQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:31 CEST 2023 ] New thread called Thread-4 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:31 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=974PG+gIR7a5/4vnIMYbwA==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:32 CEST 2023 ] New thread called Thread-5 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Zm4JnbwrSvuOLWV/0HdG7Q==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 14:58:32 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 14:58:32 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:33 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cWpifKIdRHaY4AmXz3mpZw==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:33 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BX0avUgrQc2QyaaO6L7JKQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:33 CEST 2023 ] New thread called Thread-6 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=oP6JgkGsSK+JtNjPzBdkgQ==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=8C+RE9XjRmmXHozQr7YYbw==)
+[ERROR] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[ERROR] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:34 CEST 2023 ] New thread called Thread-7 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=PUVu1cw4QgyhF2ZM7zp41w==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:34 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GRAnrNvTRCC0Cu9JGkdbKg==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GVlZrxhdR72Sr8T6/x26WQ==)
+[ERROR] BazaDanych: [ Sun Jun 04 14:58:34 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:35 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=wS8MQXbIR/SaVMzwrU/x8Q==)
+[FATAL] EkranSerwer: [ Sun Jun 04 14:58:35 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 14:58:35 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 14:58:36 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:36 CEST 2023 ] New thread called Thread-10 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:36 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=OlML3G10TCyuoyV/aI2hmw==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:38 CEST 2023 ] New thread called Thread-11 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:38 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ecl7wYq2Rfm5Z4zfIJpkoQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:38 CEST 2023 ] New thread called Thread-12 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:38 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=HUZjVEr7SguqUJo5bKsrLQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:38 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:38 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=LGfJ9+m2RfKeH51ng4i0Mg==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:39 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=X5NwLgMeQZiuSyxUEKUc6w==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:39 CEST 2023 ] New thread called Thread-14 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:39 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=U52CGXwkQu2DIgC23CoDdA==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:58:39 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:39 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=AgB/7Ei9SlqJcULrZFcerw==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:58:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=u0IIVyklRRa+R/rgfOU3jA==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:06 CEST 2023 ] New thread called Thread-16 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ISHwivE+T0OMLHWZU5EAQA==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:06 CEST 2023 ] New thread called Thread-17 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=W8DYr4JhSHqLu7XrIiEhkQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 14:59:06 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 14:59:06 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 14:59:08 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:09 CEST 2023 ] New thread called Thread-18 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:09 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=FhWdaPF3TXGxCB8Mp6bp8w==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:10 CEST 2023 ] New thread called Thread-19 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:10 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=baHnZ5n9QQCSu+A+pJVU8w==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:10 CEST 2023 ] New thread called Thread-20 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:10 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=7i+gaGOdTjO45/HZMNUo2w==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 14:59:11 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 14:59:11 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=i7niVDnLRL28qJt13PyNyQ==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Lsb8rHwjQ12BOdG6EGZGNw==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:12 CEST 2023 ] New thread called Thread-21 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=2yp3J15ORUa7mJSzzFPTpg==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:12 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=kROrhqv8SxWNOwmiSopzSw==)
+[ERROR] BazaDanych: [ Sun Jun 04 14:59:12 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[ERROR] BazaDanych: [ Sun Jun 04 14:59:12 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:13 CEST 2023 ] New thread called Thread-22 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NO/OYe3oT/2T2Ew2XWM80Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:13 CEST 2023 ] New thread called Thread-23 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=zk/+fxo/Q1iSS7f7DcclPA==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Ei30c/nJSKKCyKYeRdQfVA==)
+[ERROR] BazaDanych: [ Sun Jun 04 14:59:13 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:13 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:13 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Whi27S1uQ323gpK9vDHERw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 14:59:13 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 14:59:13 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 14:59:14 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:14 CEST 2023 ] New thread called Thread-25 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:14 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4SExmxf2RsyeZh5r2M6/cw==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:15 CEST 2023 ] New thread called Thread-26 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:15 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NYLgs1JvTDCTjwKAbSvK4g==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:16 CEST 2023 ] New thread called Thread-27 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=S7Ky2LDJQ1uyq711ZwpP1g==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:16 CEST 2023 ] New thread called Thread-28 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1XfURBybSFKI/o+rgjLHQQ==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ZU0JnPDkTT6YZENFXA1VvQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:16 CEST 2023 ] New thread called Thread-29 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ob+rOpORTNmMhh2xUDKyHw==)
+[INFO] EkranSerwer: [ Sun Jun 04 14:59:16 CEST 2023 ] New thread called Thread-30 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:16 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Sj2+3prLTWOXhI0c0C3DdQ==)
+[FATAL] BazaDanych: [ Sun Jun 04 14:59:17 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BhafjCeXQZ+Tjbs8bwZXnw==)
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:00 CEST 2023 ] New thread called Thread-31 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:01 CEST 2023 ] New thread called Thread-32 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] EkranSerwer: [ Sun Jun 04 15:04:01 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:04:01 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:04:02 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:03 CEST 2023 ] New thread called Thread-33 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:03 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:05 CEST 2023 ] New thread called Thread-34 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:05 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:05 CEST 2023 ] New thread called Thread-35 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:05 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 15:04:06 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:06 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 15:04:07 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 15:04:07 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:08 CEST 2023 ] New thread called Thread-36 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:08 CEST 2023 ] New thread called Thread-37 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:09 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:09 CEST 2023 ] New thread called Thread-38 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:09 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:04:09 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:09 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:09 CEST 2023 ] New thread called Thread-39 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:09 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] EkranSerwer: [ Sun Jun 04 15:04:09 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:04:09 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:04:10 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:10 CEST 2023 ] New thread called Thread-40 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:11 CEST 2023 ] New thread called Thread-41 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:11 CEST 2023 ] New thread called Thread-42 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:11 CEST 2023 ] New thread called Thread-43 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:04:12 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:12 CEST 2023 ] New thread called Thread-44 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:12 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:04:12 CEST 2023 ] New thread called Thread-45 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:04:12 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:04:13 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:21 CEST 2023 ] New thread called Thread-46 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:21 CEST 2023 ] New thread called Thread-47 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] EkranSerwer: [ Sun Jun 04 15:07:21 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:07:21 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:07:23 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:23 CEST 2023 ] New thread called Thread-48 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:23 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:24 CEST 2023 ] New thread called Thread-49 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:24 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:24 CEST 2023 ] New thread called Thread-50 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:24 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 15:07:25 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:25 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:27 CEST 2023 ] New thread called Thread-51 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:28 CEST 2023 ] New thread called Thread-52 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:28 CEST 2023 ] New thread called Thread-53 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:07:28 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:28 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:28 CEST 2023 ] New thread called Thread-54 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] EkranSerwer: [ Sun Jun 04 15:07:28 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:07:28 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:07:29 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:29 CEST 2023 ] New thread called Thread-55 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:30 CEST 2023 ] New thread called Thread-56 was created 
+[INFO] BazaDanych: [ Sun Jun 04 15:07:30 CEST 2023 ] Changed something in database construction
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:31 CEST 2023 ] New thread called Thread-57 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:31 CEST 2023 ] New thread called Thread-58 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:31 CEST 2023 ] New thread called Thread-59 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:07:31 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:32 CEST 2023 ] New thread called Thread-60 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:32 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:07:32 CEST 2023 ] New thread called Thread-61 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:07:32 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:07:33 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:45 CEST 2023 ] New thread called Thread-62 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:45 CEST 2023 ] New thread called Thread-63 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] EkranSerwer: [ Sun Jun 04 15:09:45 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:09:45 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:09:46 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:46 CEST 2023 ] New thread called Thread-64 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:46 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:48 CEST 2023 ] New thread called Thread-65 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:48 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:48 CEST 2023 ] New thread called Thread-66 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:48 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 15:09:49 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:49 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 15:09:50 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 15:09:50 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:50 CEST 2023 ] New thread called Thread-67 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:51 CEST 2023 ] New thread called Thread-68 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:51 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:52 CEST 2023 ] New thread called Thread-69 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:52 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:52 CEST 2023 ] New thread called Thread-70 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:53 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:09:53 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:53 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:53 CEST 2023 ] New thread called Thread-71 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:53 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] EkranSerwer: [ Sun Jun 04 15:09:53 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:09:53 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:09:54 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:54 CEST 2023 ] New thread called Thread-72 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:54 CEST 2023 ] New thread called Thread-73 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:54 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:55 CEST 2023 ] New thread called Thread-74 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:55 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:55 CEST 2023 ] New thread called Thread-75 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:55 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:09:55 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:55 CEST 2023 ] New thread called Thread-76 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:56 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:56 CEST 2023 ] New thread called Thread-77 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:09:56 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:09:57 CEST 2023 ] New thread called Thread-78 was created 
+[INFO] BazaDanych: [ Sun Jun 04 15:09:57 CEST 2023 ] Changed something in database construction
+[FATAL] BazaDanych: [ Sun Jun 04 15:09:58 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:18 CEST 2023 ] New thread called Thread-79 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:18 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:18 CEST 2023 ] New thread called Thread-80 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:19:19 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:19:19 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:19:20 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:20 CEST 2023 ] New thread called Thread-81 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:20 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:21 CEST 2023 ] New thread called Thread-82 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:21 CEST 2023 ] New thread called Thread-83 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 15:19:22 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:22 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 15:19:23 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 15:19:23 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:23 CEST 2023 ] New thread called Thread-84 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:24 CEST 2023 ] New thread called Thread-85 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:25 CEST 2023 ] New thread called Thread-86 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:26 CEST 2023 ] New thread called Thread-87 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:26 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:19:26 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:26 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:26 CEST 2023 ] New thread called Thread-88 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:19:26 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:19:26 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:19:27 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:27 CEST 2023 ] New thread called Thread-89 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:28 CEST 2023 ] New thread called Thread-90 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:28 CEST 2023 ] New thread called Thread-91 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:28 CEST 2023 ] New thread called Thread-92 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:28 CEST 2023 ] New thread called Thread-93 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:28 CEST 2023 ] New thread called Thread-94 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:28 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:19:29 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:29 CEST 2023 ] New thread called Thread-95 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:29 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:29 CEST 2023 ] New thread called Thread-96 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:19:29 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:19:30 CEST 2023 ] New thread called Thread-97 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 15:19:31 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:26 CEST 2023 ] New thread called Thread-98 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:26 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:26 CEST 2023 ] New thread called Thread-99 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:20:26 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:20:26 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:20:27 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:27 CEST 2023 ] New thread called Thread-100 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:28 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:29 CEST 2023 ] New thread called Thread-101 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:29 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:29 CEST 2023 ] New thread called Thread-102 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:29 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 15:20:30 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:30 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 15:20:31 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 15:20:31 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:31 CEST 2023 ] New thread called Thread-103 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:33 CEST 2023 ] New thread called Thread-104 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:33 CEST 2023 ] New thread called Thread-105 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:34 CEST 2023 ] New thread called Thread-106 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:20:34 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:34 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:34 CEST 2023 ] New thread called Thread-107 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:20:34 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:20:34 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:20:35 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:35 CEST 2023 ] New thread called Thread-108 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:36 CEST 2023 ] New thread called Thread-109 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:36 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:36 CEST 2023 ] New thread called Thread-110 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:36 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:36 CEST 2023 ] New thread called Thread-111 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:36 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:36 CEST 2023 ] New thread called Thread-112 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:36 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:36 CEST 2023 ] New thread called Thread-113 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:37 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:20:37 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:37 CEST 2023 ] New thread called Thread-114 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:37 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:37 CEST 2023 ] New thread called Thread-115 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:20:37 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:20:38 CEST 2023 ] New thread called Thread-116 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 15:20:39 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:01 CEST 2023 ] New thread called Thread-117 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:01 CEST 2023 ] New thread called Thread-118 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:21:01 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:21:01 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:21:02 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:02 CEST 2023 ] New thread called Thread-119 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:02 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:04 CEST 2023 ] New thread called Thread-120 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:04 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:04 CEST 2023 ] New thread called Thread-121 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:04 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 15:21:04 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:04 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:06 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:06 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:06 CEST 2023 ] New thread called Thread-122 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:07 CEST 2023 ] New thread called Thread-123 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:07 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:08 CEST 2023 ] New thread called Thread-124 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:08 CEST 2023 ] New thread called Thread-125 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:08 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:08 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:08 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:08 CEST 2023 ] New thread called Thread-126 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:21:09 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:21:09 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:21:09 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:09 CEST 2023 ] New thread called Thread-127 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:11 CEST 2023 ] New thread called Thread-128 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:11 CEST 2023 ] New thread called Thread-129 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:11 CEST 2023 ] New thread called Thread-130 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:11 CEST 2023 ] New thread called Thread-131 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:11 CEST 2023 ] New thread called Thread-132 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:11 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:11 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:12 CEST 2023 ] New thread called Thread-133 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:12 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:12 CEST 2023 ] New thread called Thread-134 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:12 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:13 CEST 2023 ] New thread called Thread-135 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:14 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:26 CEST 2023 ] New thread called Thread-136 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:27 CEST 2023 ] New thread called Thread-137 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:21:27 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:21:27 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:21:29 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:29 CEST 2023 ] New thread called Thread-138 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:29 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:31 CEST 2023 ] New thread called Thread-139 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:31 CEST 2023 ] New thread called Thread-140 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 15:21:32 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:32 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:33 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:33 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:33 CEST 2023 ] New thread called Thread-141 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:34 CEST 2023 ] New thread called Thread-142 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:34 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:34 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:34 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:35 CEST 2023 ] New thread called Thread-143 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:35 CEST 2023 ] New thread called Thread-144 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:35 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:36 CEST 2023 ] New thread called Thread-145 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 15:21:36 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 15:21:36 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 15:21:36 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:36 CEST 2023 ] New thread called Thread-146 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:37 CEST 2023 ] New thread called Thread-147 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:37 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:37 CEST 2023 ] New thread called Thread-148 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:37 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:37 CEST 2023 ] New thread called Thread-149 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:37 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:38 CEST 2023 ] New thread called Thread-150 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:38 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:38 CEST 2023 ] New thread called Thread-151 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:38 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:38 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:38 CEST 2023 ] New thread called Thread-152 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:38 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:38 CEST 2023 ] New thread called Thread-153 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 15:21:38 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 15:21:39 CEST 2023 ] New thread called Thread-154 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 15:21:40 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:22 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:35 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:36 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NpqLTLPTQtegv8Osx10C2Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:36 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:36 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=l8BIt7Z4QhifQnDLevKWvA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:10:36 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:10:36 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:10:37 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:38 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:38 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=0ADaf3vuTq22GCjRNooOYQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:39 CEST 2023 ] New thread called Thread-4 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:39 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=UBtvas+jRB+vFPYc7pEN9g==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:40 CEST 2023 ] New thread called Thread-5 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:40 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QzLIjQ0DQlCKn7AImjYeDw==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 18:10:40 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 18:10:40 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SUSTBlM0S6mGzylr0Zvfxg==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=l2Oxnw0LQH2m9Q7J3YC0Cw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:41 CEST 2023 ] New thread called Thread-6 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Q3ZEUT5hR0+WmY3/UFhlWw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:10:41 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:10:41 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:10:42 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:43 CEST 2023 ] New thread called Thread-7 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=LczgL2TiTGKGgz0DnAtcfQ==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=GdFwt3EFS7GyhfYN0ytyLQ==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[ERROR] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:43 CEST 2023 ] New thread called Thread-8 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=v68Bb5NeT4O7IsYdeD8KkQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:43 CEST 2023 ] New thread called Thread-9 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eS3pXUO9SeyYLiZJWFYIsw==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IEq1D6DiRNCpwZAueHhn9w==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:10:43 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:44 CEST 2023 ] New thread called Thread-10 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=val/d1JQRranmBooIOq7UA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:10:44 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:10:44 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:10:44 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:44 CEST 2023 ] New thread called Thread-11 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=dRd4s8zAQ5SbvZvQgu5TPA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:45 CEST 2023 ] New thread called Thread-12 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=aoAEEPziQFSmfWq+wRYBiw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:46 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BpCqug4eQ/Cuo/WFTcQsCA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:46 CEST 2023 ] New thread called Thread-14 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=z9dJsgz4RBOZETt2txPMGA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:46 CEST 2023 ] New thread called Thread-15 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=hlHBk19+Traqu5yJuGtrZg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:46 CEST 2023 ] New thread called Thread-16 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QuE8RIHtRReoh3AIaRdWog==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:46 CEST 2023 ] New thread called Thread-17 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ojPsU0/yQialIKHpb8rTug==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=UjsJ6U1XSCGito2A+kdDPQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:47 CEST 2023 ] New thread called Thread-18 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:47 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Rl5RkbAYSWKb84jnlP3biA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:47 CEST 2023 ] New thread called Thread-19 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:47 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ioA8ykdsQxKWIAb5mczDkA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:10:48 CEST 2023 ] New thread called Thread-20 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=xhy4eAl5RmGBg7YSB4FwEQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:10:48 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:10:48 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:10:48 CEST 2023 ] null
+[FATAL] BazaDanych: [ Sun Jun 04 18:10:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=nWPG5Sd/Ru+4zWdGAK/3fA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:24 CEST 2023 ] New thread called Thread-21 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IGBXZPLtSFWFEs1VWG18iw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:24 CEST 2023 ] New thread called Thread-22 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:24 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=DppPmKMGSPi8MqX2ZeHE5w==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:11:25 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:11:25 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:11:26 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:26 CEST 2023 ] New thread called Thread-23 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:26 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=KFrxbNx+S0SOaqC3mpX7Vg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:28 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cKlkQgKTRDiXfpvs/zlWTg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:28 CEST 2023 ] New thread called Thread-25 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:28 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=47nc1QVoTqePNafZAs6xlQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 18:11:28 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 18:11:29 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=pOzCqZicRni4Y6Kdo0PlPg==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:29 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=gDmvKLW8RSiGQp38FOB6OA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:30 CEST 2023 ] New thread called Thread-26 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:30 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=R4vHqiCOTmyVMRQSCEwXPg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:11:30 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:11:30 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:11:30 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:31 CEST 2023 ] New thread called Thread-27 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:31 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=G+gBKp2BSQiQ7JCYWZw4aQ==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:31 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=KZW+feLdTOSDcQa4gDHSwQ==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:11:31 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[ERROR] BazaDanych: [ Sun Jun 04 18:11:31 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:32 CEST 2023 ] New thread called Thread-28 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=EXcdMp82RhuPBwSNHjZgLQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:32 CEST 2023 ] New thread called Thread-29 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=oOD2nF8DSN6NiQZuX8pr3w==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=exkhIL9bS96pjys2VfpFxw==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:11:32 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:32 CEST 2023 ] New thread called Thread-30 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=epp2UxcZSIeeg5zLbJsa9g==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:11:32 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:11:32 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:11:32 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:32 CEST 2023 ] New thread called Thread-31 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:32 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=bVYWk5YzTC6Ty7EBGpoRAw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:34 CEST 2023 ] New thread called Thread-32 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=rl5OhyThTH+DfNOwncoANA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:34 CEST 2023 ] New thread called Thread-33 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Oa5qOmrhS6W6KHDnVpsBdw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:34 CEST 2023 ] New thread called Thread-34 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=mDJRP7upRLmQrb8txkNVbg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:34 CEST 2023 ] New thread called Thread-35 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:34 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=S0Zio8rcTFGi4KT01zMRsg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:34 CEST 2023 ] New thread called Thread-36 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=d+axZ8JsSUiYGjnMztwK6g==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:35 CEST 2023 ] New thread called Thread-37 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BgnNnvabQ2+/AyRSFtOLUA==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=QiGnZllURTCaslgvYliPRw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:35 CEST 2023 ] New thread called Thread-38 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=r2YKkWJ/Tyi/pV1phwYgiA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:35 CEST 2023 ] New thread called Thread-39 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:35 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=bcghKVqnRGKXA+N3I7gh4w==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:11:36 CEST 2023 ] New thread called Thread-40 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:36 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=WZ0mX0cARBOslspnrekLNA==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:11:36 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:11:36 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:11:36 CEST 2023 ] null
+[FATAL] BazaDanych: [ Sun Jun 04 18:11:37 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1in/hUSWTmWeoaAs8tALCw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:38 CEST 2023 ] New thread called Thread-41 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:38 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=A6r6mnwPQpqYbSIyjWizUg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:38 CEST 2023 ] New thread called Thread-42 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:38 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=AVquXOymQNqekFC8T0mT/Q==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:16:38 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:16:38 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:16:39 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:39 CEST 2023 ] New thread called Thread-43 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:39 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=E4P/Gqi5TI6wm3IQCZtl+A==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:41 CEST 2023 ] New thread called Thread-44 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=P4+XSIqmRL+oK/gPpkFUUA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:41 CEST 2023 ] New thread called Thread-45 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:41 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=WtNm+TecTyiMtltRCSH5FA==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 18:16:42 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 18:16:42 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=jIw9g6+WQA2su78ddKrogQ==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=hg1/1ErsTBWH0RWaL084Kg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:43 CEST 2023 ] New thread called Thread-46 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:43 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=7oRM3xzFSZS57dwKINrFzg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:16:43 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:16:43 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:16:44 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:44 CEST 2023 ] New thread called Thread-47 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:44 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=BDh7V4r0SpCPHgIZT83okw==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=XUFTJvu1RQOGjuWloj2w8Q==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[ERROR] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:45 CEST 2023 ] New thread called Thread-48 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Nk26g5RRT8aPaPVOsu0ucw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:45 CEST 2023 ] New thread called Thread-49 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3EfyY3AuR3CqpFRh2uHAxA==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=2Ja6+aJZRjamPTzCMuDb5w==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:45 CEST 2023 ] New thread called Thread-50 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:45 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=kneX+pG/RXyWHsOb5amH3A==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:16:45 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:16:45 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:16:46 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:46 CEST 2023 ] New thread called Thread-51 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:46 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=JoZWaKgiSSaby3ga91YjWw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:47 CEST 2023 ] New thread called Thread-52 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:47 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ZPjVaMm4S/OI63QUSj7KNQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:48 CEST 2023 ] New thread called Thread-53 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=CgNJs39FRTuRpo4wE2RzDg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:48 CEST 2023 ] New thread called Thread-54 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:48 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=SOWIE7sBS6eVwx+oF+gSBA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:48 CEST 2023 ] New thread called Thread-55 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eMCycBHRRNqNi06nx6xPSA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:49 CEST 2023 ] New thread called Thread-56 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=WT6C907LSRmjDwttI2eniA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:49 CEST 2023 ] New thread called Thread-57 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=COI+jK68T5Gq5aWgKATJKA==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=9b2x058sQbycFWHtFiWP7w==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:49 CEST 2023 ] New thread called Thread-58 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=3hKulsitSwGLOFtuN2/QIw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:49 CEST 2023 ] New thread called Thread-59 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:49 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=FpFrWgnLQNGzYE8GsDUr0Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:16:50 CEST 2023 ] New thread called Thread-60 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=S0lMB3ZsTX+12/lg+l8bXg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:16:50 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:16:50 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:16:50 CEST 2023 ] null
+[FATAL] BazaDanych: [ Sun Jun 04 18:16:51 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=PBdgXlcUQ1aiRUzEVEQoLQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:20:54 CEST 2023 ] New thread called Thread-61 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:54 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=105j14JYQHCiU6MU9/w8fw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:20:55 CEST 2023 ] New thread called Thread-62 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:55 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=6gTcqjEvQpm+jcWh2IlqXw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:20:55 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:20:55 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:20:55 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:20:56 CEST 2023 ] New thread called Thread-63 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:56 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=FAaxY0yLTbiqq7Lgmai1Ig==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:20:57 CEST 2023 ] New thread called Thread-64 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=fYg0vmQsRIC2gMYO4CBRyA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:20:58 CEST 2023 ] New thread called Thread-65 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=gXvUMGT3SPCgZpAPvq1Tew==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 18:20:58 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 18:20:58 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=vdsr94d+QOiIotgwjF6V0A==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=caTXQJRjTLuRkZc01q1feQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:20:59 CEST 2023 ] New thread called Thread-66 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:20:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=hDF2r7yQTjW/saBcEOa69w==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:20:59 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:20:59 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:21:00 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:00 CEST 2023 ] New thread called Thread-67 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=iqVyIUeFTNmqtQEnbwILlA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:01 CEST 2023 ] New thread called Thread-68 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=HJDTwRsWSGaBHpbEL3XOKg==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=yjZqriFSQ82n11yl4znLQg==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[ERROR] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:01 CEST 2023 ] New thread called Thread-69 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=k+8bMX/QSZCN5sTuXzz5mw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:01 CEST 2023 ] New thread called Thread-70 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=LgSAtWrTQvmXb21DlgenRg==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=pIEPklZ9Tze+jXz42/KcKg==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:21:01 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:01 CEST 2023 ] New thread called Thread-71 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:02 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=JVVmCtl5Tc+YAn4xypO8bg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:21:02 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:21:02 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:21:02 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:02 CEST 2023 ] New thread called Thread-72 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:02 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=/SzJuKhzTuW/ML7rgLYGcQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:03 CEST 2023 ] New thread called Thread-73 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=dxEGbr5sSPGX+gh8d+44jA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:03 CEST 2023 ] New thread called Thread-74 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=qK9IiA3KS62Ok/7CdhQrfQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:03 CEST 2023 ] New thread called Thread-75 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:03 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=nNZIrj5SRIubcuQ1gEPpuQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:04 CEST 2023 ] New thread called Thread-76 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=UFR33JkaTEWS0ql/obXhEw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:04 CEST 2023 ] New thread called Thread-77 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=eItLa+lqSFyXVFcVSK+bSw==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Bd4MvlU3Qjm6RlAnMEyjGQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:04 CEST 2023 ] New thread called Thread-78 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Wc0R3O2aQQiUtRS0FD70eA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:04 CEST 2023 ] New thread called Thread-79 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:04 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=EGuKhmlsS2GlpnXPJZUzSA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:21:05 CEST 2023 ] New thread called Thread-80 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:05 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IyeRBAuXSdmGwInBoVkwpw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:21:05 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:21:05 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:21:05 CEST 2023 ] null
+[FATAL] BazaDanych: [ Sun Jun 04 18:21:06 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=oI2NwcqLSWOt6Wo2DTwxkA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:50 CEST 2023 ] New thread called Thread-81 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=DtXqKJ9TQAOiguka9iXJwA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:50 CEST 2023 ] New thread called Thread-82 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:50 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=6aeF1m2UQQGXW/KQ4/VtTw==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:29:50 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:29:50 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:29:51 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:51 CEST 2023 ] New thread called Thread-83 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:51 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=01xF6UnuRE6xFH/pV3K/nQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:53 CEST 2023 ] New thread called Thread-84 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:53 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=S+jotJ0JQCa/ojr/wGem8A==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:53 CEST 2023 ] New thread called Thread-85 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:53 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Yiwqwck7Tr6rQ95I4vmzZQ==)
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 18:29:54 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 18:29:54 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:55 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=yATSQxLwRR+JMYBZNhCbHw==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:55 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=rJXaZWLIRhegoTar9vR9xA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:55 CEST 2023 ] New thread called Thread-86 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:55 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cxoF87gETWW7NOPCKe4wRg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:29:55 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:29:55 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:29:55 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:56 CEST 2023 ] New thread called Thread-87 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:56 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=i0RIsP/aRLK+HVr+F44J6g==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:56 CEST 2023 ] New thread called Thread-88 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:56 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=99XhFP2YTaCoSzB/lEBbIA==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:56 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=n8YGkov/Q+Wi4KNckvvfmQ==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:29:56 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[ERROR] BazaDanych: [ Sun Jun 04 18:29:56 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:57 CEST 2023 ] New thread called Thread-89 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=I67CS9WXQp+NiBf69OehmA==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:57 CEST 2023 ] New thread called Thread-90 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=azvxaiW1RaSb4zJriNIJ2w==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:57 CEST 2023 ] New thread called Thread-91 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=1lf5St/QSDGo8jxx2tM1ig==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=/aiuEYZTR1yaGFp1V3Py/A==)
+[ERROR] BazaDanych: [ Sun Jun 04 18:29:57 CEST 2023 ] Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connect" is null
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:57 CEST 2023 ] New thread called Thread-92 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:57 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=umEACQ5JSZa/LP0Bv63RIQ==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:29:57 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:29:57 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 18:29:58 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:58 CEST 2023 ] New thread called Thread-93 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:58 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=NEf7KsKxQ3KzS9MW8WsCXw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:59 CEST 2023 ] New thread called Thread-94 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=IrrZOJ6ZSnW11ZP9hAvoLw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:59 CEST 2023 ] New thread called Thread-95 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=xchbaSsKTSCQEZq8weZa5Q==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:59 CEST 2023 ] New thread called Thread-96 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=Wc65u9SnQEiCWYQ+7D4Weg==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:29:59 CEST 2023 ] New thread called Thread-97 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:29:59 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=lbBqLLPaSmuV4A75VMPagw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:30:00 CEST 2023 ] New thread called Thread-98 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:30:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=a28ivD1+T42+NWnexniEnw==)
+[FATAL] BazaDanych: [ Sun Jun 04 18:30:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=7f8nhw2fQS6ZTM39qLP3Kw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:30:00 CEST 2023 ] New thread called Thread-99 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:30:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=ZYxXuMutSJWlQXzPelPEXQ==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:30:00 CEST 2023 ] New thread called Thread-100 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:30:00 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=4JLhMbP7SDmSPfvcwlvEBw==)
+[INFO] EkranSerwer: [ Sun Jun 04 18:30:01 CEST 2023 ] New thread called Thread-101 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 18:30:01 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=lrJmTHjBR26vZ3loEP01vg==)
+[FATAL] EkranSerwer: [ Sun Jun 04 18:30:01 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 18:30:01 CEST 2023 ] Cannot invoke "String.length()" because "str" is null
+[ERROR] Klient: [ Sun Jun 04 18:30:01 CEST 2023 ] null
+[FATAL] BazaDanych: [ Sun Jun 04 18:30:02 CEST 2023 ] Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+  (CONNECTION_ID=cJEBPakMTIqB4pGLBd/I+w==)
+[INFO] EkranSerwer: [ Sun Jun 04 20:40:28 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:16 CEST 2023 ] New thread called Thread-0 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:43:17 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:43:17 CEST 2023 ] Unexpected event
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:17 CEST 2023 ] Błąd we-wy: Socket read interrupted, Authentication lapse 0 ms.
+[ERROR] Klient: [ Sun Jun 04 20:43:19 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:21 CEST 2023 ] New thread called Thread-2 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:43:23 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:43:23 CEST 2023 ] Unexpected event
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:23 CEST 2023 ] Błąd we-wy: Socket read interrupted, Authentication lapse 714 ms.
+[ERROR] Klient: [ Sun Jun 04 20:43:24 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:24 CEST 2023 ] New thread called Thread-3 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:43:26 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:43:26 CEST 2023 ] Unexpected event
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:26 CEST 2023 ] For input string: ""
+[ERROR] Klient: [ Sun Jun 04 20:43:26 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:27 CEST 2023 ] New thread called Thread-4 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:27 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:30 CEST 2023 ] New thread called Thread-5 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 20:43:31 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:31 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:33 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:33 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:33 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:34 CEST 2023 ] New thread called Thread-7 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:34 CEST 2023 ] New thread called Thread-8 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:34 CEST 2023 ] New thread called Thread-9 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:35 CEST 2023 ] New thread called Thread-10 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:35 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:36 CEST 2023 ] New thread called Thread-11 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:36 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:36 CEST 2023 ] New thread called Thread-12 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:36 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:36 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:36 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:37 CEST 2023 ] New thread called Thread-13 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:43:37 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:43:37 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:43:37 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:37 CEST 2023 ] New thread called Thread-14 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:38 CEST 2023 ] New thread called Thread-15 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:38 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:38 CEST 2023 ] New thread called Thread-16 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:39 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:39 CEST 2023 ] New thread called Thread-17 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:39 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:39 CEST 2023 ] New thread called Thread-18 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:39 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:39 CEST 2023 ] New thread called Thread-19 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:39 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:39 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:40 CEST 2023 ] New thread called Thread-20 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:40 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:40 CEST 2023 ] New thread called Thread-21 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:40 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:41 CEST 2023 ] New thread called Thread-22 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:41 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:52 CEST 2023 ] New thread called Thread-23 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:53 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:53 CEST 2023 ] New thread called Thread-24 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:43:53 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:43:53 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:43:54 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:54 CEST 2023 ] New thread called Thread-25 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:54 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:56 CEST 2023 ] New thread called Thread-26 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:56 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:56 CEST 2023 ] New thread called Thread-27 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:56 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 20:43:57 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 20:43:57 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:59 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 20:43:59 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:43:59 CEST 2023 ] New thread called Thread-28 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:00 CEST 2023 ] New thread called Thread-29 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:00 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:00 CEST 2023 ] New thread called Thread-30 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:00 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:01 CEST 2023 ] New thread called Thread-31 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:01 CEST 2023 ] New thread called Thread-32 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:01 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:02 CEST 2023 ] New thread called Thread-33 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:02 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:02 CEST 2023 ] New thread called Thread-34 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:02 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:44:02 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:02 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:02 CEST 2023 ] New thread called Thread-35 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:44:02 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:44:02 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:44:03 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:03 CEST 2023 ] New thread called Thread-36 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:05 CEST 2023 ] New thread called Thread-37 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:05 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:05 CEST 2023 ] New thread called Thread-38 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:05 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:05 CEST 2023 ] New thread called Thread-39 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:05 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:05 CEST 2023 ] New thread called Thread-40 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:05 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:05 CEST 2023 ] New thread called Thread-41 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:05 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:44:06 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:06 CEST 2023 ] New thread called Thread-42 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:06 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:06 CEST 2023 ] New thread called Thread-43 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:44:06 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:44:07 CEST 2023 ] New thread called Thread-44 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 20:44:08 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:38 CEST 2023 ] New thread called Thread-45 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:38 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:38 CEST 2023 ] New thread called Thread-46 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:48:38 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:48:38 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:48:40 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:40 CEST 2023 ] New thread called Thread-47 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:40 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:42 CEST 2023 ] New thread called Thread-48 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:42 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:42 CEST 2023 ] New thread called Thread-49 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:42 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 20:48:42 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:42 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 20:48:44 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 20:48:44 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:44 CEST 2023 ] New thread called Thread-50 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:45 CEST 2023 ] New thread called Thread-51 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:46 CEST 2023 ] New thread called Thread-52 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:46 CEST 2023 ] New thread called Thread-53 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:46 CEST 2023 ] New thread called Thread-54 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:47 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:47 CEST 2023 ] New thread called Thread-55 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:47 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:47 CEST 2023 ] New thread called Thread-56 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:47 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:48:47 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:47 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:47 CEST 2023 ] New thread called Thread-57 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:48:47 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:48:47 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:48:48 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:48 CEST 2023 ] New thread called Thread-58 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:49 CEST 2023 ] New thread called Thread-59 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:49 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:49 CEST 2023 ] New thread called Thread-60 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:49 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:49 CEST 2023 ] New thread called Thread-61 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:50 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:50 CEST 2023 ] New thread called Thread-62 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:50 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:50 CEST 2023 ] New thread called Thread-63 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:50 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:48:50 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:50 CEST 2023 ] New thread called Thread-64 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:50 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:51 CEST 2023 ] New thread called Thread-65 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:48:51 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:48:51 CEST 2023 ] New thread called Thread-66 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 20:48:52 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:12 CEST 2023 ] New thread called Thread-67 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:12 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:12 CEST 2023 ] New thread called Thread-68 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:49:13 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:49:13 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:49:15 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:15 CEST 2023 ] New thread called Thread-69 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:16 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:17 CEST 2023 ] New thread called Thread-70 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:17 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:17 CEST 2023 ] New thread called Thread-71 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:17 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 20:49:18 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:18 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:19 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:19 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:19 CEST 2023 ] New thread called Thread-72 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:20 CEST 2023 ] New thread called Thread-73 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:20 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:21 CEST 2023 ] New thread called Thread-74 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:21 CEST 2023 ] New thread called Thread-75 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:21 CEST 2023 ] New thread called Thread-76 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:21 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:22 CEST 2023 ] New thread called Thread-77 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:22 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:22 CEST 2023 ] New thread called Thread-78 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:22 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:22 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:22 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:22 CEST 2023 ] New thread called Thread-79 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:49:22 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:49:22 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:49:23 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:23 CEST 2023 ] New thread called Thread-80 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:24 CEST 2023 ] New thread called Thread-81 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:24 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:24 CEST 2023 ] New thread called Thread-82 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:24 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:24 CEST 2023 ] New thread called Thread-83 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:24 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:24 CEST 2023 ] New thread called Thread-84 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:25 CEST 2023 ] New thread called Thread-85 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:25 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:25 CEST 2023 ] New thread called Thread-86 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:25 CEST 2023 ] New thread called Thread-87 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:25 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:26 CEST 2023 ] New thread called Thread-88 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:27 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:51 CEST 2023 ] New thread called Thread-89 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:51 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:51 CEST 2023 ] New thread called Thread-90 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:49:51 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:49:51 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:49:53 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:54 CEST 2023 ] New thread called Thread-91 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:54 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:55 CEST 2023 ] New thread called Thread-92 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:55 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:55 CEST 2023 ] New thread called Thread-93 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:55 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 20:49:56 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:56 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:57 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:57 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:57 CEST 2023 ] New thread called Thread-94 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:58 CEST 2023 ] New thread called Thread-95 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:58 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:58 CEST 2023 ] New thread called Thread-96 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:59 CEST 2023 ] New thread called Thread-97 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:49:59 CEST 2023 ] New thread called Thread-98 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:49:59 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:00 CEST 2023 ] New thread called Thread-99 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:00 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:00 CEST 2023 ] New thread called Thread-100 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:00 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:50:00 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:00 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:00 CEST 2023 ] New thread called Thread-101 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:50:00 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:50:00 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:50:01 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:01 CEST 2023 ] New thread called Thread-102 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:01 CEST 2023 ] New thread called Thread-103 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:02 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:02 CEST 2023 ] New thread called Thread-104 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:02 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:02 CEST 2023 ] New thread called Thread-105 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:02 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:02 CEST 2023 ] New thread called Thread-106 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:02 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:02 CEST 2023 ] New thread called Thread-107 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:02 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:50:02 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:03 CEST 2023 ] New thread called Thread-108 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:03 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:03 CEST 2023 ] New thread called Thread-109 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:50:03 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:50:04 CEST 2023 ] New thread called Thread-110 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 20:50:05 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:37 CEST 2023 ] New thread called Thread-111 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:38 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:38 CEST 2023 ] New thread called Thread-112 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:53:38 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:53:38 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:53:39 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:39 CEST 2023 ] New thread called Thread-113 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:39 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:41 CEST 2023 ] New thread called Thread-114 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:41 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:41 CEST 2023 ] New thread called Thread-115 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:41 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 20:53:42 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:42 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 20:53:43 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 20:53:43 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:43 CEST 2023 ] New thread called Thread-116 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:44 CEST 2023 ] New thread called Thread-117 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:44 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:45 CEST 2023 ] New thread called Thread-118 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:45 CEST 2023 ] New thread called Thread-119 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:45 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:45 CEST 2023 ] New thread called Thread-120 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:46 CEST 2023 ] New thread called Thread-121 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:46 CEST 2023 ] New thread called Thread-122 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:53:46 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:46 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:46 CEST 2023 ] New thread called Thread-123 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:46 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:47 CEST 2023 ] New thread called Thread-124 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:53:47 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:53:47 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:53:47 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:47 CEST 2023 ] New thread called Thread-125 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:48 CEST 2023 ] New thread called Thread-126 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:48 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:49 CEST 2023 ] New thread called Thread-127 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:49 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:49 CEST 2023 ] New thread called Thread-128 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:49 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:49 CEST 2023 ] New thread called Thread-129 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:49 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:49 CEST 2023 ] New thread called Thread-130 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:49 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:53:49 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:50 CEST 2023 ] New thread called Thread-131 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:50 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:50 CEST 2023 ] New thread called Thread-132 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:53:50 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:53:51 CEST 2023 ] New thread called Thread-133 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 20:53:51 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:22 CEST 2023 ] New thread called Thread-134 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:23 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:23 CEST 2023 ] New thread called Thread-135 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:55:23 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:55:23 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:55:24 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:24 CEST 2023 ] New thread called Thread-136 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:24 CEST 2023 ] For input string: ""
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:26 CEST 2023 ] New thread called Thread-137 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:26 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:26 CEST 2023 ] New thread called Thread-138 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:26 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] EkranPrzywrocHaslo: [ Sun Jun 04 20:55:26 CEST 2023 ] For input string: "abc123"
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:27 CEST 2023 ] ex
+[FATAL] BazaDanych: [ Sun Jun 04 20:55:28 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[FATAL] BazaDanych: [ Sun Jun 04 20:55:28 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:28 CEST 2023 ] New thread called Thread-139 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:29 CEST 2023 ] New thread called Thread-140 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:29 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:29 CEST 2023 ] New thread called Thread-141 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:29 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:29 CEST 2023 ] New thread called Thread-142 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] Cannot parse null string
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] Brakuje parametru IN lub OUT przy indeksie:: 1
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:30 CEST 2023 ] New thread called Thread-143 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:30 CEST 2023 ] New thread called Thread-144 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:30 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:31 CEST 2023 ] New thread called Thread-145 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:31 CEST 2023 ] New thread called Thread-146 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:55:31 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:31 CEST 2023 ] Index: 0, Size: 0
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:31 CEST 2023 ] New thread called Thread-147 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:31 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:32 CEST 2023 ] New thread called Thread-148 was created 
+[FATAL] EkranSerwer: [ Sun Jun 04 20:55:32 CEST 2023 ] Database no connection
+[ERROR] EkranSerwer: [ Sun Jun 04 20:55:32 CEST 2023 ] Index: 0, Size: 0
+[ERROR] Klient: [ Sun Jun 04 20:55:32 CEST 2023 ] null
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:32 CEST 2023 ] New thread called Thread-149 was created 
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:33 CEST 2023 ] New thread called Thread-150 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:33 CEST 2023 ] New thread called Thread-151 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:33 CEST 2023 ] New thread called Thread-152 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:33 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:34 CEST 2023 ] New thread called Thread-153 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:34 CEST 2023 ] New thread called Thread-154 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[FATAL] BazaDanych: [ Sun Jun 04 20:55:34 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
+[INFO] Wiadomosc: Wiadomosc
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:34 CEST 2023 ] New thread called Thread-155 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:34 CEST 2023 ] New thread called Thread-156 was created 
+[ERROR] BazaDanych: [ Sun Jun 04 20:55:34 CEST 2023 ] ORA-00942: tabela lub perspektywa nie istnieje
+
+[INFO] EkranSerwer: [ Sun Jun 04 20:55:35 CEST 2023 ] New thread called Thread-157 was created 
+[FATAL] BazaDanych: [ Sun Jun 04 20:55:36 CEST 2023 ] Cannot invoke "String.hashCode()" because "<local1>" is null
