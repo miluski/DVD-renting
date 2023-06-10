@@ -1,19 +1,28 @@
 package com.client;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
+    /**
+     * Atrybut będący listą ciągów znaków przechowującym dane
+     */
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący polem tekstowym
      */
@@ -23,23 +32,26 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
      */
     private final javax.swing.JTable jTable1 = new javax.swing.JTable();
     /**
-     * Atrybut będący sorterem tabeli
-     */
-    private TableRowSorter<TableModel> rowSorter;
-    /**
      * Lista odebranych danych
      */
     private final java.util.List<String> panelData = new LinkedList<>();
     /**
+     * Atrybut będący sorterem tabeli
+     */
+    private TableRowSorter<TableModel> rowSorter;
+
+    /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     *
      * @param klient Instancja klasy klient
-     * @param modal Określa czy okno jest modalne, czy nie
+     * @param modal  Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
     public DialogStanMagazynowyDVD(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        klient.polacz(klient);
-        panelData.addAll(klient.otrzymujDane("DVDWareHouseAvalaible",""));
+        dane.clear();
+        dane.add("DVDWareHouseAvalaible");
+        panelData.addAll((Collection<? extends String>) klient.polacz(klient, dane));
         klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -51,6 +63,7 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         setVisible(true);
     }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -75,19 +88,13 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
         jTextField1.setDisabledTextColor(Color.lightGray);
         jTextField1.setMaximumSize(jTextField1.getPreferredSize());
         int counter = 0;
-        int size = ((panelData.size())/2);
+        int size = ((panelData.size()) / 2);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-            },
-            new String [] {
-                "Tytuł filmu", "Ilość egzemplarzy"
-            }
-        ));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(new Object[][]{}, new String[]{"Tytuł filmu", "Ilość egzemplarzy"}));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        for(int i=0; i<size; i++){
-            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1)});
-            if(size>1) counter+=2;
+        for (int i = 0; i < size; i++) {
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter + 1)});
+            if (size > 1) counter += 2;
         }
         jTable1.setBorder(new LineBorder(Color.BLACK));
         jTable1.setEnabled(false);
@@ -101,6 +108,7 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
                     rowSorter.setRowFilter(RowFilter.regexFilter("(?i)" + text));
                 }
             }
+
             @Override
             public void removeUpdate(DocumentEvent e) {
                 String text = jTextField1.getText();
@@ -110,6 +118,7 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
                     rowSorter.setRowFilter(RowFilter.regexFilter("(?i)" + text));
                 }
             }
+
             @Override
             public void changedUpdate(DocumentEvent e) {
                 throw new UnsupportedOperationException("Nie obsługiwany event!");
@@ -126,7 +135,7 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
 
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-        for(int i=0; i<2; i++) {
+        for (int i = 0; i < 2; i++) {
             jTable1.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
             jTable1.getColumnModel().getColumn(i).setHeaderRenderer(centerRenderer);
         }
@@ -141,59 +150,19 @@ public class DialogStanMagazynowyDVD extends javax.swing.JDialog {
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(30, 30, 30)
-                            .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField1))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(150, 150, 150)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel1)
-                .addGap(15,15,15)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jLabel2)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
+        jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(40, 40, 40).addComponent(jLabel1).addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addGroup(jPanel1Layout.createSequentialGroup().addGap(30, 30, 30).addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addComponent(jLabel2).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jTextField1)))).addGroup(jPanel1Layout.createSequentialGroup().addGap(20, 20, 20).addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)).addGroup(jPanel1Layout.createSequentialGroup().addGap(150, 150, 150).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))).addContainerGap(20, Short.MAX_VALUE)));
+        jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(30, 30, 30).addComponent(jLabel1).addGap(15, 15, 15).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jLabel2).addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(15, 15, 15).addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(30, 30, 30).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(37, Short.MAX_VALUE)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         pack();
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Ok
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {

@@ -1,31 +1,25 @@
 package com.client;
+
 import com.server.Logs;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi głównego okna logowania
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class EkranLogowania extends javax.swing.JFrame {
     /**
-     * Atrybut będący nazwą użytkownika
+     * Atrybut będący listą ciągów znaków przechowującym dane
      */
-    protected String loginUzytkownika;
-    /**
-     * Atrybut będący hasłem użytkownika
-     */
-    protected String hasloUzytkownika;
-    /**
-     * Atrybut będący wiadomością
-     */
-    public String wiadomosc;
-    /**
-     * Atrybut będący rangą użytkownika
-     */
-    protected String ranga;
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący polem tekstowym GUI służącym do wprowadzania hasła
      */
@@ -39,11 +33,22 @@ public class EkranLogowania extends javax.swing.JFrame {
      */
     private final Klient klient;
     /**
+     * Atrybut będący wiadomością
+     */
+    public String wiadomosc;
+    /**
      * IP używane do połączenia z serwerem
      */
     public String IP;
     /**
+     * Atrybut będący rangą użytkownika
+     */
+    protected String ranga;
+
+    /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     *
+     * @param IP IP ustawiane do podłączenia z serwerem
      */
     public EkranLogowania(String IP) {
         this.IP = IP;
@@ -52,15 +57,16 @@ public class EkranLogowania extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
+
     /**
-     * Metoda obsługująca powstałe wyjątki
-     * @param ex Otrzymany wyjątek
+     * Metoda pozwalająca na uruchomienie ekranu logowania
+     *
+     * @param args Argumenty przyjmowane podczas uruchamiania aplikacji
      */
-    private void catchService(Exception ex){
-        if(ex.getMessage()==null) { JOptionPane.showMessageDialog(null, "Unexpected event", "Informacja", JOptionPane.INFORMATION_MESSAGE);}
-        else JOptionPane.showMessageDialog(null, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
-        new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranLogowania", "error");
+    public static void main(String[] args) {
+        new EkranLogowania("localhost");
     }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -121,10 +127,9 @@ public class EkranLogowania extends javax.swing.JFrame {
             jButton3.setOpaque(true);
             jButton3.getModel().addChangeListener(e -> {
                 ButtonModel model = (ButtonModel) e.getSource();
-                if(model.isRollover()){
+                if (model.isRollover()) {
                     jButton3.setForeground(Color.lightGray);
-                }
-                else{
+                } else {
                     jButton3.setForeground(null);
                 }
             });
@@ -141,167 +146,146 @@ public class EkranLogowania extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
             jPanel3.setLayout(jPanel3Layout);
-            jPanel3Layout.setHorizontalGroup(
-                    jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGap(0, 47, Short.MAX_VALUE)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGap(47, 47, Short.MAX_VALUE)
-                                            .addComponent(jButton3)
-                                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel3)
-                                                    .addComponent(jLabel4)
-                                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addContainerGap(53, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel2)
-                                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            );
-            jPanel3Layout.setVerticalGroup(
-                    jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGap(120, 120, 120)
-                                    .addComponent(jLabel2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(25, 25, 25)
-                                    .addComponent(jLabel4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton3)
-                                    .addGap(42, 42, 42)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(28, 28, 28)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(76, 76, 76))
-            );
+            jPanel3Layout.setHorizontalGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel3Layout.createSequentialGroup().addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addGroup(jPanel3Layout.createSequentialGroup().addGap(0, 47, Short.MAX_VALUE).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING).addGap(47, 47, Short.MAX_VALUE).addComponent(jButton3).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel3).addComponent(jLabel4).addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))).addContainerGap(53, Short.MAX_VALUE)).addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup().addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jLabel2).addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+            jPanel3Layout.setVerticalGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel3Layout.createSequentialGroup().addGap(120, 120, 120).addComponent(jLabel2).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jLabel3).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(25, 25, 25).addComponent(jLabel4).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jButton3).addGap(42, 42, 42).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(28, 28, 28).addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(76, 76, 76)));
             jLabel1.setPreferredSize(new java.awt.Dimension(440, 550));
 
             javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
             jPanel1.setLayout(jPanel1Layout);
-            jPanel1Layout.setHorizontalGroup(
-                    jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addContainerGap(81, Short.MAX_VALUE)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addContainerGap(81, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addContainerGap())
-            );
-            jPanel1Layout.setVerticalGroup(
-                    jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addContainerGap()
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addContainerGap(76, Short.MAX_VALUE)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 550, Short.MAX_VALUE)
-                                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addContainerGap(76, Short.MAX_VALUE))
-            );
+            jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup().addContainerGap(81, Short.MAX_VALUE).addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(81, Short.MAX_VALUE)).addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup().addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap()));
+            jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup().addContainerGap().addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(76, Short.MAX_VALUE).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 550, Short.MAX_VALUE).addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addContainerGap(76, Short.MAX_VALUE)));
 
             javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
             getContentPane().setLayout(layout);
-            layout.setHorizontalGroup(
-                    layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1010, Short.MAX_VALUE)
-            );
-            layout.setVerticalGroup(
-                    layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            );
+            layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1010, Short.MAX_VALUE));
+            layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
             pack();
-        }
-        catch(Exception ex){
+        } catch (Exception ex) {
             catchService(ex);
         }
     }
+
+    /**
+     * Metoda walidująca to czy któreś z obowiązkowych pól jest puste
+     *
+     * @return Zwraca informację o tym, czy wszystkie obowiązkowe pola tekstowe są wypełnione
+     */
+    private boolean validateFieldsIsNotEmpty() {
+        if (jTextField1.getText().isEmpty() || jPasswordField1.getPassword().length == 0) {
+            JOptionPane.showMessageDialog(this, "Nie wprowadzono jednej z istotnych danych!", "Błąd", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Metoda wysyłająca listę danych na serwer
+     */
+    private void sendDataList() {
+        java.util.List<String> listaDanych = (java.util.List<String>) new LinkedList<>(klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+        wiadomosc = listaDanych.get(0);
+        ranga = listaDanych.get(1);
+        if (wiadomosc.equals("")) {
+            wiadomosc = "Wystąpił nieoczekiwany błąd!";
+        }
+    }
+
+    /**
+     * Metoda uzupełniająca listę danych do wysył na serwer
+     */
+    private void fillListData() {
+        dane.clear();
+        dane.add("Login");
+        dane.add(jTextField1.getText());
+        dane.add(klient.hashPassword(new String(jPasswordField1.getPassword()), "e5WX^6&dNg8K"));
+    }
+
+    /**
+     * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
+     */
+    private void clearComponents() {
+        jTextField1.setText("");
+        jPasswordField1.setText("");
+        wiadomosc = "";
+        ranga = "";
+    }
+
+    /**
+     * Metoda obsługująca zdarzenie poprawnego zalogowania się
+     */
+    private void successfullLogin() {
+        klient.nickname = jTextField1.getText();
+        if (ranga.equals("user")) {
+            dispose();
+            new EkranGlownyUzytkownik(klient);
+        } else if (ranga.equals("admin")) {
+            dispose();
+            new EkranGlownyAdmin(klient);
+        } else {
+            JOptionPane.showMessageDialog(this, "Nie udana próba logowania!", "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Zaloguj się
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        if(jTextField1.getText().isEmpty() || jPasswordField1.getPassword().length == 0){
-            JOptionPane.showMessageDialog(this,"Nie wprowadzono jednej z istotnych danych!","Błąd",JOptionPane.ERROR_MESSAGE);
-        }
-        else {
-            loginUzytkownika = jTextField1.getText();
-            hasloUzytkownika = klient.hashPassword(new String(jPasswordField1.getPassword()),"e5WX^6&dNg8K");
+        if (validateFieldsIsNotEmpty()) {
             try {
-                klient.polacz(klient);
-                java.util.List<String> listaDanych = new LinkedList<>(klient.zaloguj(loginUzytkownika, hasloUzytkownika));
-                wiadomosc = listaDanych.get(0);
-                ranga = listaDanych.get(1);
-                if(wiadomosc.equals("")) {
-                    wiadomosc = "Wystąpił nieoczekiwany błąd!";
+                fillListData();
+                sendDataList();
+                JOptionPane.showMessageDialog(this, wiadomosc, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+                if (wiadomosc.equals("Pomyślnie zalogowano!")) {
+                    successfullLogin();
+                    clearComponents();
                 }
-                else {
-                    JOptionPane.showMessageDialog(this, wiadomosc, "Informacja", JOptionPane.INFORMATION_MESSAGE);
-                    jTextField1.setText("");
-                    jPasswordField1.setText("");
-                    if (wiadomosc.equals("Pomyślnie zalogowano!")) {
-                        if (ranga.equals("user")) {
-                            dispose();
-                            new EkranGlownyUzytkownik(loginUzytkownika, klient);
-                        } else if (ranga.equals("admin")) {
-                            dispose();
-                            new EkranGlownyAdmin(loginUzytkownika, klient);
-                        } else {
-                            JOptionPane.showMessageDialog(this, "Nie udana próba logowania!", "Informacja", JOptionPane.INFORMATION_MESSAGE);
-                        }
-                        wiadomosc = "";
-                        ranga = "";
-                    }
-                }
-                klient.zakonczPolaczenie();
-            }
-            catch(Exception ex){
+            } catch (Exception ex) {
                 catchService(ex);
             }
         }
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Utwórz konto
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         dispose();
-        new EkranUtworzKonto("guest",klient);
+        new EkranUtworzKonto("guest", klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Nie pamiętasz hasła?
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt){
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         dispose();
         new EkranPrzywrocHaslo(klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku zębatki
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUstawieniaSerwera(this, true, klient);
     }
+
     /**
-     * Metoda pozwalająca na uruchomienie ekranu logowania
-     * @param args Argumenty przyjmowane podczas uruchamiania aplikacji
+     * Metoda obsługująca powstałe wyjątki
+     *
+     * @param ex Otrzymany wyjątek
      */
-    public static void main(String[] args) {
-        new EkranLogowania("localhost");
+    private void catchService(Exception ex) {
+        if (ex.getMessage() == null) {
+            JOptionPane.showMessageDialog(null, "Unexpected event", "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        } else JOptionPane.showMessageDialog(null, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
+        new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranLogowania", "error");
     }
 }

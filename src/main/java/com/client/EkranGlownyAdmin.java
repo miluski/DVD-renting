@@ -1,20 +1,26 @@
 package com.client;
+
 import com.server.Logs;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class EkranGlownyAdmin extends javax.swing.JFrame {
     /**
-     * Atrybut będący graficznym menu wyboru strony
+     * Atrybut będący listą ciągów znaków przechowującym dane
      */
-    private JTabbedPane jTabbedPane2;
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący listą w postaci graficznej
      */
@@ -24,25 +30,25 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
      */
     private final javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
     /**
-     * Atrybut będący wiadomością
-     */
-    public String message;
-    /**
-     * Atrybut przechowujący login użytkownika
-     */
-    private final String loginUzytkownika;
-    /**
      * Instancja klasy Klient
      */
     private final Klient klient;
     /**
-     * Konstruktor odpowiadający za inicjalizację GUI
-     * @param klient Instancja klasy Klient
-     * @param loginUzytkownika Login użytkownika
+     * Atrybut będący wiadomością
      */
-    public EkranGlownyAdmin(String loginUzytkownika, Klient klient) {
+    public String message;
+    /**
+     * Atrybut będący graficznym menu wyboru strony
+     */
+    private JTabbedPane jTabbedPane2;
+
+    /**
+     * Konstruktor odpowiadający za inicjalizację GUI
+     *
+     * @param klient Instancja klasy Klient
+     */
+    public EkranGlownyAdmin(Klient klient) {
         this.klient = klient;
-        this.loginUzytkownika = loginUzytkownika;
         setVisible(true);
         initComponents();
         this.setLocationRelativeTo(null);
@@ -50,52 +56,89 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
                 try {
-                    klient.polacz(klient);
-                    klient.wyloguj(loginUzytkownika);
-                    klient.zakonczPolaczenie();
-                }
-                catch(Exception ex){
+                    logout();
+                    dispose();
+                } catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                     new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranGlownyAdmin", "error");
                 }
             }
         });
     }
+
+    /**
+     * Metoda, której zadaniem jest wysył danych na serwer celem wylogowania klienta z aplikacji
+     */
+    private void logout() {
+        dane.clear();
+        dane.add("Logout");
+        dane.add(klient.getNickname());
+        java.util.List<String> listaDanych = (java.util.List<String>) new LinkedList<>(klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+        message = listaDanych.get(0);
+    }
+
+    /**
+     * Metoda, której zadaniem jest komunikacja z serwerem celem odebrania powiadomień o przetrzymywanych płytach DVD
+     *
+     * @return Zwraca listę otrzymanych powiadomień
+     */
+    private List<String> sendRequestForReservationNotifications() {
+        DefaultListModel<String> newListModel = new DefaultListModel<>();
+        jList1.setModel(newListModel);
+        dane.clear();
+        dane.add("AdminReservationNotifications");
+        dane.add(klient.nickname);
+        java.util.List<String> adminReservationDVDsNotifications = (List<String>) new LinkedList<>(klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+        return adminReservationDVDsNotifications;
+    }
+
+    /**
+     * Metoda, której zadaniem jest komunikacja z serwerem celem odebrania powiadomień o przetrzymywanych płytach DVD
+     *
+     * @return Zwraca listę otrzymanych powiadomień
+     */
+    private List<String> sendRequestForDetentionNotifications() {
+        DefaultListModel<String> newListModel = new DefaultListModel<>();
+        jList1.setModel(newListModel);
+        dane.clear();
+        dane.add("AdminDetentionNotifications");
+        dane.add(klient.nickname);
+        java.util.List<String> adminDetentionDVDsNotifications = (List<String>) new LinkedList<>(klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+        return adminDetentionDVDsNotifications;
+    }
+
     /**
      * Metoda, której zadaniem jest inicjacja listy w postaci graficznej z powiadomieniami dla administratora
      */
-    private void setNotifications(){
+    private void setNotifications() {
         try {
-            DefaultListModel<String> newListModel = new DefaultListModel<>();
-            jList1.setModel(newListModel);
-            klient.polacz(klient);
-            java.util.List<String> adminNotifications = new LinkedList<>(klient.notifications("Admin",loginUzytkownika));
-            int size = klient.getListSize();
-            klient.zakonczPolaczenie();
+            java.util.List<String> adminDetentionDVDsNotifications = new LinkedList<>(sendRequestForDetentionNotifications());
+            java.util.List<String> adminReservationDVDsNotifications = new LinkedList<>(sendRequestForReservationNotifications());
             DefaultListModel<String> defaultListModel = new DefaultListModel<>();
-            for(int i=0; i<size; i+=2){
-                if(!adminNotifications.get(i).equals("Brak powiadomień")){
-                    defaultListModel.addElement("Użytkownik " + adminNotifications.get(i+1) + " chce wypożyczyć płytę o nazwie " + adminNotifications.get(i)+"\n");
-                }
-                else defaultListModel.addElement(adminNotifications.get(i));
+            for (int i = 0; i < adminReservationDVDsNotifications.size(); i += 2) {
+                if (!adminReservationDVDsNotifications.get(i).equals("Brak powiadomień")) {
+                    defaultListModel.addElement("Użytkownik " + adminReservationDVDsNotifications.get(i + 1) + " chce wypożyczyć płytę o nazwie " + adminReservationDVDsNotifications.get(i) + "\n");
+                } else defaultListModel.addElement(adminReservationDVDsNotifications.get(i));
             }
-            for (int i = size; i < adminNotifications.size(); i += 3) {
-                if (!adminNotifications.get(i).equals("Brak powiadomień")) {
-                    defaultListModel.addElement("Użytkownik o ID " + adminNotifications.get(i) + " przetrzymuje płytę o ID " + adminNotifications.get(i+1) + " od " + adminNotifications.get(i+2));
-                } else defaultListModel.addElement(adminNotifications.get(i));
+            for (int i = 0; i < adminDetentionDVDsNotifications.size(); i += 3) {
+                if (!adminDetentionDVDsNotifications.get(i).equals("Brak powiadomień")) {
+                    defaultListModel.addElement("Użytkownik o ID " + adminDetentionDVDsNotifications.get(i) + " przetrzymuje płytę o ID " + adminDetentionDVDsNotifications.get(i + 1) + " od " + adminDetentionDVDsNotifications.get(i + 2));
+                } else defaultListModel.addElement(adminDetentionDVDsNotifications.get(i));
             }
-            adminNotifications.clear();
             jList1.setModel(defaultListModel);
             jList1.setBackground(new java.awt.Color(255, 255, 255));
             jList1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 16));
             jList1.setBorder(null);
             jScrollPane1.setViewportView(jList1);
-        }
-        catch (Exception ex){
+        } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
             new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranGlownyAdmin", "error");
         }
     }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -227,10 +270,9 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
             jButton15.setOpaque(true);
             jButton15.getModel().addChangeListener(e -> {
                 ButtonModel model = (ButtonModel) e.getSource();
-                if(model.isRollover()){
+                if (model.isRollover()) {
                     jButton15.setForeground(Color.lightGray);
-                }
-                else{
+                } else {
                     jButton15.setForeground(null);
                 }
             });
@@ -257,58 +299,8 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
             jPanel2.setLayout(jPanel2Layout);
-            jPanel2Layout.setHorizontalGroup(
-                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGap(18, 18, 18)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel2)
-                                        .addComponent(jLabel3)))
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGap(49, 49, 49)
-                                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGap(0, 13, Short.MAX_VALUE))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addContainerGap())
-            );
-            jPanel2Layout.setVerticalGroup(
-                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(31, 31, 31)
-                    .addComponent(jLabel2)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(jLabel3)
-                    .addGap(63, 63, 63)
-                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(18, 18, 18)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton15)
-                    .addGap(32, 32, 32))
-            );
+            jPanel2Layout.setHorizontalGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel2Layout.createSequentialGroup().addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel2Layout.createSequentialGroup().addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel2Layout.createSequentialGroup().addGap(18, 18, 18).addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel2).addComponent(jLabel3))).addGroup(jPanel2Layout.createSequentialGroup().addGap(49, 49, 49).addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))).addGap(0, 13, Short.MAX_VALUE)).addGroup(jPanel2Layout.createSequentialGroup().addContainerGap().addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))).addContainerGap()));
+            jPanel2Layout.setVerticalGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel2Layout.createSequentialGroup().addGap(31, 31, 31).addComponent(jLabel2).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jLabel3).addGap(63, 63, 63).addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton15).addGap(32, 32, 32)));
 
             jTabbedPane2.setTabPlacement(javax.swing.JTabbedPane.BOTTOM);
             jTabbedPane2.setPreferredSize(new java.awt.Dimension(700, 520));
@@ -325,26 +317,10 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
             jPanel5.setLayout(jPanel5Layout);
-            jPanel5Layout.setHorizontalGroup(
-                    jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                    .addGap(35, 35, 35)
-                                    .addComponent(jLabel4))
-                            .addGap(15,15,15)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addContainerGap(250, Short.MAX_VALUE))
+            jPanel5Layout.setHorizontalGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel5Layout.createSequentialGroup().addGap(35, 35, 35).addComponent(jLabel4)).addGap(15, 15, 15).addGroup(jPanel5Layout.createSequentialGroup().addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(250, Short.MAX_VALUE))
 
             );
-            jPanel5Layout.setVerticalGroup(
-                    jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                    .addGap(15, 15, 15)
-                                    .addComponent(jLabel4)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
-                                    .addContainerGap(300, Short.MAX_VALUE))
-            );
+            jPanel5Layout.setVerticalGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel5Layout.createSequentialGroup().addGap(15, 15, 15).addComponent(jLabel4).addGap(18, 18, 18).addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE).addContainerGap(300, Short.MAX_VALUE)));
 
             jTabbedPane2.addTab("Pulpit", jPanel5);
 
@@ -388,39 +364,8 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
             jPanel3.setLayout(jPanel3Layout);
-            jPanel3Layout.setHorizontalGroup(
-                jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addGap(35, 35, 35)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(90, 90, 90)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(35, 35, 35))
-            );
-            jPanel3Layout.setVerticalGroup(
-                jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addGap(32, 32, 32)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(27, 27, 27)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addContainerGap(30, Short.MAX_VALUE))
-            );
+            jPanel3Layout.setHorizontalGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel3Layout.createSequentialGroup().addGap(35, 35, 35).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(90, 90, 90).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(35, 35, 35)));
+            jPanel3Layout.setVerticalGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel3Layout.createSequentialGroup().addGap(32, 32, 32).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(27, 27, 27).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))).addContainerGap(30, Short.MAX_VALUE)));
 
             jTabbedPane2.addTab("Kolekcje", jPanel3);
 
@@ -447,34 +392,8 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
             jPanel4.setLayout(jPanel4Layout);
-            jPanel4Layout.setHorizontalGroup(
-                jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                    .addGap(35,35,35)
-                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(jPanel4Layout.createSequentialGroup()
-                    .addGap(35, 35, 35)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(35, 35, 35))
-            );
-            jPanel4Layout.setVerticalGroup(
-                jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel4Layout.createSequentialGroup()
-                    .addGap(32, 32, 32)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(30, Short.MAX_VALUE)
-                    .addContainerGap(257, Short.MAX_VALUE))
-            );
+            jPanel4Layout.setHorizontalGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel4Layout.createSequentialGroup().addGap(35, 35, 35).addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addGroup(jPanel4Layout.createSequentialGroup().addGap(35, 35, 35).addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE).addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE).addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(35, 35, 35)));
+            jPanel4Layout.setVerticalGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel4Layout.createSequentialGroup().addGap(32, 32, 32).addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(27, 27, 27).addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(30, Short.MAX_VALUE).addContainerGap(257, Short.MAX_VALUE)));
 
             jTabbedPane2.addTab("Klienci", jPanel4);
 
@@ -506,32 +425,8 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
             jPanel6.setLayout(jPanel6Layout);
-            jPanel6Layout.setHorizontalGroup(
-                jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel6Layout.createSequentialGroup()
-                    .addGap(35, 35, 35)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton20, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                        .addComponent(jButton18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGap(90, 90, 90)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
-                    .addContainerGap(275, Short.MAX_VALUE))
-            );
-            jPanel6Layout.setVerticalGroup(
-                jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel6Layout.createSequentialGroup()
-                    .addGap(32, 32, 32)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton18, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                        .addComponent(jButton19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGap(27, 27, 27)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton20, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                        .addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addContainerGap(30, Short.MAX_VALUE))
-            );
+            jPanel6Layout.setHorizontalGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel6Layout.createSequentialGroup().addGap(35, 35, 35).addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton20, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE).addComponent(jButton18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addGap(90, 90, 90).addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)).addContainerGap(275, Short.MAX_VALUE)));
+            jPanel6Layout.setVerticalGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel6Layout.createSequentialGroup().addGap(32, 32, 32).addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton18, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE).addComponent(jButton19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addGap(27, 27, 27).addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton20, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE).addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addContainerGap(30, Short.MAX_VALUE)));
 
             jTabbedPane2.addTab("Wypożyczenia i zwroty", jPanel6);
 
@@ -545,20 +440,8 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
             jPanel7.setLayout(jPanel7Layout);
-            jPanel7Layout.setHorizontalGroup(
-                jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel7Layout.createSequentialGroup()
-                    .addGap(35, 35, 35)
-                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(515, Short.MAX_VALUE))
-            );
-            jPanel7Layout.setVerticalGroup(
-                jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel7Layout.createSequentialGroup()
-                    .addGap(32, 32, 32)
-                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(257, Short.MAX_VALUE))
-            );
+            jPanel7Layout.setHorizontalGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel7Layout.createSequentialGroup().addGap(35, 35, 35).addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(515, Short.MAX_VALUE)));
+            jPanel7Layout.setVerticalGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel7Layout.createSequentialGroup().addGap(32, 32, 32).addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(257, Short.MAX_VALUE)));
 
             jTabbedPane2.addTab("Rezerwacje", jPanel7);
 
@@ -578,24 +461,8 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
             jPanel9.setLayout(jPanel9Layout);
-            jPanel9Layout.setHorizontalGroup(
-                jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel9Layout.createSequentialGroup()
-                    .addGap(35, 35, 35)
-                    .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(90, 90, 90)
-                    .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(275, Short.MAX_VALUE))
-            );
-            jPanel9Layout.setVerticalGroup(
-                jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel9Layout.createSequentialGroup()
-                    .addGap(32, 32, 32)
-                    .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton29, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                        .addComponent(jButton30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addContainerGap(257, Short.MAX_VALUE))
-            );
+            jPanel9Layout.setHorizontalGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel9Layout.createSequentialGroup().addGap(35, 35, 35).addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(90, 90, 90).addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(275, Short.MAX_VALUE)));
+            jPanel9Layout.setVerticalGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel9Layout.createSequentialGroup().addGap(32, 32, 32).addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton29, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE).addComponent(jButton30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addContainerGap(257, Short.MAX_VALUE)));
 
             jTabbedPane2.addTab("Rachunki", jPanel9);
 
@@ -633,35 +500,8 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
             jPanel8.setLayout(jPanel8Layout);
-            jPanel8Layout.setHorizontalGroup(
-                jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel8Layout.createSequentialGroup()
-                    .addGap(35, 35, 35)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                        .addComponent(jButton22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton26, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
-                    .addGap(90, 90, 90)
-                    .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(35, 35, 35))
-            );
-            jPanel8Layout.setVerticalGroup(
-                jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel8Layout.createSequentialGroup()
-                    .addGap(32, 32, 32)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(27, 27, 27)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton26, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
-                    .addContainerGap(30, Short.MAX_VALUE))
-            );
+            jPanel8Layout.setHorizontalGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel8Layout.createSequentialGroup().addGap(35, 35, 35).addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE).addComponent(jButton22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE).addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton26, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)).addGap(90, 90, 90).addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(35, 35, 35)));
+            jPanel8Layout.setVerticalGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel8Layout.createSequentialGroup().addGap(32, 32, 32).addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(27, 27, 27).addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton26, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)).addContainerGap(30, Short.MAX_VALUE)));
 
             jTabbedPane2.addTab("Zarządzanie bazą danych", jPanel8);
 
@@ -670,286 +510,322 @@ public class EkranGlownyAdmin extends javax.swing.JFrame {
 
             javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
             jPanel1.setLayout(jPanel1Layout);
-            jPanel1Layout.setHorizontalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(50, 50, 50)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1)
-                        .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(63, Short.MAX_VALUE))
-            );
-            jPanel1Layout.setVerticalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(45, 45, 45)
-                    .addComponent(jLabel1)
-                    .addGap(45, 45, 45)
-                    .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(58, Short.MAX_VALUE))
-            );
+            jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(50, 50, 50).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel1).addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)).addContainerGap(63, Short.MAX_VALUE)));
+            jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE).addGroup(jPanel1Layout.createSequentialGroup().addGap(45, 45, 45).addComponent(jLabel1).addGap(45, 45, 45).addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(58, Short.MAX_VALUE)));
 
             javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
             getContentPane().setLayout(layout);
-            layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            );
-            layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            );
+            layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
+            layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
             pack();
-        }
-        catch(Exception ex){
+        } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
             new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranGlownyAdmin", "error");
         }
     }
+
     /**
      * Metoda wykrywająca zmianę strony
+     *
      * @param changeEvent Zdarzenie pobrane podczas zmiany strony
      */
     private void jTabbedPane2Changed(ChangeEvent changeEvent) {
         int index = jTabbedPane2.getSelectedIndex();
-        if(index==0){
+        if (index == 0) {
             setNotifications();
         }
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Dodaj DVD
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogDodajDVD(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Edytuj DVD
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogEdytujDVD(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Usun DVD
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUsunDVD(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Pulpit
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) { jTabbedPane2.setSelectedIndex(0); }
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {
+        jTabbedPane2.setSelectedIndex(0);
+    }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Kolekcja DVD
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {
         jTabbedPane2.setSelectedIndex(1);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Klienci
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {
         jTabbedPane2.setSelectedIndex(2);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Wypożyczenia i zwroty
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {
         jTabbedPane2.setSelectedIndex(3);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Rezerwacje
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {
         jTabbedPane2.setSelectedIndex(4);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Zarządzaj bazą danych
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {
         jTabbedPane2.setSelectedIndex(6);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj kolekcje
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogPrzegladajKolekcjeDVD(this, true, "ReviewDVDCollection", klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Stan magazynowy
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogStanMagazynowyDVD(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Zmień liczbę kopii
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUstawLiczbeDVD(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj listę klientów
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogPrzegladajListeKlientow(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń klienta
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUsunKlienta(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Dodaj klienta
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {
         new EkranUtworzKonto("admin", klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Wypożycz
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogWypozycz(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj wypożyczenia
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogPrzegladajWypozyczenia(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Zwróć
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogZwroc(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj zwroty
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogPrzegladajZwroty(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Zobacz rezerwację
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogZobaczRezerwacje(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Utwórz tabelę
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUtworzTabele(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń tabelę
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUsunTabele(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń wszystkie dane bazy
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {
         int reply = klient.dialogTakNie("Spowoduje to usunięcie wszystkich użytkowników z bazy danych\nCzy kontynuować?");
         if (reply == JOptionPane.YES_OPTION) {
             try {
-                klient.polacz(klient);
-                message = klient.zarzadzaj("DeleteFromTables");
+                dane.clear();
+                dane.add("Management");
+                dane.add("DeleteFromTables");
+                List<String> message = (List<String>) new LinkedList<>(klient.polacz(klient, dane));
                 klient.zakonczPolaczenie();
-                if(message.equals("")) message = "Wystąpił nieoczekiwany błąd!";
-                JOptionPane.showMessageDialog(this, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
-            }
-            catch(Exception ex){
+                if (message.get(0).equals("")) message.set(0, "Wystąpił nieoczekiwany błąd!");
+                JOptionPane.showMessageDialog(this, message.get(0), "Sukces", JOptionPane.INFORMATION_MESSAGE);
+            } catch (Exception ex) {
                 JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                 new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranGlownyAdmin", "error");
             }
         }
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Utwórz sekwencje
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUtworzSekwencje(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń sekwencje
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogUsunSekwencje(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Wyloguj się
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {
         int reply = klient.dialogTakNie("Czy na pewno chcesz sie wylogowac?");
         if (reply == JOptionPane.YES_OPTION) {
             try {
-                klient.polacz(klient);
-                java.util.List<String> listaDanych = new LinkedList<>(klient.wyloguj(loginUzytkownika));
-                klient.zakonczPolaczenie();
-                message = listaDanych.get(0);
-                if(message.equals("")) message = "Wystąpił nieoczekiwany błąd!";
+                logout();
+                if (message.equals("")) message = "Wystąpił nieoczekiwany błąd!";
                 JOptionPane.showMessageDialog(this, message, "Sukces", JOptionPane.INFORMATION_MESSAGE);
                 dispose();
                 new EkranLogowania(klient.getKlientIP());
-            }
-            catch(Exception ex){
+            } catch (Exception ex) {
                 JOptionPane.showMessageDialog(this, ex, "Informacja", JOptionPane.INFORMATION_MESSAGE);
                 new Logs("[ " + new java.util.Date() + " ] " + ex.getMessage(), "EkranGlownyAdmin", "error");
             }
         }
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Wystawianie rachunków
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {
         jTabbedPane2.setSelectedIndex(5);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Wystaw rachunek
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogWystawRachunek(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Przeglądaj rachunki
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {
         new DialogPrzegladajRachunki(this, true, klient);
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Edytuj klienta
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {

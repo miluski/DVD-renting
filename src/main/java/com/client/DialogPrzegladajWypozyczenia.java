@@ -1,17 +1,27 @@
 package com.client;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class DialogPrzegladajWypozyczenia extends javax.swing.JDialog {
+    /**
+     * Atrybut będący listą ciągów znaków przechowującym dane
+     */
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący listą w postaci graficznej
      */
@@ -20,10 +30,6 @@ public class DialogPrzegladajWypozyczenia extends javax.swing.JDialog {
      * Atrybut będący tabelą
      */
     private final javax.swing.JTable jTable1 = new javax.swing.JTable();
-    /**
-     * Atrybut będący identyfikatorem użytkownika
-     */
-    protected String userID;
     /**
      * Lista zawierająca dane
      */
@@ -37,17 +43,21 @@ public class DialogPrzegladajWypozyczenia extends javax.swing.JDialog {
      */
     private final Klient klient;
     /**
+     * Atrybut będący identyfikatorem użytkownika
+     */
+    protected String userID;
+
+    /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     *
      * @param klient Instancja klasy klient
-     * @param modal Określa czy okno jest modalne, czy nie
+     * @param modal  Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
     public DialogPrzegladajWypozyczenia(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
-        klient.polacz(klient);
-        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
-        klient.zakonczPolaczenie();
+        getUserDataList();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -62,15 +72,38 @@ public class DialogPrzegladajWypozyczenia extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    /**
+     * Metoda, której zadaniem jest pobranie listy klientów z bazy danych
+     */
+    private void getUserDataList() {
+        dane.clear();
+        dane.add("ReviewClients");
+        panelData.addAll((Collection<? extends String>) klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+    }
+
+    /**
+     * Metoda, której zadaniem jest wysłanie żądania do serwera celem odbioru danych wypożyczeń danego użytkownika
+     */
+    private void getUserRentedDVDs() {
+        dane.clear();
+        dane.add("ReviewMyRents");
+        dane.add(userID);
+        panelData2.addAll((Collection<? extends String>) klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+    }
+
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private void clearComponents(){
+    private void clearComponents() {
         jTable1.setModel(new DefaultTableModel());
         DefaultListModel<String> newListModel = new DefaultListModel<>();
         jList1.setModel(newListModel);
         panelData.clear();
     }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -97,13 +130,13 @@ public class DialogPrzegladajWypozyczenia extends javax.swing.JDialog {
         jLabel3.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 14));
         jLabel3.setText("Wypożyczenia wybranego klienta:");
 
-        int size = ((panelData.size())/5);
+        int size = ((panelData.size()) / 5);
         int counter = 0;
 
         DefaultListModel<String> defaultListModel = new DefaultListModel<>();
-        for(int i=0; i<size; i++){
-            defaultListModel.addElement(panelData.get(counter)+". "+panelData.get(counter+1)+" "+panelData.get(counter+2));
-            if(size>1) counter+=5;
+        for (int i = 0; i < size; i++) {
+            defaultListModel.addElement(panelData.get(counter) + ". " + panelData.get(counter + 1) + " " + panelData.get(counter + 2));
+            if (size > 1) counter += 5;
         }
         jList1.setModel(defaultListModel);
         jList1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
@@ -111,29 +144,22 @@ public class DialogPrzegladajWypozyczenia extends javax.swing.JDialog {
             if (!e.getValueIsAdjusting()) {
                 panelData2.clear();
                 jTable1.setModel(new DefaultTableModel());
-                if(jList1.getSelectedValue()!=null) userID = jList1.getSelectedValue().substring(0,(jList1.getSelectedValue()).indexOf("."));
-                klient.panelData.clear();
-                klient.polacz(klient);
-                panelData2.addAll(klient.otrzymujDane("ReviewRents",userID));
+                if (jList1.getSelectedValue() != null)
+                    userID = jList1.getSelectedValue().substring(0, (jList1.getSelectedValue()).indexOf("."));
+                getUserRentedDVDs();
                 int counter2 = 0;
-                int size2 = ((panelData2.size())/9);
-                jTable1.setModel(new javax.swing.table.DefaultTableModel(
-                        new Object[][]{
-                        },
-                        new String[]{
-                                "Nazwa filmu", "Data wypożyczenia"
-                        }
-                ));
+                int size2 = ((panelData2.size()) / 9);
+                jTable1.setModel(new javax.swing.table.DefaultTableModel(new Object[][]{}, new String[]{"Nazwa filmu", "Data wypożyczenia"}));
                 jTable1.setEnabled(false);
                 jTable1.setBorder(new LineBorder(Color.BLACK));
                 DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-                for(int i=0; i<size2; i++){
-                    model.addRow(new Object[]{panelData2.get(counter2+1), panelData2.get(counter2+8)});
-                    if(size2>1) counter2+=9;
+                for (int i = 0; i < size2; i++) {
+                    model.addRow(new Object[]{panelData2.get(counter2 + 1), panelData2.get(counter2 + 8)});
+                    if (size2 > 1) counter2 += 9;
                 }
                 DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
                 centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-                for(int i=0; i<2; i++) {
+                for (int i = 0; i < 2; i++) {
                     jTable1.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
                     jTable1.getColumnModel().getColumn(i).setHeaderRenderer(centerRenderer);
                 }
@@ -152,62 +178,19 @@ public class DialogPrzegladajWypozyczenia extends javax.swing.JDialog {
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(371, 371, 371)
-                                                .addComponent(jLabel1))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(55, 55, 55)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jLabel2)
-                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(34, 34, 34)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGap(30,30,30)
-                                                        .addComponent(jLabel3)
-                                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(400, 400, 400)
-                                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(42, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(25, 25, 25)
-                                .addComponent(jLabel1)
-                                .addGap(36, 36, 36)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel2)
-                                        .addComponent(jLabel3))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                                .addGap(35, 35, 35)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(26, 26, 26))
-        );
+        jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(371, 371, 371).addComponent(jLabel1)).addGroup(jPanel1Layout.createSequentialGroup().addGap(55, 55, 55).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel2).addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(34, 34, 34).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGap(30, 30, 30).addComponent(jLabel3).addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))).addGroup(jPanel1Layout.createSequentialGroup().addGap(400, 400, 400).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))).addContainerGap(42, Short.MAX_VALUE)));
+        jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(25, 25, 25).addComponent(jLabel1).addGap(36, 36, 36).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jLabel2).addComponent(jLabel3)).addGap(18, 18, 18).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE).addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)).addGap(35, 35, 35).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(26, 26, 26)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(layout.createSequentialGroup().addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(0, 0, Short.MAX_VALUE)));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         pack();
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Ok
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {

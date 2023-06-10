@@ -919,3 +919,26 @@ ORA-12505, TNS:listener does not currently know of SID given in connect descript
 [INFO] EkranSerwer: [ Sat Jun 03 14:43:33 CEST 2023 ] Thread called Thread-60 was deleted 
 [INFO] EkranSerwer: [ Sat Jun 03 14:43:33 CEST 2023 ] Thread called Thread-61 was deleted 
 [INFO] EkranSerwer: [ Sat Jun 03 14:43:33 CEST 2023 ] Server shutdown
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:38 CEST 2023 ] Server running
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:44 CEST 2023 ] New thread called Thread-0 was created 
+[INFO] BazaDanych: [ Sat Jun 10 15:31:44 CEST 2023 ] Connected to the database
+[INFO] BazaDanych: [ Sat Jun 10 15:31:45 CEST 2023 ] Login from: 127.0.0.1 Nickname: Admin
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:45 CEST 2023 ] New thread called Thread-2 was created 
+[INFO] BazaDanych: [ Sat Jun 10 15:31:45 CEST 2023 ] Connected to the database
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:45 CEST 2023 ] New thread called Thread-3 was created 
+[INFO] BazaDanych: [ Sat Jun 10 15:31:45 CEST 2023 ] Connected to the database
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:48 CEST 2023 ] New thread called Thread-4 was created 
+[INFO] BazaDanych: [ Sat Jun 10 15:31:48 CEST 2023 ] Connected to the database
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:50 CEST 2023 ] New thread called Thread-5 was created 
+[INFO] BazaDanych: [ Sat Jun 10 15:31:50 CEST 2023 ] Connected to the database
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:53 CEST 2023 ] New thread called Thread-6 was created 
+[INFO] BazaDanych: [ Sat Jun 10 15:31:53 CEST 2023 ] Connected to the database
+[INFO] BazaDanych: [ Sat Jun 10 15:31:53 CEST 2023 ] Logout from: 127.0.0.1 Nickname: Admin
+[INFO] BazaDanych: [ Sat Jun 10 15:31:55 CEST 2023 ] Connected to the database
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:55 CEST 2023 ] Thread called Thread-0 was deleted 
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:55 CEST 2023 ] Thread called Thread-2 was deleted 
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:55 CEST 2023 ] Thread called Thread-3 was deleted 
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:55 CEST 2023 ] Thread called Thread-4 was deleted 
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:55 CEST 2023 ] Thread called Thread-5 was deleted 
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:55 CEST 2023 ] Thread called Thread-6 was deleted 
+[INFO] EkranSerwer: [ Sat Jun 10 15:31:55 CEST 2023 ] Server shutdown

@@ -1,9 +1,15 @@
 package com.client;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
@@ -12,15 +18,19 @@ public class DialogZwroc extends javax.swing.JDialog {
     /**
      * Lista zawierająca dane
      */
+    public final java.util.List<String> panelData3 = new LinkedList<>();
+    /**
+     * Atrybut będący listą ciągów znaków przechowującym dane
+     */
+    protected final List<String> dane = new ArrayList<>();
+    /**
+     * Lista zawierająca dane
+     */
     private final java.util.List<String> panelData = new LinkedList<>();
     /**
      * Lista zawierająca dane
      */
     private final java.util.List<String> panelData2 = new LinkedList<>();
-    /**
-     * Lista zawierająca dane
-     */
-    public final java.util.List<String> panelData3 = new LinkedList<>();
     /**
      * Instancja klasy klient
      */
@@ -81,10 +91,12 @@ public class DialogZwroc extends javax.swing.JDialog {
      * Atrybut będący identyfikatorem płyty DVD
      */
     private int dvdID;
+
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     *
      * @param klient Instancja klasy klient
-     * @param modal Określa czy okno jest modalne, czy nie
+     * @param modal  Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
     public DialogZwroc(Frame parent, boolean modal, Klient klient) {
@@ -95,7 +107,8 @@ public class DialogZwroc extends javax.swing.JDialog {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
                 dispose();
-                jList1.removeListSelectionListener(e2-> jList2.removeListSelectionListener(e3-> {}));
+                jList1.removeListSelectionListener(e2 -> jList2.removeListSelectionListener(e3 -> {
+                }));
                 DefaultListModel<String> defaultListModel3 = new DefaultListModel<>();
                 jList1.setModel(defaultListModel3);
                 jList2.setModel(defaultListModel3);
@@ -105,16 +118,40 @@ public class DialogZwroc extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         setVisible(true);
     }
+
     /**
      * Metoda czyszcząca zawartości komponentów graficznych dialog boxa
      */
-    private void clearComponents(){
-        jList1.removeListSelectionListener(e2-> jList2.removeListSelectionListener(e3-> {}));
+    private void clearComponents() {
+        jList1.removeListSelectionListener(e2 -> jList2.removeListSelectionListener(e3 -> {
+        }));
         DefaultListModel<String> defaultListModel3 = new DefaultListModel<>();
         jList1.setModel(defaultListModel3);
         jList2.setModel(defaultListModel3);
         panelData.clear();
     }
+
+    /**
+     * Metoda, której zadaniem jest pobranie listy klientów z bazy danych
+     */
+    private void getUserDataList() {
+        dane.clear();
+        dane.add("ReviewClients");
+        panelData.addAll((Collection<? extends String>) klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+    }
+
+    /**
+     * Metoda, której zadaniem jest wysłanie żądania do serwera celem odbioru danych wypożyczeń danego użytkownika
+     */
+    private void getUserRentedDVDs() {
+        dane.clear();
+        dane.add("ReviewMyRents");
+        dane.add(userID);
+        panelData2.addAll((Collection<? extends String>) klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+    }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -130,15 +167,13 @@ public class DialogZwroc extends javax.swing.JDialog {
         javax.swing.JButton jButton2 = new javax.swing.JButton();
         panelData.clear();
         panelData2.clear();
-        klient.polacz(klient);
-        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
-        klient.zakonczPolaczenie();
-        int size = ((panelData.size())/5);
+        getUserDataList();
+        int size = ((panelData.size()) / 5);
         int counter = 0;
         DefaultListModel<String> defaultListModel = new DefaultListModel<>();
-        for(int i=0; i<size; i++){
-            defaultListModel.addElement(panelData.get(counter)+". "+panelData.get(counter+1));
-            if(size>1) counter+=5;
+        for (int i = 0; i < size; i++) {
+            defaultListModel.addElement(panelData.get(counter) + ". " + panelData.get(counter + 1));
+            if (size > 1) counter += 5;
         }
         jList1.setModel(defaultListModel);
         jList1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
@@ -168,13 +203,10 @@ public class DialogZwroc extends javax.swing.JDialog {
             DefaultListModel<String> defaultListModel3 = new DefaultListModel<>();
             jList2.setModel(defaultListModel3);
             panelData2.clear();
-            if(jList1.getSelectedValue()!=null) {
+            if (jList1.getSelectedValue() != null) {
                 jTextArea1.setText(jList1.getSelectedValue());
-                DialogMojeWypozyczenia.userID = jList1.getSelectedValue().substring(0, (jList1.getSelectedValue()).indexOf("."));
-                userID = DialogMojeWypozyczenia.userID;
-                klient.polacz(klient);
-                panelData2.addAll(klient.otrzymujDane("ReviewMyRents",userID));
-                klient.zakonczPolaczenie();
+                userID = jList1.getSelectedValue().substring(0, (jList1.getSelectedValue()).indexOf("."));
+                getUserRentedDVDs();
                 int counter2 = 0;
                 int size2 = ((panelData2.size()) / 9);
                 DefaultListModel<String> defaultListModel2 = new DefaultListModel<>();
@@ -188,10 +220,10 @@ public class DialogZwroc extends javax.swing.JDialog {
                 jTextArea2.setColumns(20);
                 jTextArea2.setRows(1);
                 jList2.addListSelectionListener(e2 -> {
-                    if(jList2.getSelectedValue()!=null) {
+                    if (jList2.getSelectedValue() != null) {
                         jTextArea2.setText(jList2.getSelectedValue());
-                        filmName = jList2.getSelectedValue().substring((jList2.getSelectedValue()).indexOf(".")+2);
-                        rentID = jList2.getSelectedValue().substring(0,(jList2.getSelectedValue()).indexOf("."));
+                        filmName = jList2.getSelectedValue().substring((jList2.getSelectedValue()).indexOf(".") + 2);
+                        rentID = jList2.getSelectedValue().substring(0, (jList2.getSelectedValue()).indexOf("."));
                         rentDate = panelData2.get(8);
                     }
                 });
@@ -228,132 +260,99 @@ public class DialogZwroc extends javax.swing.JDialog {
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(455, 455, 455)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(35, 35, 35)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(79, 79, 79)
-                                        .addComponent(jLabel4))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(40, 40, 40)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel5)
-                                            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-                                            .addComponent(jLabel6)
-                                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(100, 100, 100)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
-                .addGap(30, 30, 30))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-                            .addComponent(jScrollPane2)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel4)
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(35, 35, 35))
-        );
+        jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(455, 455, 455).addComponent(jLabel1)).addGroup(jPanel1Layout.createSequentialGroup().addGap(30, 30, 30).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel2).addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(35, 35, 35).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel3).addGroup(jPanel1Layout.createSequentialGroup().addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(79, 79, 79).addComponent(jLabel4)).addGroup(jPanel1Layout.createSequentialGroup().addGap(40, 40, 40).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jLabel5).addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE).addComponent(jLabel6).addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))).addGroup(jPanel1Layout.createSequentialGroup().addGap(100, 100, 100).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))))).addGap(30, 30, 30)));
+        jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(25, 25, 25).addComponent(jLabel1).addGap(27, 27, 27).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jLabel2).addComponent(jLabel3)).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(18, 18, 18).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false).addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE).addComponent(jScrollPane2))).addGroup(jPanel1Layout.createSequentialGroup().addGap(60, 60, 60).addComponent(jLabel4).addGap(17, 17, 17).addComponent(jLabel5).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(27, 27, 27).addComponent(jLabel6).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(42, 42, 42).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))).addGap(35, 35, 35)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         pack();
     }
+
+    /**
+     * Metoda, której celem jest wysył danych na serwer w celu zwrócenia płyty DVD danego użytkownika
+     *
+     * @return Zwraca wiadomość o tym, czy operacja przebiegła pomyślnie
+     */
+    private String returnDVD() {
+        dane.clear();
+        dane.add("ReturnDVD");
+        dane.add(userID);
+        dane.add(Integer.toString(dvdID));
+        dane.add(rentID);
+        dane.add(rentDate);
+        List<String> dataList = (List<String>) new LinkedList<>(klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+        return dataList.get(0);
+    }
+
+    /**
+     * Metoda, której celem jest pobranie z serwera listy płyt DVD
+     */
+    private void getDVDCollection() {
+        dane.clear();
+        dane.add("ReviewDVDCollection");
+        panelData3.addAll((Collection<? extends String>) klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+    }
+
+    /**
+     * Metoda, której zadaniem jest wysył do serwera żądania o zaktualizowanie ilości płyty DVD
+     *
+     * @param updatingItem Nowa ilość płyty DVD na stanie
+     * @param updatingID   ID aktualizowanej płyty DVD
+     */
+    private void updateCount(String updatingItem, String updatingID) {
+        dane.clear();
+        dane.add("UpdateCount");
+        dane.add("dvds_data");
+        dane.add(updatingID);
+        dane.add(updatingItem);
+        klient.polacz(klient, dane);
+        klient.zakonczPolaczenie();
+    }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Zatwierdź
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     public void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         panelData3.clear();
-        klient.panelData.clear();
-        klient.polacz(klient);
-        panelData3.addAll(klient.otrzymujDane("ReviewDVDCollection",""));
-        klient.zakonczPolaczenie();
+        getDVDCollection();
         int counter2 = 0;
-        int size2 = ((panelData3.size())/10);
-        for(int i=0; i<size2; i++){
-            boolean isFound = filmName.equals(panelData3.get(counter2+1));
-            if(isFound) {
+        int size2 = ((panelData3.size()) / 10);
+        for (int i = 0; i < size2; i++) {
+            boolean isFound = filmName.equals(panelData3.get(counter2 + 1));
+            if (isFound) {
                 numberOfCopies = Integer.parseInt(panelData3.get(counter2 + 8));
                 dvdID = Integer.parseInt(panelData3.get(counter2));
                 break;
             }
-            if(size2>1) counter2+=10;
+            if (size2 > 1) counter2 += 10;
         }
-        klient.panelData.add(userID);
-        klient.panelData.add(Integer.toString(dvdID));
-        klient.panelData.add(rentID);
-        klient.panelData.add(rentDate);
-        klient.polacz(klient);
-        String message = klient.wysylajDane("ReturnDVD");
-        klient.zakonczPolaczenie();
-        int updatingID = Integer.parseInt(Integer.toString(dvdID));
-        String updatingItem = Integer.toString(numberOfCopies+1);
-        klient.polacz(klient);
-        klient.zaktualizujStan(updatingItem,updatingID);
-        jList1.removeListSelectionListener(e2-> jList2.removeListSelectionListener(e3-> {}));
-        if(message==null) message = "Wystąpił nieoczekiwany błąd!";
+        String message = returnDVD();
+        String updatingItem = Integer.toString(numberOfCopies + 1);
+        updateCount(updatingItem, Integer.toString(dvdID));
+        jList1.removeListSelectionListener(e2 -> jList2.removeListSelectionListener(e3 -> {
+        }));
+        if (message == null) message = "Wystąpił nieoczekiwany błąd!";
         else if (message.equals("Pomyślnie zmieniono liczbę DVD!")) message = "Pomyślnie zwrócono DVD!";
         JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
         clearComponents();
         dispose();
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Anuluj
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         dispose();
-        jList1.removeListSelectionListener(e2-> jList2.removeListSelectionListener(e3-> {}));
+        jList1.removeListSelectionListener(e2 -> jList2.removeListSelectionListener(e3 -> {
+        }));
         clearComponents();
     }
 }

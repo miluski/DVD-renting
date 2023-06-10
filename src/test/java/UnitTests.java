@@ -4,38 +4,29 @@ import com.server.EkranSerwer;
 import com.server.Logs;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.Field;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 /**
  * Klasa zawierająca pola i metody testujące całą aplikację od strony zarówno serwera, jak i klienta
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class UnitTests {
     private final EkranSerwer ekranSerwer = new EkranSerwer();
-    private final BazaDanych bazaDanych = new BazaDanych(ekranSerwer);
+    private final BazaDanych bazaDanych = new BazaDanych(ekranSerwer, "", "localhost");
+
     @Test   //Wszystkie testy dla zmiennych EkranSerwer.java
     public void testDefaultValues_EkranSerwer() {
         assertNotNull(ekranSerwer);
-        Assertions.assertNull(ekranSerwer.nick);
-        Assertions.assertNull(ekranSerwer.pass);
-        Assertions.assertNull(ekranSerwer.userID);
-        Assertions.assertNull(ekranSerwer.operation);
-        Assertions.assertNull(ekranSerwer.passOperation);
-        Assertions.assertNull(ekranSerwer.managementOperation);
-        Assertions.assertNull(ekranSerwer.message);
-        Assertions.assertNull(ekranSerwer.updatingItem);
-        Assertions.assertNull(ekranSerwer.selectedNick);
-        Assertions.assertNull(ekranSerwer.filmName);
-        Assertions.assertEquals(0, ekranSerwer.updatingID);
-        Assertions.assertEquals(0, ekranSerwer.dvdID);
-        Assertions.assertNull(ekranSerwer.tableName);
         Assertions.assertTrue(ekranSerwer.running);
         Assertions.assertFalse(ekranSerwer.noDatabaseConnection);
-        Assertions.assertNull(ekranSerwer.nickname);
         Assertions.assertEquals("localhost", ekranSerwer.IP);
         Assertions.assertNotNull(ekranSerwer.clients);
         Assertions.assertTrue(ekranSerwer.clients.isEmpty());
@@ -43,6 +34,7 @@ public class UnitTests {
         Assertions.assertTrue(ekranSerwer.panelData.isEmpty());
         Assertions.assertNotNull(ekranSerwer.jTextArea1);
     }
+
     @Test
     public void testSetIP() {
         String expectedIP = "192.168.0.1";
@@ -50,6 +42,7 @@ public class UnitTests {
         String actualIP = ekranSerwer.IP;
         assertEquals(expectedIP, actualIP);
     }
+
     @Test
     public void testSetMessage() {
         String initialText = "Hello, world!";
@@ -60,36 +53,38 @@ public class UnitTests {
         String actualText = initialText + message;
         assertEquals(expectedText, actualText);
     }
+
     //BazaDanych
     @Test
-    public void testGetPanelData(){
-        assertEquals(bazaDanych.panelData,bazaDanych.getPanelData());
+    public void testGetPanelData() {
+        assertEquals(bazaDanych.panelData, bazaDanych.getPanelData());
     }
-    @Test
-    public void testGetPanelData2(){
-        assertEquals(bazaDanych.panelData2,bazaDanych.getPanelData2());
-    }
+
     @Test
     public void testCatchServe() {
         Exception ex = new Exception("ex");
         bazaDanych.catchServe(ex);
     }
+
     @Test
-    public void testSetUpDatabase(){
-        assertEquals("Cannot invoke \"String.hashCode()\" because \"<local1>\" is null",bazaDanych.setUpDataBase());
+    public void testSetUpDatabase() {
+        assertEquals("Success", bazaDanych.setUpDataBase());
     }
+
     @Test
-    public void commitQuery(){
+    public void commitQuery() {
         bazaDanych.setUpDataBase();
         bazaDanych.commitQuery();
     }
+
     @Test
-    public void testCall(){
+    public void testCall() {
         bazaDanych.setUpDataBase();
-        assertEquals("Cannot invoke \"String.hashCode()\" because \"<local1>\" is null",bazaDanych.call());
+        assertEquals("Success", bazaDanych.call());
     }
+
     @Test
-    public void testWymianaDanych(){
+    public void testWymianaDanych() {
         bazaDanych.setUpDataBase();
         bazaDanych.wymianaDanych("ReviewDVDCollection");
         bazaDanych.wymianaDanych("DVDAvalaible");
@@ -124,15 +119,17 @@ public class UnitTests {
         bazaDanych.wymianaDanych("AdminNotifications");
         bazaDanych.wymianaDanych("UserNotifications");
     }
+
     @Test
-    public void testOdzyskiwanieDanych(){
+    public void testOdzyskiwanieDanych() {
         bazaDanych.setUpDataBase();
-        bazaDanych.odzyskiwanieDanych();
+        bazaDanych.recoveryData();
     }
+
     //Logi
     @Test
     public void testKonstruktoraLogi() {
-        Logs lg = new Logs("Wiadomosc","Wiadomosc","info");
+        Logs lg = new Logs("Wiadomosc", "Wiadomosc", "info");
         Assertions.assertNotNull(lg);
         Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
     }
@@ -153,6 +150,7 @@ public class UnitTests {
         assertEquals("", jTextField1.getText());
         assertEquals("", jPasswordField1.getText());
     }
+
     @Test
     public void testLogowaniaPoprawneDane() throws Exception {
         EkranLogowania ekranLogowania = new EkranLogowania("192.168.0.12");
@@ -167,6 +165,7 @@ public class UnitTests {
         jTextField1.setText("username");
         jPasswordField1.setText("password");
     }
+
     //Ekran Utworz Konto
     @Test
     public void testUtworzKontoWprowadzonoPusteDane() throws Exception {
@@ -210,6 +209,7 @@ public class UnitTests {
         Assertions.assertEquals("", new String(jPasswordField1.getPassword()));
         Assertions.assertEquals("", new String(jPasswordField2.getPassword()));
     }
+
     @Test
     public void testUtworzKontoPoprawneDane() throws Exception {
         EkranUtworzKonto ekranUtworzKonto = new EkranUtworzKonto();
@@ -252,6 +252,7 @@ public class UnitTests {
         Assertions.assertEquals("password", new String(jPasswordField1.getPassword()));
         Assertions.assertEquals("password", new String(jPasswordField2.getPassword()));
     }
+
     //Ekran przywracanie hasla
     @Test
     public void testPrzywrocHasloPusteDane() throws Exception {
@@ -280,6 +281,7 @@ public class UnitTests {
         Assertions.assertEquals("", new String(jPasswordField1.getPassword()));
         Assertions.assertEquals("", new String(jPasswordField2.getPassword()));
     }
+
     @Test
     public void testPrzywrocHasloPoprawneDane() throws Exception {
         Klient kl = new Klient();
@@ -308,6 +310,7 @@ public class UnitTests {
         Assertions.assertEquals("newpassword", new String(jPasswordField1.getPassword()));
         Assertions.assertEquals("newpassword", new String(jPasswordField2.getPassword()));
     }
+
     @Test
     public void testWalidacjiKodu() {
         Klient kl = new Klient();
@@ -322,6 +325,7 @@ public class UnitTests {
         boolean invalidMatch = ekranPrzywrocHaslo.walidacjaKodu(invalidKey);
         Assertions.assertFalse(invalidMatch, "Oczekiwano niepoprawnego dopasowania dla niepoprawnego klucza");
     }
+
     @Test
     public void testWalidacjiHasla() {
         Klient kl = new Klient();
@@ -340,7 +344,7 @@ public class UnitTests {
     @Test
     public void testEkranGlownyUzytkownik() {
         Klient kl = new Klient();
-        EkranGlownyUzytkownik ekranGlownyUzytkownik = new EkranGlownyUzytkownik("login",kl);
+        EkranGlownyUzytkownik ekranGlownyUzytkownik = new EkranGlownyUzytkownik(kl);
         Assertions.assertNotNull(ekranGlownyUzytkownik);
         ekranGlownyUzytkownik.dispose();
         Assertions.assertFalse(ekranGlownyUzytkownik.isVisible());
@@ -350,7 +354,7 @@ public class UnitTests {
     @Test
     public void testEkranGlownyAdmin() {
         Klient kl = new Klient();
-        EkranGlownyAdmin ekranGlownyAdmin = new EkranGlownyAdmin("login",kl);
+        EkranGlownyAdmin ekranGlownyAdmin = new EkranGlownyAdmin(kl);
         Assertions.assertNotNull(ekranGlownyAdmin);
         ekranGlownyAdmin.dispose();
         Assertions.assertFalse(ekranGlownyAdmin.isVisible());
@@ -473,12 +477,13 @@ public class UnitTests {
         assertEquals(5, jSpinner1.getValue());
         assertEquals(15, jSpinner2.getValue());
     }
+
     //Dialog Edytuj klienta
     @Test
     public void testEdytujKlienta() throws Exception {
         JFrame ok = new JFrame();
         Klient kl = new Klient();
-        DialogEdytujKlienta dialogEdytujKlienta = new DialogEdytujKlienta(ok,false,kl);
+        DialogEdytujKlienta dialogEdytujKlienta = new DialogEdytujKlienta(ok, false, kl);
         // Uzyskaj dostęp do prywatnych pól
         Field jTextField1Field = DialogEdytujKlienta.class.getDeclaredField("jTextField1");
         Field jTextField2Field = DialogEdytujKlienta.class.getDeclaredField("jTextField2");
@@ -560,11 +565,12 @@ public class UnitTests {
         boolean modal = false;
         Klient klient = new Klient();
         klient.nickname = "admin";
-        DialogPrzegladajKolekcjeDVD dialog = new DialogPrzegladajKolekcjeDVD(parent, modal,"ReviewDVDCollection", klient);
+        DialogPrzegladajKolekcjeDVD dialog = new DialogPrzegladajKolekcjeDVD(parent, modal, "ReviewDVDCollection", klient);
         Assertions.assertNotNull(dialog);
         dialog.dispose();
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //Dialog przegladaj liste klientow
     @Test
     public void testKonstruktoraPrzegladajListeKlientow() {
@@ -596,6 +602,7 @@ public class UnitTests {
         // Sprawdź, czy dialog zniknal po kliknieciu przycisku
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //Dialog przegladaj wypozyczenia
     @Test
     public void testKonstruktoraPrzegladajWypozyczenia() {
@@ -611,6 +618,7 @@ public class UnitTests {
         // Sprawdź, czy dialog zniknal po kliknieciu przycisku
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //Dialog przegladaj zwroty
     @Test
     public void testKonstruktoraPrzegladajZwroty() {
@@ -626,6 +634,7 @@ public class UnitTests {
         // Sprawdź, czy dialog zniknal po kliknieciu przycisku
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //Dialog stan magazynowy
     @Test
     public void testKonstruktoraStanMagazynowy() {
@@ -641,12 +650,13 @@ public class UnitTests {
         // Sprawdź, czy dialog zniknal po kliknieciu przycisku
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //Dialog ustawienia serwera
     @Test
     public void testDialogUstawieniaSerwera() throws Exception {
         Klient kl = new Klient();
         JFrame ok = new JFrame();
-        DialogUstawieniaSerwera ekranUstawienia = new DialogUstawieniaSerwera(ok,false,kl);
+        DialogUstawieniaSerwera ekranUstawienia = new DialogUstawieniaSerwera(ok, false, kl);
         String poprawneIP = "192.168.0.12";
         Field jTextField1Field = DialogUstawieniaSerwera.class.getDeclaredField("jTextField1");
         jTextField1Field.setAccessible(true);
@@ -656,18 +666,20 @@ public class UnitTests {
         Assertions.assertTrue(wynik);
         Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
     }
+
     //Dialog ustaw liczbe DVD
     @Test
     public void testDialogUstawLiczbeDVD() {
         Klient kl = new Klient();
         JFrame ok = new JFrame();
-        DialogUstawLiczbeDVD dialog = new DialogUstawLiczbeDVD(ok,false,kl);
+        DialogUstawLiczbeDVD dialog = new DialogUstawLiczbeDVD(ok, false, kl);
         dialog.jSpinner1.setValue(-1);
         dialog.jButton1ActionPerformed(null);
         Assertions.assertEquals(JOptionPane.ERROR_MESSAGE, 0);
         dialog.jSpinner1.setValue(5);
         Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
     }
+
     //Dialog Usun DVD
     @Test
     public void testKonstruktoraUsunDVD() {
@@ -680,6 +692,7 @@ public class UnitTests {
         dialog.dispose();
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //Dialog usun klienta
     @Test
     public void testKonstruktoraUsunKlienta() {
@@ -705,6 +718,7 @@ public class UnitTests {
         dialog.dispose();
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //dialog usun tabele
     @Test
     public void testKonstruktoraUsunTabele() {
@@ -717,6 +731,7 @@ public class UnitTests {
         dialog.dispose();
         Assertions.assertFalse(dialog.isVisible());
     }
+
     //Dialog utworz sekwencje
     @Test
     public void testKonstruktoraUtworzSekwencje() {
@@ -729,11 +744,12 @@ public class UnitTests {
         dialog.dispose();
         Assertions.assertFalse(dialog.isVisible());
     }
+
     @Test
     public void testDialogUtworzSekwencje2() {
         Klient kl = new Klient();
         JFrame ok = new JFrame();
-        DialogUtworzSekwencje dialog = new DialogUtworzSekwencje(ok,false,kl);
+        DialogUtworzSekwencje dialog = new DialogUtworzSekwencje(ok, false, kl);
         dialog.jComboBox1.setSelectedItem("Sekwencja1");
         dialog.jButton1ActionPerformed(null);
         Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);
@@ -751,11 +767,12 @@ public class UnitTests {
         dialog.dispose();
         Assertions.assertFalse(dialog.isVisible());
     }
+
     @Test
     public void testDialogUtworzTabele2() {
         Klient kl = new Klient();
         JFrame ok = new JFrame();
-        DialogUtworzTabele dialog = new DialogUtworzTabele(ok,false,kl);
+        DialogUtworzTabele dialog = new DialogUtworzTabele(ok, false, kl);
         dialog.jComboBox1.setSelectedItem("Sekwencja1");
         dialog.jButton1ActionPerformed(null);
         Assertions.assertEquals(JOptionPane.INFORMATION_MESSAGE, 1);

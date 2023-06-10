@@ -1,4 +1,5 @@
 package com.client;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
@@ -8,14 +9,23 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class DialogZobaczRezerwacje extends javax.swing.JDialog {
+    /**
+     * Atrybut będący listą ciągów znaków przechowującym dane
+     */
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący polem tekstowym GUI
      */
@@ -24,6 +34,14 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
      * Atrybut będący tabelą
      */
     private final javax.swing.JTable jTable1 = new javax.swing.JTable();
+    /**
+     * Lista zawierająca dane
+     */
+    private final java.util.List<String> panelData = new LinkedList<>();
+    /**
+     * Instancja klasy klient
+     */
+    private final Klient klient;
     /**
      * Atrybut będący sorterem tabeli
      */
@@ -36,28 +54,20 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
      * Atrybut będący nazwą płyty DVD
      */
     private String dvdName;
-    /**
-     * Lista zawierająca dane
-     */
-    private final java.util.List<String> panelData = new LinkedList<>();
-    /**
-     * Instancja klasy klient
-     */
-    private final Klient klient;
+
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     *
      * @param klient Instancja klasy klient
-     * @param modal Określa czy okno jest modalne, czy nie
+     * @param modal  Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
     public DialogZobaczRezerwacje(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
         this.klient = klient;
+        getReservationsList();
         jTable1.setRowSorter(null);
         rowSorter = null;
-        klient.polacz(klient);
-        panelData.addAll(klient.otrzymujDane("ReviewReservations",""));
-        klient.zakonczPolaczenie();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -76,6 +86,17 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    /**
+     * Metoda łącząca się z serwerem celem pobrania istniejących rezerwacji z bazy danych
+     */
+    private void getReservationsList() {
+        dane.clear();
+        dane.add("ReviewReservations");
+        panelData.addAll((Collection<? extends String>) klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+    }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -108,18 +129,12 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
         jTextField1.setMaximumSize(jTextField1.getPreferredSize());
 
         int counter = 0;
-        int size = ((panelData.size())/2);
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-            },
-            new String [] {
-                "Klient", "Rezerwuje"
-            }
-        ));
+        int size = ((panelData.size()) / 2);
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(new Object[][]{}, new String[]{"Klient", "Rezerwuje"}));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        for(int i=0; i<size; i++){
-            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1)});
-            if(size>1) counter+=2;
+        for (int i = 0; i < size; i++) {
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter + 1)});
+            if (size > 1) counter += 2;
         }
         jTextField1.getDocument().addDocumentListener(new DocumentListener() {
             @Override
@@ -131,6 +146,7 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
                     rowSorter.setRowFilter(RowFilter.regexFilter("(?i)" + text));
                 }
             }
+
             @Override
             public void removeUpdate(DocumentEvent e) {
                 String text = jTextField1.getText();
@@ -140,6 +156,7 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
                     rowSorter.setRowFilter(RowFilter.regexFilter("(?i)" + text));
                 }
             }
+
             @Override
             public void changedUpdate(DocumentEvent e) {
                 throw new UnsupportedOperationException("Nie obsługiwany event!");
@@ -161,7 +178,7 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
 
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-        for(int i=0; i<2; i++) {
+        for (int i = 0; i < 2; i++) {
             jTable1.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
             jTable1.getColumnModel().getColumn(i).setHeaderRenderer(centerRenderer);
         }
@@ -169,83 +186,77 @@ public class DialogZobaczRezerwacje extends javax.swing.JDialog {
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(150, 150, 150)
-                        .addComponent(jLabel1)
-                    )
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(29, 29, 29)
-                                .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel2)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField1)))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(35, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addGap(15,15,15)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jLabel2)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
-        );
+        jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(150, 150, 150).addComponent(jLabel1)).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(29, 29, 29).addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addComponent(jLabel2).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jTextField1))))).addGroup(jPanel1Layout.createSequentialGroup().addGap(130, 130, 130).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)).addGroup(jPanel1Layout.createSequentialGroup().addGap(35, 35, 35).addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE))).addContainerGap(35, Short.MAX_VALUE)));
+        jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(25, 25, 25).addComponent(jLabel1).addGap(15, 15, 15).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jLabel2).addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(20, 20, 20).addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(18, 18, 18).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(15, 15, 15)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         jTable1.setRowSorter(null);
         rowSorter = null;
         pack();
     }
+
+    /**
+     * Metoda pobierająca ID wskazanego użytkownika z bazy
+     *
+     * @return Zwraca pobrane ID
+     */
+    private String getUserID() {
+        dane.clear();
+        dane.add("GetClientID");
+        dane.add(userName);
+        List<String> dataList = (List<String>) new LinkedList<>(klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+        return dataList.get(0);
+    }
+
+    /**
+     * Metoda pobierająca ID wskazanej płyty DVD z bazy
+     *
+     * @return Zwraca pobrane ID
+     */
+    private String getDVDID() {
+        dane.clear();
+        dane.add("GetDVDID");
+        dane.add(dvdName);
+        List<String> dataList = (List<String>) new LinkedList<>(klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+        return dataList.get(0);
+    }
+
+    private void rentDVD(String userID, String dvdID) {
+        dane.clear();
+        dane.add("RentDVD");
+        dane.add(userID);
+        dane.add(dvdID);
+        klient.polacz(klient, dane);
+        klient.zakonczPolaczenie();
+    }
+
+    private void deleteReservation(String userID, String dvdID) {
+        dane.clear();
+        dane.add("DeleteReservation");
+        dane.add(userID);
+        dane.add(dvdID);
+        klient.polacz(klient, dane);
+        klient.zakonczPolaczenie();
+    }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Zatwierdź rezerwację
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         jTable1.setRowSorter(null);
         rowSorter = null;
-        if(userName!=null) {
-            klient.panelData.clear();
-            klient.polacz(klient);
-            String userID = klient.pobierzIDKlienta(userName);
-            klient.panelData.add(userID);
-            klient.zakonczPolaczenie();
-            klient.polacz(klient);
-            int dvdID = klient.pobierzIDDVD(dvdName);
-            klient.panelData.add(Integer.toString(dvdID));
-            klient.zakonczPolaczenie();
-            klient.polacz(klient);
-            klient.wysylajDane("RentDVD");
-            klient.zakonczPolaczenie();
-            klient.polacz(klient);
-            klient.usunRezerwacje(userID,dvdID);
-            klient.zakonczPolaczenie();
+        if (userName != null) {
+            String userID = getUserID();
+            String dvdID = getDVDID();
+            rentDVD(userID, dvdID);
+            deleteReservation(userID, dvdID);
             DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
             model.setRowCount(0);
             model.setColumnCount(0);

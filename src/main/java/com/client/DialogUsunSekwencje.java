@@ -1,14 +1,23 @@
 package com.client;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class DialogUsunSekwencje extends javax.swing.JDialog {
+    /**
+     * Atrybut będący listą ciągów znaków przechowującym dane
+     */
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący listą wyboru
      */
@@ -17,10 +26,12 @@ public class DialogUsunSekwencje extends javax.swing.JDialog {
      * Instancja klasy klient
      */
     private final Klient klient;
+
     /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     *
      * @param klient Instancja klasy klient
-     * @param modal Określa czy okno jest modalne, czy nie
+     * @param modal  Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
     public DialogUsunSekwencje(Frame parent, boolean modal, Klient klient) {
@@ -36,6 +47,7 @@ public class DialogUsunSekwencje extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         setVisible(true);
     }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -58,7 +70,7 @@ public class DialogUsunSekwencje extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 14));
         jLabel2.setText("Wybierz sekwencje z listy");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"DROP SEQUENCE user_id","DROP SEQUENCE user_data_id","DROP SEQUENCE dvd_id","DROP SEQUENCE rent_id","DROP SEQUENCE return_id","DROP SEQUENCE bill_id","DROP SEQUENCE reservation_id"}));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"DROP SEQUENCE user_id", "DROP SEQUENCE user_data_id", "DROP SEQUENCE dvd_id", "DROP SEQUENCE rent_id", "DROP SEQUENCE return_id", "DROP SEQUENCE bill_id", "DROP SEQUENCE reservation_id"}));
         jComboBox1.setPreferredSize(new java.awt.Dimension(72, 25));
         jComboBox1.setFont(new java.awt.Font("Segoe UI", Font.PLAIN, 14));
 
@@ -78,71 +90,39 @@ public class DialogUsunSekwencje extends javax.swing.JDialog {
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(137, 137, 137)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(79, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addGap(35, 35, 35)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(48, Short.MAX_VALUE))
-        );
+        jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(137, 137, 137).addComponent(jLabel1)).addGroup(jPanel1Layout.createSequentialGroup().addGap(75, 75, 75).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel2).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false).addGroup(jPanel1Layout.createSequentialGroup().addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)).addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))).addContainerGap(79, Short.MAX_VALUE)));
+        jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(25, 25, 25).addComponent(jLabel1).addGap(35, 35, 35).addComponent(jLabel2).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED).addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(35, 35, 35).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)).addContainerGap(48, Short.MAX_VALUE)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
 
         pack();
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Usuń
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         String sequence = String.valueOf(jComboBox1.getSelectedItem());
-        int reply = klient.dialogTakNie("Spowoduje to usunięcie sekwencji "+sequence+"\nCzy kontynuować?");
+        int reply = klient.dialogTakNie("Spowoduje to usunięcie sekwencji " + sequence + "\nCzy kontynuować?");
         if (reply == JOptionPane.YES_OPTION) {
-            klient.polacz(klient);
-            String message = klient.zarzadzaj(sequence);
+            dane.clear();
+            dane.add("Management");
+            dane.add(sequence);
+            java.util.List<String> message = (List<String>) new LinkedList<>(klient.polacz(klient, dane));
             klient.zakonczPolaczenie();
             JOptionPane.showMessageDialog(this, message, "Informacja", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         }
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Anuluj
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {

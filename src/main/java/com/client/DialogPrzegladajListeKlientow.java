@@ -1,4 +1,5 @@
 package com.client;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.event.DocumentEvent;
@@ -8,15 +9,23 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Klasa zawierająca pola i metody służące do obsługi dialog boxa
+ *
  * @author Jakub Szczur
  * @author Maksymilian Sowula
  * @version 1.0.0-alpha
  */
 public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
+    /**
+     * Atrybut będący listą ciągów znaków przechowującym dane
+     */
+    protected final List<String> dane = new ArrayList<>();
     /**
      * Atrybut będący polem tekstowym
      */
@@ -26,24 +35,29 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
      */
     private final javax.swing.JTable jTable1 = new javax.swing.JTable();
     /**
-     * Atrybut będący sorterem tabeli
+     * Instancja klasy Klient
      */
-    private TableRowSorter<TableModel> rowSorter;
+    private final Klient klient;
     /**
      * Lista odebranych danych
      */
     private final java.util.List<String> panelData = new LinkedList<>();
     /**
+     * Atrybut będący sorterem tabeli
+     */
+    private TableRowSorter<TableModel> rowSorter;
+
+    /**
      * Konstruktor odpowiadający za inicjalizację GUI
+     *
      * @param klient Instancja klasy klient
-     * @param modal Określa czy okno jest modalne, czy nie
+     * @param modal  Określa czy okno jest modalne, czy nie
      * @param parent Okno macierzyste
      */
     public DialogPrzegladajListeKlientow(Frame parent, boolean modal, Klient klient) {
         super(parent, modal);
-        klient.polacz(klient);
-        panelData.addAll(klient.otrzymujDane("ReviewClients",""));
-        klient.zakonczPolaczenie();
+        this.klient = klient;
+        getDataList();
         initComponents();
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -54,6 +68,17 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
         this.setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    /**
+     * Metoda, której zadaniem jest pobranie listy klientów z bazy danych
+     */
+    private void getDataList() {
+        dane.clear();
+        dane.add("ReviewClients");
+        panelData.addAll((Collection<? extends String>) klient.polacz(klient, dane));
+        klient.zakonczPolaczenie();
+    }
+
     /**
      * Metoda inicjalizująca komponenty graficzne dialog boxa
      */
@@ -76,18 +101,12 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
         jTextField1.setDisabledTextColor(Color.lightGray);
         jTextField1.setMaximumSize(jTextField1.getPreferredSize());
         int counter = 0;
-        int size = ((panelData.size())/5);
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-            },
-            new String [] {
-                "ID","Imię", "Nazwisko", "Adres e-mail", "Telefon"
-            }
-        ));
+        int size = ((panelData.size()) / 5);
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(new Object[][]{}, new String[]{"ID", "Imię", "Nazwisko", "Adres e-mail", "Telefon"}));
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        for(int i=0; i<size; i++){
-            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter+1), panelData.get(counter+2), panelData.get(counter+3), panelData.get(counter+4)});
-            if(size>1) counter+=5;
+        for (int i = 0; i < size; i++) {
+            model.addRow(new Object[]{panelData.get(counter), panelData.get(counter + 1), panelData.get(counter + 2), panelData.get(counter + 3), panelData.get(counter + 4)});
+            if (size > 1) counter += 5;
         }
         jTable1.setEnabled(false);
         jTextField1.getDocument().addDocumentListener(new DocumentListener() {
@@ -100,6 +119,7 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
                     rowSorter.setRowFilter(RowFilter.regexFilter("(?i)" + text));
                 }
             }
+
             @Override
             public void removeUpdate(DocumentEvent e) {
                 String text = jTextField1.getText();
@@ -109,6 +129,7 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
                     rowSorter.setRowFilter(RowFilter.regexFilter("(?i)" + text));
                 }
             }
+
             @Override
             public void changedUpdate(DocumentEvent e) {
                 throw new UnsupportedOperationException("Nie obsługiwany event!");
@@ -122,7 +143,7 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
 
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-        for(int i=0; i<5; i++) {
+        for (int i = 0; i < 5; i++) {
             jTable1.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
             jTable1.getColumnModel().getColumn(i).setHeaderRenderer(centerRenderer);
         }
@@ -140,54 +161,18 @@ public class DialogPrzegladajListeKlientow extends javax.swing.JDialog {
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
 
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(420, 420, 420)
-                        .addComponent(jLabel2)
-                        .addGap(190,190,190)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(410, 410, 410)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jLabel2)
-                .addComponent(jLabel3)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
-        );
+        jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(420, 420, 420).addComponent(jLabel2).addGap(190, 190, 190).addComponent(jLabel3).addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jTextField1).addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addGroup(jPanel1Layout.createSequentialGroup().addGap(26, 26, 26).addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE)).addGroup(jPanel1Layout.createSequentialGroup().addGap(410, 410, 410).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))).addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+        jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(26, 26, 26).addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jLabel2).addComponent(jLabel3).addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)).addGap(26, 26, 26).addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE).addGap(26, 26, 26).addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE).addContainerGap(22, Short.MAX_VALUE)));
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         pack();
     }
+
     /**
      * Metoda obsługująca kliknięcie przycisku Ok
+     *
      * @param evt Przyjęty event podczas kliknięcia przycisku
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
